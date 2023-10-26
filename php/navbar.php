@@ -12,21 +12,10 @@
 
                     <div class="navbar-collapse collapse" id="mobile_menu">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Schools</a></li>
-                                    <li><a href="#">Work Finder</a></li>
-                                    <li><a href="#">Students</a></li>
-                                    <li><a href="#">About Four</a></li>
-                                    <li><a href="#">About Five</a></li>
-                                    <li><a href="#">About Six</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Welcome</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li class="active"><a href="index.php">Home</a></li>
+                            <li><a href="#">Analytics</a></li>
+                            <li><a href="#">News Feed</a></li>
+                            <li><a href="#">Notifications</a></li>
                         </ul>
                         <ul class="nav navbar-nav">
                             <li>
@@ -43,13 +32,7 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#">Sign Up</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            <li><a href="./pages/login.php"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</span></a></li>
                     </div>
                 </div>
             </div>
