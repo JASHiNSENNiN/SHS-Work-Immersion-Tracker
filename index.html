@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Workify</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Home | Design studio template</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="static/images/favicons/favicon.png"
+            type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+            rel="stylesheet" type="text/css">
+        <link rel="stylesheet"
+            href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="static/css/index.css">
     </head>
+
     <body>
-        <link rel="stylesheet" href="css/navbar.css">
-        <header>
-            <h1 class="logo"> Workify </h1>
-            <nav>
-                <ul class="nav__links">
-                    <li>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#">
-                <button>Log In</button>
-            </a>
+        <!-- $Page header-->
+        <header class="page-header js-header">
+            <div class="page-header__inner">
+                <div class="page-header__logo">
+                    <h1>Workify</h1>
+                </div>
+                <nav class="page-header__nav js-nav">
+
+                </nav>
+            </div>
         </header>
 
-        <link rel="stylesheet" href="css/index.css">
-
-        <section id="about">
-            <h2>About Workify</h2>
-            <p>Workify is a comprehensive Work Immersion Management System
-                designed to streamline the work immersion process for Senior
-                High School students. Our goal is to provide a platform that
-                enables efficient monitoring and management of work immersion
-                environments, ensuring a positive and valuable experience for
-                students.</p>
-            <p>With Workify, schools, students, and industry partners can
-                collaborate seamlessly, leveraging data analytics and reporting
-                to make informed decisions and optimize the work immersion
-                program.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Data Collection and Integration: Collect and integrate data
-                    from various sources, including student profiles, industry
-                    partners, and work immersion activities.</li>
-                <li>Dashboard and Reporting: Develop a user-friendly dashboard
-                    with visual representations of key metrics and performance
-                    indicators.</li>
-                <li>Matching and Placement: Utilize data analytics to optimize
-                    the process of matching students with suitable work
-                    immersion placements.</li>
-                <li>Performance Evaluation: Implement a standardized evaluation
-                    system using data analytics to assess students' performance
-                    during work immersion.</li>
-                <li>Identifying Industry Trends: Analyze data to identify
-                    emerging industry trends, skill requirements, and demands.</li>
-                <li>Feedback and Surveys: Incorporate data analytics to collect
-                    and analyze feedback from stakeholders.</li>
-                <li>Risk Assessment and Intervention: Use data analytics to
-                    identify potential risks or challenges during the work
-                    immersion program.</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>&copy; 2022 Workify. All rights reserved.</p>
-        </footer>
-
+        <link rel="stylesheet" href="static/css/login.css">
+        <div class="row">
+            <div class="colm-logo">
+                <h1>Workify</h1>
+                <h2>
+                    Streamlining Senior High School Work Immersion Management
+                    System with Data Analytics
+                </h2>
+            </div>
+            <script src="static/js/login.js"></script>
+            <div id="login-form" class="colm-form">
+                <div class="form-container">
+                    <input type="text"
+                        placeholder="Email address or phone number">
+                    <input type="password" placeholder="Password">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-new">Create new Account</button>
+                </div>
+            </div>
+            <div id="register-form" class="colm-form">
+                <div class="form-container">
+                    <input type="text"
+                        placeholder="Email address or phone number">
+                    <input type="password" placeholder="Password">
+                    <input type="password"
+                        placeholder="Confirm Password">
+                    <label for="type" class="label"></label>
+                    <select name="type" id="type">
+                        <option value class="null-type">Account Type:</option>
+                        <option value="student">Student</option>
+                        <option value="school">School</option>
+                        <option value="partner">Partner Organization</option>
+                    </select>
+                    <button class="btn-login">Regisster</button>
+                    <button class="btn-new">Log in to Existing Account</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
