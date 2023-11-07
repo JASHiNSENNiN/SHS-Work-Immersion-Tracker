@@ -29,21 +29,23 @@ switchToLoginButton.addEventListener("click", showLoginForm);
 
 showLoginForm();
 
-function validateForm() {
+async function validateForm() {
 	const email = document.getElementById("email").value;
 	const password = document.getElementById("password").value;
 	const confirmPassword = document.getElementById("confirm-password").value;
 	const accountType = document.getElementById("account-type").value;
+	const schoolName = document.getElementById("school-name").value;
+	const organizationName = document.getElementById("organization-name").value;
 	const firstName = document.getElementById("first-name").value;
 	const middleName = document.getElementById("middle-name").value;
 	const lastName = document.getElementById("last-name").value;
 	const gradeLevel = document.getElementById("grade-level").value;
 	const strand = document.getElementById("strand").value;
 
+
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email)) {
 		alert("Please enter a valid email address");
-		showRegisterForm();
 		return;
 	}
 
@@ -52,39 +54,161 @@ function validateForm() {
 		alert(
 			"Password must contain at least 6 characters, including one uppercase letter, one lowercase letter, and one digit"
 		);
-		showRegisterForm();
 		return;
 	}
 
 	if (password !== confirmPassword) {
 		alert("Passwords do not match");
-		showRegisterForm();
 		return;
 	}
 
 	if (accountType === "") {
 		alert("Please select an account type");
-		showRegisterForm();
-		return;
-	}
-
-	const nameRegex = /^[A-Za-z\s]{3,}$/;
-	if (
-		!nameRegex.test(firstName) ||
-		!nameRegex.test(middleName) ||
-		!nameRegex.test(lastName)
-	) {
-		alert("Please enter a valid full name");
-		showRegisterForm();
-		return;
-	}
-
-	if (gradeLevel === "" || strand === "") {
-		alert("Please select a grade level and strand");
-		showRegisterForm();
 		return;
 	}
 
 
-	document.querySelector("#register").submit();
+	if (accountType === "student") {
+		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		if (
+			!nameRegex.test(firstName) ||
+			!nameRegex.test(middleName) ||
+			!nameRegex.test(lastName)
+		) {
+			alert("Please enter a valid full name");
+			return;
+		}
+
+		if (gradeLevel === "" || strand === "") {
+			alert("Please select a grade level and strand");
+			return;
+		}
+	}
+	if (accountType === "school") {
+		const schoolRegex = /^[A-Za-z\s]{3,}$/;
+		if (!schoolRegex.test(schoolName)) {
+			alert("Please enter a valid school name");
+			return;
+		}
+	}
+	if (accountType === "partner") {
+		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		if (!nameRegex.test(organizationName)) {
+			alert("Please enter a valid organization name");
+			return;
+		}
+	}
+
+	checkEmail(email)
+		.then((exists) => {
+			if (exists) {
+				alert("Email already exists!");
+			} else {
+			}
+		})
+		.catch((error) => {
+			console.error("Error:", error);
+		});
+
+	var formData = {
+		email: email,
+		password: password,
+		accountType: accountType,
+		firstName: firstName,
+		middleName: middleName,
+		lastName: lastName,
+		gradeLevel: gradeLevel,
+		strand: strand,
+		schoolName: schoolName,
+		organizationName: organizationName,
+	};
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "/shs/php/register.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			alert(xhr.responseText);
+		}
+	};
+
+	xhr.send(JSON.stringify(formData));
+	location.reload();
+}
+
+function toggleFields() {
+	var accountType = document.getElementById("account-type").value;
+	var studentFields = document.getElementById("student-fields");
+	var schoolFields = document.getElementById("school-fields");
+	var partnerFields = document.getElementById("partner-fields");
+
+	if (accountType === "student") {
+		studentFields.style.display = "block";
+		schoolFields.style.display = "none";
+		partnerFields.style.display = "none";
+	} else if (accountType === "school") {
+		studentFields.style.display = "none";
+		schoolFields.style.display = "block";
+		partnerFields.style.display = "none";
+	} else if (accountType === "partner") {
+		studentFields.style.display = "none";
+		schoolFields.style.display = "none";
+		partnerFields.style.display = "block";
+	} else {
+		studentFields.style.display = "none";
+		schoolFields.style.display = "none";
+		partnerFields.style.display = "none";
+	}
+}
+
+function checkEmail(email) {
+	return new Promise((resolve, reject) => {
+		const xhr = new XMLHttpRequest();
+		xhr.open("POST", "/shs/php/check_email.php", true);
+		xhr.setRequestHeader("Content-Type", "application/json");
+
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					const response = JSON.parse(xhr.responseText);
+					resolve(response.exists);
+				} else {
+					reject(xhr.statusText);
+				}
+			}
+		};
+
+		xhr.send(JSON.stringify({ email: email }));
+	});
+}
+
+function login() {
+	const email = document.getElementById("login-email").value;
+	const password = document.getElementById("login-password").value;
+
+	const formData = {
+		email,
+		password,
+	};
+
+	const xhr = new XMLHttpRequest();
+	xhr.open("POST", "/shs/php/log_in.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			if (xhr.status === 200) {
+				const response = JSON.parse(xhr.responseText);
+				if (response.success) {
+					//   ---- setSession();
+					window.location.href = response.redirectUrl;
+				} else {
+					alert(response.message);
+				}
+			} else {
+				console.error("Error:", xhr.status);
+			}
+		}
+	};
+	xhr.send(JSON.stringify(formData));
 }

@@ -35,14 +35,6 @@
                 <h1>Welcome to our site!</h1>
                 <p>This is the home section.</p>
             </section>
-            <section id="Work Finder">
-                <h1>About us</h1>
-                <p>This is the about section.</p>
-            </section>
-            <section id="Settings">
-                <h1>Get in touch</h1>
-                <p>This is the contact section.</p>
-            </section>
         </main>
 
     </body>
