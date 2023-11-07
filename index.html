@@ -6,30 +6,19 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Home | Design studio template</title>
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="shortcut icon" href="static/images/favicons/favicon.png"
-            type="image/x-icon">
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
-            rel="stylesheet" type="text/css">
-        <link rel="stylesheet"
-            href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-        <link rel="stylesheet" href="static/css/index.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
-        <!-- $Page header-->
         <header class="page-header js-header">
             <div class="page-header__inner">
                 <div class="page-header__logo">
                     <h1>Workify</h1>
                 </div>
-                <nav class="page-header__nav js-nav">
-
-                </nav>
             </div>
         </header>
 
-        <link rel="stylesheet" href="static/css/login.css">
+        <link rel="stylesheet" href="css/login.css">
         <div class="row">
             <div class="colm-logo">
                 <h1>Workify</h1>
@@ -38,14 +27,14 @@
                     System with Data Analytics
                 </h2>
             </div>
-            <script src="static/js/login.js"></script>
             <div id="login-form" class="colm-form">
                 <div class="form-container">
                     <input type="text"
                         placeholder="Email address or phone number">
                     <input type="password" placeholder="Password">
                     <button class="btn-login">Login</button>
-                    <button class="btn-new">Create new Account</button>
+                    <button class="btn-new" id="switch-to-register">Create new
+                        Account</button>
                 </div>
             </div>
             <div id="register-form" class="colm-form">
@@ -63,9 +52,11 @@
                         <option value="partner">Partner Organization</option>
                     </select>
                     <button class="btn-login">Regisster</button>
-                    <button class="btn-new">Log in to Existing Account</button>
+                    <button class="btn-new" id="switch-to-login">Log in to
+                        Existing Account</button>
                 </div>
             </div>
+            <script src="js/login.js"></script>
         </div>
     </body>
 </html>

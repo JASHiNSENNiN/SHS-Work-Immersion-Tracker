@@ -19,7 +19,7 @@ form,
 input,
 header,
 hgroup,
-nav{
+nav {
     margin: 0;
     padding: 0;
     border: 0;
@@ -63,6 +63,7 @@ p {
 a {
     font-size: 20px;
     text-decoration: none;
+
 }
 
 html,
@@ -129,7 +130,7 @@ body {
 
 .page-header__nav {
     float: right;
-    margin: 30px 55px 0 0;
+    margin: 40px 55px 0 0;
     background-color: #fff;
 }
 
@@ -154,7 +155,6 @@ body {
     background-color: #1bbc9b;
     color: #fff;
 }
-
 
 @media screen and (max-width:800px) {
 
@@ -206,4 +206,10 @@ body {
     .page-header__nav li {
         margin-left: 0;
     }
+}
+
+.page-header__nav-link.active {
+    position: relative;
+    border-bottom: 2px solid #0088a9;
+    color: #fff;
 }
