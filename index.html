@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Home | Design studio template</title>
+        <title>Workify | Log In</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -30,30 +30,60 @@
             <div id="login-form" class="colm-form">
                 <div class="form-container">
                     <input type="text"
-                        placeholder="Email address or phone number">
+                        placeholder="Email address">
                     <input type="password" placeholder="Password">
                     <button class="btn-login">Login</button>
-                    <button class="btn-new" id="switch-to-register">Create new
+                    <button class="btn-new" id="switch-to-register"
+                        onclick="showLoginForm()">Create New
                         Account</button>
                 </div>
             </div>
-            <div id="register-form" class="colm-form">
+            <div id="register-form" class="colm-form" style="margin-top: 250px">
                 <div class="form-container">
-                    <input type="text"
-                        placeholder="Email address or phone number">
-                    <input type="password" placeholder="Password">
-                    <input type="password"
-                        placeholder="Confirm Password">
-                    <label for="type" class="label"></label>
-                    <select name="type" id="type">
-                        <option value class="null-type">Account Type:</option>
-                        <option value="student">Student</option>
-                        <option value="school">School</option>
-                        <option value="partner">Partner Organization</option>
-                    </select>
-                    <button class="btn-login">Regisster</button>
-                    <button class="btn-new" id="switch-to-login">Log in to
-                        Existing Account</button>
+                    <form id="register" method="POST">
+                        <input type="text" for="email" name="email" id="email"
+                            placeholder="Email address" required>
+                        <input type="password" placeholder="Password"
+                            id="password"
+                            name="confirm-password" required>
+                        <input type="password" placeholder="Confirm Password"
+                            id="confirm-password" name="confirm-password"
+                            required>
+                        <select id="account-type" name="account-type" required>
+                            <option value class="null-type">Account Type:</option>
+                            <option value="student">Student</option>
+                            <option value="school">School</option>
+                            <option value="partner">Partner Organization</option>
+                        </select>
+                        <input type="text" placeholder="First Name"
+                            id="first-name"
+                            name="first-name" required>
+                        <input type="text" placeholder="Middle Name"
+                            id="middle-name" name="middle-name" required>
+                        <input type="text" placeholder="Last Name"
+                            id="last-name"
+                            name="last-name" required>
+                        <select name="grade-level" id="grade-level"
+                            name="grade-level" required>
+                            <option value class="null-type">Grade Level:
+                            </option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="strand" id="strand" name="strand" required>
+                            <option value class="null-type">Strand: </option>
+                            <option value="stem">STEM</option>
+                            <option value="humss">HUMSS</option>
+                            <option value="abm">ABM</option>
+                            <option value="gas">GAS</option>
+                            <option value="tvl">TVL</option>
+                        </select>
+                        <button class="btn-login" onclick="validateForm()">Register</button>
+                        <button class="btn-new" id="switch-to-login"
+                            onclick="showLoginForm()">
+                            Log in to Existing Account
+                        </button>
+                    </form>
                 </div>
             </div>
             <script src="js/login.js"></script>
