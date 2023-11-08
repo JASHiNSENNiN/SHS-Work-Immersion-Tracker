@@ -1,20 +1,18 @@
 <?php
 
-// Database configuration
 $host = "localhost";
 $username = "root";
 $password = "";
 $database = "shs_immersion";
 
-// Create a connection
+
 $conn = mysqli_connect($host, $username, $password);
 
-// Check connection
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Create the database if it does not exist
 $sql = "CREATE DATABASE IF NOT EXISTS $database";
 if (mysqli_query($conn, $sql)) {
     //echo "Database created successfully or already exists\n";
@@ -22,10 +20,9 @@ if (mysqli_query($conn, $sql)) {
     //echo "Error creating database: " . mysqli_error($conn) . "\n";
 }
 
-// Select the database
+
 mysqli_select_db($conn, $database);
 
-// Create the tables if they do not exist
 $sql = "
 CREATE TABLE IF NOT EXISTS users (
   id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -41,6 +38,7 @@ CREATE TABLE IF NOT EXISTS student_profiles (
   last_name VARCHAR(255),
   grade_level ENUM('11', '12'),
   strand ENUM('stem', 'humss', 'abm', 'gas', 'tvl'),
+  stars INT(10),
   user_id INT(11),
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
@@ -48,6 +46,7 @@ CREATE TABLE IF NOT EXISTS student_profiles (
 CREATE TABLE IF NOT EXISTS school_profiles (
   id INT(11) PRIMARY KEY AUTO_INCREMENT,
   school_name VARCHAR(255),
+  stars INT(10),
   user_id INT(11),
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
@@ -55,6 +54,7 @@ CREATE TABLE IF NOT EXISTS school_profiles (
 CREATE TABLE IF NOT EXISTS partner_profiles (
   id INT(11) PRIMARY KEY AUTO_INCREMENT,
   organization_name VARCHAR(255),
+  stars INT(10),
   user_id INT(11),
   FOREIGN KEY (user_id) REFERENCES users(id)
 );

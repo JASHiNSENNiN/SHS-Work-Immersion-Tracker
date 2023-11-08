@@ -21,6 +21,8 @@ if ($result->num_rows === 1) {
   $row = $result->fetch_assoc();
   $hashedPassword = hash('sha256', $password);
   if (password_verify($hashedPassword, $row['password'])) {
+    session_start();
+
     $_SESSION['user_id'] = $row['id'];
     $accountType = $row['account_type'];
     switch ($accountType) {
