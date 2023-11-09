@@ -42,6 +42,17 @@ async function validateForm() {
 	const gradeLevel = document.getElementById("grade-level").value;
 	const strand = document.getElementById("strand").value;
 
+	try {
+		const exists = checkEmailExists(email);
+		if (exists) {
+			alert("Email already exists");
+			return;
+		} else {
+			//console.log("Email does not exist");
+		}
+	} catch (error) {
+		console.error("Error:", error);
+	}
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email)) {
@@ -67,7 +78,6 @@ async function validateForm() {
 		return;
 	}
 
-
 	if (accountType === "student") {
 		const nameRegex = /^[A-Za-z\s]{3,}$/;
 		if (
@@ -91,24 +101,13 @@ async function validateForm() {
 			return;
 		}
 	}
-	if (accountType === "partner") {
+	if (accountType === "organization") {
 		const nameRegex = /^[A-Za-z\s]{3,}$/;
 		if (!nameRegex.test(organizationName)) {
 			alert("Please enter a valid organization name");
 			return;
 		}
 	}
-
-	checkEmail(email)
-		.then((exists) => {
-			if (exists) {
-				alert("Email already exists!");
-			} else {
-			}
-		})
-		.catch((error) => {
-			console.error("Error:", error);
-		});
 
 	var formData = {
 		email: email,
@@ -142,16 +141,20 @@ function toggleFields() {
 	var studentFields = document.getElementById("student-fields");
 	var schoolFields = document.getElementById("school-fields");
 	var partnerFields = document.getElementById("partner-fields");
+	var registerForm = document.getElementById("register-form");
 
 	if (accountType === "student") {
+		registerForm.style.paddingTop = "25%";
 		studentFields.style.display = "block";
 		schoolFields.style.display = "none";
 		partnerFields.style.display = "none";
 	} else if (accountType === "school") {
+		registerForm.style.paddingTop = "10%";
 		studentFields.style.display = "none";
 		schoolFields.style.display = "block";
 		partnerFields.style.display = "none";
-	} else if (accountType === "partner") {
+	} else if (accountType === "organization") {
+		registerForm.style.paddingTop = "10%";
 		studentFields.style.display = "none";
 		schoolFields.style.display = "none";
 		partnerFields.style.display = "block";
@@ -162,26 +165,21 @@ function toggleFields() {
 	}
 }
 
-function checkEmail(email) {
-	return new Promise((resolve, reject) => {
-		const xhr = new XMLHttpRequest();
-		xhr.open("POST", "/shs/php/check_email.php", true);
-		xhr.setRequestHeader("Content-Type", "application/json");
+function checkEmailExists(email) {
+	const xhr = new XMLHttpRequest();
+	xhr.open("POST", "/shs/php/check_email.php", false);
+	xhr.setRequestHeader("Content-Type", "application/json");
 
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					const response = JSON.parse(xhr.responseText);
-					resolve(response.exists);
-				} else {
-					reject(xhr.statusText);
-				}
-			}
-		};
+	xhr.send(JSON.stringify({ email: email }));
 
-		xhr.send(JSON.stringify({ email: email }));
-	});
+	if (xhr.readyState === 4 && xhr.status === 200) {
+		const exists = JSON.parse(xhr.responseText);
+		return exists;
+	} else {
+		throw new Error(xhr.statusText);
+	}
 }
+
 
 function login() {
 	const email = document.getElementById("login-email").value;

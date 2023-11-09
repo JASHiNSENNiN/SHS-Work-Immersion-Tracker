@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS users (
   id INT(11) PRIMARY KEY AUTO_INCREMENT,
   email VARCHAR(255) UNIQUE,
   password VARCHAR(255),
-  account_type ENUM('student', 'school', 'partner')
+  account_type ENUM('student', 'school', 'organization')
 );
 
 CREATE TABLE IF NOT EXISTS student_profiles (

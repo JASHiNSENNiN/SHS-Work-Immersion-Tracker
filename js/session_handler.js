@@ -1,6 +1,13 @@
 var userId;
 var accountType;
 var email;
+var error;
+const excludedPaths = [
+	"/shs/student.php",
+	"/shs/school.php",
+	"/shs/organization.php",
+];
+const currentPath = window.location.pathname;
 
 function fetchCurrentUser() {
 	const xhr = new XMLHttpRequest();
@@ -25,6 +32,9 @@ function fetchCurrentUser() {
 				checkSessionAndRedirect();
 			} else {
 				console.log("Error: " + response.message);
+				if (excludedPaths.includes(currentPath)) {
+					window.location.href = "/shs/index.php";
+				}
 			}
 		} else {
 			console.log("Error: " + xhr.status);
@@ -42,27 +52,10 @@ fetchCurrentUser();
 checkSessionAndRedirect();
 
 function checkSessionAndRedirect() {
-	if (userId && accountType && email) {
-		const currentPath = window.location.pathname;
-		const excludedPaths = [
-			"/shs/student.php",
-			"/shs/school.php",
-			"/shs/organization.php",
-		];
-		if (userId !== "" && !excludedPaths.includes(currentPath)) {
-			switch (accountType) {
-				case "student":
-					window.location.href = "/shs/student.php";
-					break;
-				case "school":
-					window.location.href = "/shs/school.php";
-					break;
-				case "partner":
-					window.location.href = "/shs/organization.php";
-					break;
-				default:
-					window.location.href = "/shs/index.php";
-					break;
+	if (userId && accountType) {
+		if (userId !== "") {
+			if (currentPath !== "/shs/" + accountType + ".php") {
+				window.location.href = "/shs/" + accountType + ".php";
 			}
 		}
 	}

@@ -40,7 +40,7 @@ session_start();
                     Account</button>
             </div>
         </div>
-        <div id="register-form" class="colm-form" style="margin-top: 250px">
+        <div id="register-form" class="colm-form">
             <div class="form-container">
                 <input type="text" for="email" name="email" id="email" placeholder="Email address" required>
                 <input type="password" placeholder="Password" id="password" name="confirm-password" required>
@@ -49,7 +49,7 @@ session_start();
                     <option value class="null-type">Account Type:</option>
                     <option value="student">Student</option>
                     <option value="school">School</option>
-                    <option value="partner">Partner Organization</option>
+                    <option value="organization">Partner Organization</option>
                 </select>
                 <div id="student-fields" style="display: none;">
                     <input type="text" placeholder="First Name" id="first-name" name="first-name">

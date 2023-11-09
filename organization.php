@@ -8,7 +8,7 @@
     <title>Workify | Partner Organization</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="/ph/css/work.css">
+    <link rel="stylesheet" href="/shs/css/work.css">
 </head>
 
 <body>

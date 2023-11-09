@@ -156,58 +156,6 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width:800px) {
-
-    .page-header__nav {
-        margin: 30px 10px 0 0;
-    }
-
-}
-
-
-@media screen and (max-width:480px) {
-    .contact__form-submit {
-        float: none;
-        margin: 0 auto;
-    }
-
-    .page-header {
-        min-height: 50px;
-    }
-
-    .page-header__inner {
-        text-align: center;
-    }
-
-    .page-header__logo {
-        float: none;
-        position: relative;
-        display: inline-block;
-        margin: 20px auto 10px;
-        text-align: left;
-    }
-
-    .page-header__logo h1 {
-        display: block;
-    }
-
-    .page-header__logo span {
-        display: inline-block;
-    }
-
-    .page-header__nav {
-        float: none;
-        margin: 10px auto;
-        padding-top: 20px;
-        text-align: center;
-        border-top: 1px solid #eee;
-    }
-
-    .page-header__nav li {
-        margin-left: 0;
-    }
-}
-
 .page-header__nav-link.active {
     position: relative;
     border-bottom: 2px solid #0088a9;

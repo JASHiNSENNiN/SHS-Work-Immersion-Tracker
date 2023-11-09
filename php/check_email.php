@@ -1,4 +1,7 @@
 <?php
+$host = "localhost";
+$username = "root";
+$database = "shs_immersion";
 
 $email = json_decode(file_get_contents('php://input'), true)['email'];
 
@@ -30,5 +33,6 @@ $emailExists = $row['count'] > 0;
 $stmt->close();
 $conn->close();
 
-echo json_encode(['exists' => $emailExists]);
+echo json_encode($emailExists);
+
 ?>
