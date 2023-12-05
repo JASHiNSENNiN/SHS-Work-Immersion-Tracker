@@ -42,10 +42,45 @@ async function validateForm() {
 	const gradeLevel = document.getElementById("grade-level").value;
 	const strand = document.getElementById("strand").value;
 
+	const emailInput = document.getElementById("email");
+	const passwordInput = document.getElementById("password");
+	const confirmPasswordInput = document.getElementById("confirm-password");
+	const accountTypeInput = document.getElementById("account-type");
+	const schoolNameInput = document.getElementById("school-name");
+	const organizationNameInput = document.getElementById("organization-name");
+	const firstNameInput = document.getElementById("first-name");
+	const middleNameInput = document.getElementById("middle-name");
+	const lastNameInput = document.getElementById("last-name");
+	const gradeLevelInput = document.getElementById("grade-level");
+	const strandInput = document.getElementById("strand");
+
+	const allInputs = [
+		emailInput,
+		passwordInput,
+		confirmPasswordInput,
+		accountTypeInput,
+		schoolNameInput,
+		organizationNameInput,
+		firstNameInput,
+		middleNameInput,
+		lastNameInput,
+		gradeLevelInput,
+		strandInput,
+	];
+
+	allInputs.forEach((input) => {
+		input.addEventListener("input", function () {
+			if (this.validity.customError) {
+				this.setCustomValidity("");
+			}
+		});
+	});
+
 	try {
 		const exists = checkEmailExists(email);
 		if (exists) {
-			alert("Email already exists");
+			emailInput.setCustomValidity("Email already exists");
+			emailInput.reportValidity();
 			return;
 		} else {
 			//console.log("Email does not exist");
@@ -56,25 +91,29 @@ async function validateForm() {
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email)) {
-		alert("Please enter a valid email address");
+		emailInput.setCustomValidity("Please enter a valid email address");
+		emailInput.reportValidity();
 		return;
 	}
 
 	const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 	if (!passwordRegex.test(password)) {
-		alert(
+		passwordInput.setCustomValidity(
 			"Password must contain at least 6 characters, including one uppercase letter, one lowercase letter, and one digit"
 		);
+		passwordInput.reportValidity();
 		return;
 	}
 
 	if (password !== confirmPassword) {
-		alert("Passwords do not match");
+		confirmPasswordInput.setCustomValidity("Passwords do not match");
+		confirmPasswordInput.reportValidity();
 		return;
 	}
 
 	if (accountType === "") {
-		alert("Please select an account type");
+		accountTypeInput.setCustomValidity("Please select an account type");
+		accountTypeInput.reportValidity();
 		return;
 	}
 
@@ -85,26 +124,43 @@ async function validateForm() {
 			!nameRegex.test(middleName) ||
 			!nameRegex.test(lastName)
 		) {
-			alert("Please enter a valid full name");
+			firstNameInput.setCustomValidity("Please enter a valid full name");
+			middleNameInput.setCustomValidity("Please enter a valid full name");
+			lastNameInput.setCustomValidity("Please enter a valid full name");
+			firstNameInput.reportValidity();
+			middleNameInput.reportValidity();
+			lastNameInput.reportValidity();
 			return;
 		}
 
-		if (gradeLevel === "" || strand === "") {
-			alert("Please select a grade level and strand");
+		if (gradeLevel === "") {
+			gradeLevelInput.setCustomValidity("Please select a grade level");
+			gradeLevelInput.reportValidity();
+			return;
+		}
+		if (strand === "") {
+			strandInput.setCustomValidity("Please select a strand");
+			strandInput.reportValidity();
 			return;
 		}
 	}
 	if (accountType === "school") {
 		const schoolRegex = /^[A-Za-z\s]{3,}$/;
 		if (!schoolRegex.test(schoolName)) {
-			alert("Please enter a valid school name");
+			schoolNameInput.setCustomValidity(
+				"Please enter a valid school name"
+			);
+			schoolNameInput.reportValidity();
 			return;
 		}
 	}
 	if (accountType === "organization") {
 		const nameRegex = /^[A-Za-z\s]{3,}$/;
 		if (!nameRegex.test(organizationName)) {
-			alert("Please enter a valid organization name");
+			organizationNameInput.setCustomValidity(
+				"Please enter a valid organization name"
+			);
+			organizationNameInput.reportValidity();
 			return;
 		}
 	}
@@ -180,10 +236,23 @@ function checkEmailExists(email) {
 	}
 }
 
-
 function login() {
 	const email = document.getElementById("login-email").value;
 	const password = document.getElementById("login-password").value;
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	const emailInput = document.getElementById("login-email");
+	const passwordInput = document.getElementById("login-password");
+
+	emailInput.addEventListener("input", function () {
+		if (this.validity.customError) {
+			this.setCustomValidity("");
+		}
+	});
+	passwordInput.addEventListener("input", function () {
+		if (this.validity.customError) {
+			this.setCustomValidity("");
+		}
+	});
 
 	const formData = {
 		email,
@@ -201,7 +270,21 @@ function login() {
 					//   ---- setSession();
 					window.location.href = response.redirectUrl;
 				} else {
-					alert(response.message);
+					if (email === "" || !emailRegex.test(email)) {
+						emailInput.setCustomValidity(
+							"Please enter a valid email"
+						);
+						emailInput.reportValidity();
+						return;
+					}
+					if (response.message === "User not found") {
+						emailInput.setCustomValidity("User not found");
+						emailInput.reportValidity();
+					}
+					if (response.message === "Invalid password") {
+						passwordInput.setCustomValidity("Invalid password");
+						passwordInput.reportValidity();
+					}
 				}
 			} else {
 				console.error("Error:", xhr.status);

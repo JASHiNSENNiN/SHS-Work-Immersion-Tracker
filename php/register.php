@@ -69,7 +69,7 @@ if ($accountType === 'student') {
     exit();
   }
   $stmt->close();
-} elseif ($accountType === 'partner') {
+} elseif ($accountType === 'organization') {
   $organizationName = $formData['organizationName'];
 
   $sql = "INSERT INTO partner_profiles (organization_name, user_id) VALUES (?, ?)";
@@ -90,4 +90,3 @@ if ($accountType === 'student') {
 echo "User registered successfully";
 
 $conn->close();
-?>

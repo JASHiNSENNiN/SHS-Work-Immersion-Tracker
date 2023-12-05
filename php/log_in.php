@@ -27,13 +27,13 @@ if ($result->num_rows === 1) {
     $accountType = $row['account_type'];
     switch ($accountType) {
       case 'organization':
-        $response = array("success" => true, "redirectUrl" => "/shs/organization.php");
+        $response = array("success" => true, "redirectUrl" => "/shs/pages/organization.php");
         break;
       case 'school':
-        $response = array("success" => true, "redirectUrl" => "/shs/school.php");
+        $response = array("success" => true, "redirectUrl" => "/shs/pages/school.php");
         break;
       case 'student':
-        $response = array("success" => true, "redirectUrl" => "/shs/student.php");
+        $response = array("success" => true, "redirectUrl" => "/shs/pages/student.php");
         break;
       default:
         $response = array("success" => false, "message" => "Invalid account type");

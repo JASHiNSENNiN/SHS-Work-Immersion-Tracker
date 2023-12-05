@@ -2,11 +2,12 @@ var userId;
 var accountType;
 var email;
 var error;
-const excludedPaths = [
-	"/shs/student.php",
-	"/shs/school.php",
-	"/shs/organization.php",
+excludedPaths = [
+	"/shs/pages/student.php",
+	"/shs/pages/organization.php",
+	"/shs/pages/school.php",
 ];
+
 const currentPath = window.location.pathname;
 
 function fetchCurrentUser() {
@@ -53,17 +54,15 @@ checkSessionAndRedirect();
 
 function checkSessionAndRedirect() {
 	if (userId && accountType) {
-		if (userId !== "") {
-			if (currentPath !== "/shs/" + accountType + ".php") {
-				window.location.href = "/shs/" + accountType + ".php";
-			}
+		if (currentPath !== "/shs/pages/" + accountType + ".php") {
+			window.location.href = "/shs/pages/" + accountType + ".php";
 		}
 	}
 }
 
 function logout() {
 	userId = null;
-	vaccountType = null;
+	accountType = null;
 	email = null;
 
 	const xhr = new XMLHttpRequest();

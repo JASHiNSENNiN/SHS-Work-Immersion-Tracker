@@ -20,6 +20,7 @@ input,
 header,
 hgroup,
 nav {
+    color: inherit;
     margin: 0;
     padding: 0;
     border: 0;
@@ -140,6 +141,7 @@ body {
 }
 
 .page-header__nav-link {
+    color: #1bbc9b;
     display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
@@ -159,5 +161,4 @@ body {
 .page-header__nav-link.active {
     position: relative;
     border-bottom: 2px solid #0088a9;
-    color: #fff;
 }

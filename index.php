@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Workify | Log In</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/shs/css/index.css">
 </head>
 
 <body>
@@ -33,8 +33,10 @@ session_start();
         </div>
         <div id="login-form" class="colm-form">
             <div class="form-container">
-                <input autocomplete="email" type="text" placeholder="Email address" id="login-email" name="login-email">
-                <input autocomplete="current-password" type="password" placeholder="Password" id="login-password" name="login-password">
+                <input autocomplete="email" type="text" placeholder="Email address" id="login-email" name="login-email"
+                    required>
+                <input autocomplete="current-password" type="password" placeholder="Password" id="login-password"
+                    name="login-password" required>
                 <button class="btn-login" onclick="login()">Login</button>
                 <button class="btn-new" id="switch-to-register" onclick="showLoginForm()">Create New
                     Account</button>
@@ -44,7 +46,8 @@ session_start();
             <div class="form-container">
                 <input type="text" for="email" name="email" id="email" placeholder="Email address" required>
                 <input type="password" placeholder="Password" id="password" name="confirm-password" required>
-                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password" required>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password"
+                    required>
                 <select id="account-type" name="account-type" required onchange="toggleFields()">
                     <option value class="null-type">Account Type:</option>
                     <option value="student">Student</option>
@@ -87,17 +90,17 @@ session_start();
 
 </html>
 <script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
+function printCookies() {
+    const cookies = document.cookie.split(";")
+        .map(cookie => cookie.trim());
 
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
+    console.log("Cookies:");
+    cookies.forEach(cookie => {
+        console.log(cookie);
+    });
+}
 
 
-    window.onload = printCookies;
+window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
