@@ -40,6 +40,14 @@
         </section>
 
         <section id="settings">
+            <h2>Survey Questions</h2>
+            <ul class="survey-list" id="survey-list">
+                <!-- Survey questions will be dynamically added here -->
+            </ul>
+            <form class="add-survey-form" id="add-survey-form">
+                <input type="text" id="question" name="question" placeholder="Enter a survey question">
+                <button type="button" onclick="addSurvey()">Add</button>
+            </form>
             <div class="logout-button-container">
                 <button class="logout-button" onclick="logout()">Logout</button>
             </div>

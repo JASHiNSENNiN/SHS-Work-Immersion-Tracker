@@ -78,6 +78,8 @@ session_start();
                 <div id="partner-fields" style="display: none;">
                     <input type="text" placeholder="Organization Name" id="organization-name" name="organization-name">
                 </div>
+                <!-- add more data needed here for the partner organization. -->
+                <!-- create possible inputs that can help the data gathering for the databse -->
                 <button class="btn-login" onclick="validateForm()">Register</button>
                 <button class="btn-new" id="switch-to-login" onclick="showLoginForm()">
                     Log in to Existing Account
