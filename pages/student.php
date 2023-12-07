@@ -42,7 +42,7 @@
         <section id="settings">
             <h2>Survey Questions</h2>
             <ul class="survey-list" id="survey-list">
-                <!-- Survey questions will be dynamically added here -->
+                <!-- Survey questions-->
             </ul>
             <form class="add-survey-form" id="add-survey-form">
                 <input type="text" id="question" name="question" placeholder="Enter a survey question">

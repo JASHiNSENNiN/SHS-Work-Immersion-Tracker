@@ -2,6 +2,7 @@
 include_once "php/config.php";
 session_start();
 ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -77,9 +78,15 @@ session_start();
                 </div>
                 <div id="partner-fields" style="display: none;">
                     <input type="text" placeholder="Organization Name" id="organization-name" name="organization-name">
+                    <select name="strand-focus" id="strand-focus">
+                        <option value class="null-type">Strand:</option>
+                        <option value="stem">STEM</option>
+                        <option value="humss">HUMSS</option>
+                        <option value="abm">ABM</option>
+                        <option value="gas">GAS</option>
+                        <option value="tvl">TVL</option>
+                    </select>
                 </div>
-                <!-- add more data needed here for the partner organization. -->
-                <!-- create possible inputs that can help the data gathering for the databse -->
                 <button class="btn-login" onclick="validateForm()">Register</button>
                 <button class="btn-new" id="switch-to-login" onclick="showLoginForm()">
                     Log in to Existing Account

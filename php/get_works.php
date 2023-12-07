@@ -11,9 +11,13 @@ try {
     $stmt = $pdo->query("SELECT id, organization_name, stars, user_id FROM partner_profiles");
     $works = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    header('Content-Type: application/json');
+    $worksArray = [];
+    foreach ($works as $work) {
+        $worksArray[] = $work;
+    }
 
-    echo json_encode($works);
+    header('Content-Type: application/json');
+    echo json_encode($worksArray);
 } catch (PDOException $e) {
     $error = array("error" => "Database connection failed: " . $e->getMessage());
     echo json_encode($error);

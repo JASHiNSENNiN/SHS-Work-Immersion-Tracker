@@ -71,12 +71,13 @@ if ($accountType === 'student') {
   $stmt->close();
 } elseif ($accountType === 'organization') {
   $organizationName = $formData['organizationName'];
+  $strandFocus = $formData['strandFocus'];
 
-  $sql = "INSERT INTO partner_profiles (organization_name, user_id) VALUES (?, ?)";
+  $sql = "INSERT INTO partner_profiles (organization_name, strand, user_id) VALUES (?, ?, ?)";
 
   $stmt = $conn->prepare($sql);
 
-  $stmt->bind_param('si', $organizationName, $userID);
+  $stmt->bind_param('ssi', $organizationName, $strandFocus, $userID);
 
   if (!$stmt->execute()) {
     echo "Error: " . $stmt->error;

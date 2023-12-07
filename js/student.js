@@ -1,16 +1,16 @@
-function fetchWorks() {
-	const xhr = new XMLHttpRequest();
-	xhr.open("GET", "/shs/php/get_works.php", true);
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "/shs/php/get_works.php", true);
+xhr.setRequestHeader("Content-Type", "application/json");
 
-	xhr.onreadystatechange = function () {
-		if (xhr.readyState === 4 && xhr.status === 200) {
-			const works = JSON.parse(xhr.responseText);
-			displayWorks(works);
-		}
-	};
+xhr.onreadystatechange = function () {
+	if (xhr.readyState === 4 && xhr.status === 200) {
+		const works = JSON.parse(xhr.responseText);
+		console.log(typeof works);
+		displayWorks(works);
+	}
+};
 
-	xhr.send();
-}
+xhr.send();
 
 function displayWorks(works) {
 	const worksContainer = document.getElementById("worksContainer");
@@ -20,7 +20,7 @@ function displayWorks(works) {
 		workItem.className = "work-item";
 
 		const id = document.createElement("p");
-		id.textContent = "ID: " + work.id;
+		id.textContent = "ID: " + work.user_id;
 
 		const organization = document.createElement("h2");
 		organization.textContent = work.organization_name;
@@ -34,10 +34,14 @@ function displayWorks(works) {
 		applyButton.addEventListener("click", function () {
 			if (applyButton.textContent === "Apply") {
 				applyButton.textContent = "Pending";
+				applyToWork(work.user_id);
 			} else {
 				applyButton.textContent = "Apply";
+				removeApplication(work.user_id);
 			}
 		});
+
+		checkApplicationStatus(work.user_id, applyButton);
 
 		workItem.appendChild(id);
 		workItem.appendChild(organization);
@@ -48,7 +52,53 @@ function displayWorks(works) {
 	});
 }
 
-fetchWorks();
+function applyToWork(workId) {
+	const xhr = new XMLHttpRequest();
+	xhr.open("POST", "/shs/php/add_application.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+
+	const data = { workId: workId };
+	xhr.send(JSON.stringify(data));
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			if (xhr.status === 200) {
+				console.log(xhr.responseText);
+			} else {
+				console.log("Application request failed. Status:", xhr.status);
+			}
+		}
+	};
+}
+
+function removeApplication(workId) {
+	const xhr = new XMLHttpRequest();
+	xhr.open("POST", "/shs/php/remove_application.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+
+	const data = { workId: workId };
+	xhr.send(JSON.stringify(data));
+}
+
+function checkApplicationStatus(workId, applyButton) {
+	const xhr = new XMLHttpRequest();
+	xhr.open(
+		"GET",
+		"/shs/php/check_application_status.php?workId=" + workId,
+		true
+	);
+	xhr.setRequestHeader("Content-Type", "application/json");
+
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			const response = JSON.parse(xhr.responseText);
+			if (response.status === "applied") {
+				applyButton.textContent = "Pending";
+			}
+		}
+	};
+
+	xhr.send();
+}
 
 let surveys = [];
 

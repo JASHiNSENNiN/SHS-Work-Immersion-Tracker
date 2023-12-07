@@ -41,6 +41,7 @@ async function validateForm() {
 	const lastName = document.getElementById("last-name").value;
 	const gradeLevel = document.getElementById("grade-level").value;
 	const strand = document.getElementById("strand").value;
+	const strandFocus = document.getElementById("strand-focus").value;
 
 	const emailInput = document.getElementById("email");
 	const passwordInput = document.getElementById("password");
@@ -53,6 +54,7 @@ async function validateForm() {
 	const lastNameInput = document.getElementById("last-name");
 	const gradeLevelInput = document.getElementById("grade-level");
 	const strandInput = document.getElementById("strand");
+	const strandFocusInput = document.getElementById("strand-focus");
 
 	const allInputs = [
 		emailInput,
@@ -66,6 +68,7 @@ async function validateForm() {
 		lastNameInput,
 		gradeLevelInput,
 		strandInput,
+		strandFocusInput,
 	];
 
 	allInputs.forEach((input) => {
@@ -79,7 +82,7 @@ async function validateForm() {
 	try {
 		const exists = checkEmailExists(email);
 		if (exists) {
-			emailInput.setCustomValidity("Email already exists");
+			emailInput.setCustomValidity("Email was already taken");
 			emailInput.reportValidity();
 			return;
 		} else {
@@ -143,6 +146,18 @@ async function validateForm() {
 			strandInput.reportValidity();
 			return;
 		}
+		try {
+			const exists = checkNameExists(schoolName, accountType);
+			if (exists) {
+				schoolNameInput.setCustomValidity("Name was already taken");
+				schoolNameInput.reportValidity();
+				return;
+			} else {
+				//console.log("name does not exist");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
 	}
 	if (accountType === "school") {
 		const schoolRegex = /^[A-Za-z\s]{3,}$/;
@@ -163,6 +178,25 @@ async function validateForm() {
 			organizationNameInput.reportValidity();
 			return;
 		}
+		if (strandFocus === "") {
+			strandFocusInput.setCustomValidity("Please select a strand");
+			strandFocusInput.reportValidity();
+			return;
+		}
+		try {
+			const exists = checkNameExists(organizationName, accountType);
+			if (exists) {
+				organizationNameInput.setCustomValidity(
+					"Name was already taken"
+				);
+				organizationNameInput.reportValidity();
+				return;
+			} else {
+				//console.log("name does not exist");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
 	}
 
 	var formData = {
@@ -176,8 +210,8 @@ async function validateForm() {
 		strand: strand,
 		schoolName: schoolName,
 		organizationName: organizationName,
+		strandFocus: strandFocus,
 	};
-
 	var xhr = new XMLHttpRequest();
 	xhr.open("POST", "/shs/php/register.php", true);
 	xhr.setRequestHeader("Content-Type", "application/json");
@@ -227,6 +261,21 @@ function checkEmailExists(email) {
 	xhr.setRequestHeader("Content-Type", "application/json");
 
 	xhr.send(JSON.stringify({ email: email }));
+
+	if (xhr.readyState === 4 && xhr.status === 200) {
+		const exists = JSON.parse(xhr.responseText);
+		return exists;
+	} else {
+		throw new Error(xhr.statusText);
+	}
+}
+
+function checkNameExists(checkName, accountType) {
+	const xhr = new XMLHttpRequest();
+	xhr.open("POST", "/shs/php/check_name.php", false);
+	xhr.setRequestHeader("Content-Type", "application/json");
+	checkData = { checkName: checkName, accountType: accountType };
+	xhr.send(JSON.stringify(checkData));
 
 	if (xhr.readyState === 4 && xhr.status === 200) {
 		const exists = JSON.parse(xhr.responseText);
