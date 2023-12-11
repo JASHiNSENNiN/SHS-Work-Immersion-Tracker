@@ -33,7 +33,71 @@
     </header><br><br><br>
 
     <main>
+        <section id="analytics">
+            <div class="student-info">
+                <div class="box">
+                    <h2>Student Info</h2>
+                    <div class="name">
+                        <h3>Name: <span id="student-name">[Student Name]</span></h3>
+                    </div>
+                    <div class="grade-level">
+                        <h3>Grade Level: <span id="grade-level">[Grade Level]</span></h3>
+                    </div>
+                    <div class="strand">
+                        <h3>Strand: <span id="strand">[Strand]</span></h3>
+                    </div>
+                </div>
+            </div>
 
+            <div class="current-work-immersion">
+                <div class="box">
+                    <h2>Current Work Immersion</h2>
+                    <div class="organization-name">
+                        <h3>Organization name: <span id="org-name">[Organization name]</span></h3>
+                    </div>
+                    <div class="organization-strand-category">
+                        <h3>Organization strand category: <span id="org-strand">[Strand category]</span></h3>
+                    </div>
+                    <div class="organization-ratings">
+                        <h3>Organization ratings: <span id="org-ratings">[Organization ratings]</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .student-info {
+                flex: 1;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+            .current-work-immersion {
+                flex: 1;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .box {
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 20px;
+            }
+
+            .box h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .box h3 {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .box span {
+                font-weight: bold;
+            }
+        </style>
 
         <section id="work">
             <div id="worksContainer"></div>
@@ -57,17 +121,17 @@
 </body>
 
 <script>
-function printCookies() {
-    const cookies = document.cookie.split(";")
-        .map(cookie => cookie.trim());
+    function printCookies() {
+        const cookies = document.cookie.split(";")
+            .map(cookie => cookie.trim());
 
-    console.log("Cookies:");
-    cookies.forEach(cookie => {
-        console.log(cookie);
-    });
-}
+        console.log("Cookies:");
+        cookies.forEach(cookie => {
+            console.log(cookie);
+        });
+    }
 
-window.onload = printCookies;
+    window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
 <script src="/shs/js/navbar.js"></script>
