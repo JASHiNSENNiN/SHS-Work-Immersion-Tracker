@@ -11,6 +11,8 @@ try {
     $stmt = $pdo->query("SELECT id, organization_name, stars, user_id FROM partner_profiles");
     $works = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    $stmt->closeCursor(); // Free up the connection
+
     $worksArray = [];
     foreach ($works as $work) {
         $worksArray[] = $work;

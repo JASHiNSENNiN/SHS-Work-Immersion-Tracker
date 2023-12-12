@@ -30,9 +30,9 @@ $row = $result->fetch_assoc();
 
 $emailExists = $row['count'] > 0;
 
+$result->free_result(); // Free the memory associated with the result set
+
 $stmt->close();
 $conn->close();
 
 echo json_encode($emailExists);
-
-?>

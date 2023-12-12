@@ -24,6 +24,9 @@ if (mysqli_num_rows($result) > 0) {
     $response = array('status' => 'not applied');
 }
 
+mysqli_free_result($result);
+
 echo json_encode($response);
 
+mysqli_stmt_close($stmt);
 mysqli_close($conn);

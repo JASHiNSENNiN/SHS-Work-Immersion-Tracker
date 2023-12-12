@@ -23,4 +23,6 @@ if (mysqli_stmt_execute($stmt)) {
     echo "Error adding application: " . mysqli_error($conn);
 }
 
+mysqli_stmt_store_result($stmt);
+mysqli_stmt_close($stmt);
 mysqli_close($conn);

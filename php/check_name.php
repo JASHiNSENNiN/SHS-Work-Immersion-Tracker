@@ -40,6 +40,8 @@ $row = $result->fetch_assoc();
 
 $nameExists = $row['count'] > 0;
 
+$result->free_result();
+
 $stmt->close();
 $conn->close();
 

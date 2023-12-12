@@ -15,7 +15,6 @@ if (!$conn) {
 }
 
 $hashedPassword = hash('sha256', $password);
-
 $encryptedPassword = password_hash($hashedPassword, PASSWORD_BCRYPT);
 
 $sql = "INSERT INTO users (email, password, account_type) VALUES (?, ?, ?)";

@@ -20,10 +20,13 @@
             </div>
             <nav class="page-header__nav">
                 <li class="page-header__nav-link">
-                    <a href="#" onclick="setActive(this)">Analytics</a>
+                    <a href="#" onclick="setActive(this)">Profile</a>
                 </li>
                 <li class="page-header__nav-link">
-                    <a href="#" onclick="setActive(this)">Interns</a>
+                    <a href="#" onclick="setActive(this)">Participants</a>
+                </li>
+                <li class="page-header__nav-link">
+                    <a href="#" onclick="setActive(this)">Applicants</a>
                 </li>
                 <li class="page-header__nav-link">
                     <a href="#" onclick="setActive(this)">Settings</a>
@@ -32,48 +35,18 @@
         </div>
     </header><br><br><br>
     <main>
-        <section id="analytics">
-            <link rel="stylesheet" href="/shs/css/analytics.css">
-            <h1>Work Immersion Analytics</h1>
-            <div class="simple-bar-chart">
-
-                <div class="item" style="--clr: #5EB344; --val: 80">
-                    <div class="label"> </div>
-                    <div class="value">50%</div>
-                </div>
-
-                <div class="item" style="--clr: #FCB72A; --val: 50">
-                    <div class="label"> </div>
-                    <div class="value">27%</div>
-                </div>
-
-                <div class="item" style="--clr: #F8821A; --val: 100">
-                    <div class="label"> </div>
-                    <div class="value">69%</div>
-                </div>
-
-                <div class="item" style="--clr: #E0393E; --val: 15">
-                    <div class="label"> </div>
-                    <div class="value">53%</div>
-                </div>
-
-                <div class="item" style="--clr: #963D97; --val: 1">
-                    <div class="label"> </div>
-                    <div class="value">4%</div>
-                </div>
-
-                <div class="item" style="--clr: #069CDB; --val: 90">
-                    <div class="label"> </div>
-                    <div class="value">90%</div>
-                </div>
-            </div>
+        <section id="profile">
         </section>
 
-        <section id="interns"></section>
+        <section id="participants"></section>
+
+        <section id="applicants">
+            <div id="applicantsContainer"></div>
+        </section>
 
         <section id="settings">
             <div class="logout-button-container">
-                <button class="logout-button" onclick="logout()">Logout</button>
+                <button class="logout-button" onclick="session_logout()">Logout</button>
             </div>
         </section>
     </main>
@@ -94,5 +67,6 @@ window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
 <script src="/shs/js/navbar.js"></script>
+<script src="/shs/js/organization.js"></script>
 
 </html>

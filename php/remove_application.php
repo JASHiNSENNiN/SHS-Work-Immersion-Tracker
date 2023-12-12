@@ -15,7 +15,11 @@ $userId = $_SESSION['user_id'];
 
 $sql = "DELETE FROM applicants WHERE partner_id = ? AND student_id = ?";
 $stmt = mysqli_prepare($conn, $sql);
-mysqli_stmt_bind_param($stmt, "ii", $workId, $userId);
+
+$partnerId = $workId;
+$studentId = $userId;
+mysqli_stmt_bind_param($stmt, "ii", $partnerId, $studentId);
+
 mysqli_stmt_execute($stmt);
 
 mysqli_close($conn);

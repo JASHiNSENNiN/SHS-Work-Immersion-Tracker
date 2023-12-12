@@ -60,7 +60,7 @@ function checkSessionAndRedirect() {
 	}
 }
 
-function logout() {
+function session_logout() {
 	userId = null;
 	accountType = null;
 	email = null;

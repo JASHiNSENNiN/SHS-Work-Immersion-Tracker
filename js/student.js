@@ -1,18 +1,22 @@
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "/shs/php/get_works.php", true);
-xhr.setRequestHeader("Content-Type", "application/json");
+////////////////////////////////////////////////////////
 
-xhr.onreadystatechange = function () {
-	if (xhr.readyState === 4 && xhr.status === 200) {
-		const works = JSON.parse(xhr.responseText);
-		console.log(typeof works);
-		displayWorks(works);
-	}
-};
+function displayWorks() {
+	const xhr = new XMLHttpRequest();
+	xhr.open("GET", "/shs/php/get_works.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
 
-xhr.send();
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			const works = JSON.parse(xhr.responseText);
+			console.log(typeof works);
+			renderWorks(works);
+		}
+	};
 
-function displayWorks(works) {
+	xhr.send();
+}
+
+function renderWorks(works) {
 	const worksContainer = document.getElementById("worksContainer");
 
 	works.forEach(function (work) {
@@ -100,6 +104,10 @@ function checkApplicationStatus(workId, applyButton) {
 	xhr.send();
 }
 
+displayWorks();
+
+////////////////////////////////////////////////////////////////
+
 let surveys = [];
 
 function addSurvey() {
@@ -180,3 +188,49 @@ function deleteSurvey(id) {
 }
 
 renderSurveys();
+
+////////////////////////////////////////////////////////////////
+
+function populateData() {
+	const xhr = new XMLHttpRequest();
+
+	xhr.open("GET", "/shs/php/session_getter.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+
+	xhr.onload = function () {
+		if (xhr.status === 200) {
+			const response = JSON.parse(xhr.responseText);
+			if (response.success) {
+				console.log(response);
+				document.getElementById("student-name").textContent =
+					response.student_profile.first_name +
+					" " +
+					response.student_profile.middle_name +
+					" " +
+					response.student_profile.last_name;
+				document.getElementById("school").textContent =
+					response.student_profile.school;
+				document.getElementById("grade-level").textContent =
+					response.student_profile.grade_level;
+				document.getElementById("strand").textContent =
+					response.student_profile.strand.toUpperCase();
+			}
+		}
+	};
+
+	xhr.onerror = function () {
+		console.log("Error: Request failed");
+	};
+
+	xhr.send();
+}
+
+function _populateData(data) {
+	document.getElementById("student-name").textContent =
+		studentProfile.first_name + " " + studentProfile.last_name;
+	document.getElementById("grade-level").textContent =
+		studentProfile.grade_level;
+	document.getElementById("strand").textContent = studentProfile.strand;
+}
+
+populateData();

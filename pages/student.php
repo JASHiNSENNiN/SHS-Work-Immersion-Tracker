@@ -20,7 +20,7 @@
             </div>
             <nav class="page-header__nav">
                 <li class="page-header__nav-link">
-                    <a href="#" onclick="setActive(this)">Analytics</a>
+                    <a href="#" onclick="setActive(this)">Profile</a>
                 </li>
                 <li class="page-header__nav-link">
                     <a href="#" onclick="setActive(this)">Work</a>
@@ -33,12 +33,15 @@
     </header><br><br><br>
 
     <main>
-        <section id="analytics">
+        <section id="profile">
             <div class="student-info">
                 <div class="box">
                     <h2>Student Info</h2>
                     <div class="name">
                         <h3>Name: <span id="student-name">[Student Name]</span></h3>
+                    </div>
+                    <div class="school">
+                        <h3>School: <span id="school">[school]</span></h3>
                     </div>
                     <div class="grade-level">
                         <h3>Grade Level: <span id="grade-level">[Grade Level]</span></h3>
@@ -64,40 +67,6 @@
                 </div>
             </div>
         </section>
-        <style>
-            .student-info {
-                flex: 1;
-                padding-right: 20px;
-                padding-left: 20px;
-            }
-
-            .current-work-immersion {
-                flex: 1;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            .box {
-                margin-bottom: 20px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                padding: 20px;
-            }
-
-            .box h2 {
-                font-size: 18px;
-                margin-bottom: 10px;
-            }
-
-            .box h3 {
-                font-size: 16px;
-                margin-bottom: 5px;
-            }
-
-            .box span {
-                font-weight: bold;
-            }
-        </style>
 
         <section id="work">
             <div id="worksContainer"></div>
@@ -113,7 +82,7 @@
                 <button type="button" onclick="addSurvey()">Add</button>
             </form>
             <div class="logout-button-container">
-                <button class="logout-button" onclick="logout()">Logout</button>
+                <button class="logout-button" onclick="session_logout()">Logout</button>
             </div>
         </section>
     </main>
@@ -121,17 +90,17 @@
 </body>
 
 <script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
+function printCookies() {
+    const cookies = document.cookie.split(";")
+        .map(cookie => cookie.trim());
 
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
+    console.log("Cookies:");
+    cookies.forEach(cookie => {
+        console.log(cookie);
+    });
+}
 
-    window.onload = printCookies;
+window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
 <script src="/shs/js/navbar.js"></script>
