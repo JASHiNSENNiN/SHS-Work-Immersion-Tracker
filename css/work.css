@@ -1,4 +1,4 @@
-.analytics{
+.analytics {
     margin-top: 5%;
     padding-left: 2%;
     padding-right: 2%;
@@ -24,4 +24,70 @@
 
 .logout-button:hover {
     background-color: #0e745f;
+}
+
+
+.student-profiles-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-profiles-table th,
+.student-profiles-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.student-profiles-table th {
+    background-color: #1bbc9b;
+    color: #fff;
+}
+
+.student-profiles-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-profiles-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.work-immersion-profile {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.work-immersion-profile .box {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.work-immersion-profile .box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.work-immersion-profile .box h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.work-immersion-profile .box span {
+    font-weight: bold;
+}
+
+.work-immersion-profile .organization-name h3,
+.work-immersion-profile .organization-strand-category h3,
+.work-immersion-profile .organization-ratings h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.work-immersion-profile .organization-name span,
+.work-immersion-profile .organization-strand-category span,
+.work-immersion-profile .organization-ratings span {
+    font-weight: bold;
 }

@@ -190,6 +190,8 @@ function deleteSurvey(id) {
 renderSurveys();
 
 ////////////////////////////////////////////////////////////////
+var session_data;
+var current_work;
 
 function populateData() {
 	const xhr = new XMLHttpRequest();
@@ -200,8 +202,9 @@ function populateData() {
 	xhr.onload = function () {
 		if (xhr.status === 200) {
 			const response = JSON.parse(xhr.responseText);
+			console.log(response);
 			if (response.success) {
-				console.log(response);
+				session_data = response;
 				document.getElementById("student-name").textContent =
 					response.student_profile.first_name +
 					" " +
@@ -214,6 +217,27 @@ function populateData() {
 					response.student_profile.grade_level;
 				document.getElementById("strand").textContent =
 					response.student_profile.strand.toUpperCase();
+				const orgNameElement = document.getElementById("org-name");
+				const orgStrandElement = document.getElementById("org-strand");
+				const orgRatingsElement =
+					document.getElementById("org-ratings");
+
+				if (response.partner_profile === null) {
+					orgNameElement.textContent = "";
+					orgStrandElement.textContent = "";
+					orgRatingsElement.textContent = "";
+				} else {
+					orgNameElement.textContent =
+						response.partner_profile.organization_name || "";
+					orgStrandElement.textContent = (
+						response.partner_profile.strand || ""
+					).toUpperCase();
+					orgRatingsElement.textContent =
+						response.partner_profile.stars || "";
+				}
+
+				current_work = response.student_profile.current_work;
+				setWorkPage();
 			}
 		}
 	};
@@ -225,12 +249,32 @@ function populateData() {
 	xhr.send();
 }
 
-function _populateData(data) {
-	document.getElementById("student-name").textContent =
-		studentProfile.first_name + " " + studentProfile.last_name;
-	document.getElementById("grade-level").textContent =
-		studentProfile.grade_level;
-	document.getElementById("strand").textContent = studentProfile.strand;
+function setWorkPage() {
+	const worksContainer = document.getElementById("worksContainer");
+	const workProfile = document.getElementById("workProfile");
+	console.log("set: " + current_work);
+	if (current_work === null) {
+		worksContainer.style.display = "block";
+		workProfile.style.display = "none";
+	} else {
+		worksContainer.style.display = "none";
+		workProfile.style.display = "block";
+
+		const workImmersionName = document.getElementById(
+			"work-immersion-name"
+		);
+		const workImmersionStrand = document.getElementById(
+			"work-immersion-strand"
+		);
+		const workImmersionStars = document.getElementById(
+			"work-immersion-stars"
+		);
+
+		workImmersionName.textContent =
+			session_data.partner_profile.organization_name;
+		workImmersionStrand.textContent = session_data.partner_profile.strand;
+		workImmersionStars.textContent = session_data.partner_profile.stars;
+	}
 }
 
 populateData();

@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS student_profiles (
   grade_level ENUM('11', '12'),
   strand ENUM('stem', 'humss', 'abm', 'gas', 'tvl'),
   stars INT(10),
-  current_work VARCHAR(255),
+  current_work INT(11),
   user_id INT(11),
   FOREIGN KEY (user_id) REFERENCES users(id)
 );

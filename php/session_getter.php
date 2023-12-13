@@ -28,17 +28,21 @@ if (isset($_SESSION['user_id'])) {
         if ($studentResult->num_rows > 0) {
             $studentProfile = $studentResult->fetch_assoc();
             $response["student_profile"] = $studentProfile;
-        }
 
-        $partnerSql = "SELECT * FROM partner_profiles WHERE user_id = '$userID'";
-        $partnerResult = $conn->query($partnerSql);
+            $currentWork = $studentProfile['current_work'];
 
-        if ($partnerResult->num_rows > 0) {
-            $partnerProfile = $partnerResult->fetch_assoc();
-            $response["partner_profile"] = $partnerProfile;
+            $partnerSql = "SELECT * FROM partner_profiles WHERE user_id = '$currentWork'";
+            $partnerResult = $conn->query($partnerSql);
+
+            if ($partnerResult->num_rows > 0) {
+                $partnerProfile = $partnerResult->fetch_assoc();
+                $response["partner_profile"] = $partnerProfile;
+            } else {
+                $response["partner_profile"] = null;
+            }
         }
     } else {
-        $response = array("success" => false, "message" => "User data not found");
+        $response = array("success" => false, "message" => "");
     }
 
     $userResult->free_result();

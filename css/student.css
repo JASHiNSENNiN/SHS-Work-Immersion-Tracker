@@ -50,7 +50,6 @@
 .survey-item button {
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: #f2f2f2;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -93,7 +92,6 @@
     padding-left: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f5f5f5;
     border-radius: 5px;
     position: relative;
 }
@@ -161,5 +159,109 @@
 }
 
 .box span {
+    font-weight: bold;
+}
+
+.current-work-immersion {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.current-work-immersion h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.work-immersion-info {
+    margin-bottom: 20px;
+}
+
+.work-immersion-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.evaluation-scores,
+.feedback,
+.work-immersion-activities {
+    margin-bottom: 20px;
+}
+
+.evaluation-scores h2,
+.feedback h2,
+.work-immersion-activities h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skills-assessment h3,
+.attendance-records h3,
+.work-ethics-evaluation h3,
+.supervisor-feedback h3,
+.student-feedback h3,
+.partner-feedback h3,
+.teacher-feedback h3,
+.industry-metrics h3,
+.placement-details h3,
+.duration h3,
+.tasks-responsibilities h3,
+.schedule h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.skills-assessment span,
+.attendance-records span,
+.work-ethics-evaluation span,
+.supervisor-feedback span,
+.student-feedback span,
+.partner-feedback span,
+.teacher-feedback span,
+.industry-metrics span,
+.placement-details span,
+.duration span,
+.tasks-responsibilities span,
+.schedule span {
+    font-weight: bold;
+}
+
+.industry-metrics ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.industry-metrics ul li {
+    margin-bottom: 5px;
+}
+
+.industry-metrics ul li span {
+    font-weight: bold;
+}
+
+.placement-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.placement-details ul li {
+    margin-bottom: 5px;
+}
+
+.placement-details ul li span {
+    font-weight: bold;
+}
+
+.tasks-responsibilities ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tasks-responsibilities ul li {
+    margin-bottom: 5px;
+}
+
+.tasks-responsibilities ul li span {
     font-weight: bold;
 }

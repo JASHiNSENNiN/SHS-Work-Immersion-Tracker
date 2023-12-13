@@ -20,13 +20,13 @@
             </div>
             <nav class="page-header__nav">
                 <li class="page-header__nav-link">
-                    <a href="#" onclick="setActive(this)">Analytics</a>
+                    <a href="#analytics" onclick="setActive(this)">Analytics</a>
                 </li>
                 <li class="page-header__nav-link">
-                    <a href="#" onclick="setActive(this)">Students</a>
+                    <a href="#students" onclick="setActive(this)">Students</a>
                 </li>
                 <li class="page-header__nav-link">
-                    <a href="#" onclick="setActive(this)">Settings</a>
+                    <a href="#settings" onclick="setActive(this)">Settings</a>
                 </li>
             </nav>
         </div>
@@ -80,17 +80,17 @@
 
 </body>
 <script>
-function printCookies() {
-    const cookies = document.cookie.split(";")
-        .map(cookie => cookie.trim());
+    function printCookies() {
+        const cookies = document.cookie.split(";")
+            .map(cookie => cookie.trim());
 
-    console.log("Cookies:");
-    cookies.forEach(cookie => {
-        console.log(cookie);
-    });
-}
+        console.log("Cookies:");
+        cookies.forEach(cookie => {
+            console.log(cookie);
+        });
+    }
 
-window.onload = printCookies;
+    window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
 <script src="/shs/js/navbar.js"></script>
