@@ -86,8 +86,10 @@ function fetchAndRenderApplicants() {
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === XMLHttpRequest.DONE) {
 			if (xhr.status === 200) {
-				const applicants = JSON.parse(xhr.responseText);
-				renderApplicants(applicants);
+				if (xhr.responseText !== "") {
+					const applicants = JSON.parse(xhr.responseText);
+					renderApplicants(applicants);
+				}
 			} else {
 				console.error("Error: " + xhr.status);
 			}
@@ -149,11 +151,12 @@ getStudentProfiles();
 function populateData() {
 	const xhr = new XMLHttpRequest();
 
-	xhr.open("GET", "/shs/php/session_getter.php", true);
+	xhr.open("GET", "/shs/php/get_partner_profiles.php", true);
 	xhr.setRequestHeader("Content-Type", "application/json");
 
 	xhr.onload = function () {
 		if (xhr.status === 200) {
+			console.log(xhr.responseText);
 			const response = JSON.parse(xhr.responseText);
 			console.log(response);
 			if (response.success) {
@@ -168,12 +171,11 @@ function populateData() {
 					orgRatingsElement.textContent = "";
 				} else {
 					orgNameElement.textContent =
-						response.partner_profile.organization_name || "";
-					orgStrandElement.textContent = (
-						response.partner_profile.strand || ""
-					).toUpperCase();
+						response.partner_profile.organization_name;
+					orgStrandElement.textContent =
+						response.partner_profile.strand.toUpperCase();
 					orgRatingsElement.textContent =
-						response.partner_profile.stars || "";
+						response.partner_profile.stars;
 				}
 			}
 		}

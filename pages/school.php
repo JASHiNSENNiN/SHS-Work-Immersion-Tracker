@@ -33,40 +33,6 @@
     </header><br><br><br>
     <main>
         <section id="analytics">
-            <link rel="stylesheet" href="/shs/css/analytics.css">
-            <h1>School Analytics</h1>
-            <div class="simple-bar-chart">
-
-                <div class="item" style="--clr: #5EB344; --val: 80">
-                    <div class="label"> </div>
-                    <div class="value">50%</div>
-                </div>
-
-                <div class="item" style="--clr: #FCB72A; --val: 50">
-                    <div class="label"> </div>
-                    <div class="value">27%</div>
-                </div>
-
-                <div class="item" style="--clr: #F8821A; --val: 100">
-                    <div class="label"> </div>
-                    <div class="value">69%</div>
-                </div>
-
-                <div class="item" style="--clr: #E0393E; --val: 15">
-                    <div class="label"> </div>
-                    <div class="value">53%</div>
-                </div>
-
-                <div class="item" style="--clr: #963D97; --val: 1">
-                    <div class="label"> </div>
-                    <div class="value">4%</div>
-                </div>
-
-                <div class="item" style="--clr: #069CDB; --val: 90">
-                    <div class="label"> </div>
-                    <div class="value">90%</div>
-                </div>
-            </div>
         </section>
 
         <section id="students"></section>
@@ -80,17 +46,17 @@
 
 </body>
 <script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
+function printCookies() {
+    const cookies = document.cookie.split(";")
+        .map(cookie => cookie.trim());
 
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
+    console.log("Cookies:");
+    cookies.forEach(cookie => {
+        console.log(cookie);
+    });
+}
 
-    window.onload = printCookies;
+window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
 <script src="/shs/js/navbar.js"></script>

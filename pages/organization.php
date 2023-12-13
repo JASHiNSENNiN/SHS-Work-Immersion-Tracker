@@ -30,7 +30,10 @@
                         <a href="#applicants" onclick="setActive(this)">Applicants</a>
                     </li>
                     <li class="page-header__nav-link">
-                        <a href="#settings" onclick="setActive(this)">Settings</a>
+                        <div class="logout-button-container">
+                            <button class="logout-button" onclick="session_logout()">Logout</button>
+                        </div>
+                        <!-- <a href="#settings" onclick="setActive(this)">Settings</a> -->
                     </li>
                 </ul>
             </nav>
@@ -71,17 +74,17 @@
 
 </body>
 <script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
+function printCookies() {
+    const cookies = document.cookie.split(";")
+        .map(cookie => cookie.trim());
 
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
+    console.log("Cookies:");
+    cookies.forEach(cookie => {
+        console.log(cookie);
+    });
+}
 
-    window.onload = printCookies;
+window.onload = printCookies;
 </script>
 <script src="/shs/js/session_handler.js"></script>
 <script src="/shs/js/navbar.js"></script>

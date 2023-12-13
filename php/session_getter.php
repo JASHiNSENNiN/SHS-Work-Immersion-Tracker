@@ -31,14 +31,18 @@ if (isset($_SESSION['user_id'])) {
 
             $currentWork = $studentProfile['current_work'];
 
-            $partnerSql = "SELECT * FROM partner_profiles WHERE user_id = '$currentWork'";
-            $partnerResult = $conn->query($partnerSql);
+            if ($currentWork) {
+                $partnerSql = "SELECT * FROM partner_profiles WHERE user_id = '$currentWork'";
+                $partnerResult = $conn->query($partnerSql);
 
-            if ($partnerResult->num_rows > 0) {
-                $partnerProfile = $partnerResult->fetch_assoc();
-                $response["partner_profile"] = $partnerProfile;
-            } else {
-                $response["partner_profile"] = null;
+                if ($partnerResult->num_rows > 0) {
+                    $partnerProfile = $partnerResult->fetch_assoc();
+                    $response["partner_profile"] = $partnerProfile;
+                } else {
+                    $response["partner_profile"] = null;
+                }
+
+                $partnerResult->free_result();
             }
         }
     } else {
@@ -47,7 +51,6 @@ if (isset($_SESSION['user_id'])) {
 
     $userResult->free_result();
     $studentResult->free_result();
-    $partnerResult->free_result();
 
     $conn->close();
 } else {
