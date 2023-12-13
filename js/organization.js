@@ -132,7 +132,7 @@ function getStudentProfiles() {
           <td>${profile.last_name}</td>
           <td>${profile.school}</td>
           <td>${profile.grade_level}</td>
-          <td>${profile.strand}</td>
+          <td>${profile.strand.toUpperCase()}</td>
           <td>${profile.stars}</td>
         `;
 				table.appendChild(tableRow);
