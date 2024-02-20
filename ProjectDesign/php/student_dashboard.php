@@ -116,6 +116,18 @@
               <li><a href="#">02 Jan 2021</a></li>
             </ul>
             <ul class="details">
+              <li class="topic">Strand</li>
+              <li><a href="#">HUMMS</a></li>
+              <li><a href="#">STEM</a></li>
+              <li><a href="#">GAS</a></li>
+              <li><a href="#">TECHVOC</a></li>
+              <li><a href="#">HUMMS</a></li>
+              <li><a href="#">GAS</a></li>
+              <li><a href="#">GAS</a></li>
+              <li><a href="#">STEM</a></li>
+              <li><a href="#">STEM</a></li>
+            </ul>
+            <ul class="details">
             <li class="topic">Name</li>
             <li><a href="#">Alex Doe</a></li>
             <li><a href="#">David Mart</a></li>
