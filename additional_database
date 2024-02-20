@@ -12,7 +12,7 @@ Dashboard/Analytics - on all the user sub types
 
 Student:
 rating focus: self
--full name 
+-full name
 -strand
 -Age
 -Address
@@ -25,16 +25,17 @@ rating focus: self
 
 School:
 rating focus: students
-- stars average of students (10 students total / 10 = stars of school)
-- Student 
 
+-   stars average of students (10 students total / 10 = stars of school)
+-   Student
 
-Org: 
-rating focus: stars of works offered average + org itself 
-- organization rating
-- per work rating
-- per work comment
-- stars average depending
+Org:
+rating focus: stars of works offered average + org itself
+
+-   organization rating
+-   per work rating
+-   per work comment
+-   stars average depending
 
 ---works
 -date of publication
@@ -43,4 +44,3 @@ rating focus: stars of works offered average + org itself
 -work description
 -work address
 -work ratings
-
