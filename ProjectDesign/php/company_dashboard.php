@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title> Responsiive Admin Dashboard | CodingLab </title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" type="text/css" href="../css/student_student_dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../css/company_dashboard.css">
     <!-- <link rel="stylesheet" type="text/css" href="../css/school_dashboard.css"> -->
     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -22,6 +22,7 @@
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <div class="sidebar">
         <div class="logo-details">
 
@@ -36,15 +37,21 @@
         <br>
         <ul class="nav-links">
             <li>
-                <a href="#" class="link" id="#company">
+                <a href="#" class="link" id="#job">
                     <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Company Area</span>
+                    <span class="links_name">Job Ads</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="link" id="#narrative">
-                    <i class='bx bx-paperclip'></i>
-                    <span class="links_name">Narrative Report</span>
+                <a href="#" class="link" id="#request">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Job Request</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="link" id="#report">
+                    <i class='bx bxs-graduation'></i>
+                    <span class="links_name">Faculty Report</span>
                 </a>
             </li>
 
@@ -68,7 +75,7 @@
                 <i class='bx bx-menu sidebarBtn' onclick="toggle();"></i>
                 <span class="dashboard"></span>
                 <span class="dashboard"> </span>
-                <span class="dashboard">Student Dashboard</span>
+                <span class="dashboard">Company Dashboard</span>
                 <!-- <div class="logo">
             <img src="../logo.jpg" alt="Logo">
             <h1>\</h1>
@@ -92,89 +99,124 @@
 
 
             <div id="content_container">
-                <div id="company" class="content active">
-                <div class="sales-boxes">
-                <div class="recent-sales box" style="margin-left: 20px;">
-                    <b>
-                        <div class="box-topic" style="margin-left: 20px;">Company List: </div>
-                    </b>
-                    <br>
-                    <!-- <div class="title">Popularity Company </div> -->
-                    <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
 
-                    <table style="width:100%">
-                        <tr>
-                            <th>#</th>
-                            <th>Company</th>
-                            <th>Address</th>
-                            <th>Action</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>NIA</td>
-                            <td>Guimba</td>
-                            <td><button type="button" class="btn btn-success">Apply</button>
-                                <button type="button" class="btn btn-primary">Details</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>PNP</td>
-                            <td>Guimba</td>
-                            <td><button type="button" class="btn btn-success">Apply</button>
-                                <button type="button" class="btn btn-primary">Details</button>
-                            </td>
+                <div id="job" class="content active">
+                    <div class="sales-boxes">
+                        <div class="recent-sales box">
+                            <b>
+                                <!-- <div class="box-topic" style="margin-left: 20px;">Post a Job ad for free </div> -->
+                            </b>
+                            <br>
+                            <!-- <div class="title">Popularity Company </div> -->
+                            <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
 
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Municipal</td>
-                            <td>Guimba</td>
-                            <td><button type="button" class="btn btn-success">Apply</button>
-                                <button type="button" class="btn btn-primary">Details</button>
-                            </td>
+                            <form action="">
+                                <div class="container">
+                                    <h1>Post a Job ad for free</h1>
+                                    <p>Please fill in this form to create an job.</p>
+                                    <hr>
 
-                        </tr>
-                    </table>
-                    <!-- <div class="button">
+                                    <label for="worktitle"><b>Work Title</b></label>
+                                    <input type="text" placeholder="" name="" id="" required>
+
+                                    <label for="date"><b>Expected Job Start date</b></label><br>
+                                    <input type="date" placeholder="DD/MM/YY" name="" id="" required><br><br>
+
+                                    <label for="job"><b>Job Description</b></label><br>
+                                    <textarea type="textarea" name="" id="textarea"></textarea>
+                                    <hr>
+
+                                    <p>By creating job ads you agree to our <a href="#">Terms & Privacy</a>.</p>
+                                    <button type="submit" class="registerbtn">Submit</button>
+                                </div>
+
+                            </form>
+                            <!-- <div class="button">
                         <a href="#">See All</a>
                     </div> -->
-                </div>
+                        </div>
 
-                <div class="top-sales box" style="margin-left:10px">
-                    <div class="title">Top Company </div>
-                    <ul class="top-sales-details">
-                        <li>
-                            <a href="#">
-                                <img src="" alt="">
-                                <span class="product">NIA</span>
-                            </a>
-                            <span class="price">100%</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="" alt="">
-                                <span class="product">Jollibee </span>
-                            </a>
-                            <span class="price">90%</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+                    </div>
 
                 </div>
 
-                <div id="narrative" class="content">
-
+                <div id="request" class="content">
                     <div class="sales-boxes">
                         <div class="recent-sales box" style="width: 90%;">
                             <b>
-                                <div class="box-topic" style="margin-left: 20px;">Narrative Report</div>
+                                <div class="box-topic" style="margin-left: 20px;">Job Request</div>
+                            </b>
+                            <br>
+                            <!-- <div class="title">Popularity Company </div> -->
+                            <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
+
+                            <table style="width:100%">
+                                <tr>
+                                    <th>#</th>
+                                    <th>School ID</th>
+                                    <th>Name</th>
+                                    <th>Strand</th>
+                                    <th>School</th>
+                                    <th>Address</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2024-11</td>
+                                    <td>NIA</td>
+                                    <td>HUMSS</td>
+                                    <td>OLSHCO</td>
+                                    <td>Guimba</td>
+                                    <td><button type="button" class="btn btn-success">Accept</button>
+                                        <button type="button" class="btn btn-primary">Details</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2024-12</td>
+                                    <td>PNP</td>
+                                    <td>GAS</td>
+                                    <td>National</td>
+                                    <td>Guimba</td>
+                                    <td><button type="button" class="btn btn-success">Accept</button>
+                                        <button type="button" class="btn btn-primary">Details</button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2024-13</td>
+                                    <td>Municipal</td>
+                                    <td>STEM</td>
+                                    <td>BLUN</td>
+                                    <td>Guimba</td>
+                                    <td><button type="button" class="btn btn-success">Accept</button>
+                                        <button type="button" class="btn btn-primary">Details</button>
+                                    </td>
+
+                                </tr>
+                            </table>
+                            <!-- <div class="button">
+                        <a href="#">See All</a>
+                    </div> -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="report" class="content">
+                    <!-- <div class="title">Videos</div>
+                    <div class="description">Videos description</div> -->
+                    <div class="sales-boxes">
+                        <div class="recent-sales box" style="width: 90%;">
+                            <b>
+                                <div class="box-topic" style="margin-left: 20px;">Faculty Report</div>
                             </b>
                             <br>
 
-                            <label for="studentid">Company name</label> <br>
-                            <input type="text" placeholder="Enter Company name" name="studentid" id="studentid"
+                            <label for="studentid">Student ID</label> <br>
+                            <input type="number" placeholder="Enter Student ID" name="studentid" id="studentid"
                                 required>
                             <!-- <div class="title">Popularity Company </div> -->
                             <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
@@ -361,8 +403,9 @@
                         </div>
 
                     </div>
-                    
-                    
+
+
+
                 </div>
                 <div id="setting" class="content">
                     <div class="title">Wallpapers</div>
@@ -372,7 +415,7 @@
 
 
 
-            
+
         </div>
     </section>
 
@@ -409,6 +452,21 @@
             $(".content").removeClass("active");
             var content_id = $(this).attr("id");
             $(content_id).addClass("active");
+        });
+    </script>
+
+    // Survey form
+    <script>
+        $("input:checkbox").on('click', function () {
+           
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
         });
     </script>
 

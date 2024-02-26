@@ -202,7 +202,7 @@ nav .profile-details i {
 
 .home-section .home-content {
     position: relative;
-    padding-top: 50px;
+    padding-top: 104px;
 }
 
 .home-content .overview-boxes {
@@ -308,7 +308,7 @@ nav .profile-details i {
     width: 65%;
     background: #fff;
     padding: 20px 30px;
-    margin: 0 20px;
+    margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -508,25 +508,6 @@ nav .profile-details i {
     margin-right: 5px;
 }
 
-#logo_name {
-    margin: auto;
-    margin-left: 30px;
-}
-
-.content:not(.active) {
-    display: none;
-}
-
-.contents:not(.active) {
-    display: none;
-}
-
-.box:hover {
-    background-color: gray;
-    cursor: pointer;
-    transform: scale(1);
-}
-
 table,
 th,
 td {
@@ -540,42 +521,30 @@ table {
     padding: 20px;
 }
 
+td .btn {
+    border-radius: 10px;
+    margin-top: 10px;
+}
 
-/* Company */
-
-.corner {
-    border-radius: 25px;
-    background: #CCD3CA;
-    padding: 20px;
-    width: 50%;
-    height: 50%;
+#logo_name {
     margin: auto;
-    margin-top: 50px;
+    margin-left: 30px;
 }
 
-#LOGO {
-    width: 15%;
+.content:not(.active) {
+    display: none;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
 
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
+/* Narrative Report */
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-td {
-    text-align: center;
+input[type=text] {
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    /* border: none; */
+    background: #f1f1f1;
 }
 
 

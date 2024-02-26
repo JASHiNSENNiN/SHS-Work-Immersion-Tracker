@@ -202,7 +202,7 @@ nav .profile-details i {
 
 .home-section .home-content {
     position: relative;
-    padding-top: 50px;
+    padding-top: 104px;
 }
 
 .home-content .overview-boxes {
@@ -508,77 +508,34 @@ nav .profile-details i {
     margin-right: 5px;
 }
 
-#logo_name {
-    margin: auto;
-    margin-left: 30px;
-}
-
-.content:not(.active) {
-    display: none;
-}
-
-.contents:not(.active) {
-    display: none;
-}
-
 .box:hover {
     background-color: gray;
     cursor: pointer;
     transform: scale(1);
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.content:not(.active) {
+    display: none;
+}
+
+.icon .bx-user-plus {
+    background-color: #2697FF;
+    border-radius: 10px;
+    height: 30px;
+    width: 35px;
     text-align: center;
-}
-
-td,
-table {
-    padding: 20px;
+    padding: 4px;
+    margin-top: 20px;
 }
 
 
-/* Company */
-
-.corner {
-    border-radius: 25px;
-    background: #CCD3CA;
-    padding: 20px;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-#LOGO {
-    width: 15%;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-td {
-    text-align: center;
-}
-
-
-/* .box:hover {
-    background-color: gray;
+/* .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 15px);
+    background: #fff;
+    padding: 15px 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 } */
