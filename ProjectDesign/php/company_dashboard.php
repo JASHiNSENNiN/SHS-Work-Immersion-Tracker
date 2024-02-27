@@ -420,54 +420,53 @@
     </section>
 
     <script>
-        let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".sidebarBtn");
-        sidebarBtn.onclick = function () {
-            sidebar.classList.toggle("active");
-            if (sidebar.classList.contains("active")) {
-                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-            } else
-                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-        }
-
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else
+            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
     </script>
     <script>
-        let toggle = () => {
+    let toggle = () => {
 
-            let element = document.getElementById("logo_name");
-            let hidden = element.getAttribute("hidden");
+        let element = document.getElementById("logo_name");
+        let hidden = element.getAttribute("hidden");
 
-            if (hidden) {
-                element.removeAttribute("hidden");
-            } else {
-                element.setAttribute("hidden", "hidden");
-            }
+        if (hidden) {
+            element.removeAttribute("hidden");
+        } else {
+            element.setAttribute("hidden", "hidden");
         }
+    }
     </script>
     <script type="text/javascript" src=" ../js/analytics_school_dashboard.js"></script>
 
     <script>
-        $(".link").click(function (e) {
-            e.preventDefault();
-            $(".content").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".link").click(function(e) {
+        e.preventDefault();
+        $(".content").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
 
     // Survey form
     <script>
-        $("input:checkbox").on('click', function () {
-           
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+    $("input:checkbox").on('click', function() {
+
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
 
 </body>
