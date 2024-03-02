@@ -57,13 +57,8 @@
             <button type="submit">Submit</button>
         </form> -->
         
-<section id="contact" class="contact">
+<!-- <section id="contact" class="contact">
   <div class="container" data-aos="fade-up">
-
-    <!-- <div class="section-title">
-      <h2>Get in Touch</h2>
-     
-    </div> -->
 
     <div class="row">
 
@@ -126,8 +121,10 @@
     </div>
 
   </div>
-</section>
+</section> -->
     </section>
+
+    
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <p>By using Workify you agrree to new <a href="#"></a></p>

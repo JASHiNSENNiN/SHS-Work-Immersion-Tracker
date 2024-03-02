@@ -28,6 +28,16 @@
         <a class="login-btn" href="#" style="margin-left: 20px;" >Register</a>
         <a class="login-btn" href="#">Log in</a>
     </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="../img/joblisting.jpg" style="width:100%">
+            <!-- <div class="text">Get Your Work Immersion</div> -->
+            <h1 class="text-slide-container">About Us</h1>
+        </div>
+
+
+    </div>
 
     <!-- <section class="contact-section">
         <h2>About Us</h2>
