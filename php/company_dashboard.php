@@ -83,13 +83,24 @@
             <h1>Vorkify</h1>
         </div> -->
             </div>
-            
 
-            <div class="profile-details">
-                <img src="images/profile.jpg" alt="">
-                <span class="admin_name">Prem Shahi</span>
-                <i class='bx bx-chevron-down'></i>
+
+            <div class="profile-details" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown">
+                    <img src="image/NIA.png" alt="">
+                    <span class="admin_name">NIA</span>
+                </div>
+                <!-- <i class='bx bx-chevron-down'></i> -->
             </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"><span class="link" id="#setting">Setting</span></a>
+                <hr>
+                <a class="dropdown-item" href="#"><span>Log out</span></a>
+
+            </div>
+
+
         </nav>
 
 
@@ -170,7 +181,7 @@
                             <table style="width:100%">
                                 <tr>
                                     <th>#</th>
-                                    <th>School ID</th>
+                                    <th>Student ID</th>
                                     <th>Name</th>
                                     <th>Strand</th>
                                     <th>School</th>
@@ -237,10 +248,16 @@
                                             id="studentid" required>
                                     </div>
                                     <div class="col-sm">
+                                        <label for="studentid">School</label> <br>
+                                        <input type="text" placeholder="Enter School" name="studentid" id="studentid"
+                                            style="width: auto;">
+                                    </div>
+                                    <div class="col-sm">
                                         <label for="studentid">Student ID</label> <br>
                                         <input type="number" placeholder="Enter Student ID" name="studentid"
                                             id="studentid" style="width: auto;">
                                     </div>
+
 
                                 </div>
                             </div>
@@ -299,8 +316,8 @@
                             <br>
                             <form action="">
                                 <div class="container">
-                                    <h3>Questioner </h3>
-                                    <p>Please fill in this survey form to create an job.</p>
+                                    <h3>Evaluation</h3>
+                                    <p>Please fill in this evaluation form</p>
                                     <hr>
 
                                     <table style="width:100%">
@@ -724,7 +741,6 @@
             } else
                 sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
         }
-
     </script>
     <script>
         let toggle = () => {

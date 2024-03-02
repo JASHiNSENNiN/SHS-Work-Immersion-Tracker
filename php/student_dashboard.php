@@ -14,7 +14,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Boxicons CDN Link -->
@@ -30,12 +30,11 @@
         <div class="logo-details">
 
             <a href="#" class="active" style='text-decoration:none'>
-                <i><img src="logo.png" alt="Logo" height="50" style="margin-left:5px;">
+                <i><img src="logo.png" alt="Logo" height="50" style="margin-left:5px; margin-top:15px;">
                 </i>
 
             </a>
-            <span class="logo_name" id="logo_name" style="color:#fff;">Workify</span>
-
+            <span class="logo_name" id="logo_name" style="color:#fff; margin-left: 80px;">Workify</span>
         </div>
         <br>
         <ul class="nav-links">
@@ -73,21 +72,20 @@
                 <span class="dashboard"></span>
                 <span class="dashboard"> </span>
                 <span class="dashboard">Dashboard</span>
-                <!-- <div class="logo">
-            <img src="../logo.jpg" alt="Logo">
-            <h1>\</h1>
-            <h1>Vorkify</h1>
-        </div> -->
+
             </div>
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <input type="text" placeholder="Search...">
                 <i class='bx bx-search'></i>
-            </div>
+            </div> -->
+
+
             <div class="profile-details">
-                <img src="images/profile.jpg" alt="">
-                <span class="admin_name">Prem Shahi</span>
+                <img src="image/me.jpg" alt="">
+                <span class="admin_name">Natividad, Miguel Von A.</span>
                 <i class='bx bx-chevron-down'></i>
             </div>
+
         </nav>
 
 
@@ -97,74 +95,92 @@
 
             <div id="content_container">
                 <div id="company" class="content active">
-                    <div class="sales-boxes">
-                        <div class="recent-sales box" style="margin-left: 20px;">
-                            <b>
-                                <div class="box-topic" >Company List: </div>
-                            </b>
-                            <br>
-                            <!-- <div class="title">Popularity Company </div> -->
-                            <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
-
-                            <table style="width:100%">
-                                <tr>
-                                    <th>#</th>
-                                    <th>Company</th>
-                                    <th>Address</th>
-                                    <th>Action</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>NIA</td>
-                                    <td>Guimba</td>
-                                    <td><button type="button" class="btn btn-success">Apply</button>
-                                        <button type="button" class="btn btn-primary">Details</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>PNP</td>
-                                    <td>Guimba</td>
-                                    <td><button type="button" class="btn btn-success">Apply</button>
-                                        <button type="button" class="btn btn-primary">Details</button>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Municipal</td>
-                                    <td>Guimba</td>
-                                    <td><button type="button" class="btn btn-success">Apply</button>
-                                        <button type="button" class="btn btn-primary">Details</button>
-                                    </td>
-
-                                </tr>
-                            </table>
-                            <!-- <div class="button">
-                        <a href="#">See All</a>
-                    </div> -->
+                    <div class="container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    One of three columns
+                                </div>
+                                <div class="col-sm">
+                                    <div class="search-box">
+                                        <input type="text" placeholder="Search..." style="margin-top:50px; width:100%">
+                                        <i class='bx bx-search'></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    One of three columns
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="top-sales box" style="margin-left:10px">
-                            <div class="title">Top Company </div>
-                            <ul class="top-sales-details">
-                                <li>
-                                    <a href="#">
-                                        <img src="" alt="">
-                                        <span class="product">NIA</span>
-                                    </a>
-                                    <span class="price">100%</span>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="" alt="">
-                                        <span class="product">Jollibee </span>
-                                    </a>
-                                    <span class="price">90%</span>
-                                </li>
-                            </ul>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="mobile-wrapper">
+                                    <article class="job-card">
+                                        <div class="company-logo-img">
+                                            <img src="image/NIA.png" />
+                                        </div>
+                                        <div class="job-title">The National Irrigation Administration</div>
+                                        <!-- <div class="company-name">Hays</div> -->
+                                        <div class="skills-container">
+                                            <div class="skill">Planter</div>
+                                            <div class="skill">Assistant</div>
+                                            <div class="skill">Computer</div>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="apply">Apply</button>
+                                            <button class="save">Save Job</button>
+                                        </div>
+                                        <a href="#"></a>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="mobile-wrapper">
+                                    <article class="job-card">
+                                        <div class="company-logo-img">
+                                            <img src="image/Jollibee.png" />
+                                        </div>
+                                        <div class="job-title">Jollibee</div>
+                                        <!-- <div class="company-name">Hays</div> -->
+                                        <div class="skills-container">
+                                            <div class="skill">Crew</div>
+                                            <div class="skill">Assistant</div>
+                                            <div class="skill">Guard</div>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="apply">Apply</button>
+                                            <button class="save">Save Job</button>
+                                        </div>
+                                        <a href="#"></a>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="mobile-wrapper">
+                                    <article class="job-card">
+                                        <div class="company-logo-img">
+                                            <img src="image/landbank.jpg" />
+                                        </div>
+                                        <div class="job-title">LANBANK</div>
+                                        <div class="skills-container">
+                                            <div class="skill">Bookkeeper</div>
+                                            <div class="skill">Assistant</div>
+                                            <div class="skill">IT specialist</div>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="apply">Apply</button>
+                                            <button class="save">Save Job</button>
+                                        </div>
+                                        <a href="#"></a>
+                                    </article>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
+
 
                 </div>
                 <div id="narrative" class="content">
@@ -198,7 +214,8 @@
                                 <tr>
                                     <td>4</td>
                                     <td>Very Satisfactory</td>
-                                    <td>Performace fully met job requirements. Was able to perform what was expected of
+                                    <td>Performace fully met job requirements. Was able to perform what was expected
+                                        of
                                         a person in his/her position.</td>
 
 
@@ -214,7 +231,8 @@
                                 <tr>
                                     <td>2</td>
                                     <td>Fair</td>
-                                    <td>Performace partially meet the required stantard. Less than satisfactory could be
+                                    <td>Performace partially meet the required stantard. Less than satisfactory
+                                        could be
                                         doind better.</td>
 
 
@@ -222,7 +240,8 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Needs Improvement</td>
-                                    <td>Performance does not meet the required standard. Major improvements needed.</td>
+                                    <td>Performance does not meet the required standard. Major improvements needed.
+                                    </td>
                                     <!-- <td><button type="button" class="btn btn-success">Apply</button>
                                         <button type="button" class="btn btn-primary">Details</button>
                                     </td> -->
@@ -232,8 +251,8 @@
                             <br>
                             <form action="">
                                 <div class="container">
-                                    <h3>Questioner </h3>
-                                    <p>Please fill in this survey form to create an job.</p>
+                                    <h3>Evaluation </h3>
+                                    <p>Please fill in this evaluation form.</p>
                                     <hr>
 
                                     <table style="width:100%">
@@ -268,7 +287,8 @@
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Actively participates in activities and assigned tasks required.</td>
+                                            <td>Actively participates in activities and assigned tasks required.
+                                            </td>
                                             <td><input type="checkbox" name="fooby[3][]"></td>
                                             <td><input type="checkbox" name="fooby[3][]"></td>
                                             <td><input type="checkbox" name="fooby[3][]"></td>
@@ -352,7 +372,7 @@
                                     <hr>
 
 
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary" style="width: auto;">Submit</button>
                                 </div>
 
 
@@ -407,7 +427,8 @@
                                                         </label> &nbsp;
                                                         <button type="button"
                                                             class="btn btn-default md-btn-flat">Reset</button>
-                                                        <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max
+                                                        <div class="text-light small mt-1">Allowed JPG, GIF or PNG.
+                                                            Max
                                                             size
                                                             of 800K</div>
                                                     </div>
@@ -420,22 +441,27 @@
                                 </div> -->
                                                     <div class="form-group">
                                                         <label class="form-label">School Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%";><br>
+                                                        <input type="text" class="form-control" style="width: 50%"
+                                                            ;><br>
                                                         <label class="form-label">First Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%";><br>
+                                                        <input type="text" class="form-control" style="width: 50%"
+                                                            ;><br>
                                                         <label class="form-label">Middle Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%";><br>
+                                                        <input type="text" class="form-control" style="width: 50%"
+                                                            ;><br>
                                                         <label class="form-label">Last Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%";><br>
+                                                        <input type="text" class="form-control" style="width: 50%"
+                                                            ;><br>
                                                         <label class="form-label">Student ID</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%";>
+                                                        <input type="text" class="form-control" style="width: 50%" ;>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">E-mail</label><br>
                                                         <input type="text" class="form-control mb-1"
                                                             placeholder="@gmail.com" style="width: 50%">
                                                         <div class="alert alert-warning mt-3">
-                                                            Your email is not confirmed. Please check your inbox.<br>
+                                                            Your email is not confirmed. Please check your
+                                                            inbox.<br>
                                                             <a href="javascript:void(0)">Resend confirmation</a>
                                                         </div>
                                                     </div>
@@ -488,7 +514,7 @@
                                                     <div class="form-group">
                                                         <label class="form-label">Phone</label><br>
                                                         <input type="number" class="form-control"
-                                                            value="+0 (123) 456 7891" style="width: 50%"> 
+                                                            value="+0 (123) 456 7891" style="width: 50%">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Website</label><br>
@@ -510,7 +536,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Google+</label><br>
-                                                        <input type="text" class="form-control" style="width: 90%" >
+                                                        <input type="text" class="form-control" style="width: 90%">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">LinkedIn</label><br>
@@ -565,7 +591,8 @@
                                                                 <span class="switcher-yes"></span>
                                                                 <span class="switcher-no"></span>
                                                             </span>
-                                                            <span class="switcher-label">Email me when someone comments
+                                                            <span class="switcher-label">Email me when someone
+                                                                comments
                                                                 on
                                                                 my article</span>
                                                         </label>
@@ -577,7 +604,8 @@
                                                                 <span class="switcher-yes"></span>
                                                                 <span class="switcher-no"></span>
                                                             </span>
-                                                            <span class="switcher-label">Email me when someone answers
+                                                            <span class="switcher-label">Email me when someone
+                                                                answers
                                                                 on my
                                                                 forum
                                                                 thread</span>
@@ -590,7 +618,8 @@
                                                                 <span class="switcher-yes"></span>
                                                                 <span class="switcher-no"></span>
                                                             </span>
-                                                            <span class="switcher-label">Email me when someone follows
+                                                            <span class="switcher-label">Email me when someone
+                                                                follows
                                                                 me</span>
                                                         </label>
                                                     </div>
@@ -605,7 +634,8 @@
                                                                 <span class="switcher-yes"></span>
                                                                 <span class="switcher-no"></span>
                                                             </span>
-                                                            <span class="switcher-label">News and announcements</span>
+                                                            <span class="switcher-label">News and
+                                                                announcements</span>
                                                         </label>
                                                     </div>
                                                     <div class="form-group">
@@ -615,7 +645,8 @@
                                                                 <span class="switcher-yes"></span>
                                                                 <span class="switcher-no"></span>
                                                             </span>
-                                                            <span class="switcher-label">Weekly product updates</span>
+                                                            <span class="switcher-label">Weekly product
+                                                                updates</span>
                                                         </label>
                                                     </div>
                                                     <div class="form-group">
@@ -654,61 +685,64 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".sidebarBtn");
-        sidebarBtn.onclick = function () {
-            sidebar.classList.toggle("active");
-            if (sidebar.classList.contains("active")) {
-                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-            } else
-                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-        }
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else
+            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
     </script>
     <script>
-        let toggle = () => {
+    let toggle = () => {
 
-            let element = document.getElementById("logo_name");
-            let hidden = element.getAttribute("hidden");
+        let element = document.getElementById("logo_name");
+        let hidden = element.getAttribute("hidden");
 
-            if (hidden) {
-                element.removeAttribute("hidden");
-            } else {
-                element.setAttribute("hidden", "hidden");
-            }
+        if (hidden) {
+            element.removeAttribute("hidden");
+        } else {
+            element.setAttribute("hidden", "hidden");
         }
+    }
     </script>
     <script type="text/javascript" src=" ../js/analytics_school_dashboard.js"></script>
 
     <script>
-        $(".link").click(function (e) {
-            e.preventDefault();
-            $(".content").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".link").click(function(e) {
+        e.preventDefault();
+        $(".content").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
     <script>
-        $("input:checkbox").on('click', function () {
+    $("input:checkbox").on('click', function() {
 
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
     <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputfile = document.getElementById("input-file");
-        inputfile.onchange = function () {
-            profilePic.src = URL.createObjectURL(inputfile.files[0]);
-        }
+    let profilePic = document.getElementById("profile-pic");
+    let inputfile = document.getElementById("input-file");
+    inputfile.onchange = function() {
+        profilePic.src = URL.createObjectURL(inputfile.files[0]);
+    }
     </script>
+
 
 </body>
 
