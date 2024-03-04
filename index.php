@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Search Portal</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    </head>
+</head>
+
 <body>
 
     <header>
-         <div class="logo">
+        <div class="logo">
             <img src="logo.jpg" alt="Logo">
             <h1>\</h1>
             <h1>Vorkify</h1>
@@ -62,8 +64,9 @@
 
     <!-- JavaScript to display the current date -->
     <script>
-        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
 </body>
+
 </html>
