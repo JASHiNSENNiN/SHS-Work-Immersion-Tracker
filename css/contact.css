@@ -1,4 +1,4 @@
- /* .contact-section {
+/* .contact-section {
      max-width: 800px;
      margin: 20px auto;
      padding: 20px;
@@ -9,7 +9,9 @@
      margin-bottom: 100px;
      margin-top: 80px;
  } */
- /*
+
+
+/*
 label {
     display: block;
     margin-bottom: 8px;
@@ -37,32 +39,39 @@ button {
 button:hover {
     background-color: #45a049;
 } */
- /* ----------------Slider---------------------*/
- 
- img {
-     vertical-align: middle;
- }
- 
- .slideshow-container {
-     /* max-width: 1000px; */
-     position: relative;
-     margin: auto;
- }
- 
- .text-slide-container {
-     color: #fff;
-     font-size: 65px;
-     padding: 8px 12px;
-     position: absolute;
-     bottom: 8px;
-     width: 90%;
-     text-align: center;
-     margin-left: 70px;
- }
- /* On smaller screens, decrease text size */
- 
- @media only screen and (max-width: 300px) {
-     .text-slide-container {
-         font-size: 11px;
-     }
- }
+
+
+/* ----------------Slider---------------------*/
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+.text-slide-container {
+    color: #fff;
+    font-size: 65px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
+    text-align: center;
+    margin-left: 70px;
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text-slide-container {
+        font-size: 11px;
+    }
+}
+
+
+/*--------------------------Contact----------------------------  */
