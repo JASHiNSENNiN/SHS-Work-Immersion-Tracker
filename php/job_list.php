@@ -12,11 +12,23 @@
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 
+    <style>
+      .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .slideshow-container + .searchbar + .main-container {
+    padding-top: 102px;
+  }
+    </style>
+
 </head>
 
 <body>
 
-    <header>
+    <header id="headerSticky" >
         <div class="logo">
             <a href="index.php">
                 <img src="../img/logov3.jpg" alt="Logo">
@@ -60,26 +72,9 @@
        
     </section>
 <!-- ---------------joblist Area --------------------------->
-    <!-- <section class="joblist-area">  -->
-        <!-- <div class="col-lg-12" >
-            <span>100 Work immersion found</span>
-        </div> -->
-        <!-- <div class="job-listing">
-            <h3>Software Engineer</h3>
-            <p>Company: ABC Tech</p>
-            <p>Location: City, Country</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </div>  -->
-        <!-- <div class="job"> -->
- <!-- <div class="wrapper"> -->
+   
   <div class="main-container">
    <div class="search-type">
-    <!-- <div class="alert">
-     <div class="alert-title">Create Job Alert</div>
-     <div class="alert-subtitle">Create a job alert now and never miss a job</div>
-     <input type="text" placeholder="Enter job keyword">
-     <button class="search-buttons">Create Job Alerts</button>
-    </div> -->
     <div class="job-time">
      <div class="job-time-title">Type of Employment</div>
      <div class="job-wrapper">
@@ -666,15 +661,33 @@
  <!-- </div> -->
 <!-- </div> -->
     <!-- </section> -->
+    
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
     </footer>
+
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
+<script>
+  window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("headerSticky");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+  
+  </script>
+
 
 </body>
 
