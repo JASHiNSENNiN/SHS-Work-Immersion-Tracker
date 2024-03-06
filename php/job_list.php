@@ -12,33 +12,22 @@
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 
-    <style>
-      .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .slideshow-container + .searchbar + .main-container {
-    padding-top: 102px;
-  }
-    </style>
 
 </head>
 
 <body>
 
-    <header id="headerSticky" >
+    <header class="nav" >
         <div class="logo">
             <a href="index.php">
                 <img src="../img/logov3.jpg" alt="Logo">
             </a>
         </div>
         <nav>
-            <a href="../index.php">Home</a>
-            <a href="job_list.php">Find a Work Immerssion</a>
-            <a href="contact.php">Contact</a>
-            <a href="aboutUs.php">About</a>
+            <a href="../index.php" >Home</a>
+            <a href="job_list.php" >Find a Work Immerssion</a>
+            <a href="contact.php" >Contact</a>
+            <!-- <a href="aboutUs.php">About</a> -->
 
         </nav>
         <!-- <button class="login-btn">Log In</button> -->
@@ -145,46 +134,6 @@
       </div>
      </div>
     </div>
-    <!-- <div class="job-time">
-     <div class="job-time-title">Salary Range</div>
-     <div class="job-wrapper">
-      <div class="type-container">
-       <input type="checkbox" id="job1" class="job-style">
-       <label for="job1">$700 - $1000</label>
-       <span class="job-number">49</span>
-      </div>
-      <div class="type-container">
-       <input type="checkbox" id="job2" class="job-style">
-       <label for="job2">$1000 - $1200</label>
-       <span class="job-number">67</span>
-      </div>
-      <div class="type-container">
-       <input type="checkbox" id="job3" class="job-style">
-       <label for="job3">$1200 - $1400</label>
-       <span class="job-number">24</span>
-      </div>
-      <div class="type-container">
-       <input type="checkbox" id="job4" class="job-style">
-       <label for="job4">$1500 - $1800</label>
-       <span class="job-number">27</span>
-      </div>
-      <div class="type-container">
-       <input type="checkbox" id="job5" class="job-style" checked>
-       <label for="job5">$2000 - $3000</label>
-       <span class="job-number">76</span>
-      </div>
-      <div class="type-container">
-       <input type="checkbox" id="job6" class="job-style" checked>
-       <label for="job6">$3000 - $4000</label>
-       <span class="job-number">22</span>
-      </div>
-      <div class="type-container">
-       <input type="checkbox" id="job6" class="job-style">
-       <label for="job6">$4000 - $5000</label>
-       <span class="job-number">18</span>
-      </div>
-     </div>
-    </div> -->
    </div>
    <div class="searched-jobs">
     <div class="searched-bar">
@@ -658,37 +607,24 @@
     </div>
    </div>
   </div>
- <!-- </div> -->
-<!-- </div> -->
-    <!-- </section> -->
+
     
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+        
     </footer>
 
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+
+    
     </script>
-<script>
-  window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("headerSticky");
-var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-  
-  </script>
 
 
 </body>
-
 </html>

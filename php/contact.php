@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
     </head>
-    <style>
-      </style>
-    <header>
+   
+    <header >
          <div class="logo">
          <a href="index.php">
          <img src="../img/logov3.jpg" alt="Logo">
@@ -22,7 +21,7 @@
             <a href="../index.php">Home</a>
             <a href="job_list.php">Find a Work Immerssion</a>
             <a href="contact.php">Contact</a>
-            <a href="aboutUs.php">About</a>
+            <!-- <a href="aboutUs.php">About</a> -->
             
         </nav>
         <!-- <button class="login-btn">Log In</button> -->
@@ -156,7 +155,7 @@
       </div>
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+        <p>Thank you for considering Workify for your work immersion. We are committed to providing a valuable and informative experience to all our applicants. Please feel free to contact us if you have any questions or would like to learn more about our website.</p>
       <form action="#">
         <div class="input-box">
           <input type="text" placeholder="Enter your name">
@@ -180,13 +179,14 @@
     
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <p>By using Workify you agrree to new <a href="#"></a></p>
+        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
     </footer>
 
     <!-- JavaScript to display the current date -->
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
+    
 
 </body>
 </html>
