@@ -20,7 +20,7 @@
             <a href="index.php">Home</a>
             <a href="./php/job_list.php">Find a Work Immerssion</a>
             <a href="./php/contact.php">Contact</a>
-            <a href="./php/aboutUs.php">About</a>
+            <!-- <a href="./php/aboutUs.php">About</a> -->
             
         </nav>
         <!-- <div class="css-1ld7x2h eu4oa1w0"></div> -->
