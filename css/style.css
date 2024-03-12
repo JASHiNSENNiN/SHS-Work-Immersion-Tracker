@@ -92,6 +92,7 @@ h3 {
     color: #333;
 }
 
+
 /* .sfa {
     color: #172738;
     font-size: 80px;
@@ -178,7 +179,7 @@ header {
     padding-left: 100px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -203,6 +204,7 @@ header {
 
 nav {
     text-align: center;
+    display: flex;
 }
 
 nav a {
@@ -215,6 +217,10 @@ nav a {
     transition: background-color 0.3s;
     font-size: 15px;
     font-weight: 500;
+}
+
+nav .login-btn:hover {
+    color: #172738;
 }
 
 nav a:hover {
@@ -326,6 +332,21 @@ nav a:hover::after {
         /* width: 10% !important; */
         height: 10% !important;
     }
+}
+
+
+/* -------------------------line button----------------------------- */
+
+.css-1ld7x2h {
+    background-color: #d4d2d0;
+    margin: 0.75rem 0 0;
+}
+
+.css-1ld7x2h {
+    box-sizing: border-box;
+    height: 1.5rem;
+    min-width: 0;
+    width: 0.0625rem;
 }
 
 
@@ -1288,4 +1309,18 @@ html {
     .header {
         padding: 0 20px;
     }
+}
+
+
+/* --------------------------------------Header Sticky--------------------------- */
+
+.stickyhead {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.stickyhead+.content-sticky {
+    padding-top: 102px;
 }

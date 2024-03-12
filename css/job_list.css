@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 /* .joblist-area {
     max-width: 100%;
     margin: 20px auto;
@@ -11,12 +12,16 @@
     margin-right: 20%;
    
 } */
+
+
 /* -------------Text container-----------*/
+
 .col-lg-12 {
     font-family: "Muli", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
+
 .col-lg-12 {
     position: relative;
     width: 100%;
@@ -24,7 +29,11 @@
     padding-right: 15px;
     /* padding-left: 100px */
 }
+
+
 /* --------------------joblisting container ---------------------- */
+
+
 /* 
 .job-listing {
 
@@ -36,23 +45,29 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 
+
 /* ----------------Slider---------------------*/
 
 .mySlides {
     display: none;
 }
+
 img {
     vertical-align: middle;
 }
 
+
 /* Slideshow container */
+
 .slideshow-container {
     /* max-width: 1000px; */
     position: relative;
     margin: auto;
 }
 
+
 /* Caption text */
+
 .text-slide-container {
     color: #fff;
     font-size: 65px;
@@ -64,13 +79,18 @@ img {
     margin-left: 70px;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
     .text-slide-container {
         font-size: 11px;
     }
 }
+
+
 /* ///////////////////////////////////Search Bar //////////////////////////////// */
+
 section {
     max-width: 800px;
     margin: 20px auto;
@@ -84,6 +104,7 @@ section {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 .line-search {
     border: 1px solid rgb(0, 0, 0);
     background-color: #ffff;
@@ -91,6 +112,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
+
 .searchwork {
     width: 20px auto;
     height: 50px auto;
@@ -111,7 +133,6 @@ section {
     margin-right: 0.5rem;
     padding: 0;
 }
-
 
 .search-container {
     display: flex;
@@ -140,6 +161,7 @@ section {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 form {
     display: flex;
     justify-content: center;
@@ -178,8 +200,25 @@ input {
     outline: none;
     transition: 200ms ease-in;
 }
+
+
 /* 
 .sfa {
     color: #172738;
     font-size: 2.75rem;
 } */
+
+
+/* -------------------------line button----------------------------- */
+
+.css-1ld7x2h {
+    background-color: #d4d2d0;
+    margin: 0.75rem 0 0;
+}
+
+.css-1ld7x2h {
+    box-sizing: border-box;
+    height: 1.5rem;
+    min-width: 0;
+    width: 0.0625rem;
+}
