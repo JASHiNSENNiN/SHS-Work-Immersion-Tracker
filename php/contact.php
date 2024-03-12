@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Work Immersion</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
@@ -16,19 +16,17 @@
          <a href="index.php">
          <img src="../img/logov3.jpg" alt="Logo">
            </a>
-        </div>
-        <nav>
+           <nav>
             <a href="../index.php">Home</a>
-            <a href="job_list.php">Find a Work Immerssion</a>
-            <a href="contact.php">Contact</a>
-            <!-- <a href="aboutUs.php">About</a> -->
-            
+            <a href="job_list.php" >Company Review</a>
+            <a href="contact.php">Contact</a> 
         </nav>
-        <!-- <button class="login-btn">Log In</button> -->
-         <!-- <div class="css-1ld7x2h eu4oa1w0"></div>
-        <button class="login-btn">Log In</button> -->
-        <a class="login-btn" href="#" style="margin-left: 20px;" >Register</a>
-        <a class="login-btn" href="#">Log in</a>
+        </div>
+       <nav>
+        <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
+        <div class="css-1ld7x2h eu4oa1w0"></div>
+    <a  href="post_work_Immersion.php">Post Work Immersion</a>
+    </nav>
     </header>
 
     <div class="slideshow-container">

@@ -23,19 +23,20 @@
             <a href="index.php">
                 <img src="../img/logov3.jpg" alt="Logo">
             </a>
-        </div>
-        <nav>
+            <nav>
             <a href="../index.php" >Home</a>
             <a href="job_list.php" >Company Review</a>
             <a href="contact.php" >Contact</a>
             <!-- <a href="aboutUs.php">About</a> -->
 
         </nav>
-        <!-- <button class="login-btn">Log In</button> -->
-        <!-- <div class="css-1ld7x2h eu4oa1w0"></div>
-        <button class="login-btn">Log In</button> -->
+        </div>
+       
+       <nav>
         <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
-    <a class="login-btn" href="#">Post Work Immersion</a>
+        <div class="css-1ld7x2h eu4oa1w0"></div>
+    <a  href="post_work_Immersion.php">Post Work Immersion</a>
+    </nav>
     </header>
     
     <div class="slideshow-container">
