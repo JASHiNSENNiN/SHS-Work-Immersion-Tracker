@@ -16,23 +16,26 @@
 
 <body>
 
-  <header>
+  <header id="myHeader-sticky">
     <div class="logo">
       <a href="index.php">
         <img src="img/logov3.jpg" alt="Logo">
       </a>
       <nav>
       <a href="index.php">Home</a>
-      <a href="./php/job_list.php">Find a Work Immerssion</a>
+      <a href="./php/job_list.php">Company Review</a>
       <a href="./php/contact.php">Contact</a>
     </nav>
-
     </div>
-    
+   <nav>
     <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
-    <a class="login-btn" href="#">Post Work Immersion</a>
-
+    <div class="css-1ld7x2h eu4oa1w0"></div>
+    <a href="./php/post_work_Immersion.php">Post Work Immersion</a>
+    </nav>
+    
   </header>
+  <div class="content-sticky">
+  
 
   <section>
     <!-- <h2 class="sfa">Search, Find and Apply!</h2 -->
@@ -723,6 +726,23 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader-sticky");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("stickyhead");
+            } else {
+                header.classList.remove("stickyhead");
+            }
+        }
+    </script>
+
 </body>
 
 
