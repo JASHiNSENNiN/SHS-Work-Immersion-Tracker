@@ -18,27 +18,27 @@
 
 <body>
 
-    <header class="nav" >
+    <header class="nav">
         <div class="logo">
             <a href="index.php">
                 <img src="../img/logov3.jpg" alt="Logo">
             </a>
             <nav>
-            <a href="../index.php" >Home</a>
-            <a href="job_list.php" >Company Review</a>
-            <a href="contact.php" >Contact</a>
-            <!-- <a href="aboutUs.php">About</a> -->
+                <a href="../index.php">Home</a>
+                <a href="job_list.php">Company Review</a>
+                <a href="contact.php">Contact</a>
+                <!-- <a href="aboutUs.php">About</a> -->
 
-        </nav>
+            </nav>
         </div>
-       
-       <nav>
-        <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
-        <div class="css-1ld7x2h eu4oa1w0"></div>
-    <a  href="post_work_Immersion.php">Post Work Immersion</a>
-    </nav>
+
+        <nav>
+            <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
+            <div class="css-1ld7x2h eu4oa1w0"></div>
+            <a href="post_work_Immersion.php">Post Work Immersion</a>
+        </nav>
     </header>
-    
+
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -50,46 +50,45 @@
     <br>
 
     <section>
-    <!-- <h2 class="sfa">Explore Top Companies and Their Benefits</h2> -->
-    <p style="color:#595959;" >Get the Inside Scoop on Company Reviews</p>
-    <!-- <label>Company name or Work Immersion title</label> -->
-    <div class="line-search">
-      <div class="searchwork">
-        <form action="#" method="get">
+        <!-- <h2 class="sfa">Explore Top Companies and Their Benefits</h2> -->
+        <p style="color:#595959;">Get the Inside Scoop on Company Reviews</p>
+        <!-- <label>Company name or Work Immersion title</label> -->
+        <div class="line-search">
+            <div class="searchwork">
+                <form action="#" method="get">
 
-          <div class="search-container">
-            <button type="submit"><i class="fas fa-search"></i></button>
-            <input type="text" placeholder="Company name or Work Immersion title ">
+                    <div class="search-container">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <input type="text" placeholder="Company name or Work Immersion title ">
 
-          </div>
+                    </div>
 
-          <input type="submit" value="Find Now" href="">
-      </div>
-      </form>
-    </div>
+                    <input type="submit" value="Find Now" href="">
+            </div>
+            </form>
+        </div>
 
-  </section>
+    </section>
 
 
-    
 
-    
+
+
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
-        
+
     </footer>
 
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
-        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
-
-    
+    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
 
 
 
 </body>
+
 </html>

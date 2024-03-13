@@ -22,9 +22,7 @@ session_start();
 
         </div>
         <nav>
-            <a href="../index.php">Home</a>
-            <a href="../php/job_list.php">Find a Work Immerssion</a>
-            <a href="../php/contact.php">Contact</a>
+            <a href="../index.php">Back</a>
         </nav>
     </header>
 
@@ -37,7 +35,11 @@ session_start();
                     required>
                 <input autocomplete="current-password" type="password" placeholder="Password" id="login-password"
                     name="login-password" required>
+
+                <!-- login button -->
                 <button class="btn-login" onclick="login()">Login</button>
+
+                <!-- form switching -->
                 <button class="btn-new" id="switch-to-register" onclick="showLoginForm()">Create New
                     Account</button>
             </div>
@@ -87,6 +89,8 @@ session_start();
                     </select>
                 </div>
                 <button class="btn-login" onclick="validateForm()">Register</button>
+
+                <!-- login button -->
                 <button class="btn-new" id="switch-to-login" onclick="showLoginForm()">
                     Log in to Existing Account
                 </button>
