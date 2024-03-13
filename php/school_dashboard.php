@@ -1059,55 +1059,56 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".sidebarBtn");
-    sidebarBtn.onclick = function() {
-        sidebar.classList.toggle("active");
-        if (sidebar.classList.contains("active")) {
-            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-        } else
-            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-    }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+
     </script>
     <script>
-    let toggle = () => {
+        let toggle = () => {
 
-        let element = document.getElementById("logo_name");
-        let hidden = element.getAttribute("hidden");
+            let element = document.getElementById("logo_name");
+            let hidden = element.getAttribute("hidden");
 
-        if (hidden) {
-            element.removeAttribute("hidden");
-        } else {
-            element.setAttribute("hidden", "hidden");
+            if (hidden) {
+                element.removeAttribute("hidden");
+            } else {
+                element.setAttribute("hidden", "hidden");
+            }
         }
-    }
     </script>
     <script type="text/javascript" src=" ../js/analytics_school_dashboard.js"></script>
 
     <script>
-    $(".link").click(function(e) {
-        e.preventDefault();
-        $(".content").removeClass("active");
-        var content_id = $(this).attr("id");
-        $(content_id).addClass("active");
-    });
+        $(".link").click(function (e) {
+            e.preventDefault();
+            $(".content").removeClass("active");
+            var content_id = $(this).attr("id");
+            $(content_id).addClass("active");
+        });
     </script>
 
     <script>
-    $(".box").click(function(e) {
-        e.preventDefault();
-        $(".contents").removeClass("active");
-        var content_id = $(this).attr("id");
-        $(content_id).addClass("active");
-    });
+        $(".box").click(function (e) {
+            e.preventDefault();
+            $(".contents").removeClass("active");
+            var content_id = $(this).attr("id");
+            $(content_id).addClass("active");
+        });
     </script>
 
     <script>
-    let profilePic = document.getElementById("profile-pic");
-    let inputfile = document.getElementById("input-file");
-    inputfile.onchange = function() {
-        profilePic.src = URL.createObjectURL(inputfile.files[0]);
-    }
+        let profilePic = document.getElementById("profile-pic");
+        let inputfile = document.getElementById("input-file");
+        inputfile.onchange = function () {
+            profilePic.src = URL.createObjectURL(inputfile.files[0]);
+        }
     </script>
     <script src="../js/chart.js"></script>
 

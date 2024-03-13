@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +8,24 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
 
-</head>
-
+    </head>
 <body>
 
     <header>
-        <div class="logo">
-            <img src="../img/logov3.jpg" alt="Logo">
-
+         <div class="logo">
+         <img src="../img/logov3.jpg" alt="Logo">
+         
         </div>
         <nav>
-            <a href="../index.php">Home</a>
+        <a href="../index.php">Home</a>
             <a href="job_list.php">Find a Work Immerssion</a>
             <a href="contact.php">Contact</a>
             <a href="aboutUs.php">About</a>
-
+            
         </nav>
         <!-- <button class="login-btn">Log In</button> -->
-
-        <a class="login-btn" href="#" style="margin-left: 20px;">Register</a>
+         
+        <a class="login-btn" href="#" style="margin-left: 20px;" >Register</a>
         <a class="login-btn" href="#">Log in</a>
     </header>
     <div class="slideshow-container">
@@ -56,9 +54,8 @@
 
     <!-- JavaScript to display the current date -->
     <script>
-    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
 </body>
-
 </html>
