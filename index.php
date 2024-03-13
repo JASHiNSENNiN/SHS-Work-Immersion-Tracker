@@ -166,6 +166,7 @@
             <button class="search-buttons card-buttons-msg">Save</button>
           </div>
         </div>
+        
         <div class="job-card">
           <div class="job-card-header">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="background-color:#f76754">
