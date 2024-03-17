@@ -58,8 +58,10 @@
         </div>
         </form>
       </div>
-
+    
     </section>
+    <div class="jobsearch-TabbedContent-tabsContainer">
+      </div>
     <!-- ------------------------------------------------------Job list------------------------------>
     <div class="main-container">
       <div class="search-type">

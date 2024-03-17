@@ -334,6 +334,16 @@ nav a:hover::after {
     }
 }
 
+.jobsearch-TabbedContent-tabsContainer {
+    border-bottom: 1px solid #e4e2e0;
+    display: flex;
+    justify-content: center;
+    min-height: 48px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+
 
 /* -------------------------line button----------------------------- */
 
