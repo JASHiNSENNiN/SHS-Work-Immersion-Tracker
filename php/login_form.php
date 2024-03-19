@@ -14,40 +14,61 @@ session_start();
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.php">
-                <img src="../img/logov3.jpg" alt="Logo">
-            </a>
-
-        </div>
-        <nav>
-            <a href="../index.php">Home</a>
-            <a href="../php/job_list.php">Find a Work Immerssion</a>
-            <a href="../php/contact.php">Contact</a>
-        </nav>
-    </header>
-
-
     <div class="row">
 
+
         <div id="login-form" class="colm-form">
+
+        <!-- ---------------------------------Logo ---------------------- -->
+        <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
+
+
+
             <div class="form-container">
-                <input autocomplete="email" type="text" placeholder="Email address" id="login-email" name="login-email"
-                    required>
-                <input autocomplete="current-password" type="password" placeholder="Password" id="login-password"
-                    name="login-password" required>
-                <button class="btn-login" onclick="login()">Login</button>
-                <button class="btn-new" id="switch-to-register" onclick="showLoginForm()">Create New
-                    Account</button>
+                
+
+            <!-- --------------------------------Google button--------------------- -->
+
+                <button type="button" class="login-with-google-btn" >
+                    Sign in with Google
+                </button>
+
+                <!-- --------------------------------Line OR--------------------------->
+
+                <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
+                        <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
+                    <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
+                </div>
+                <label class="css-ddheu4"> Email address <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                <input autocomplete="email" type="text" placeholder="" id="login-email" name="login-email" required>
+
+                <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                <input autocomplete="current-password" type="password" placeholder="" id="login-password" name="login-password" required>
+                <button class="btn-login" style="height: 40px; font-size: 15px" onclick="login()"> <span class="hover-underline-animation"> Continue </span>
+                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16" fill="#fff">
+                        <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                    </svg>
+                </button>
+
+                <!-- --------------------------------Line OR--------------------------->
+
+                <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
+                        <span role="separator" aria-orientation="horizontal"></span></span>
+                    
+                </div>
+
+                <button class="btn-new" id="switch-to-register" style="height: 40px; font-size: 15px" onclick="showLoginForm()">
+                <span class="hover-underline-animation"> Create new account </span>
+                
+            </button>
             </div>
+
         </div>
         <div id="register-form" class="colm-form">
             <div class="form-container">
                 <input type="text" for="email" name="email" id="email" placeholder="Email address" required>
                 <input type="password" placeholder="Password" id="password" name="confirm-password" required>
-                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password"
-                    required>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password" required>
                 <select id="account-type" name="account-type" required onchange="toggleFields()">
                     <option value class="null-type">Account Type:</option>
                     <option value="student">Student</option>
@@ -95,21 +116,26 @@ session_start();
 
         <script src="../backend/js/login.js"></script>
     </div>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+        
+    </footer>
 </body>
 
 </html>
 <script>
-function printCookies() {
-    const cookies = document.cookie.split(";")
-        .map(cookie => cookie.trim());
+    function printCookies() {
+        const cookies = document.cookie.split(";")
+            .map(cookie => cookie.trim());
 
-    console.log("Cookies:");
-    cookies.forEach(cookie => {
-        console.log(cookie);
-    });
-}
+        console.log("Cookies:");
+        cookies.forEach(cookie => {
+            console.log(cookie);
+        });
+    }
 
 
-window.onload = printCookies;
+    window.onload = printCookies;
 </script>
 <script src="../backend/js/session_handler.js"></script>

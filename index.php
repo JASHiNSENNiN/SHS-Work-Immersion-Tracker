@@ -28,7 +28,7 @@
       </nav>
     </div>
     <nav>
-      <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
+      <a class="login-btn" href="./php/login_form.php" style="margin-left: 20px;">Sign in</a>
       <div class="css-1ld7x2h eu4oa1w0"></div>
       <a href="./php/post_work_Immersion.php">Post Work Immersion</a>
     </nav>
@@ -61,6 +61,7 @@
     
     </section>
     <div class="jobsearch-TabbedContent-tabsContainer">
+    Find Your Dream Work Immersion  in a Few Seconds
       </div>
     <!-- ------------------------------------------------------Job list------------------------------>
     <div class="main-container">
