@@ -17,20 +17,3 @@ $auth0 = new \Auth0\SDK\Auth0([
     'clientSecret' => $clientSecret,
     'redirectUrl' => $redirectURL,
 ]);
-
-
-$session = $auth0->getCredentials();
-
-if (null === $session || $session->accessTokenExpired) {
-    // Redirect to Auth0 to authenticate the user.
-    header('Location: ' . $auth0->login());
-    exit;
-} else {
-
-    if ($auth0->getExchangeParameters()) {
-        // If they're present, we should perform the code exchange.
-        $auth0->exchange();
-    }
-
-    header("Location: http://localhost/shs/test.php", true, 301);
-}
