@@ -1,7 +1,5 @@
 <?php require_once '../vendor\autoload.php';
 
-
-
 // client request sa elgoog
 $client = new Google_Client();
 $client->setClientId($clientID);
