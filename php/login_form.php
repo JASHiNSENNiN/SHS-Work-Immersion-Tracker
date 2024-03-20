@@ -19,19 +19,20 @@ session_start();
 
         <div id="login-form" class="colm-form">
 
-        <!-- ---------------------------------Logo ---------------------- -->
-        <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
+            <!-- ---------------------------------Logo ---------------------- -->
+            <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
 
 
             <div class="form-container">
-                
 
-            <!-- --------------------------------Google button--------------------- -->
 
-                <button type="button" class="login-with-google-btn" >
-                    Sign in with Google
-                </button>
+                <!-- --------------------------------Google button--------------------- -->
+
+                <a href="<?php echo $client->createAuthUrl(); ?>"><button type="button" class="login-with-google-btn">
+                        Sign in with Google
+                    </button></a>
+
 
                 <!-- --------------------------------Line OR--------------------------->
 
@@ -42,7 +43,8 @@ session_start();
                 <label class="css-ddheu4"> Email address <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
                 <input autocomplete="email" type="text" placeholder="" id="login-email" name="login-email" required>
 
-                <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span>
+                </label>
                 <input autocomplete="current-password" type="password" placeholder="" id="login-password" name="login-password" required>
                 <button class="btn-login" style="height: 40px; font-size: 15px" onclick="login()"> <span class="hover-underline-animation"> Continue </span>
                     <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16" fill="#fff">
@@ -54,13 +56,13 @@ session_start();
 
                 <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                         <span role="separator" aria-orientation="horizontal"></span></span>
-                    
+
                 </div>
 
                 <button class="btn-new" id="switch-to-register" style="height: 40px; font-size: 15px" onclick="showLoginForm()">
-                <span class="hover-underline-animation"> Create new account </span>
-                
-            </button>
+                    <span class="hover-underline-animation"> Create new account </span>
+
+                </button>
             </div>
 
         </div>
@@ -119,7 +121,7 @@ session_start();
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
-        
+
     </footer>
 </body>
 

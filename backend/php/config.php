@@ -1,5 +1,7 @@
 <?php
 
+require_once '0Auth/auth_login.php';
+
 $host = "localhost";
 $username = "root";
 $password = "";
