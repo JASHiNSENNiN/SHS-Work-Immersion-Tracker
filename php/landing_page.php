@@ -3,7 +3,7 @@
 <head>
     <title>Landing Page</title>
     <!--ICON-->
-<link rel="shortcut icon" href="images/logo.svg">
+<!-- <link rel="shortcut icon" href="images/logo.svg"> -->
 
 <!--META TAGS-->
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
