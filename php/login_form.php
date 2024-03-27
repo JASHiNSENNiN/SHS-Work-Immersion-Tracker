@@ -59,8 +59,10 @@ session_start();
 
                 </div>
 
-                <button class="btn-new" id="switch-to-register" style="height: 40px; font-size: 15px" onclick="showLoginForm()">
-                    <span class="hover-underline-animation"> Create new account </span>
+                <button class="btn-new" id="switch-to-register" style=" font-size: 15px" onclick="showLoginForm()">
+                    <span class="hover-underline-animation"> 
+                        Create new account
+                     </span>
 
                 </button>
             </div>
