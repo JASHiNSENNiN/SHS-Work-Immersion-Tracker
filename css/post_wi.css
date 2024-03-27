@@ -422,3 +422,14 @@ nav a:hover::after {
 
 
 /* Responsiveness:End */
+
+
+/* --------------------------------------Footer ----------------------- */
+
+.sub-footer {
+    background: #1e1e1e;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    padding: 10px 0px;
+}

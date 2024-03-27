@@ -52,9 +52,9 @@ em {
     box-shadow: 0px 3px 8px -3px rgba(1, 1, 1, 0.5);
     outline: none;
     border: 0;
-    background: #fff;
+    background: #172738;
     border-radius: 20px;
-    color: #1BBC9B;
+    color: #fff;
     font-weight: 400;
     text-align: center;
     transition: 0.5s;
@@ -62,7 +62,8 @@ em {
 
 .btn1:hover {
     color: #fff;
-    background-color: rgb(23, 39, 56);
+    /* background-color: rgb(23, 39, 56); */
+    background: #1BBC9B;
 }
 
 .btn2 {
@@ -484,7 +485,7 @@ header {
     margin: 1%;
     display: inline-block;
     text-align: center;
-    border-top: 2px solid #172738;
+    border-top: 2px solid #1BBC9B;
 }
 
 .section0 .banner {
@@ -494,7 +495,7 @@ header {
 
 .section0 .card i {
     font-size: 4em;
-    color: #172738;
+    color: #1BBC9B;
     float: left;
 }
 

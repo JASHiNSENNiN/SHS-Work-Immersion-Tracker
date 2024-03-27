@@ -58,7 +58,7 @@
 </div>
 </header>
 
-<div id="navbar">
+<!-- <div id="navbar">
 <div class="slide-menu">
   <a class="logo">WORKIFY</a>
   <a href="#team">Sitemap</a>
@@ -73,11 +73,11 @@
       <a href="#">Link 3</a>
     </div>
   </div> 
-   <a href="https://codepen.io/MAHESHBYL/details/mdOmWZG">Contact</a>
+   <a href="#">Contact</a>
   <a href="about.html">About</a>
    <a href="#" class="active">Home</a>
 </div>
-</div>
+</div> -->
 
 
 
@@ -152,7 +152,7 @@
 <h1 class="title">Empower Your Career with Workify</h1>
 <p>At workify, we understand that finding work immersion opportunities can be a challenge for schools and students alike. That’s why we’ve created a platform that connects schools with our partner industries, making it easier than ever before to find the perfect opportunity. Our goal is to provide students with real-world experiences that give them the skills and knowledge they need to pursue their careers with confidence.</p>
 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-<a href="#moreaboutus" class="btn2">Discover More</a>
+<a href="login_form.php" class="btn2">Register Now</a>
 </td>
 </tr>
 </table>
