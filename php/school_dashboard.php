@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal | www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -30,11 +29,13 @@
         <div class="logo-details">
 
             <a href="#" class="active" style='text-decoration:none'>
-                <i><img src="logo.png" alt="Logo" height="50" style="margin-left:5px;">
+                <i>
+                    <!-- <img src="image/logov3.jpg" alt="Logo" height="11.5%" width="100%"
+                        styl="margin-left:5px; margin-top:15px;"> -->
                 </i>
 
             </a>
-            <span class="logo_name" id="logo_name" style="color:#fff;">Workify</span>
+            <!-- <span class="logo_name" id="logo_name" style="color:#fff; margin-left: 80px;">Workify</span>f   -->
 
         </div>
         <br>
@@ -91,7 +92,8 @@
                 <i class='bx bx-menu sidebarBtn' onclick="toggle();"></i>
                 <span class="dashboard"></span>
                 <span class="dashboard"> </span>
-                <span class="dashboard">Dashboard</span>
+                <span class="dashboard"><img src="image/logov3.jpg" alt="Logo" height="11%" width="50%"
+                        styl="margin-left:5px; margin-top:15px;"></span>
                 <!-- <div class="logo">
             <img src="../logo.jpg" alt="Logo">
             <h1>\</h1>
@@ -105,7 +107,7 @@
 
             <div class="profile-details">
                 <img src="image/OLSHCO.png" alt="">
-                <span class="admin_name">School name</span>
+                <span class="admin_name">OLSHCO</span>
                 <i class='bx bx-chevron-down'></i>
             </div>
         </nav>
@@ -303,7 +305,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                         <table style="width:100%">
                                             <tr>
                                                 <th>#</th>
-                                                <th>School ID</th>
                                                 <th>Name</th>
                                                 <th>Company</th>
                                                 <th>Status</th>
@@ -312,7 +313,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
-                                                <td>2024-17</td>
                                                 <td>Joshua Rivera</td>
                                                 <td>NIA</td>
                                                 <td>Deployed</td>
@@ -324,7 +324,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>2024-18</td>
                                                 <td>Ivan Diaz</td>
                                                 <td>PNP</td>
                                                 <td>Deployed</td>
@@ -337,7 +336,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>2024-19</td>
                                                 <td>Angel Diaz</td>
                                                 <td>Municipal</td>
                                                 <td>Pending</td>
@@ -350,7 +348,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>2024-20</td>
                                                 <td>Alex Doe</td>
                                                 <td>LTO</td>
                                                 <td>Deployed</td>
@@ -375,7 +372,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                         <table style="width:100%">
                                             <tr>
                                                 <th>#</th>
-                                                <th>School ID</th>
                                                 <th>Name</th>
                                                 <th>Company</th>
                                                 <th>Status</th>
@@ -384,7 +380,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
-                                                <td>2024-21</td>
                                                 <td>Joshua Rivera</td>
                                                 <td>Bank</td>
                                                 <td>Deployed</td>
@@ -396,7 +391,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>2024-22</td>
                                                 <td>Ivan Diaz</td>
                                                 <td>Finance</td>
                                                 <td>Deployed</td>
@@ -409,7 +403,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>2024-23</td>
                                                 <td>Angel Diaz</td>
                                                 <td>BDO</td>
                                                 <td>Pending</td>
@@ -422,7 +415,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>2024-24</td>
                                                 <td>Alex Doe</td>
                                                 <td>Land Bank</td>
                                                 <td>Deployed</td>
@@ -447,7 +439,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                         <table style="width:100%">
                                             <tr>
                                                 <th>#</th>
-                                                <th>School ID</th>
                                                 <th>Name</th>
                                                 <th>Company</th>
                                                 <th>Status</th>
@@ -456,7 +447,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
-                                                <td>2024-25</td>
                                                 <td>Joshua Rivera</td>
                                                 <td>NIA</td>
                                                 <td>Deployed</td>
@@ -468,7 +458,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>2024-26</td>
                                                 <td>Ivan Diaz</td>
                                                 <td>PNP</td>
                                                 <td>Deployed</td>
@@ -481,7 +470,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>2024-27</td>
                                                 <td>Angel Diaz</td>
                                                 <td>Municipal</td>
                                                 <td>Pending</td>
@@ -494,7 +482,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>2024-28</td>
                                                 <td>Alex Doe</td>
                                                 <td>LTO</td>
                                                 <td>Deployed</td>
@@ -510,6 +497,7 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
 
                                 </div>
                             </div>
+
                             <div id="techvoc" class="contents active">
                                 <div class="sales-boxes">
                                     <div class="recent-sales" style="width: 100%; margin-bottom:20px;">
@@ -519,7 +507,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                         <table style="width:100%">
                                             <tr>
                                                 <th>#</th>
-                                                <th>School ID</th>
                                                 <th>Name</th>
                                                 <th>Company</th>
                                                 <th>Status</th>
@@ -528,7 +515,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
-                                                <td>2024-29</td>
                                                 <td>Joshua Rivera</td>
                                                 <td>Deped</td>
                                                 <td>Deployed</td>
@@ -540,7 +526,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>2024-30</td>
                                                 <td>Ivan Diaz</td>
                                                 <td>IT</td>
                                                 <td>Deployed</td>
@@ -553,7 +538,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>2024-31</td>
                                                 <td>Angel Diaz</td>
                                                 <td>Developer</td>
                                                 <td>Pending</td>
@@ -566,7 +550,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>2024-32</td>
                                                 <td>Alex Doe</td>
                                                 <td>Assistant</td>
                                                 <td>Deployed</td>
@@ -591,29 +574,90 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
 
                 </div>
                 <div id="company" class="content active">
-                    <div class="corner">
-                        <img id="LOGO" src="image/NIA.png" alt="">
-                        <h3>NIA-Guimba</h3>
-                        <p>NATIONAL IRRIGATION ADMINISTRATION</p>
-                        <br>
-                        <p>Guimba, Nueva Ecija <br>
-                            Help Desk & IT Support (Information & Communication Technology)</p>
+                    <div class="container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <!-- One of three columns -->
+                                </div>
+                                <div class="col-sm">
+                                    <div class="search-box">
+                                        <input type="text" placeholder="Search..."
+                                            style="margin-top:50px; width:100%; ">
+                                        <i class='bx bx-search' style="top:62%;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <!-- One of three columns -->
+                                </div>
+                            </div>
+                        </div>
 
-                    </div>
-                    <div class="corner">
-                        <img id="LOGO" src="image/Jollibee.png" alt=""><br>
-                        <h3>Jollibee-Guimba</h3>
-                        <p>Jollibee Foods Corporation</p>
-                        <br>
-                        <p> <b> JOB QUALIFICATION:</b>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="mobile-wrapper">
+                                    <article class="job-card">
+                                        <div class="company-logo-img">
+                                            <img src="image/NIA.png" />
+                                        </div>
+                                        <div class="job-title">The National Irrigation Administration</div>
+                                        <!-- <div class="company-name">Hays</div> -->
+                                        <div class="skills-container">
+                                            <div class="skill">Planter</div>
+                                            <div class="skill">Assistant</div>
+                                            <div class="skill">Computer</div>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="apply">Delete</button>
+                                            <button class="save">Details</button>
+                                        </div>
+                                        <a href="#"></a>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="mobile-wrapper">
+                                    <article class="job-card">
+                                        <div class="company-logo-img">
+                                            <img src="image/Jollibee.png" />
+                                        </div>
+                                        <div class="job-title">Jollibee</div>
+                                        <!-- <div class="company-name">Hays</div> -->
+                                        <div class="skills-container">
+                                            <div class="skill">Crew</div>
+                                            <div class="skill">Assistant</div>
+                                            <div class="skill">Guard</div>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="apply">Delete</button>
+                                            <button class="save">Details</button>
+                                        </div>
+                                        <a href="#"></a>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="mobile-wrapper">
+                                    <article class="job-card">
+                                        <div class="company-logo-img">
+                                            <img src="image/landbank.jpg" />
+                                        </div>
+                                        <div class="job-title">LANBANK</div>
+                                        <div class="skills-container">
+                                            <div class="skill">Bookkeeper</div>
+                                            <div class="skill">Assistant</div>
+                                            <div class="skill">IT specialist</div>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="apply">Delete</button>
+                                            <button class="save">Details</button>
+                                        </div>
+                                        <a href="#"></a>
+                                    </article>
+                                </div>
+                            </div>
 
-                            <br>Graduate of any 4-year course, preferably Business
-                            <br> Fresh graduates are welcome to apply
-                            <br>No experience required but with experience is an advantage
-                            <br>With basic knowledge administrative processes in the organization
-                            <br>Knowledgeable in MS tools.
-                        </p>
-
+                        </div>
                     </div>
 
 
@@ -973,84 +1017,6 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
 
         </div>
 
-        <footer class="new_footer_area bg_color">
-            <div class="new_footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
-                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                <p>Don’t miss any updates of our new templates and extensions.!</p>
-                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
-                                    _lpchecked="1">
-                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
-                                    <p class="mchimp-errmessage" style="display: none;"></p>
-                                    <p class="mchimp-sucmessage" style="display: none;"></p>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
-                                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-                                <ul class="list-unstyled f_list">
-                                    <li><a href="#">Company</a></li>
-                                    <li><a href="#">Android App</a></li>
-                                    <li><a href="#">ios App</a></li>
-                                    <li><a href="#">Desktop</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">My tasks</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
-                                style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
-                                <ul class="list-unstyled f_list">
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Term &amp; conditions</a></li>
-                                    <li><a href="#">Reporting</a></li>
-                                    <li><a href="#">Documentation</a></li>
-                                    <li><a href="#">Support Policy</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
-                                style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-                                <div class="f_social_icon">
-                                    <a href="#" class="fab fa-facebook"></a>
-                                    <a href="#" class="fab fa-twitter"></a>
-                                    <a href="#" class="fab fa-linkedin"></a>
-                                    <a href="#" class="fab fa-pinterest"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_bg">
-                    <div class="footer_bg_one"></div>
-                    <div class="footer_bg_two"></div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <!-- <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-7">
-                            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
-                        </div>
-                        <div class="col-lg-6 col-sm-5 text-right">
-                            <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank">CakeCounter</a></p>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </footer>
 
     </section>
 
@@ -1058,57 +1024,59 @@ font-weight: 500; margin-bottom:10px;">Top Company </div>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".sidebarBtn");
-        sidebarBtn.onclick = function () {
-            sidebar.classList.toggle("active");
-            if (sidebar.classList.contains("active")) {
-                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-            } else
-                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-        }
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else
+            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
     </script>
     <script>
-        let toggle = () => {
+    let toggle = () => {
 
-            let element = document.getElementById("logo_name");
-            let hidden = element.getAttribute("hidden");
+        let element = document.getElementById("logo_name");
+        let hidden = element.getAttribute("hidden");
 
-            if (hidden) {
-                element.removeAttribute("hidden");
-            } else {
-                element.setAttribute("hidden", "hidden");
-            }
+        if (hidden) {
+            element.removeAttribute("hidden");
+        } else {
+            element.setAttribute("hidden", "hidden");
         }
+    }
     </script>
     <script type="text/javascript" src=" ../js/analytics_school_dashboard.js"></script>
 
     <script>
-        $(".link").click(function (e) {
-            e.preventDefault();
-            $(".content").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".link").click(function(e) {
+        e.preventDefault();
+        $(".content").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
 
     <script>
-        $(".box").click(function (e) {
-            e.preventDefault();
-            $(".contents").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".box").click(function(e) {
+        e.preventDefault();
+        $(".contents").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
 
     <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputfile = document.getElementById("input-file");
-        inputfile.onchange = function () {
-            profilePic.src = URL.createObjectURL(inputfile.files[0]);
-        }
+    let profilePic = document.getElementById("profile-pic");
+    let inputfile = document.getElementById("input-file");
+    inputfile.onchange = function() {
+        profilePic.src = URL.createObjectURL(inputfile.files[0]);
+    }
     </script>
     <script src="../js/chart.js"></script>
 

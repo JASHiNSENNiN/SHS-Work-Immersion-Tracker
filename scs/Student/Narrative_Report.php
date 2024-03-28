@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/Company.css">
     <link rel="stylesheet" href="css/Narrative.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- -------------font--------- -->
@@ -54,7 +52,7 @@
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="link" id="#area" href="Company_Area.php"> Company Area</a>
             <a class="link" id="#review" href="Company_Review.php">Company review</a>
-            <a class="link" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
+            <a class="active" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
             <!-- <a class="link" id="#contact">Contact</a> -->
             <a class="link" id="#details">Details</a>
             <!-- <a href="aboutUs.php">About</a> -->
@@ -64,13 +62,17 @@
 
 
     <br>
+    <div class="titleEF">
+        <b>
+            <h1 class="sfa">Evaluation and Feedback Form</h1>
+            <div class="box-topic"></div>
+        </b>
+    </div>
+
 
     <div class="sales-boxes">
-        <div class="recent-sales box" style="width: 90%;">
-            <b>
-                <h1 class="sfa">Evaluation and Feedback</h1>
-                <div class="box-topic"></div>
-            </b>
+        <div class="recent-sales box">
+
             <br>
 
             <label class="lb" for="studentid">Company name:</label>
@@ -135,7 +137,7 @@
                     <p>Please fill in this evaluation form.</p>
                     <hr class="hr1">
 
-                    <table style="width:100%">
+                    <table>
                         <tr>
                             <th>#</th>
                             <th>Questioner</th>
@@ -282,24 +284,26 @@
                                 </label>
                             </div>
                         </div>
+
                         <div class="mb-4">
-                            <label class="form-label" for="feedback_comments">Comments:</label>
+                            <label class="form-label" for="feedback_comments">Comments:</label><br>
                             <textarea class="form-control" required rows="6" name="comments"
                                 id="feedback_comments"></textarea>
                         </div>
+
                         <div class="row">
                             <div class="col">
                                 <label class="form-label" for="feedback_name">Your Name:</label><br>
                                 <input type="text" required name="name" class="form-control" id="feedback_name"
-                                    placeholder="Name" style="width: 100%;" />
+                                    placeholder="Name" />
                             </div>
 
                             <div class="col mb-4">
-                                <label class="form-label" for="feedback_email">Email:</label>
-                                <input type="email" name="email" required class="form-control" id="feedback_email"
+                                <label class="form-label" for="feedback_email">Email:</label><br>
+                                <input type="text" name="email" required class="form-control" id="feedback_email"
                                     placeholder="Your Email" />
                             </div>
-                        </div>
+                        </div><br>
                         <button type="submit" class="btn btn-success btn-lg" style="width: auto;">Post</button>
                     </form>
 
@@ -325,17 +329,17 @@
     </footer>
 
     <script>
-        $("input:checkbox").on('click', function () {
+    $("input:checkbox").on('click', function() {
 
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
 
 </body>

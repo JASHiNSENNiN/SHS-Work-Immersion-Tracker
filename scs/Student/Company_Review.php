@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/Company.css">
     <link rel="stylesheet" href="">
 
@@ -40,7 +39,7 @@
     </header>
 
 
-    <img class="logoimg" src="image/background.jpg" alt="">
+    <img class="logoimg" src="image/background.jpg" alt="" width="200" height="300">
 
     <div class="profile">
         <img src="image/me.jpg" alt="">
@@ -64,14 +63,6 @@
 
 
 
-    <!-- <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <img src="joblisting.jpg" style="width:100%; height: 50%;">
-            <div class="text">Get Your Work Immersion</div>
-            <h1 class="text-slide-container">Discover a Great Place to Work</h1>
-        </div>
-    </div> -->
     <br>
 
 
@@ -376,16 +367,16 @@
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
-        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
     <script>
-        $(".link").click(function (e) {
-            e.preventDefault();
-            $(".content").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".link").click(function(e) {
+        e.preventDefault();
+        $(".content").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
 
 

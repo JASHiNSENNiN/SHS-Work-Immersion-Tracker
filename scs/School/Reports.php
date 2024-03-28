@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/Reports.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- -------------font--------- -->
@@ -22,6 +20,7 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
+            </a>
         </div>
 
         <nav>
@@ -54,9 +53,58 @@
     </div>
 
 
+
+    <div class="container2">
+        <!-- <h1>HUMSS</h1> -->
+        <table class="rwd-table">
+            <tbody>
+                <tr>
+                    <th>#</th>
+                    <th>Company</th>
+                    <th>Student Name</th>
+                    <th>Action</th>
+
+                </tr>
+                <tr>
+                    <td data-th="#">1</td>
+                    <td data-th="Company">NIA</td>
+                    <td data-th="Student Name">Joshua Rivera</td>
+                    <td data-th="Action"><a href="#" class="btn-4d-can"><span>View</span></a>
+                        <a href="#" class="btn-3d-can"><span>Delete</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="#">2</td>
+                    <td data-th="Company">UPS South Inc.</td>
+                    <td data-th="Student Name">Dan Mamaid</td>
+                    <td data-th="Action"><a href="#" class="btn-4d-can"><span>View</span></a>
+                        <a href="#" class="btn-3d-can"><span>Delete</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="#">3</td>
+                    <td data-th="Company">BOX Pro West</td>
+                    <td data-th="Student Name">Ronald Diaz</td>
+                    <td data-th="Action"><a href="#" class="btn-4d-can"><span>View</span></a>
+                        <a href="#" class="btn-3d-can"><span>Delete</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="#">4</td>
+                    <td data-th="Company">Pan Providers and Co.</td>
+                    <td data-th="Student Name">Raniel Cruz</td>
+                    <td data-th="Action"><a href="#" class="btn-4d-can"><span>View</span></a>
+                        <a href="#" class="btn-3d-can"><span>Delete</span></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Resize Me</h3>
+    </div>
+
+
+
     <br>
-
-
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->

@@ -20,7 +20,7 @@ session_start();
 
 <body>
 
-    <header id="myHeader-sticky">
+    <header class="nav-header">
         <div class="logo">
             <a href="image/index.php">
                 <img src="image/logov3.jpg" alt="Logo">
@@ -39,7 +39,7 @@ session_start();
     </header>
 
 
-    <img class="logoimg" src="image/background.jpg" alt="">
+    <img class="logoimg" src="image/background.jpg" alt="" width="200" height="300">
 
     <div class="profile">
         <img src="image/me.jpg" alt="">

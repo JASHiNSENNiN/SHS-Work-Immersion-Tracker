@@ -2,10 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* background-color: #f4f4f4; */
-  /* background-image: url("../img/frontpage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 section {
@@ -168,7 +164,7 @@ input::placeholder {
   border-radius: 8px;
 }
 
-header {
+.nav-header {
   background-color: #fff;
   color: #fff;
   padding-top: 5px;
@@ -199,7 +195,7 @@ header {
   color: #172738;
 }
 
-nav:focus {
+nav {
   text-align: center;
   display: flex;
 }
@@ -242,23 +238,8 @@ nav a:hover::after {
   transform-origin: bottom left;
 }
 
-/* .login-btn {
-            background-color: #1bbc9b;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .login-btn:hover {
-            background-color: #0e745f;
-        
-
-        } */
-
 .login-btn {
+  /* border-radius: 5px; */
   margin-right: 10px;
   display: inline-block;
   padding: 0.9rem 1.8rem;
@@ -293,20 +274,6 @@ nav a:hover::after {
   transform: translateX(0);
   color: #fff;
 }
-
-/* .css-1ld7x2h {
-    box-sizing: border-box;
-    height: 2rem;
-    min-width: 0;
-  width: 0.0625rem;
-}
-.css-1ld7x2h {
-    background-color: #d4d2d0;
-    margin: 0.75rem 0 0;
-    margin-top: 0;
-        position: absolute;
-    left: 90%;
-} */
 
 @media only screen and (max-width: 1085px) {
   .header {
@@ -449,13 +416,6 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* body {
-    background-color: var(--body-bg-color);
-    font-family: var(--body-font);
-    font-size: 15px;
-    color: var(--body-color);
-   } */
-
 .dark-light svg {
   margin-right: 8px;
   width: 22px;
@@ -510,34 +470,6 @@ html {
     margin-right: 12px;
   }
 }
-
-/* .header {
-    display: flex;
-    align-items: center;
-    transition: box-shadow 0.3s;
-    flex-shrink: 0;
-    padding: 0 40px;
-    white-space: nowrap;
-    background-color: var(--header-bg-color);
-    height: 60px;
-    width: 100%;
-    font-size: 14px;
-    justify-content: space-between;
-    &-menu a {
-     text-decoration: none;
-     color: var(--body-color);
-     font-weight: 500;
-     &:hover {
-      color:var(--active-color);
-     }
-     &:not(:first-child) {
-      margin-left: 30px;
-     }
-     &.active {
-      color: var(--active-color);
-     }
-    }
-   } */
 
 .user-settings {
   display: flex;
@@ -600,24 +532,6 @@ html {
   }
 }
 
-/* .search-bar {
-    height: 55px;
-    width: 100%;
-    position: relative;
-    input {
-     width: 100%;
-     height: 100%;
-     display: block;
-     background-color: transparent;
-     border: none;
-     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%230162ff'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
-     background-repeat: no-repeat;
-     background-size: 14px;
-     background-position: 0 50%;
-     padding: 0 25px 0 305px;
-    }
-   } */
-
 .search-location,
 .search-job,
 .search-salary {
@@ -628,13 +542,6 @@ html {
   font-weight: 500;
   padding: 0 25px;
   height: 100%;
-  /* input {
-     width: 100%;
-     height: 100%;
-     display: block;
-     background-color: transparent;
-     border: none;
-    } */
   svg {
     margin-right: 8px;
     width: 18px;
@@ -706,15 +613,6 @@ html {
     line-height: 1.6em;
     margin-bottom: 20px;
   }
-  /* input {
-     width: 100%;
-     padding: 10px;
-     display: block;
-     border-radius: 6px;
-     background-color: var(--header-bg-color);
-     border: none;
-     font-size: 13px;
-    } */
 }
 
 .search-buttons {
@@ -1353,16 +1251,3 @@ html {
     padding: 0 20px;
   }
 }
-
-/* --------------------------------------Header Sticky--------------------------- */
-
-/* .stickyhead {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-}
-
-.stickyhead + .content-sticky {
-  padding-top: 102px;
-} */

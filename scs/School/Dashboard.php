@@ -22,6 +22,7 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
+            </a>
         </div>
 
         <nav>
