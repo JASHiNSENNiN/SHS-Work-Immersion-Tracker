@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Search Portal</title>
     <link rel="stylesheet" type="text/css" href="../css/post_wi.css">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/footer.css"> -->
 </head>
 <style>
 
@@ -42,10 +42,10 @@
         <section class="section-yj7db7">
             <h1 class="sfa">Let's Workify Your Work Life</h1>
             <div class="searchwork">
-                <form action="#" method="get">
+                <form action="login_form.php" method="get">
                     <!-- <input type="text" name="keywords" placeholder="Immerssion  / Keywords / Company">
                 <input type="text" name="location" placeholder="Location"> -->
-                    <input type="submit" value="Post a Work Immersion!">
+                    <input type="submit" value="Post a Work Immersion!"  >
 
                 </form>
             </div>
@@ -111,6 +111,11 @@
             </section>
 
     </div>
+    <footer>
+    <div class="sub-footer">
+2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+</div>
+    </footer>
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
