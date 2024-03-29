@@ -17,13 +17,6 @@ img {
   display: block;
   border-radius: 10px;
 }
-.Settings {
-  margin-left: 75%;
-  margin-right: auto;
-  margin-top: -4%;
-  display: block;
-  width: 20%;
-}
 
 .profile img {
   height: 150px;
@@ -240,13 +233,6 @@ a {
   text-decoration: none;
 }
 
-button,
-input[type="submit"] {
-  background: inherit;
-  border: 0;
-  cursor: pointer;
-}
-
 html {
   font-size: 100%;
 }
@@ -357,15 +343,24 @@ button,
 .button {
   display: inline-block;
   padding: 16px 35px;
-  background: #103c8a;
-  color: #fff;
-  border-radius: 5px;
+  background: #b4b4b8;
+  color: #000000;
+  border-radius: 15px;
   transition: background 0.3s ease-in-out;
+  font-weight: bold;
+}
+.Settings {
+  margin-left: 75%;
+  margin-right: auto;
+  margin-top: -4%;
+  display: block;
+  width: 20%;
+  box-sizing: border-box;
 }
 
 button:hover,
 .button:hover {
-  background: #1550b8;
+  background: #b4b4b8;
   color: #fff;
 }
 
@@ -572,16 +567,13 @@ footer {
   bottom: 0;
 }
 
-.content:not(.active) {
-  display: none;
-}
 /* --end-- */
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 h1,
@@ -643,6 +635,9 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
+  color: #1bbc9b;
+}
+.active {
   color: #1bbc9b;
 }
 
