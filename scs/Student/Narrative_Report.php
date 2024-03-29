@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 
@@ -287,8 +288,7 @@
 
                         <div class="mb-4">
                             <label class="form-label" for="feedback_comments">Comments:</label><br>
-                            <textarea class="textarea" required rows="10" name="comments"
-                                id="feedback_comments"></textarea>
+                            <textarea class="textarea" rows="10" name="comments" id="feedback_comments"></textarea>
                         </div>
 
                         <div class="row">
@@ -304,15 +304,15 @@
                                     placeholder="Your Email" />
                             </div>
                         </div><br>
-                        <button type="submit" class="Submit" style="width: auto;">Submit</button>
+                        <button type="submit" class="Submit" onclick="openPopup()">Submit</button>
                     </form>
-
-
-                    <!-- <button type="submit" class="btn btn-primary" style="width: auto;">Submit</button> -->
+                    <div class="popup" id="popup">
+                        <img src="image/404-tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p> Your details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
                 </div>
-
-
-
             </form>
             <!-- <div class="button">
                         <a href="#">See All</a>
@@ -322,6 +322,8 @@
     </div>
 
 
+
+
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
@@ -329,18 +331,32 @@
     </footer>
 
     <script>
-        $("input:checkbox").on('click', function () {
+    $("input:checkbox").on('click', function() {
 
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
+
+    <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+    </script>
+
+
 
 </body>
 
