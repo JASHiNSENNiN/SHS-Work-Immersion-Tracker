@@ -42,15 +42,16 @@
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Dashboard</a>
+        <a href="Dashboard.php">Analytics</a>
             <a href="Student.php">Student</a>
-            <a href="Company.php">Company</a>
+            <a href="Company.php">Work Immersion List</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
 
@@ -105,12 +106,11 @@
 
 
     <br>
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
-
-    </footer>
-
+    
+  <div class="sub-footer">
+    2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+  </div>
+  
 
 </body>
 
