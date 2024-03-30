@@ -17,13 +17,6 @@ img {
   display: block;
   border-radius: 10px;
 }
-.Settings {
-  margin-left: 75%;
-  margin-right: auto;
-  margin-top: -4%;
-  display: block;
-  width: 20%;
-}
 
 .profile img {
   height: 150px;
@@ -260,15 +253,16 @@ button,
 .button {
   display: inline-block;
   padding: 16px 35px;
-  background: #103c8a;
-  color: #fff;
-  border-radius: 5px;
+  background: #b4b4b8;
+  color: #000000;
+  border-radius: 15px;
   transition: background 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 button:hover,
 .button:hover {
-  background: #1550b8;
+  background: #b4b4b8;
   color: #fff;
 }
 
@@ -302,7 +296,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 h1,
@@ -603,11 +597,18 @@ table {
 }
 
 .lb {
-  margin-left: 45px;
+  margin-left: 39px;
 }
 
 input[type="text"] {
-  width: 25%;
+  width: 40%;
+  padding: 15px;
+  margin: 13px 8px 17px 40px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.row input[type="text"] {
+  width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -622,6 +623,30 @@ input[type="text"] {
 .row {
   width: 100%;
   display: inline-flex;
+}
+.col {
+  margin: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.form-check {
+  margin: 10px;
+}
+.textarea {
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+.Submit {
+  display: inline-block;
+  padding: 16px 35px;
+  background: #008dda;
+  color: #fff;
+  border-radius: 15px;
+  transition: background 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 /* Header */
@@ -786,4 +811,56 @@ nav a:hover::after {
   display: flex;
   text-align: center;
   width: fit-content;
+}
+
+.popup {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 356%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+.sticky {
+  position: fixed;
 }

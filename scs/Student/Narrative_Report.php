@@ -7,7 +7,9 @@
     <title>Student Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" href="css/Narrative.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -44,7 +46,7 @@
         <img src="image/me.jpg" alt="">
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button> <i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
@@ -74,11 +76,10 @@
         <div class="recent-sales box">
 
             <br>
-
-            <label class="lb" for="studentid">Company name:</label>
-            <input type="text" placeholder="Enter Company name" name="studentid" id="studentid" required>
-            <!-- <div class="title">Popularity Company </div> -->
-            <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
+            <div class="mb-4">
+                <label class="lb" for="studentid">Company name:</label><br>
+                <input type="text" placeholder="Enter Company name" name="studentid" id="studentid" required>
+            </div>
 
             <table class="tbl1">
                 <!-- <tr>
@@ -133,7 +134,7 @@
             <br>
             <form action="">
                 <div class="container">
-                    <h3>Evaluation </h3>
+                    <h1>Evaluation </h1>
                     <p>Please fill in this evaluation form.</p>
                     <hr class="hr1">
 
@@ -254,7 +255,7 @@
                     <hr>
                     <br>
 
-                    <h2>Feedback</h2>
+                    <h1>Feedback</h1>
                     <div class="mb-4 small">
                         Please provide your feedback in the form below
                     </div>
@@ -287,8 +288,7 @@
 
                         <div class="mb-4">
                             <label class="form-label" for="feedback_comments">Comments:</label><br>
-                            <textarea class="form-control" required rows="6" name="comments"
-                                id="feedback_comments"></textarea>
+                            <textarea class="textarea" rows="10" name="comments" id="feedback_comments"></textarea>
                         </div>
 
                         <div class="row">
@@ -304,15 +304,15 @@
                                     placeholder="Your Email" />
                             </div>
                         </div><br>
-                        <button type="submit" class="btn btn-success btn-lg" style="width: auto;">Post</button>
+                        <button type="submit" class="Submit" onclick="openPopup()">Submit</button>
                     </form>
-
-
-                    <!-- <button type="submit" class="btn btn-primary" style="width: auto;">Submit</button> -->
+                    <div class="popup" id="popup">
+                        <img src="image/404-tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p> Your details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
                 </div>
-
-
-
             </form>
             <!-- <div class="button">
                         <a href="#">See All</a>
@@ -320,6 +320,8 @@
         </div>
 
     </div>
+
+
 
 
     <footer>
@@ -341,6 +343,20 @@
         }
     });
     </script>
+
+    <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+    </script>
+
+
 
 </body>
 

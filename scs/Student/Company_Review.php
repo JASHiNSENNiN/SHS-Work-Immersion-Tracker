@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -45,14 +46,14 @@
         <img src="image/me.jpg" alt="">
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button><i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; left:33%;">
             <a class="link" id="#area" href="Company_Area.php"> Company Area</a>
-            <a class="link" id="#review" href="Company_Review.php">Company review</a>
+            <a class="active" id="#review" href="Company_Review.php">Company review</a>
             <a class="link" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
 
             <a class="link" id="#details">Details</a>

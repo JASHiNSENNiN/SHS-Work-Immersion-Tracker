@@ -13,6 +13,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 
@@ -45,13 +46,13 @@ session_start();
         <img src="image/me.jpg" alt="">
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
-        <div><button class="Settings"> Edit Profile</button></div>
+        <div><button class="Settings"><i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a class="link" id="#area" href="company_area.php"> Company Area</a>
+            <a class="active" id="#area" href="company_area.php"> Company Area</a>
             <a class="link" id="#review" href="Company_Review.php">Company review</a>
             <a class="link" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
             <!-- <a class="link" id="#contact">Contact</a> -->
