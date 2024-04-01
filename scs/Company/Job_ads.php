@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/job_ads.css">
 
     <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.snow.css">
     <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.core.css">
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quill-image-resize-module@3.0.0/image-resize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -29,6 +27,7 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
+            </a>
         </div>
 
         <nav>
@@ -44,13 +43,13 @@
         <img src="image/NIA.png" alt="">
         <div class="name">National Irrigation Administration</div>
         <label class="strand" for="">NIA</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button><i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Job_ads.php"> Job Ads</a>
+            <a class="active" href="Job_ads.php"> Job Ads</a>
             <a href="Job_request.php">Job Request</a>
             <a href="Faculty_report.php">Faculty Report</a>
             <a href="Details.php">Details</a>
@@ -94,7 +93,7 @@
                     <hr>
 
                     <p>By creating job ads you agree to our <a href="#">Terms & Privacy</a>.</p>
-                    <button type="submit" class="registerbtn">Submit</button>
+                    <button type="submit" class="Submit">Submit</button>
                 </div>
 
             </form>

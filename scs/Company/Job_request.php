@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/job_request.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
 
     <!-- -------------font--------- -->
@@ -25,6 +25,7 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
+            </a>
         </div>
 
         <nav>
@@ -40,14 +41,14 @@
         <img src="image/NIA.png" alt="">
         <div class="name">National Irrigation Administration</div>
         <label class="strand" for="">NIA</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button><i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Job_ads.php"> Job Ads</a>
-            <a href="Job_request.php">Job Request</a>
+            <a class="active" href="Job_request.php">Job Request</a>
             <a href="Faculty_report.php">Faculty Report</a>
             <a href="Details.php">Details</a>
 
@@ -88,8 +89,8 @@
                     <td>HUMSS</td>
                     <td>OLSHCO</td>
                     <td>Guimba</td>
-                    <td><button type="button" class="btn btn-success">Accept</button>
-                        <button type="button" class="btn btn-primary">Details</button>
+                    <td><button type="button" class="button-9">Accept</button>
+                        <button type="button" class="button-4">Details</button>
                     </td>
                 </tr>
                 <tr>
@@ -99,8 +100,8 @@
                     <td>GAS</td>
                     <td>National</td>
                     <td>Guimba</td>
-                    <td><button type="button" class="btn btn-success">Accept</button>
-                        <button type="button" class="btn btn-primary">Details</button>
+                    <td><button type="button" class="button-9">Accept</button>
+                        <button type="button" class="button-4">Details</button>
                     </td>
 
                 </tr>
@@ -111,8 +112,8 @@
                     <td>STEM</td>
                     <td>BLUN</td>
                     <td>Guimba</td>
-                    <td><button type="button" class="btn btn-success">Accept</button>
-                        <button type="button" class="btn btn-primary">Details</button>
+                    <td><button type="button" class="button-9">Accept</button>
+                        <button type="button" class="button-4">Details</button>
                     </td>
 
                 </tr>

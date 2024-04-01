@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -37,14 +38,14 @@
         <img src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button> <i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Dashboard.php">Dashboard</a>
-            <a href="Student.php">Student</a>
+            <a class="active" href="Student.php">Student</a>
             <a href="Company.php">Company</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
@@ -99,40 +100,40 @@
                             <th>Start End</th>
                         </tr>
                         <tr>
-                            <td data-th="#">UPS5005</td>
-                            <td data-th="Name">UPS</td>
-                            <td data-th="Company">ASDF19218</td>
-                            <td data-th="Status">06/25/2016</td>
-                            <td data-th="Start Date">12/25/2016</td>
-                            <td data-th="Start End">$8,322.12</td>
+                            <td data-th="#">1</td>
+                            <td data-th="Name">Renata French</td>
+                            <td data-th="Company">NIA</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">12/30/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS3449</td>
-                            <td data-th="Supplier Name">UPS South Inc.</td>
-                            <td data-th="Invoice Number">ASDF29301</td>
-                            <td data-th="Invoice Date">6/24/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$3,255.49</td>
+                            <td data-th="#">2</td>
+                            <td data-th="Name">Juelz Adkins</td>
+                            <td data-th="Company">PNP</td>
+                            <td data-th="Status">Pending</td>
+                            <td data-th="Start Date">0/0/2024</td>
+                            <td data-th="Start End">0/0/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">BOX5599</td>
-                            <td data-th="Supplier Name">BOX Pro West</td>
-                            <td data-th="Invoice Number">ASDF43000</td>
-                            <td data-th="Invoice Date">6/27/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$45,255.49</td>
+                            <td data-th="#">3</td>
+                            <td data-th="Name">Navy Meza</td>
+                            <td data-th="Company">Landbank</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">12/30/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">PAN9999</td>
-                            <td data-th="Supplier Name">Pan Providers and Co.</td>
-                            <td data-th="Invoice Number">ASDF33433</td>
-                            <td data-th="Invoice Date">6/29/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$12,335.69</td>
+                            <td data-th="#">4</td>
+                            <td data-th="Name">Rylan Hammond</td>
+                            <td data-th="Company">Carmel</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/1/2024</td>
+                            <td data-th="Start End">12/10/2024</td>
                         </tr>
                     </tbody>
                 </table>
-                <h3>Resize Me</h3>
+                <!-- <h3>Resize Me</h3> -->
             </div>
         </div>
 
@@ -142,48 +143,48 @@
                 <table class="rwd-table">
                     <tbody>
                         <tr>
-                            <th>Supplier Code</th>
-                            <th>Supplier Name</th>
-                            <th>Invoice Number</th>
-                            <th>Invoice Date</th>
-                            <th>Due Date</th>
-                            <th>Net Amount</th>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                            <th>Start End</th>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS5005</td>
-                            <td data-th="Supplier Name">UPS</td>
-                            <td data-th="Invoice Number">ASDF19218</td>
-                            <td data-th="Invoice Date">06/25/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$8,322.12</td>
+                            <td data-th="#">1</td>
+                            <td data-th="Name">Della Morse</td>
+                            <td data-th="Company">BDO</td>
+                            <td data-th="Status">Pending</td>
+                            <td data-th="Start Date">0/0/2016</td>
+                            <td data-th="Start End">0/0/2016</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS3449</td>
-                            <td data-th="Supplier Name">UPS South Inc.</td>
-                            <td data-th="Invoice Number">ASDF29301</td>
-                            <td data-th="Invoice Date">6/24/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$3,255.49</td>
+                            <td data-th="#">2</td>
+                            <td data-th="Name">Jerry Fischer</td>
+                            <td data-th="Company">NIA</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2016</td>
+                            <td data-th="Start End">06/25/2016</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">BOX5599</td>
-                            <td data-th="Supplier Name">BOX Pro West</td>
-                            <td data-th="Invoice Number">ASDF43000</td>
-                            <td data-th="Invoice Date">6/27/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$45,255.49</td>
+                            <td data-th="#">3</td>
+                            <td data-th="Name">Gabriela Carlson</td>
+                            <td data-th="Company">Sr. Product Designer</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2016</td>
+                            <td data-th="Start End">06/25/2016</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">PAN9999</td>
-                            <td data-th="Supplier Name">Pan Providers and Co.</td>
-                            <td data-th="Invoice Number">ASDF33433</td>
-                            <td data-th="Invoice Date">6/29/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$12,335.69</td>
+                            <td data-th="#">4</td>
+                            <td data-th="Name">Demetrius Pollard</td>
+                            <td data-th="Company">User Experience Designer</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2016</td>
+                            <td data-th="Start End">06/25/2016</td>
                         </tr>
                     </tbody>
                 </table>
-                <h3>Resize Me</h3>
+                <!-- <h3>Resize Me</h3> -->
             </div>
         </div>
 
@@ -193,48 +194,48 @@
                 <table class="rwd-table">
                     <tbody>
                         <tr>
-                            <th>Supplier Code</th>
-                            <th>Supplier Name</th>
-                            <th>Invoice Number</th>
-                            <th>Invoice Date</th>
-                            <th>Due Date</th>
-                            <th>Net Amount</th>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                            <th>Start End</th>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS5005</td>
-                            <td data-th="Supplier Name">UPS</td>
-                            <td data-th="Invoice Number">ASDF19218</td>
-                            <td data-th="Invoice Date">06/25/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$8,322.12</td>
+                            <td data-th="#">1</td>
+                            <td data-th="Name">Paxton Bennett</td>
+                            <td data-th="Company">Pico Bank</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS3449</td>
-                            <td data-th="Supplier Name">UPS South Inc.</td>
-                            <td data-th="Invoice Number">ASDF29301</td>
-                            <td data-th="Invoice Date">6/24/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$3,255.49</td>
+                            <td data-th="#">2</td>
+                            <td data-th="Name">Maryam Hurst</td>
+                            <td data-th="Company">OLSCHO</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">BOX5599</td>
-                            <td data-th="Supplier Name">BOX Pro West</td>
-                            <td data-th="Invoice Number">ASDF43000</td>
-                            <td data-th="Invoice Date">6/27/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$45,255.49</td>
+                            <td data-th="#">3</td>
+                            <td data-th="Name">Ali Lewis</td>
+                            <td data-th="Company">PNP</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">PAN9999</td>
-                            <td data-th="Supplier Name">Pan Providers and Co.</td>
-                            <td data-th="Invoice Number">ASDF33433</td>
-                            <td data-th="Invoice Date">6/29/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$12,335.69</td>
+                            <td data-th="#">4</td>
+                            <td data-th="Name">Municipal</td>
+                            <td data-th="Company">Product Designer</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                     </tbody>
                 </table>
-                <h3>Resize Me</h3>
+                <!-- <h3>Resize Me</h3> -->
             </div>
         </div>
 
@@ -244,48 +245,48 @@
                 <table class="rwd-table">
                     <tbody>
                         <tr>
-                            <th>Supplier Code</th>
-                            <th>Supplier Name</th>
-                            <th>Invoice Number</th>
-                            <th>Invoice Date</th>
-                            <th>Due Date</th>
-                            <th>Net Amount</th>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                            <th>Start End</th>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS5005</td>
-                            <td data-th="Supplier Name">UPS</td>
-                            <td data-th="Invoice Number">ASDF19218</td>
-                            <td data-th="Invoice Date">06/25/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$8,322.12</td>
+                            <td data-th="#">1</td>
+                            <td data-th="Name">Jovanni Daniel</td>
+                            <td data-th="Company">Pico Bank</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">UPS3449</td>
-                            <td data-th="Supplier Name">UPS South Inc.</td>
-                            <td data-th="Invoice Number">ASDF29301</td>
-                            <td data-th="Invoice Date">6/24/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$3,255.49</td>
+                            <td data-th="#">2</td>
+                            <td data-th="Name">Ella Haynes</td>
+                            <td data-th="Company">Pico Bank</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">BOX5599</td>
-                            <td data-th="Supplier Name">BOX Pro West</td>
-                            <td data-th="Invoice Number">ASDF43000</td>
-                            <td data-th="Invoice Date">6/27/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$45,255.49</td>
+                            <td data-th="#">3</td>
+                            <td data-th="Name">Dorian Buckley</td>
+                            <td data-th="Company">Pico Bank</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                         <tr>
-                            <td data-th="Supplier Code">PAN9999</td>
-                            <td data-th="Supplier Name">Pan Providers and Co.</td>
-                            <td data-th="Invoice Number">ASDF33433</td>
-                            <td data-th="Invoice Date">6/29/2016</td>
-                            <td data-th="Due Date">12/25/2016</td>
-                            <td data-th="Net Amount">$12,335.69</td>
+                            <td data-th="#">4</td>
+                            <td data-th="Name">Margot Todd</td>
+                            <td data-th="Company">Pico Bank</td>
+                            <td data-th="Status">Deployed</td>
+                            <td data-th="Start Date">12/25/2024</td>
+                            <td data-th="Start End">06/25/2024</td>
                         </tr>
                     </tbody>
                 </table>
-                <h3>Resize Me</h3>
+                <!-- <h3>Resize Me</h3> -->
             </div>
         </div>
     </div>

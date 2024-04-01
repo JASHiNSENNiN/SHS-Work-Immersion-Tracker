@@ -7,6 +7,7 @@
     <title>School Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Reports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -36,7 +37,7 @@
         <img src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button> <i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
@@ -45,7 +46,7 @@
             <a href="Dashboard.php">Dashboard</a>
             <a href="Student.php">Student</a>
             <a href="Company.php">Company</a>
-            <a href="Reports.php">Reports</a>
+            <a class="active" href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
 
@@ -99,7 +100,7 @@
                 </tr>
             </tbody>
         </table>
-        <h3>Resize Me</h3>
+        <!-- <h3>Resize Me</h3> -->
     </div>
 
 
