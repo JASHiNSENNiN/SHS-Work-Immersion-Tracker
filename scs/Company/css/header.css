@@ -165,7 +165,8 @@ nav a:hover::after {
     height: 1px;
     background-color: #d4d2d0;
     border: none;
-    margin: 0.75rem 0 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
