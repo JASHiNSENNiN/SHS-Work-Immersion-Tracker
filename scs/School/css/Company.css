@@ -5,7 +5,16 @@
     height: 1px;
     background-color: #d4d2d0;
     border: none;
-    margin: 0.75rem 0 0;
+    /* margin: 0.75rem 0 0; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
 }
 
 body {
@@ -345,6 +354,10 @@ button,
     transition: background 0.3s ease-in-out;
 }
 
+.active {
+    color: #1bbc9b;
+}
+
 .profile img {
     height: 150px;
     width: 150px;
@@ -372,6 +385,7 @@ button,
 
 hr {
     width: 75%;
+    margin: auto;
 }
 
 
@@ -392,12 +406,7 @@ hr {
 
 /* ------------------------Job List----------------------- */
 
-* {
-    outline: none;
-    box-sizing: border-box;
-}
-
-:root {
+ :root {
     --body-bg-color: #e5ecef;
     --theme-bg-color: #fafafb;
     --body-font: "Poppins", sans-serif;

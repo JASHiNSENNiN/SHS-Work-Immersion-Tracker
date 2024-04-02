@@ -7,8 +7,9 @@
     <title>Student Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" href="css/Narrative.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 
 
     <!-- -------------font--------- -->
@@ -310,7 +311,7 @@
                         <img src="image/404-tick.png" alt="">
                         <h2>Thank You!</h2>
                         <p> Your details has been successfully submitted. Thanks!</p>
-                        <button type="button" onclick="closePopup()">OK</button>
+                        <a href="Company_Area.php"><button type="button" onclick="closePopup()">OK</button></a>
                     </div>
                 </div>
             </form>
@@ -331,29 +332,29 @@
     </footer>
 
     <script>
-    $("input:checkbox").on('click', function() {
+        $("input:checkbox").on('click', function () {
 
-        var $box = $(this);
-        if ($box.is(":checked")) {
-            var group = "input:checkbox[name='" + $box.attr("name") + "']";
-            $(group).prop("checked", false);
-            $box.prop("checked", true);
-        } else {
-            $box.prop("checked", false);
-        }
-    });
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
     </script>
 
     <script>
-    let popup = document.getElementById("popup");
+        let popup = document.getElementById("popup");
 
-    function openPopup() {
-        popup.classList.add("open-popup");
-    }
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
 
-    function closePopup() {
-        popup.classList.remove("open-popup");
-    }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
     </script>
 
 

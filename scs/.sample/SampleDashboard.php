@@ -53,28 +53,37 @@
         </nav>
     </div>
 
-    <div class="container">
-        <input type="text" name="" id="" required>
-        <button type="submit" class="btn" onclick="openPopup()"> Submit</button>
-        <div class="popup" id="popup">
-            <img src="image/404-tick.png" alt="">
-            <h2>Thank You!</h2>
-            <p> Your details has been successfully submitted. Thanks!</p>
-            <button type="button" onclick="closePopup()">OK</button>
-        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <form action="" method="POST" class="form">
+        <div class="container">
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <button type="submit" class="btn" onclick="openPopup()"> Submit</button>
 
-    </div>
+            <div class="popup" id="popup">
+                <img src="image/404-tick.png" alt="">
+                <h2>Thank You!</h2>
+                <p> Your details has been successfully submitted. Thanks!</p>
+                <button type="submit" onclick="closePopup()">OK</button>
+            </div>
+
+        </div>
+    </form>
 
     <script>
-        let popup = document.getElementById("popup");
-
-        function openPopup() {
+    let popup = document.getElementById("popup");
+    $(document).ready(function() {
+        $('.form').on('submit', function openPopup() {
+            // alert('Your details were successfully received.');
+            // function openPopup() {
             popup.classList.add("open-popup");
-        }
+            // }
 
-        function closePopup() {
-            popup.classList.remove("open-popup");
-        }
+            // function closePopup() {
+            //     popup.classList.remove("open-popup");
+            // }
+        });
+    });
     </script>
 
     <br>

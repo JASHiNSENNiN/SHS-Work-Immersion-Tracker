@@ -8,11 +8,12 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>school Dashboard</title>
+    <title>School Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/company.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 
@@ -45,7 +46,7 @@ session_start();
         <img src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button><i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
@@ -53,7 +54,11 @@ session_start();
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
         <a href="Dashboard.php">Analytics</a>
             <a href="Student.php">Student</a>
+<<<<<<< HEAD
             <a href="Company.php">Work Immersion List</a>
+=======
+            <a class="active" href="Company.php">Company</a>
+>>>>>>> 99b31b0afb06282e8a9691a01c1bad4106eb836f
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
@@ -861,50 +866,50 @@ session_start();
 
 
     <script>
-        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
     <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("btnApply");
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnApply");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+    }
     </script>
     <script>
-        window.onscroll = function () {
-            myFunction()
-        };
+    window.onscroll = function() {
+        myFunction()
+    };
 
-        var header = document.getElementById("myHeader-sticky");
-        var sticky = header.offsetTop;
+    var header = document.getElementById("myHeader-sticky");
+    var sticky = header.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("stickyhead");
-            } else {
-                header.classList.remove("stickyhead");
-            }
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("stickyhead");
+        } else {
+            header.classList.remove("stickyhead");
         }
+    }
     </script>
 
 </body>
