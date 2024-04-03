@@ -29,7 +29,7 @@
         </div>
         <script src="./js/welcome_text.js"></script>
         <div id="welcome_screen">
-            <p>Full Stack Web Developer | Game Developer</p>
+            <p>Full Stack Web Developer | Game Developer | Cyber Security Analyst</p>
         </div>
     </div>
 
