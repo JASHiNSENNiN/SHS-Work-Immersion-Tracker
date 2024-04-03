@@ -52,13 +52,10 @@ session_start();
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-        <a href="Dashboard.php">Analytics</a>
+        <a class="active" href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
             <a href="Student.php">Student</a>
-<<<<<<< HEAD
-            <a href="Company.php">Work Immersion List</a>
-=======
-            <a class="active" href="Company.php">Company</a>
->>>>>>> 99b31b0afb06282e8a9691a01c1bad4106eb836f
+            <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 

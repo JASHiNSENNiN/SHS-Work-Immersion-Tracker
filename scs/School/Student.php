@@ -7,10 +7,10 @@
     <title>School Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Student.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -43,10 +43,11 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Dashboard</a>
-            <a href="Student.php">Student</a>
-            <a href="Company.php">Company</a>
+    <nav style="position:relative; margin-left:auto; margin-right:auto;">          
+            <a href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
+            <a class="active" href="Student.php">Student</a>
+            <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 

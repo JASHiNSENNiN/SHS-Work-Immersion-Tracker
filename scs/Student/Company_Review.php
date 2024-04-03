@@ -24,13 +24,7 @@
             <a href="index.php">
                 <img src="image/logov3.jpg" alt="Logo">
             </a>
-            <!-- <nav>
-                <a href="../index.php">Home</a>
-                <a href="Student_Dashboard.php">Company Review</a>
-                <a href="contact.php">Contact</a>
-                <a href="aboutUs.php">About</a>
 
-            </nav> -->
         </div>
 
         <nav>
@@ -51,7 +45,7 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; left:33%;">
+        <nav style="position:relative; margin-left: auto; margin-right: auto; ">
             <a class="link" id="#area" href="Company_Area.php"> Company Area</a>
             <a class="active" id="#review" href="Company_Review.php">Company review</a>
             <a class="link" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
@@ -61,6 +55,7 @@
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
 
@@ -95,8 +90,7 @@
     <section class="section-gutter company-grid">
         <div class="container">
             <div class="section-bg-white section-wrapper company-grid__wrapper">
-                <header
-                    class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
+                <header class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
                     <h2 class="h4 company-grid__title">Popular companies</h2>
                     <div class="section-wrapper__header-cta">
                         <a class="link-text" href="/companies">View all <i class="fas fa-angle-double-right"></i></a>
@@ -109,8 +103,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -144,8 +137,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -179,8 +171,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -214,8 +205,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -249,8 +239,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -284,8 +273,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -319,8 +307,7 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name"
-                                                src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -368,16 +355,16 @@
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
-    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
     <script>
-    $(".link").click(function(e) {
-        e.preventDefault();
-        $(".content").removeClass("active");
-        var content_id = $(this).attr("id");
-        $(content_id).addClass("active");
-    });
+        $(".link").click(function(e) {
+            e.preventDefault();
+            $(".content").removeClass("active");
+            var content_id = $(this).attr("id");
+            $(content_id).addClass("active");
+        });
     </script>
 
 

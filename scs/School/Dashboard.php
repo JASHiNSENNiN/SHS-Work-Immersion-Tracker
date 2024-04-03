@@ -43,9 +43,10 @@
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Analytics</a>
-            <a href="Student.php">Student</a>
             <a href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
+            <a href="Student.php">Student</a>
+            <a class="active" href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
