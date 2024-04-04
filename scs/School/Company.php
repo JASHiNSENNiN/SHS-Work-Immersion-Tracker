@@ -1,7 +1,4 @@
-<!-- <?php
-include_once "backend/php/config.php";
-session_start();
-?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
