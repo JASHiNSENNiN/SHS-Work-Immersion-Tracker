@@ -44,10 +44,12 @@ Proponents. This study will benefit proponents by allowing them to expand their 
 
 Future Proponents. This study can be used by future proponents as their basis for related studies. 
  
-## Members
+## Links 
 
-- Josh Cinense
-@JASHiN
+[Gantt-Chart](https://docs.google.com/spreadsheets/d/1Hu5U-JDPpollFbVskDscJW9olF1mlN1x5WJMbuotb08/edit?usp=drivesdk)
+
+
+
 
 
 
