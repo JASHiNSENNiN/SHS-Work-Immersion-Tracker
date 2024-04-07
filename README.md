@@ -49,6 +49,12 @@ Future Proponents. This study can be used by future proponents as their basis fo
 [Gantt-Chart](https://docs.google.com/spreadsheets/d/1Hu5U-JDPpollFbVskDscJW9olF1mlN1x5WJMbuotb08/edit?usp=drivesdk)
 
 
+**Members**
+
+[Josh-Cinense](https://github.com/JASHiNSENNiN?fbclid=IwAR1QEDz7htD6brYzZXKYvtv77EyoLDniuOzOcu1Le5ZTzFvAh8t-0deVOzc_aem_AUlGxqWlGfGIzh9O44j6TGGP-iUcsVMBt07iWlO9XMzgB4K67u1Ze5l9aIx1HHwqhp2zboWy5_7KmA184qIOr2l4)
+[Michael-Jan-Natividad](https://github.com/Leahcim1270?fbclid=IwAR0QbJXiYAN8T15_vdypqHcdzXP_ghCexBUxeabv1O672VhYuUWNPTlhB84_aem_AUmO3qk1db0XZkZ_XPSKjOnCl2ywbWF-7GuqSq1W6hK6RvNO7lncxkloTe0ojmcdlflZZOaz57AcBf24s_pdrXdO)
+
+
 
 
 
