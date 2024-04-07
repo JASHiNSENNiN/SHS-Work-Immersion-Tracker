@@ -46,22 +46,22 @@ Future Proponents. This study can be used by future proponents as their basis fo
  
 ## Links 
 
-### Inline
+**Check our gantt chart**
 
-[Gantt-Chart](https://docs.google.com/spreadsheets/d/1Hu5U-JDPpollFbVskDscJW9olF1mlN1x5WJMbuotb08/edit?usp=drivesdk)
+[Gantt-Chart](https://docs.google.com/spreadsheets/d/1L7D6lxhkZp3pd_tRhSlYWcQgTtq87mwGzEFN8lk_J18/edit#gid=1115838130)
 
 
 **Members**
 
-[Josh-Cinense](https://github.com/JASHiNSENNiN?fbclid=IwAR1QEDz7htD6brYzZXKYvtv77EyoLDniuOzOcu1Le5ZTzFvAh8t-0deVOzc_aem_AUlGxqWlGfGIzh9O44j6TGGP-iUcsVMBt07iWlO9XMzgB4K67u1Ze5l9aIx1HHwqhp2zboWy5_7KmA184qIOr2l4)
+[Josh-Cinense](https://www.facebook.com/profile.php?id=100084192554900&mibextid=ZbWKwL)
 
-[Michael-Jan-Natividad](https://github.com/Leahcim1270?fbclid=IwAR0QbJXiYAN8T15_vdypqHcdzXP_ghCexBUxeabv1O672VhYuUWNPTlhB84_aem_AUmO3qk1db0XZkZ_XPSKjOnCl2ywbWF-7GuqSq1W6hK6RvNO7lncxkloTe0ojmcdlflZZOaz57AcBf24s_pdrXdO)
+[Michael-Jan-Natividad](https://www.facebook.com/profile.php?id=100087115116329&mibextid=ZbWKwL)
 
-[Miguel-Von-Natividad](https://github.com/natividadA?fbclid=IwAR246DIjZuizXBNQJZjQSd1QeioHXnsEHfhCFGRVI9KJlZLndmSQagg_IKk_aem_AUl3NKekCwdGF-aGNd-uxA7tp7gEdwcrz4z93u5CGvNR3eBKtHhGLcVQK_5zKl734vKEipBX4qaGrg5Sbgt42M3r)
+[Miguel-Von-Natividad](https://www.facebook.com/profile.php?id=100088560870026&mibextid=ZbWKwL)
 
-[Russel-Edison-Requina](https://github.com/russ0815?fbclid=IwAR2aq0jpRph-Mpuozb9cILBG31ogy2UWotQQ77E0hjxHnPDLHTiGYYBzB9I_aem_AUn3SjwhqcTGR1rZb-AwqaVurXl292h-T8ALBgdGw3oTcUmfOucjcKxYBoWZK8jUroOdq0qt4L1hjEcGHO6bHiJc)
+[Russel-Edison-Requina](https://www.facebook.com/russeledison.cortez?mibextid=ZbWKwL)
 
-[Marc-Javen-Ramo](https://github.com/ErrorJims?fbclid=IwAR25e48ZpT2Vw48AEMmw-5oqC5y0x1VghAVIKaq_bRU7zIKCHiuxGYQ6iHY_aem_AUkH3iiTzzenUDqkjRT4v8-nvF819IElyzzHpFsFS8t-LCM_PHarWSmPISw5mEOcBMr9KD6t4SAAY8BGJJUDGMlP)
+[Marc-Javen-Ramo](https://www.facebook.com/profile.php?id=100084776268405&mibextid=ZbWKwL)
 
 
 
