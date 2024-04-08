@@ -51,7 +51,7 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; left:33%;">
+        <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="link" id="#area" href="Company_Area.php"> Company Area</a>
             <a class="active" id="#review" href="Company_Review.php">Company review</a>
             <a class="link" id="#narrative" href="Narrative_Report.php">Narrative Report</a>

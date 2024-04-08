@@ -225,7 +225,9 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 nav a::after {
@@ -332,7 +334,9 @@ button,
 }
 
 .active {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 .profile img {

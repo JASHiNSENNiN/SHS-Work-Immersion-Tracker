@@ -103,7 +103,9 @@ button:hover,
   font-weight: bold;
 }
 .active {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 footer {
@@ -316,7 +318,9 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 nav a::after {

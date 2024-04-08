@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
+    <title>Company Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Faculty_report.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -253,7 +257,7 @@
                         <hr>
 
 
-                        <button type="submit" class="button-9">Submit</button>
+                        <button type="submit" onclick="validation();" class="button-9">Submit</button>
                     </div>
 
 
@@ -268,9 +272,29 @@
     </form>
 
     <script>
-    $(document).ready(function() {
-        $('.form').on('submit', function() {
-            alert('Your details were successfully received.');
+    $("input:checkbox").on('click', function() {
+
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
+    </script>
+
+    <script>
+    $(document).ready(function validation() {
+        $('.form').on('submit', function validation() {
+            Swal.fire({
+                title: "Successfully send!",
+                text: "You clicked the button!",
+                icon: "success",
+                showConfirmButton: false,
+                timer: 2500
+            });
         });
     });
     </script>

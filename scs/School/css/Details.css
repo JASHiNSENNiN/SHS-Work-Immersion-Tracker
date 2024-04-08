@@ -6,6 +6,19 @@
 
 /* ----------------Slider---------------------*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.active {
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
+}
+
 img {
   vertical-align: middle;
 }
@@ -49,6 +62,7 @@ img {
 }
 
 hr {
+  margin: auto;
   width: 75%;
 }
 
@@ -60,15 +74,16 @@ button,
 .button {
   display: inline-block;
   padding: 16px 35px;
-  background: #103c8a;
-  color: #fff;
-  border-radius: 5px;
+  background: #b4b4b8;
+  color: #000000;
+  border-radius: 15px;
   transition: background 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 button:hover,
 .button:hover {
-  background: #1550b8;
+  background: #b4b4b8;
   color: #fff;
 }
 
@@ -148,7 +163,9 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 nav a::after {

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/Dashboard.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -38,13 +38,13 @@
         <img src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button> Edit Profile</button></div>
+        <div class="Settings"><button> <i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Dashboard</a>
+            <a class="active" href="Dashboard.php">Dashboard</a>
             <a href="Student.php">Student</a>
             <a href="Company.php">Company</a>
             <a href="Reports.php">Reports</a>

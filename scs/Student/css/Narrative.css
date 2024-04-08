@@ -4,6 +4,13 @@
 
 /* ----------------Slider---------------------*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 img {
   vertical-align: middle;
 }
@@ -42,6 +49,7 @@ img {
 }
 
 hr {
+  margin: auto;
   width: 75%;
 }
 
@@ -607,7 +615,8 @@ input[type="text"] {
   display: inline-block;
   border-radius: 5px;
 }
-.row input[type="text"] {
+.row input[type="text"],
+input[type="email"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -710,10 +719,14 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 .active {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 nav a::after {
   content: "";

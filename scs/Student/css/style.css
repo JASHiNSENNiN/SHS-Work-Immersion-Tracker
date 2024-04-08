@@ -1,7 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+footer {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
 }
 
 section {
@@ -217,7 +226,9 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 nav a::after {
@@ -336,6 +347,7 @@ nav a:hover::after {
 }
 
 hr {
+  margin: auto;
   width: 75%;
 }
 
@@ -365,7 +377,9 @@ button:hover,
   color: #fff;
 }
 .active {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 /* -------------------------line button----------------------------- */
@@ -387,6 +401,12 @@ button:hover,
 * {
   outline: none;
   box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {

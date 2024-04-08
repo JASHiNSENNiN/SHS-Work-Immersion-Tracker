@@ -45,7 +45,7 @@
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Dashboard.php">Dashboard</a>
-            <a class="active" href="Student.php">Student</a>
+            <a class="active1" href="Student.php">Student</a>
             <a href="Company.php">Company</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
@@ -293,12 +293,12 @@
 
 
     <script>
-    $(".box").click(function(e) {
-        e.preventDefault();
-        $(".content").removeClass("active");
-        var content_id = $(this).attr("id");
-        $(content_id).addClass("active");
-    });
+        $(".box").click(function (e) {
+            e.preventDefault();
+            $(".content").removeClass("active");
+            var content_id = $(this).attr("id");
+            $(content_id).addClass("active");
+        });
     </script>
     <br>
     <footer>
