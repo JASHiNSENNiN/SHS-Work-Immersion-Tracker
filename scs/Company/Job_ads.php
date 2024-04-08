@@ -27,7 +27,6 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
-            </a>
         </div>
 
         <nav>
@@ -57,6 +56,7 @@
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
     <br>
@@ -93,7 +93,7 @@
                     <hr>
 
                     <p>By creating job ads you agree to our <a href="#">Terms & Privacy</a>.</p>
-                    <button type="submit" class="Submit">Submit</button>
+                    <button type="submit" class="registerbtn">Submit</button>
                 </div>
 
             </form>
@@ -108,11 +108,10 @@
 
     <script src="css/doc.js"></script>
 
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+    <div class="sub-footer">
+        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+    </div>
 
-    </footer>
 
 
 </body>

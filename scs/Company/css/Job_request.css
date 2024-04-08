@@ -2,9 +2,17 @@
 
 /* -------------Text container-----------*/
 
-/* --------------------joblisting container ---------------------- */
+/* --------------------Line  ---------------------- */
+
+.line_bottom {
+  width: 100% !important;
+  height: 1px;
+  background-color: #d4d2d0;
+  border: none;
+}
 
 /* ----------------Slider---------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +23,7 @@
 img {
   vertical-align: middle;
 }
+
 .logoimg {
   margin-left: auto;
   margin-right: auto;
@@ -22,6 +31,7 @@ img {
   display: block;
   border-radius: 10px;
 }
+
 .Settings {
   margin-left: 75%;
   margin-right: auto;
@@ -39,6 +49,7 @@ img {
   margin-top: -90px;
   border: 5px solid #fff;
 }
+
 .name {
   margin-top: 1%;
   margin-left: 21%;
@@ -46,6 +57,7 @@ img {
   /* size: 10px; */
   font-family: sans-serif;
 }
+
 .strand {
   margin-top: 1%;
   margin-left: 21%;
@@ -75,6 +87,7 @@ hr {
 }
 
 /* ----------------------------company review---------------- */
+
 .Settings button,
 .button {
   display: inline-block;
@@ -193,9 +206,7 @@ hr {
 }
 
 .active {
-  color: #000000;
-  background-color: rgba(27, 188, 155, 0.3);
-  font-weight: bold;
+  color: #1bbc9b;
 }
 
 footer {
@@ -334,6 +345,7 @@ input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
+
 .container {
   padding: 16px;
 }
@@ -417,7 +429,9 @@ div .search-box .bx-search {
   color: white;
   text-align: center;
 }
+
 /* ---header--- */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -484,9 +498,7 @@ nav .login-btn:hover {
 }
 
 nav a:hover {
-  color: #000000;
-  background-color: rgba(27, 188, 155, 0.3);
-  font-weight: bold;
+  color: #1bbc9b;
 }
 
 nav a::after {
@@ -577,4 +589,5 @@ nav a:hover::after {
   min-width: 0;
   width: 0.0625rem;
 }
+
 /* ---end header--- */

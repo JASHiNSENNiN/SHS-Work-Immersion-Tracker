@@ -1,7 +1,3 @@
-<!-- <?php
-include_once "backend/php/config.php";
-session_start();
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,11 +22,6 @@ session_start();
             <a href="image/index.php">
                 <img src="image/logov3.jpg" alt="Logo">
             </a>
-            <!-- <nav>
-                <a href="index.php">Home</a>
-                <a href="./php/job_list.php">Company Review</a>
-                <a href="./php/contact.php">Contact</a>
-            </nav> -->
         </div>
         <nav>
             <div class="css-1ld7x2h eu4oa1w0"></div>
@@ -52,15 +43,17 @@ session_start();
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Dashboard</a>
+        <a class="active" href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
             <a href="Student.php">Student</a>
-            <a class="active" href="Company.php">Company</a>
+            <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
 
@@ -851,10 +844,13 @@ session_start();
         </div>
 
     </div>
-    <footer>
+    <!-- <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
-    </footer>
+    </footer> -->
+    <div class="sub-footer">
+    2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+  </div>
+  
 
 
     <script>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Reports.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
@@ -43,15 +43,17 @@
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Dashboard</a>
+        <a href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
             <a href="Student.php">Student</a>
-            <a href="Company.php">Company</a>
-            <a class="active" href="Reports.php">Reports</a>
+            <a href="Dashboard.php">Analytics</a>
+            <a class="active"  href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
 
@@ -106,12 +108,11 @@
 
 
     <br>
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
-
-    </footer>
-
+    
+  <div class="sub-footer">
+    2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+  </div>
+  
 
 </body>
 

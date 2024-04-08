@@ -24,13 +24,7 @@
             <a href="index.php">
                 <img src="image/logov3.jpg" alt="Logo">
             </a>
-            <!-- <nav>
-                <a href="../index.php">Home</a>
-                <a href="Student_Dashboard.php">Company Review</a>
-                <a href="contact.php">Contact</a>
-                <a href="aboutUs.php">About</a>
 
-            </nav> -->
         </div>
 
         <nav>
@@ -61,6 +55,7 @@
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
 
@@ -368,16 +363,16 @@
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
-    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
     <script>
-    $(".link").click(function(e) {
-        e.preventDefault();
-        $(".content").removeClass("active");
-        var content_id = $(this).attr("id");
-        $(content_id).addClass("active");
-    });
+        $(".link").click(function (e) {
+            e.preventDefault();
+            $(".content").removeClass("active");
+            var content_id = $(this).attr("id");
+            $(content_id).addClass("active");
+        });
     </script>
 
 

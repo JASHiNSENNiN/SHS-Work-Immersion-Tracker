@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Search Portal</title>
+    <title>Work Immersion Search | Workify </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
@@ -28,7 +28,7 @@
             </nav>
         </div>
         <nav>
-            <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
+            <a class="login-btn" href="./php/login_form.php" style="margin-left: 20px;">Sign in</a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
             <a href="./php/post_work_Immersion.php">Post Work Immersion</a>
         </nav>

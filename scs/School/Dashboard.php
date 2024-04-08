@@ -13,7 +13,6 @@
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 
-
 </head>
 
 <body>
@@ -38,15 +37,17 @@
         <img src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button> <i class="fa fa-pencil"></i> Edit profile</button></div>
+        <div class="Settings"><a href="Settings.php"><button> <i class="fa fa-pencil"></i> Edit profile</button></a>
+        </div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a class="active" href="Dashboard.php">Dashboard</a>
+            <a href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
             <a href="Student.php">Student</a>
-            <a href="Company.php">Company</a>
+            <a class="active" href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
 
@@ -55,7 +56,12 @@
     </div>
 
 
+    <hr class="line_bottom">
+
     <br>
+
+
+
 
 
     <footer>

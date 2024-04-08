@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import "https://fonts.googleapis.com/css?family=Open+Sans:600,700";
 @import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Madimi+One&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Rubik+Broken+Fax&display=swap");
+
+/* --------------------Line  ---------------------- */
+
+.line_bottom {
+  width: 100% !important;
+  height: 1px;
+  background-color: #d4d2d0;
+  border: none;
+  /* margin: 0.75rem 0 0; */
+}
+
 /* ----------------Slider---------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +32,7 @@ img {
   display: block;
   border-radius: 10px;
 }
+
 .Settings {
   margin-left: 75%;
   margin-right: auto;
@@ -37,6 +50,7 @@ img {
   margin-top: -90px;
   border: 5px solid #fff;
 }
+
 .name {
   margin-top: 1%;
   margin-left: 21%;
@@ -44,6 +58,7 @@ img {
   /* size: 10px; */
   font-family: sans-serif;
 }
+
 .strand {
   margin-top: 1%;
   margin-left: 21%;
@@ -52,6 +67,7 @@ img {
 }
 
 hr {
+  width: 75%;
   margin: auto;
   width: 75%;
 }
@@ -78,6 +94,12 @@ button,
 .button {
   display: inline-block;
   padding: 16px 35px;
+  background: #103c8a;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+  padding: 16px 35px;
   background: #b4b4b8;
   color: #000000;
   border-radius: 15px;
@@ -87,9 +109,16 @@ button,
 
 button:hover,
 .button:hover {
-  background: #b4b4b8;
+  background: #1550b8;
   color: #fff;
 }
+
+/* footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+} */
 
 .active1 {
   color: #000000;
@@ -105,11 +134,12 @@ footer {
 }
 
 /* -----------Header-------------- */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 h1,
@@ -275,6 +305,7 @@ nav a:hover::after {
   font-weight: 400px;
   font-style: normal;
 }
+
 .box:hover {
   background-color: #0095e5;
   color: white;
@@ -299,6 +330,7 @@ nav a:hover::after {
 }
 
 /* ------table------- */
+
 .rwd-table {
   margin: auto;
   min-width: 300px;
@@ -366,11 +398,13 @@ nav a:hover::after {
 .rwd-table td {
   padding: 0.5em 1em;
 }
+
 @media screen and (max-width: 601px) {
   .rwd-table tr:nth-child(2) {
     border-top: none;
   }
 }
+
 @media screen and (min-width: 600px) {
   .rwd-table tr:hover:not(:first-child) {
     background-color: #d8e7f3;
@@ -400,16 +434,19 @@ nav a:hover::after {
 /* THE END OF THE IMPORTANT STUFF */
 
 /* Basic Styling */
+
 h1 {
   text-align: center;
   font-size: 2.4em;
   color: #000000;
 }
+
 .container2 {
   display: block;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
+
 h3 {
   display: inline-block;
   position: relative;
@@ -417,6 +454,7 @@ h3 {
   font-size: 1.5em;
   color: #080808;
 }
+
 h3:before {
   content: "\25C0";
   position: absolute;
@@ -424,6 +462,7 @@ h3:before {
   -webkit-animation: leftRight 2s linear infinite;
   animation: leftRight 2s linear infinite;
 }
+
 h3:after {
   content: "\25b6";
   position: absolute;
@@ -431,6 +470,7 @@ h3:after {
   -webkit-animation: leftRight 2s linear infinite reverse;
   animation: leftRight 2s linear infinite reverse;
 }
+
 @-webkit-keyframes leftRight {
   0% {
     -webkit-transform: translateX(0);
@@ -445,6 +485,7 @@ h3:after {
     -webkit-transform: translateX(0);
   }
 }
+
 @keyframes leftRight {
   0% {
     transform: translateX(0);
@@ -458,4 +499,14 @@ h3:after {
   100% {
     transform: translateX(0);
   }
+}
+
+/* --------------------------------------sub footer----------------------------- */
+
+.sub-footer {
+  background: #1e1e1e;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding: 10px 0px;
 }

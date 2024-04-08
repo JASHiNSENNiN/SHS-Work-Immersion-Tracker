@@ -7,10 +7,10 @@
     <title>School Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Student.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -43,16 +43,24 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; margin-left:auto; margin-right:auto;">
+        <<<<<<< HEAD <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Dashboard.php">Dashboard</a>
             <a class="active1" href="Student.php">Student</a>
             <a href="Company.php">Company</a>
-            <a href="Reports.php">Reports</a>
-            <a href="Details.php">Details</a>
+            =======
+            <nav style="position:relative; margin-left:auto; margin-right:auto;">
+                <a href="Company.php">Work Immersion List</a>
+                <a href="#.php">Company</a>
+                <a class="active" href="Student.php">Student</a>
+                <a href="Dashboard.php">Analytics</a>
+                >>>>>>> fc74cf3fe8872e9c22f3ae8f45bc2c571171074f
+                <a href="Reports.php">Reports</a>
+                <a href="Details.php">Details</a>
 
 
-        </nav>
+            </nav>
     </div>
+    <hr class="line_bottom">
 
 
     <br>
@@ -301,10 +309,14 @@
         });
     </script>
     <br>
-    <footer>
+    <!-- <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
-    </footer>
+        
+    </footer> -->
+
+    <div class="sub-footer">
+        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+    </div>
 
 
 </body>

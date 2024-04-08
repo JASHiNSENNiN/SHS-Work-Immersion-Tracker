@@ -24,7 +24,6 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
-            </a>
         </div>
 
         <nav>
@@ -55,16 +54,21 @@
 
         </nav>
     </div>
+    <hr class="line_bottom">
 
 
     <br>
 
 
-    <footer>
+    <!-- <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+    
 
-    </footer>
+    </footer> -->
+
+    <div class="sub-footer">
+        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+    </div>
 
 
 </body>

@@ -1,10 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* --------------------Line  ---------------------- */
+
+.line_bottom {
+  width: 100% !important;
+  height: 1px;
+  background-color: #d4d2d0;
+  border: none;
+  /* margin: 0.75rem 0 0; */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  outline: none;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   background-color: #fff;
   color: #333;
@@ -307,6 +326,7 @@ nav a:hover::after {
 }
 
 /* -------------------------Background pic ------------------------- */
+
 .logoimg {
   margin-left: auto;
   margin-right: auto;
@@ -322,15 +342,15 @@ nav a:hover::after {
   display: block;
   width: auto;
 }
+
 button,
 .button {
   display: inline-block;
   padding: 16px 35px;
-  background: #b4b4b8;
-  color: #000000;
-  border-radius: 15px;
+  background: #103c8a;
+  color: #fff;
+  border-radius: 5px;
   transition: background 0.3s ease-in-out;
-  font-weight: bold;
 }
 
 .active {
@@ -348,6 +368,7 @@ button,
   margin-top: -90px;
   border: 5px solid #fff;
 }
+
 .name {
   margin-top: 1%;
   margin-left: 21%;
@@ -355,6 +376,7 @@ button,
   /* size: 10px; */
   font-family: sans-serif;
 }
+
 .strand {
   margin-top: 1%;
   margin-left: 21%;
@@ -363,8 +385,8 @@ button,
 }
 
 hr {
-  margin: auto;
   width: 75%;
+  margin: auto;
 }
 
 /* -------------------------line button----------------------------- */
@@ -1263,4 +1285,14 @@ html {
   .header {
     padding: 0 20px;
   }
+}
+
+/* ---------------------------------------sub footer----------------------------- */
+
+.sub-footer {
+  background: #1e1e1e;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding: 10px 0px;
 }
