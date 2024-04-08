@@ -155,4 +155,4 @@ window.onclick = function(event) {
   }
 }
 </script>
-<script src="/shs/js/session_handler.js"></script>
+<script src="/SHS-Work-Immersion-Tracker/js/session_handler.js"></script>

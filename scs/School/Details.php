@@ -49,7 +49,7 @@
             <a href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
-            <a class="active"  href="Details.php">Details</a>
+            <!-- <a class="active"  href="Details.php">Details</a> -->
         </nav>
     </div>
     <hr class="line_bottom">

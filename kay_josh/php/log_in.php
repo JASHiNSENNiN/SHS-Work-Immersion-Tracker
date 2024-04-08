@@ -29,13 +29,13 @@ if ($result->num_rows === 1) {
 
     switch ($accountType) {
       case 'organization':
-        $response = array("success" => true, "redirectUrl" => "/shs/pages/organization.php");
+        $response = array("success" => true, "redirectUrl" => "/SHS-Work-Immersion-Tracker/pages/organization.php");
         break;
       case 'school':
-        $response = array("success" => true, "redirectUrl" => "/shs/pages/school.php");
+        $response = array("success" => true, "redirectUrl" => "/SHS-Work-Immersion-Tracker/pages/school.php");
         break;
       case 'student':
-        $response = array("success" => true, "redirectUrl" => "/shs/pages/student.php");
+        $response = array("success" => true, "redirectUrl" => "/SHS-Work-Immersion-Tracker/pages/student.php");
         $query = "SELECT * FROM student_profiles WHERE user_id = $user_id";
         $result = mysqli_query($conn, $query);
         $profile = mysqli_fetch_assoc($result);

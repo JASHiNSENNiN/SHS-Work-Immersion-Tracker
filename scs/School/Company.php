@@ -57,7 +57,7 @@ session_start();
             <a href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
-            <a href="Details.php">Details</a>
+            <!-- <a href="Details.php">Details</a> -->
 
 
         </nav>
