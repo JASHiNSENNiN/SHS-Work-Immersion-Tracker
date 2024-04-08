@@ -25,6 +25,7 @@
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
+            </a>
         </div>
 
         <nav>
@@ -272,37 +273,37 @@
     </form>
 
     <script>
-    $("input:checkbox").on('click', function() {
+        $("input:checkbox").on('click', function () {
 
-        var $box = $(this);
-        if ($box.is(":checked")) {
-            var group = "input:checkbox[name='" + $box.attr("name") + "']";
-            $(group).prop("checked", false);
-            $box.prop("checked", true);
-        } else {
-            $box.prop("checked", false);
-        }
-    });
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
     </script>
 
     <script>
-    $(document).ready(function validation() {
-        $('.form').on('submit', function validation() {
-            Swal.fire({
-                title: "Successfully send!",
-                text: "You clicked the button!",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 2500
+        $(document).ready(function validation() {
+            $('.form').on('submit', function validation() {
+                Swal.fire({
+                    title: "Successfully send!",
+                    text: "You clicked the button!",
+                    icon: "success",
+                    showConfirmButton: false,
+                    timer: 2500
+                });
             });
         });
-    });
     </script>
 
 
-    <div class="sub-footer">
-        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-    </div>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+    </footer>
 
 
 </body>

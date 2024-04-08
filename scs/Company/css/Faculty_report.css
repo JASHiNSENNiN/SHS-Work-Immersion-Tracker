@@ -21,10 +21,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.active {
-  color: #1bbc9b;
-}
-
 img {
   vertical-align: middle;
 }
@@ -142,7 +138,6 @@ img {
 }
 
 .strand {
-  margin-top: 1%;
   margin-left: 21%;
   font-size: 1.25rem;
   color: #777;
@@ -502,8 +497,16 @@ nav .login-btn:hover {
   color: #172738;
 }
 
+.active {
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
+}
+
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 nav a::after {

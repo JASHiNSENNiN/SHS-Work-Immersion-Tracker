@@ -205,10 +205,6 @@ hr {
   display: none;
 }
 
-.active {
-  color: #1bbc9b;
-}
-
 footer {
   background-color: #fff;
   color: #333;
@@ -497,8 +493,16 @@ nav .login-btn:hover {
   color: #172738;
 }
 
+.active {
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
+}
+
 nav a:hover {
-  color: #1bbc9b;
+  color: #000000;
+  background-color: rgba(27, 188, 155, 0.3);
+  font-weight: bold;
 }
 
 nav a::after {

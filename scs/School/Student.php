@@ -42,23 +42,16 @@
     </div><br>
     <hr>
     <div class="logo">
-
-        <<<<<<< HEAD <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Dashboard.php">Dashboard</a>
-            <a class="active1" href="Student.php">Student</a>
-            <a href="Company.php">Company</a>
-            =======
-            <nav style="position:relative; margin-left:auto; margin-right:auto;">
-                <a href="Company.php">Work Immersion List</a>
-                <a href="#.php">Company</a>
-                <a class="active" href="Student.php">Student</a>
-                <a href="Dashboard.php">Analytics</a>
-                >>>>>>> fc74cf3fe8872e9c22f3ae8f45bc2c571171074f
-                <a href="Reports.php">Reports</a>
-                <a href="Details.php">Details</a>
+        <nav style="position:relative; margin-left:auto; margin-right:auto;">
+            <a href="Company.php">Work Immersion List</a>
+            <a href="#.php">Company</a>
+            <a class="active" href="Student.php">Student</a>
+            <a href="Dashboard.php">Analytics</a>
+            <a href="Reports.php">Reports</a>
+            <a href="Details.php">Details</a>
 
 
-            </nav>
+        </nav>
     </div>
     <hr class="line_bottom">
 
@@ -301,22 +294,21 @@
 
 
     <script>
-        $(".box").click(function (e) {
-            e.preventDefault();
-            $(".content").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".box").click(function(e) {
+        e.preventDefault();
+        $(".content").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
     <br>
-    <!-- <footer>
+    <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        
-    </footer> -->
+    </footer>
 
-    <div class="sub-footer">
+    <!-- <div class="sub-footer">
         2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-    </div>
+    </div> -->
 
 
 </body>

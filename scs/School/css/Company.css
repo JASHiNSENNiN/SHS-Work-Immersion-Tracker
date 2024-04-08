@@ -347,10 +347,11 @@ button,
 .button {
   display: inline-block;
   padding: 16px 35px;
-  background: #103c8a;
-  color: #fff;
-  border-radius: 5px;
+  background: #b4b4b8;
+  color: #000000;
+  border-radius: 15px;
   transition: background 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .active {
