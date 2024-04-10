@@ -1,7 +1,3 @@
-<!-- <?php
-include_once "backend/php/config.php";
-session_start();
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,11 +22,6 @@ session_start();
             <a href="image/index.php">
                 <img src="image/logov3.jpg" alt="Logo">
             </a>
-            <!-- <nav>
-                <a href="index.php">Home</a>
-                <a href="./php/job_list.php">Company Review</a>
-                <a href="./php/contact.php">Contact</a>
-            </nav> -->
         </div>
         <nav>
             <div class="css-1ld7x2h eu4oa1w0"></div>
