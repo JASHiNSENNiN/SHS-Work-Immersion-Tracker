@@ -17,13 +17,13 @@
          <img src="../img/logov3.jpg" alt="Logo">
            </a>
            <nav>
-            <a href="../index.php">Home</a>
+            <a  href="../index.php">Home</a>
             <a href="job_list.php" >Company Review</a>
             <a href="contact.php">Contact</a> 
         </nav>
         </div>
        <nav>
-        <a class="login-btn" href="#" style="margin-left: 20px;">Sign in</a>
+        <a class="login-btn" href="login_form.php" style="margin-left: 20px;">Sign in</a>
         <div class="css-1ld7x2h eu4oa1w0"></div>
     <a  href="post_work_Immersion.php">Post Work Immersion</a>
     </nav>
