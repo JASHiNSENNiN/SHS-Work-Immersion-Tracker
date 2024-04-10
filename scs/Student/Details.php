@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Dashboard</title>
+    <title>Student Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Details.css">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+
 
 </head>
 
@@ -33,41 +36,34 @@
     <img class="logoimg" src="image/background.jpg" alt="" height="300" width="200">
 
     <div class="profile">
-        <img src="image/OLSHCO.png" alt="">
-        <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
-        <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button><i class="fa fa-pencil"></i> Edit profile</button></div>
+        <img src="image/me.jpg" alt="">
+        <div class="name"> Miguel Von Natividad</div>
+        <label class="strand" for="">STEM</label>
+        <div><button class="Settings"><i class="fa fa-pencil"></i> Edit profile</button></div>
     </div><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-            <a href="Company.php">Work Immersion List</a>
-            <a href="#.php">Company</a>
-            <a href="Student.php">Student</a>
-            <a href="Dashboard.php">Analytics</a>
-            <a href="Reports.php">Reports</a>
-<<<<<<< HEAD
-            <!-- <a class="active"  href="Details.php">Details</a> -->
-=======
-            <a class="active" href="Details.php">Details</a>
+            <a href="company_area.php"> Company Area</a>
+            <a href="Company_Review.php">Company review</a>
+            <a href="Narrative_Report.php">Narrative Report</a>
+            <a class="active" id="#details" href="Details.php">Details</a>
 
 
->>>>>>> 528679d5d02812567ee1825a7d9d30cb84805079
+
         </nav>
     </div>
-    <hr class="line_bottom">
+
 
     <br>
 
 
-
-
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+
     </footer>
-
-
 
 
 </body>

@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -26,6 +29,13 @@
         </div>
 
         <nav>
+
+            <a class="dropbtn" href=""><i class='fas fa-user-alt' style='font-size:2px; color: black;'></i></a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
             <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a>
         </nav>
@@ -58,33 +68,49 @@
         <div class="container">
             <input type="text" name="name" required>
             <input type="email" name="email" required>
-            <button type="submit" class="btn" onclick="openPopup()"> Submit</button>
+            <button type="submit" onclick="validation();" class="btn"> Submit</button>
 
-            <div class="popup" id="popup">
+            <!-- <div class="popup" id="popup">
                 <img src="image/404-tick.png" alt="">
                 <h2>Thank You!</h2>
                 <p> Your details has been successfully submitted. Thanks!</p>
                 <button type="submit" onclick="closePopup()">OK</button>
-            </div>
+            </div> -->
 
         </div>
     </form>
 
-    <script>
-    let popup = document.getElementById("popup");
-    $(document).ready(function() {
-        $('.form').on('submit', function openPopup() {
-            // alert('Your details were successfully received.');
-            // function openPopup() {
-            popup.classList.add("open-popup");
-            // }
 
-            // function closePopup() {
-            //     popup.classList.remove("open-popup");
-            // }
+    <script>
+    function validation() {
+        Swal.fire({
+            title: "Successfully send!",
+            text: "You clicked the button!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1500
+        });
+
+        // Swal.fire({
+        //     icon: "error",
+        //     title: "Oops...",
+        //     text: "Something went wrong!",
+        //     footer: '<a href="#">Why do I have this issue?</a>'
+        // });
+    }
+    </script>
+    <!-- <script>
+    $(document).ready(function() {
+        $('.form').on('submit', function() {
+            // alert('Your details were successfully received.');
+            Swal.fire({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success"
+            });
         });
     });
-    </script>
+    </script> -->
 
     <br>
 

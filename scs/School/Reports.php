@@ -43,12 +43,17 @@
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
-        <a href="Company.php">Work Immersion List</a>
+            <a href="Company.php">Work Immersion List</a>
             <a href="#.php">Company</a>
             <a href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>
+<<<<<<< HEAD
             <a class="active"  href="Reports.php">Reports</a>
             <!-- <a href="Details.php">Details</a> -->
+=======
+            <a class="active" href="Reports.php">Reports</a>
+            <a href="Details.php">Details</a>
+>>>>>>> 528679d5d02812567ee1825a7d9d30cb84805079
 
 
         </nav>
@@ -108,11 +113,11 @@
 
 
     <br>
-    
-  <div class="sub-footer">
-    2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-  </div>
-  
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+    </footer>
+
 
 </body>
 

@@ -847,6 +847,11 @@ session_start();
 
     </div>
 
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+
+    </footer>
 
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();

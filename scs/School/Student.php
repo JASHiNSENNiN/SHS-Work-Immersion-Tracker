@@ -42,8 +42,7 @@
     </div><br>
     <hr>
     <div class="logo">
-
-    <nav style="position:relative; margin-left:auto; margin-right:auto;">          
+        <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Company.php">Work Immersion List</a>
             <a href="#.php">Company</a>
             <a class="active" href="Student.php">Student</a>
@@ -303,14 +302,13 @@
     });
     </script>
     <br>
-    <!-- <footer>
+    <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        
-    </footer> -->
-    
-  <div class="sub-footer">
-    2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-  </div>
+    </footer>
+
+    <!-- <div class="sub-footer">
+        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+    </div> -->
 
 
 </body>
