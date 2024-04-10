@@ -1,24 +1,22 @@
 <?php require_once '..\vendor\autoload.php';
 
-$clientID = '';
-$clientSecret = '';
-http: //localhost/shs/php/get_started.php
-$redirectURL = 'http://localhost/shs/php/get_started.php';
-// client request sa elgoog
-$client = new Google_Client();
-$client->setClientId($clientID);
-$client->setClientSecret($clientSecret);
-$client->setRedirectUri($redirectURL);
-$client->addScope('profile');
-$client->addScope('email');
+(Dotenv\Dotenv::createImmutable(__DIR__ . '/../'))->load();
 
 $auth0 = new \Auth0\SDK\Auth0([
-    'clientId' => $clientID,
-    'clientSecret' => $clientSecret,
-    'redirectUrl' => $redirectURL,
+    'clientId' => $_ENV['AUTH0_CLIENT_ID'],
+    'clientSecret' => $_ENV['AUTH0_CLIENT_SECRET'],
+    'redirectUrl' => $_ENV['AUTH0_REDIRECT_URI']
 ]);
 
+$client = new Google_Client();
+$client->setClientId($_ENV['AUTH0_CLIENT_ID']);
+$client->setClientSecret($_ENV['AUTH0_CLIENT_SECRET']);
+$client->setRedirectUri($_ENV['AUTH0_REDIRECT_URI']);
+$client->addScope('profile');
+$client->addScope('email');;
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
