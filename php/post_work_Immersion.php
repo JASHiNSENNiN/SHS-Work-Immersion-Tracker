@@ -45,76 +45,76 @@
                 <form action="login_form.php" method="get">
                     <!-- <input type="text" name="keywords" placeholder="Immerssion  / Keywords / Company">
                 <input type="text" name="location" placeholder="Location"> -->
-                    <input type="submit" value="Post a Work Immersion!"  >
+                    <input type="submit" value="Post a Work Immersion!">
 
                 </form>
             </div>
-           
+
         </section>
-     
-       
-            <section class="section-yj6db6">
-                <div class="content-yj6db6">
 
-                    <div class="basic-yj6db6 eu4oa1w012">
-                        <h1 class="title-w6le78 ">1</h1>
-                        <div class="view-1j4u2d6">
 
-                            <div class="cost-1wdgeyr">
-                                <p class="amount-e1tiznh50">Create your
-                                    free account</p>
+        <section class="section-yj6db6">
+            <div class="content-yj6db6">
 
-                            </div>
-                        </div>
-                        <div class="description-zfpz9y">
-                            <p class="css-zfpz9y">All you need is your email address to create an account and start building your job post.</p>
+                <div class="basic-yj6db6 eu4oa1w012">
+                    <h1 class="title-w6le78 ">1</h1>
+                    <div class="view-1j4u2d6">
+
+                        <div class="cost-1wdgeyr">
+                            <p class="amount-e1tiznh50">Create your
+                                free account</p>
 
                         </div>
-
                     </div>
-
-                    <div class="standard-e1tiznh50 eu4oa1w012">
-                        <h2 class="title-w6le78 ">2</h2>
-                        <div class="view-1j4u2d6">
-
-                            <div class="cost-1wdgeyr">
-                                <p class="amount-e1tiznh50">Build your
-                                    job post</p>
-
-                            </div>
-                        </div>
-                        <div class="description-zfpz9y">
-                            <p class="css-zfpz9y">Then just add a title, description, and location to your job post, and you're ready to go.</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="business-e1tiznh50 eu4oa1w012">
-                        <h2 class="title-w6le78">3</h2>
-                        <div class="view-1j4u2d6">
-
-                            <div class="cost-1wdgeyr">
-                                <p class="amount-e1tiznh50">Post
-                                    your Work Immersion</p>
-
-                            </div>
-                        </div>
-                        <div class="description-zfpz9y">
-                            <p class="css-zfpz9y">After you post your job use our state of the art tools to help you find dream talent.</p>
-
-                        </div>
+                    <div class="description-zfpz9y">
+                        <p class="css-zfpz9y">All you need is your email address to create an account and start building your job post.</p>
 
                     </div>
 
                 </div>
-            </section>
+
+                <div class="standard-e1tiznh50 eu4oa1w012">
+                    <h2 class="title-w6le78 ">2</h2>
+                    <div class="view-1j4u2d6">
+
+                        <div class="cost-1wdgeyr">
+                            <p class="amount-e1tiznh50">Build your
+                                job post</p>
+
+                        </div>
+                    </div>
+                    <div class="description-zfpz9y">
+                        <p class="css-zfpz9y">Then just add a title, description, and location to your job post, and you're ready to go.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="business-e1tiznh50 eu4oa1w012">
+                    <h2 class="title-w6le78">3</h2>
+                    <div class="view-1j4u2d6">
+
+                        <div class="cost-1wdgeyr">
+                            <p class="amount-e1tiznh50">Post
+                                your Work Immersion</p>
+
+                        </div>
+                    </div>
+                    <div class="description-zfpz9y">
+                        <p class="css-zfpz9y">After you post your job use our state of the art tools to help you find dream talent.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
     </div>
     <footer>
-    <div class="sub-footer">
-2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-</div>
+        <div class="sub-footer">
+            2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+        </div>
     </footer>
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();

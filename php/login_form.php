@@ -1,4 +1,24 @@
+<?php require_once '..\vendor\autoload.php';
 
+$clientID = '';
+$clientSecret = '';
+http: //localhost/shs/php/get_started.php
+$redirectURL = 'http://localhost/shs/php/get_started.php';
+// client request sa elgoog
+$client = new Google_Client();
+$client->setClientId($clientID);
+$client->setClientSecret($clientSecret);
+$client->setRedirectUri($redirectURL);
+$client->addScope('profile');
+$client->addScope('email');
+
+$auth0 = new \Auth0\SDK\Auth0([
+    'clientId' => $clientID,
+    'clientSecret' => $clientSecret,
+    'redirectUrl' => $redirectURL,
+]);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,9 +77,9 @@
                 </div>
 
                 <button class="btn-new" id="switch-to-register" style=" font-size: 15px" onclick="showLoginForm()">
-                    <span class="hover-underline-animation"> 
+                    <span class="hover-underline-animation">
                         Create new account
-                     </span>
+                    </span>
 
                 </button>
             </div>

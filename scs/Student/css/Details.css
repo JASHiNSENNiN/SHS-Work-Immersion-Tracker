@@ -30,6 +30,7 @@ img {
   display: block;
   border-radius: 10px;
 }
+
 .Settings {
   margin-left: 75%;
   margin-right: auto;
@@ -46,6 +47,7 @@ img {
   margin-top: -90px;
   border: 5px solid #fff;
 }
+
 .name {
   margin-top: 1%;
   margin-left: 21%;
@@ -53,6 +55,7 @@ img {
   /* size: 10px; */
   font-family: sans-serif;
 }
+
 .strand {
   margin-top: 1%;
   margin-left: 21%;
@@ -240,16 +243,19 @@ nav a:hover::after {
     padding-left: 20px !important;
     padding-bottom: 5px !important;
   }
+
   .logo img {
     width: 160px !important;
     /* Adjust the width as needed */
     margin-right: 15px !important;
   }
+
   nav a {
     /* padding: 5px 10px !important; */
     margin: 0 10px !important;
     font-size: 14px !important;
   }
+
   .login-btn {
     /* width: 10% !important; */
     height: 10% !important;

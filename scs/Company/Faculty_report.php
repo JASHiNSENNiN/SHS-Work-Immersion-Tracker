@@ -70,18 +70,15 @@
 
                     <div class="info">
                         <label for=" studentname">Student Name</label>
-                        <input type="text" placeholder="Lastname, Firstname Middlename" name="studentname"
-                            id="studentname" required>
+                        <input type="text" placeholder="Lastname, Firstname Middlename" name="studentname" id="studentname" required>
                     </div>
                     <div class="info">
                         <label for="studentid">School</label>
-                        <input type="text" placeholder="Enter School" name="studentid" id="studentid"
-                            style="width: auto;">
+                        <input type="text" placeholder="Enter School" name="studentid" id="studentid" style="width: auto;">
                     </div>
                     <div class="info">
                         <label for="studentid">Student ID</label>
-                        <input type="number" placeholder="Enter Student ID" name="studentid" id="studentid"
-                            style="width: auto;">
+                        <input type="number" placeholder="Enter Student ID" name="studentid" id="studentid" style="width: auto;">
                     </div>
 
                 </div>
@@ -273,7 +270,7 @@
     </form>
 
     <script>
-        $("input:checkbox").on('click', function () {
+        $("input:checkbox").on('click', function() {
 
             var $box = $(this);
             if ($box.is(":checked")) {
