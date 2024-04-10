@@ -1,4 +1,4 @@
-<?php require_once '../vendor\autoload.php';
+<?php require_once '..\vendor\autoload.php';
 
 $clientID = '228321911034-th9gclqk8osq7trccfhahtitpjm9972s.apps.googleusercontent.com';
 $clientSecret = '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';
