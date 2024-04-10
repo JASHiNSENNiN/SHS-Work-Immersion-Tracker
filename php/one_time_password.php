@@ -30,39 +30,38 @@ if (mail($to, $subject, $message, $header)) {
         <div id="otp-form" class="colm-form">
             <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
             <div class="form-container">
-                <form action="../backend/php/submit_otp.php" method="POST">
+                <form action="../index.php" method="POST">
                     <h2>Enter the verification code we sent to your mobile/email:</h2>
                     <input type="number" name="checkotp" id="email" placeholder="8 Digit OTP" required>
                     <button class="btn-login" onclick="resendOTP()">Resend OTP</button>
-                    <button class="btn-login" id="switch-to-login" onclick="showLoginForm()">
+                    <button class="btn-login" id="switch-to-login" type="submit"">
                         Send Verification
                     </button>
                 </form>
             </div>
         </div>
 
-        <script src="../backend/js/login.js"></script>
-    </div>
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-        <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
+        <script src=" ../backend/js/login.js"></script>
+            </div>
+            <footer>
+                <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+                <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
 
-    </footer>
+            </footer>
 </body>
 
 </html>
 <script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
+function printCookies() {
+    const cookies = document.cookie.split(";")
+        .map(cookie => cookie.trim());
 
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
+    console.log("Cookies:");
+    cookies.forEach(cookie => {
+        console.log(cookie);
+    });
+}
 
 
-    window.onload = printCookies;
+window.onload = printCookies;
 </script>
-<script src="../backend/js/session_handler.js"></script>
