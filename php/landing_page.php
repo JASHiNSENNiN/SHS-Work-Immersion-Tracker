@@ -117,7 +117,7 @@
   <div class="sub-footer">
     2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
   </div>
-  
+
 
 
   <a href="#" id="scroll-up"><i class="fa fa-angle-up"></i></a>

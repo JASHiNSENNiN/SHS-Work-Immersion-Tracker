@@ -16,7 +16,7 @@
 
 <body>
 
-  
+
     <div class="container light-style flex-grow-1 container-p-y">
         <h4 class="font-weight-bold py-3 mb-4">
             Account settings
@@ -51,10 +51,10 @@
                             </div>
                             <hr class="border-light m-0">
                             <div class="card-body">
-                               
+
                                 <div class="form-group">
                                     <label class="form-label">School Name</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">E-mail</label>
@@ -250,11 +250,11 @@
 
 
 
-<footer>
-    <div class="sub-footer">
-        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-    </div>
-</footer>
+    <footer>
+        <div class="sub-footer">
+            2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
+        </div>
+    </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
