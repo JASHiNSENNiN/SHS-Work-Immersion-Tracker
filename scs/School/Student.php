@@ -11,6 +11,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -32,20 +33,26 @@
     </header>
 
 
-    <img class="logoimg" src="image/background.jpg" alt="" height="300" width="200">
+    <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
+    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
-        <img src="image/OLSHCO.png" alt="">
+        <img id="profile-pic" src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><button> <i class="fa fa-pencil"></i> Edit profile</button></div>
-    </div><br>
+
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
+                profile</label>
+            <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
+        </div>
+    </div><br><br>
     <hr>
     <div class="logo">
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Company.php">Work Immersion List</a>
-            <a href="#.php">Company</a>
-            <a class="active" href="Student.php">Student</a>
+            <!-- <a href="#.php">Company</a> -->
+            <a class="active1" href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
             <a href="Details.php">Details</a>
@@ -305,6 +312,24 @@
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
     </footer>
+
+    <script>
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
+
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
+    </script>
+
+    <script>
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
+
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
+    </script>
 
     <!-- <div class="sub-footer">
         2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students

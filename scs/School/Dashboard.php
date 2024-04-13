@@ -31,21 +31,26 @@
     </header>
 
 
-    <img class="logoimg" src="image/background.jpg" alt="" height="300" width="200">
+    <img id="cover-pic" class="logoimg" src="image/background.jpg" alt="" height="300" width="200">
+    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
-        <img src="image/OLSHCO.png" alt="">
+        <img id="profile-pic" src="image/OLSHCO.png" alt="">
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
-        <div class="Settings"><a href="Settings.php"><button> <i class="fa fa-pencil"></i> Edit profile</button></a>
+
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
+                profile</label>
+            <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
-    </div><br>
+    </div><br><br>
     <hr>
     <div class="logo">
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Company.php">Work Immersion List</a>
-            <a href="#.php">Company</a>
+            <!-- <a href="#.php">Company</a> -->
             <a href="Student.php">Student</a>
             <a class="active" href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
@@ -63,6 +68,23 @@
 
 
 
+    <script>
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
+
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
+    </script>
+
+    <script>
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
+
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
+    </script>
 
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>

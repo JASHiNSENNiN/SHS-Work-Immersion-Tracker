@@ -34,14 +34,20 @@
     </header>
 
 
-    <img class="logoimg" src="image/background.jpg" alt="" width="200" height="300">
+    <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" width="200" height="300">
+    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
-        <img src="image/me.jpg" alt="">
+        <img id="profile-pic" src="image/me.jpg" alt="">
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
-        <div class="Settings"><button><i class="fa fa-pencil"></i> Edit profile</button></div>
-    </div><br>
+
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
+                profile</label>
+            <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
+        </div>
+    </div><br><br>
     <hr>
     <div class="logo">
 
@@ -373,6 +379,23 @@
             var content_id = $(this).attr("id");
             $(content_id).addClass("active");
         });
+    </script>
+    <script>
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
+
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
+    </script>
+
+    <script>
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
+
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 
