@@ -53,28 +53,30 @@ $otp = rand(00000000, 99999999);
 
 
                 <!-- --------------------------------Line OR--------------------------->
+                <form method="POST" onsubmit="return validateForm()">
+                    <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
+                            <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
+                        <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
+                    </div>
+                    <label class="css-ddheu4"> Email address <span aria-hidden="true"
+                            class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                    <input autocomplete="email" type="text" placeholder="" id="login-email" name="login-email" required>
 
-                <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
-                        <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
-                    <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
-                </div>
-                <label class="css-ddheu4"> Email address <span aria-hidden="true"
-                        class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
-                <input autocomplete="email" type="text" placeholder="" id="login-email" name="login-email" required>
-
-                <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span>
-                </label>
-                <input autocomplete="current-password" type="password" placeholder="" id="login-password"
-                    name="login-password" required>
-                <button class="btn-login" style="height: 40px; font-size: 15px" onclick="login()"> <span
-                        class="hover-underline-animation"> Continue </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
-                        viewBox="0 0 46 16" fill="#fff">
-                        <path id="Path_10" data-name="Path 10"
-                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                            transform="translate(30)"></path>
-                    </svg>
-                </button>
+                    <label class="css-ddheu4"> Password <span aria-hidden="true"
+                            class="css-ers2ar es2vvo71">&nbsp;*</span>
+                    </label>
+                    <input autocomplete="current-password" type="password" placeholder="" id="login-password"
+                        name="login-password" required>
+                    <button class="btn-login" style="height: 40px; font-size: 15px" onclick="login()"> <span
+                            class="hover-underline-animation"> Continue </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                            viewBox="0 0 46 16" fill="#fff">
+                            <path id="Path_10" data-name="Path 10"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                </form>
 
                 <!-- --------------------------------Line OR--------------------------->
 
@@ -96,9 +98,9 @@ $otp = rand(00000000, 99999999);
             <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
             <div class="form-container">
-                <form action="one_time_password.php" method="POST">
+                <form action="one_time_password.php" method="POST" onsubmit="return validateRegisterForm()">
                     <input type="text" for="email" name="email" id="email" placeholder="Email address" required>
-                    <input type="password" placeholder="Password" id="password" name="confirm-password" required>
+                    <input type="password" placeholder="Password" id="password" name="password" required>
                     <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password"
                         required>
                     <input type="hidden" name="otp" value="<?php echo $otp; ?>">
@@ -111,6 +113,7 @@ $otp = rand(00000000, 99999999);
         </div>
 
         <script src="../backend/js/login.js"></script>
+        <script src="../backend/js/register.js"></script>
     </div>
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>

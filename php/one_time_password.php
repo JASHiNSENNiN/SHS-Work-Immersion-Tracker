@@ -1,6 +1,7 @@
 <?php
 $email = $_POST['email'];
 $otp = $_POST['otp'];
+$password = $_POST['password'];
 
 $to = $email;
 $from = "noreply@workifyph.online";
@@ -26,6 +27,9 @@ if (mail($to, $subject, $message, $header)) {
 
 <body>
     <div class="row">
+
+        <!--TODO if $otp ==  checkotp then redirect -->
+
 
         <div id="otp-form" class="colm-form">
             <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
@@ -60,6 +64,9 @@ function printCookies() {
     cookies.forEach(cookie => {
         console.log(cookie);
     });
+    console.log("<?php echo $otp ?>")
+    console.log("<?php echo $email ?>")
+    console.log("<?php echo $password ?>")
 }
 
 
