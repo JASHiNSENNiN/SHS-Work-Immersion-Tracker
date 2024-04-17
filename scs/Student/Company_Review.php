@@ -96,7 +96,8 @@
     <section class="section-gutter company-grid">
         <div class="container">
             <div class="section-bg-white section-wrapper company-grid__wrapper">
-                <header class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
+                <header
+                    class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
                     <h2 class="h4 company-grid__title">Popular companies</h2>
                     <div class="section-wrapper__header-cta">
                         <a class="link-text" href="/companies">View all <i class="fas fa-angle-double-right"></i></a>
@@ -109,7 +110,42 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="../Company/image/NIA.png">
+                                        </figure>
+                                    </a>
+                                    <div class="company-card__content">
+                                        <div class="company-card__block">
+                                            <h3 class="company-card__title">
+                                                <a class="company-card__title-link" href="/company">NIA</a>
+                                            </h3>
+                                            <div class="company-card__review">
+                                                <div class="review-stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <span class="css-hid0zu e1wnkr790">388 reviews</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company-card__links">
+                                        <a class="company-card__link" href="#">Reviews</a>
+                                        <a class="company-card__link" href="#">Question</a>
+                                        <a class="company-card__link" href="#">News</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-grid__item">
+                            <div class="company-card">
+                                <div class="company-card__inner">
+                                    <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <figure class="company-card__figure">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -143,7 +179,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -177,7 +214,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -211,7 +249,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -245,7 +284,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -279,41 +319,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
-                                        </figure>
-                                    </a>
-                                    <div class="company-card__content">
-                                        <div class="company-card__block">
-                                            <h3 class="company-card__title">
-                                                <a class="company-card__title-link" href="/company">Company
-                                                    Name</a>
-                                            </h3>
-                                            <div class="company-card__review">
-                                                <div class="review-stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <span class="css-hid0zu e1wnkr790">388 reviews</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="company-card__links">
-                                        <a class="company-card__link" href="#">Reviews</a>
-                                        <a class="company-card__link" href="#">Question</a>
-                                        <a class="company-card__link" href="#">News</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="company-grid__item">
-                            <div class="company-card">
-                                <div class="company-card__inner">
-                                    <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
-                                        <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -365,7 +372,7 @@
     </script>
 
     <script>
-        $(".link").click(function(e) {
+        $(".link").click(function (e) {
             e.preventDefault();
             $(".content").removeClass("active");
             var content_id = $(this).attr("id");
