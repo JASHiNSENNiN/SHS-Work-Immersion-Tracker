@@ -50,8 +50,6 @@
 
         <nav style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="active" href="Company.php">Work Immersion List</a>
-            <a href="#.php">Company</a>
-            <a class="active" href="Company.php">Work Immersion List</a>
             <!-- <a href="#.php">Company</a> -->
             <a href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>

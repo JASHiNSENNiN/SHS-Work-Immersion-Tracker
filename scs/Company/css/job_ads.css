@@ -404,6 +404,9 @@ nav a:hover::after {
     /* Adjust the width as needed */
     margin-right: 15px !important;
   }
+  .logoimg {
+    width: 100% !important;
+  }
 
   nav a {
     /* padding: 5px 10px !important; */
@@ -414,6 +417,7 @@ nav a:hover::after {
   .login-btn {
     /* width: 10% !important; */
     height: 10% !important;
+    padding: 10px !important;
   }
 }
 

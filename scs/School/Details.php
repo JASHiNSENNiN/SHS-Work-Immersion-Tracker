@@ -53,12 +53,7 @@
             <a href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>
             <a href="Reports.php">Reports</a>
-            <<<<<<< HEAD <!-- <a class="active" href="Details.php">Details</a> -->
-                =======
-                <a class="active" href="Details.php">Details</a>
-
-
-                >>>>>>> 528679d5d02812567ee1825a7d9d30cb84805079
+            <a class="active" href="Details.php">Details</a>
         </nav>
     </div>
     <hr class="line_bottom">

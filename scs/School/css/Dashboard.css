@@ -267,6 +267,10 @@ nav a:hover::after {
   .login-btn {
     /* width: 10% !important; */
     height: 10% !important;
+    padding: 10px !important;
+  }
+  .logoimg {
+    width: 100% !important;
   }
 }
 

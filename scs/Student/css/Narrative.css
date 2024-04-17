@@ -829,6 +829,16 @@ nav a:hover::after {
   .login-btn {
     /* width: 10% !important; */
     height: 10% !important;
+    padding: 10px !important;
+  }
+  .logoimg {
+    width: 100% !important;
+  }
+  .css-1ld7x2h {
+    margin: 5px 0 0 !important;
+  }
+  .sales-boxes .recent-sales {
+    width: auto !important;
   }
 }
 
@@ -949,8 +959,11 @@ nav a:hover::after {
   margin: 6px;
 }
 
-input {
+input[type="file"] {
   display: none;
+}
+input[type="radio"] {
+  width: auto;
 }
 
 .button-12 {

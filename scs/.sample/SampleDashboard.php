@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="header.css">
+    <!-- <link rel="stylesheet" type="text/css" href="header.css"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/039e1072b5.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -37,7 +38,8 @@
                 <a href="#">Link 3</a>
             </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a>
+            <a class="login-btn" href="#" style="margin-left: 20px;"><span class="text">Log out<i
+                        class="fa fa-sign-out"></i></span></a>
         </nav>
     </header>
 
@@ -79,25 +81,58 @@
 
         </div>
     </form>
+    <div class="buttons">
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorsMsg )">Error</button>
+        <button onclick="showToast(invalidMsg )">Invalid</button>
+    </div>
 
+    <div id="toastBox">
+
+    </div>
 
     <script>
-    function validation() {
-        Swal.fire({
-            title: "Successfully send!",
-            text: "You clicked the button!",
-            icon: "success",
-            showConfirmButton: false,
-            timer: 1500
-        });
+        let toastBox = document.getElementById('toastBox');
+        let successMsg = '<i class="fa fa-check-circle"></i> Successfully submitted'
+        let errorsMsg = '<i class="fa fa-times-circle"></i> Please fix the error!'
+        let invalidMsg = '<i class="fa fa-exclamation-circle"></i> Invalid input, check again'
 
-        // Swal.fire({
-        //     icon: "error",
-        //     title: "Oops...",
-        //     text: "Something went wrong!",
-        //     footer: '<a href="#">Why do I have this issue?</a>'
-        // });
-    }
+        function showToast(msg) {
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = msg;
+            toastBox.appendChild(toast);
+
+            if (msg.includes('error')) {
+                toast.classList.add('error');
+            }
+            if (msg.includes('Invalid')) {
+                toast.classList.add('Invalid');
+            }
+
+            setTimeout(() => {
+                toast.remove();
+            }, 6000);
+        }
+    </script>
+
+    <script>
+        function validation() {
+            Swal.fire({
+                title: "Successfully send!",
+                text: "You clicked the button!",
+                icon: "success",
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+            // Swal.fire({
+            //     icon: "error",
+            //     title: "Oops...",
+            //     text: "Something went wrong!",
+            //     footer: '<a href="#">Why do I have this issue?</a>'
+            // });
+        }
     </script>
     <!-- <script>
     $(document).ready(function() {

@@ -53,12 +53,8 @@
             <!-- <a href="#.php">Company</a> -->
             <a href="Student.php">Student</a>
             <a href="Dashboard.php">Analytics</a>
-            <<<<<<< HEAD <a class="active" href="Reports.php">Reports</a>
-                <!-- <a href="Details.php">Details</a> -->
-                =======
-                <a class="active" href="Reports.php">Reports</a>
-                <a href="Details.php">Details</a>
-                >>>>>>> 528679d5d02812567ee1825a7d9d30cb84805079
+            <a class="active" href="Reports.php">Reports</a>
+            <a href="Details.php">Details</a>
 
 
         </nav>
@@ -124,21 +120,21 @@
     </footer>
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 

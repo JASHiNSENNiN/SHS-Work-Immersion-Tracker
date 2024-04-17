@@ -45,7 +45,8 @@
         <div class="name">National Irrigation Administration</div>
         <label class="strand" for="">NIA</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i>
+                Edit
                 profile</label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
@@ -64,71 +65,71 @@
         </nav>
     </div>
     <hr class="line_bottom">
+    <div class="bgc">
+        <h1>About the Company</h1>
+        <div class="snapshot_container">
+            <!-- <span class="snapshot_title"><strong>Snapshots</strong>(Added 7/20 Available)</span> -->
+            <span class="snapshot_toggle">Toggle to show snapshot details
+                <button class="button-26">+</button>
+                <button class="button-14" role="button">MANAGE</button>
+            </span>
 
-    <h1>About the Company</h1>
-    <div class="snapshot_container">
-        <!-- <span class="snapshot_title"><strong>Snapshots</strong>(Added 7/20 Available)</span> -->
-        <span class="snapshot_toggle">Toggle to show snapshot details
-            <button class="button-26">+</button>
-            <button class="manage_button">MANAGE</button>
-        </span>
-
-        <div class="api_card">
-            <div class="api_details">
-                <p class="api_title">Paystub</p></br>
-                <p class="api_details_one">Payday: 02/01/2021</p></br>
-                <p class="api_details_two">Earnings: 123456</p></br>
-                <p class="api_details_three">Earnings: 123456</p>
-            </div>
-            <a class="see_more" href="#">See more</a>
-        </div>
-        <div class="api_card">
-            <div class="api_details">
-                <p class="api_title">Paystub</p></br>
-                <p class="api_details_one">Payday: 02/01/2021</p></br>
-                <p class="api_details_two">Earnings: 123456</p></br>
-                <p class="api_details_three">Earnings: 123456</p>
-            </div>
-            <a class="see_more" href="#">See more</a>
-        </div>
-        <div class="section-wrap">
-            <div class="api_card_half">
+            <div class="api_card">
                 <div class="api_details">
-                    <p class="api_title">Paystub</p></br>
+                    <p class="api_title">Branch Manager</p></br>
+                    <p class="api_details_one">Payday: 02/01/2021</p></br>
+                    <p class="api_details_two">Earnings: 123456</p></br>
+                    <p class="api_details_three">Earnings: 123456</p>
                 </div>
                 <a class="see_more" href="#">See more</a>
             </div>
-            <div class="api_card_half">
+            <div class="api_card">
                 <div class="api_details">
                     <p class="api_title">Paystub</p></br>
+                    <p class="api_details_one">Payday: 02/01/2021</p></br>
+                    <p class="api_details_two">Earnings: 123456</p></br>
+                    <p class="api_details_three">Earnings: 123456</p>
                 </div>
                 <a class="see_more" href="#">See more</a>
             </div>
+            <div class="section-wrap">
+                <div class="api_card_half">
+                    <div class="api_details">
+                        <p class="api_title">Paystub</p></br>
+                    </div>
+                    <a class="see_more" href="#">See more</a>
+                </div>
+                <div class="api_card_half">
+                    <div class="api_details">
+                        <p class="api_title">Paystub</p></br>
+                    </div>
+                    <a class="see_more" href="#">See more</a>
+                </div>
+            </div>
         </div>
+
     </div>
-
-
     <br>
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
     </footer>
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 

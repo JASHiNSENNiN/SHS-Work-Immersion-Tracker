@@ -326,6 +326,12 @@ nav a:hover::after {
     /* width: 10% !important; */
     height: 10% !important;
   }
+  .logoimg {
+    width: 100% !important;
+  }
+  .css-1ld7x2h {
+    margin: 5px 0 0 !important;
+  }
 }
 
 /* -------------------------Background pic ------------------------- */

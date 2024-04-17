@@ -279,6 +279,12 @@ nav a:hover::after {
     /* width: 10% !important; */
     height: 10% !important;
   }
+  .logoimg {
+    width: 100% !important;
+  }
+  .container2 {
+    width: 100% !important;
+  }
 }
 
 /* -------------------------line button----------------------------- */
@@ -378,6 +384,7 @@ nav a:hover::after {
 @media screen and (max-width: 601px) {
   .rwd-table tr:nth-child(2) {
     border-top: none;
+    width: 100% !important;
   }
 }
 
