@@ -1,0 +1,197 @@
+
+async function validateForm() {
+	const email = document.getElementById("email").value;
+	const password = document.getElementById("password").value;
+	const confirmPassword = document.getElementById("confirm-password").value;
+	const accountType = document.getElementById("account-type").value;
+	const schoolName = document.getElementById("school-name").value;
+	const organizationName = document.getElementById("organization-name").value;
+	const firstName = document.getElementById("first-name").value;
+	const middleName = document.getElementById("middle-name").value;
+	const lastName = document.getElementById("last-name").value;
+	const gradeLevel = document.getElementById("grade-level").value;
+	const strand = document.getElementById("strand").value;
+	const strandFocus = document.getElementById("strand-focus").value;
+
+	const emailInput = document.getElementById("email");
+	const passwordInput = document.getElementById("password");
+	const confirmPasswordInput = document.getElementById("confirm-password");
+	const accountTypeInput = document.getElementById("account-type");
+	const schoolNameInput = document.getElementById("school-name");
+	const organizationNameInput = document.getElementById("organization-name");
+	const firstNameInput = document.getElementById("first-name");
+	const middleNameInput = document.getElementById("middle-name");
+	const lastNameInput = document.getElementById("last-name");
+	const gradeLevelInput = document.getElementById("grade-level");
+	const strandInput = document.getElementById("strand");
+	const strandFocusInput = document.getElementById("strand-focus");
+
+	const allInputs = [
+		emailInput,
+		passwordInput,
+		confirmPasswordInput,
+		accountTypeInput,
+		schoolNameInput,
+		organizationNameInput,
+		firstNameInput,
+		middleNameInput,
+		lastNameInput,
+		gradeLevelInput,
+		strandInput,
+		strandFocusInput,
+	];
+
+	allInputs.forEach((input) => {
+		input.addEventListener("input", function () {
+			if (this.validity.customError) {
+				this.setCustomValidity("");
+			}
+		});
+	});
+
+	try {
+		const exists = checkEmailExists(email);
+		if (exists) {
+			emailInput.setCustomValidity("Email was already taken");
+			emailInput.reportValidity();
+			return;
+		} else {
+			//console.log("Email does not exist");
+		}
+	} catch (error) {
+		console.error("Error:", error);
+	}
+
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailRegex.test(email)) {
+		emailInput.setCustomValidity("Please enter a valid email address");
+		emailInput.reportValidity();
+		return;
+	}
+
+	const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+	if (!passwordRegex.test(password)) {
+		passwordInput.setCustomValidity(
+			"Password must contain at least 6 characters, including one uppercase letter, one lowercase letter, and one digit"
+		);
+		passwordInput.reportValidity();
+		return;
+	}
+
+	if (password !== confirmPassword) {
+		confirmPasswordInput.setCustomValidity("Passwords do not match");
+		confirmPasswordInput.reportValidity();
+		return;
+	}
+
+	if (accountType === "") {
+		accountTypeInput.setCustomValidity("Please select an account type");
+		accountTypeInput.reportValidity();
+		return;
+	}
+
+	if (accountType === "student") {
+		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		if (
+			!nameRegex.test(firstName) ||
+			!nameRegex.test(middleName) ||
+			!nameRegex.test(lastName)
+		) {
+			firstNameInput.setCustomValidity("Please enter a valid full name");
+			middleNameInput.setCustomValidity("Please enter a valid full name");
+			lastNameInput.setCustomValidity("Please enter a valid full name");
+			firstNameInput.reportValidity();
+			middleNameInput.reportValidity();
+			lastNameInput.reportValidity();
+			return;
+		}
+
+		if (gradeLevel === "") {
+			gradeLevelInput.setCustomValidity("Please select a grade level");
+			gradeLevelInput.reportValidity();
+			return;
+		}
+		if (strand === "") {
+			strandInput.setCustomValidity("Please select a strand");
+			strandInput.reportValidity();
+			return;
+		}
+		try {
+			const exists = checkNameExists(schoolName, accountType);
+			if (exists) {
+				schoolNameInput.setCustomValidity("Name was already taken");
+				schoolNameInput.reportValidity();
+				return;
+			} else {
+				//console.log("name does not exist");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	}
+	if (accountType === "school") {
+		const schoolRegex = /^[A-Za-z\s]{3,}$/;
+		if (!schoolRegex.test(schoolName)) {
+			schoolNameInput.setCustomValidity(
+				"Please enter a valid school name"
+			);
+			schoolNameInput.reportValidity();
+			return;
+		}
+	}
+	if (accountType === "organization") {
+		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		if (!nameRegex.test(organizationName)) {
+			organizationNameInput.setCustomValidity(
+				"Please enter a valid organization name"
+			);
+			organizationNameInput.reportValidity();
+			return;
+		}
+		if (strandFocus === "") {
+			strandFocusInput.setCustomValidity("Please select a strand");
+			strandFocusInput.reportValidity();
+			return;
+		}
+		try {
+			const exists = checkNameExists(organizationName, accountType);
+			if (exists) {
+				organizationNameInput.setCustomValidity(
+					"Name was already taken"
+				);
+				organizationNameInput.reportValidity();
+				return;
+			} else {
+				//console.log("name does not exist");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	}
+
+	var formData = {
+		email: email,
+		password: password,
+		accountType: accountType,
+		firstName: firstName,
+		middleName: middleName,
+		lastName: lastName,
+		gradeLevel: gradeLevel,
+		strand: strand,
+		schoolName: schoolName,
+		organizationName: organizationName,
+		strandFocus: strandFocus,
+	};
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "../php/register.php", true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			alert(xhr.responseText);
+		}
+	};
+
+	xhr.send(JSON.stringify(formData));
+	location.reload();
+}
