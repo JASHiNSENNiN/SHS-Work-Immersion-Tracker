@@ -24,14 +24,14 @@
             </a>
             <nav>
                 <a href="index.php">Home</a>
-                <a href="./php/job_list.php">Company Review</a>
+                <a href="job_list.php">Company Review</a>
                 <a href="./php/contact.php">Contact</a>
             </nav>
         </div>
         <nav>
             <a class="login-btn" href="./php/login_form.php" style="margin-left: 20px;">Sign in</a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a href="./php/post_work_Immersion.php">Post Work Immersion</a>
+            <a href="post_work_Immersion.php">Post Work Immersion</a>
         </nav>
 
     </header>
@@ -70,32 +70,32 @@
                         <div class="type-container">
                             <input type="checkbox" id="job1" class="job-style" checked>
                             <label for="job1">Full Time Jobs</label>
-                            <span class="job-number">56</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job2" class="job-style">
                             <label for="job2">Part Time Jobs</label>
-                            <span class="job-number">43</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job3" class="job-style">
                             <label for="job3">Remote Jobs</label>
-                            <span class="job-number">24</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job4" class="job-style">
                             <label for="job4">Internship Jobs</label>
-                            <span class="job-number">27</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job5" class="job-style">
                             <label for="job5">Contract</label>
-                            <span class="job-number">76</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job6" class="job-style">
                             <label for="job6">Training Jobs</label>
-                            <span class="job-number">28</span>
+                            <span class="job-number">0</span>
                         </div>
                     </div>
                 </div>
@@ -105,32 +105,32 @@
                         <div class="type-container">
                             <input type="checkbox" id="job7" class="job-style">
                             <label for="job7">Student Level</label>
-                            <span class="job-number">98</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job8" class="job-style">
                             <label for="job8">Entry Level</label>
-                            <span class="job-number">44</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job9" class="job-style" checked>
                             <label for="job9">Mid Level</label>
-                            <span class="job-number">35</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job10" class="job-style" checked>
                             <label for="job10">Senior Level</label>
-                            <span class="job-number">29</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job11" class="job-style">
                             <label for="job11">Directors</label>
-                            <span class="job-number">26</span>
+                            <span class="job-number">0</span>
                         </div>
                         <div class="type-container">
                             <input type="checkbox" id="job12" class="job-style">
                             <label for="job12">VP or Above</label>
-                            <span class="job-number">56</span>
+                            <span class="job-number">0</span>
                         </div>
                     </div>
                 </div>
