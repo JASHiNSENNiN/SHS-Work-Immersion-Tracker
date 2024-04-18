@@ -17,6 +17,9 @@ $client->addScope('email');;
 
 $otp = rand(00000000, 99999999);
 
+$gauth = new Google_Service_oauth($client); 
+$google_info = $gauth->userinfo->get(); 
+$email = $google_info->email;
 
 ?>
 
