@@ -1,25 +1,8 @@
-<?php require_once __DIR__ . '/../vendor/autoload.php';
-
-(Dotenv\Dotenv::createImmutable(__DIR__ . '/../'))->load();
-
-$auth0 = new \Auth0\SDK\Auth0([
-    'clientId' => $_ENV['AUTH0_CLIENT_ID'],
-    'clientSecret' => $_ENV['AUTH0_CLIENT_SECRET'],
-    'redirectUrl' => $_ENV['AUTH0_REDIRECT_URI']
-]);
-
-$client = new Google_Client();
-$client->setClientId($_ENV['AUTH0_CLIENT_ID']);
-$client->setClientSecret($_ENV['AUTH0_CLIENT_SECRET']);
-$client->setRedirectUri($_ENV['AUTH0_REDIRECT_URI']);
-$client->addScope('profile');
-$client->addScope('email');;
+<?php
 
 $otp = rand(00000000, 99999999);
 
-$gauth = new Google_Service_oauth($client); 
-$google_info = $gauth->userinfo->get(); 
-$email = $google_info->email;
+require_once __DIR__ . '/../backend/php/0Auth/0auth_handler.php';
 
 ?>
 
@@ -61,22 +44,15 @@ $email = $google_info->email;
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
                         <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
                     </div>
-                    <label class="css-ddheu4"> Email address <span aria-hidden="true"
-                            class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                    <label class="css-ddheu4"> Email address <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
                     <input autocomplete="email" type="text" placeholder="" id="login-email" name="login-email" required>
 
-                    <label class="css-ddheu4"> Password <span aria-hidden="true"
-                            class="css-ers2ar es2vvo71">&nbsp;*</span>
+                    <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span>
                     </label>
-                    <input autocomplete="current-password" type="password" placeholder="" id="login-password"
-                        name="login-password" required>
-                    <button class="btn-login" style="height: 40px; font-size: 15px" onclick="login()"> <span
-                            class="hover-underline-animation"> Continue </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
-                            viewBox="0 0 46 16" fill="#fff">
-                            <path id="Path_10" data-name="Path 10"
-                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                                transform="translate(30)"></path>
+                    <input autocomplete="current-password" type="password" placeholder="" id="login-password" name="login-password" required>
+                    <button class="btn-login" style="height: 40px; font-size: 15px" onclick="login()"> <span class="hover-underline-animation"> Continue </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16" fill="#fff">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
                         </svg>
                     </button>
                 </form>
@@ -104,8 +80,7 @@ $email = $google_info->email;
                 <form action="one_time_password.php" method="POST" onsubmit="return validateRegisterForm()">
                     <input type="text" for="email" name="email" id="email" placeholder="Email address" required>
                     <input type="password" placeholder="Password" id="password" name="password" required>
-                    <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password"
-                        required>
+                    <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password" required>
                     <input type="hidden" name="otp" value="<?php echo $otp; ?>">
                     <button type="submit" class="btn-login">Register</button>
                     <button class="btn-new" id="switch-to-login" onclick="showLoginForm()">
@@ -127,17 +102,17 @@ $email = $google_info->email;
 
 </html>
 <script>
-function printCookies() {
-    const cookies = document.cookie.split(";")
-        .map(cookie => cookie.trim());
+    function printCookies() {
+        const cookies = document.cookie.split(";")
+            .map(cookie => cookie.trim());
 
-    console.log("Cookies:");
-    cookies.forEach(cookie => {
-        console.log(cookie);
-    });
-}
+        console.log("Cookies:");
+        cookies.forEach(cookie => {
+            console.log(cookie);
+        });
+    }
 
 
-window.onload = printCookies;
+    window.onload = printCookies;
 </script>
 <script src="../backend/js/session_handler.js"></script>

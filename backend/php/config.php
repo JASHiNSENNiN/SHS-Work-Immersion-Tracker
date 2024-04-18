@@ -1,11 +1,10 @@
 <?php
 
-require_once '0Auth/auth_login.php';
 
 $host = "localhost";
-$username = "root";
-$password = "";
-$database = "shs_immersion";
+$username = "u487450272_workify_admin";
+$password = "@--Workify000";
+$database = "u487450272_shs_immersion";
 
 
 $conn = mysqli_connect($host, $username, $password);
