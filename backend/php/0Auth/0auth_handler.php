@@ -18,7 +18,17 @@ $client->addScope('profile');
 $client->addScope('email');;
 
 
-$gauth = new Google_Oauth2Service($client);
-$google_info = $gauth->userinfo->get();
-$email = $google_info->email;
-$name = $google_info->name;
+
+// authenticate code from Google OAuth Flow
+if (isset($_GET['code'])) {
+    $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+    $client->setAccessToken($token['access_token']);
+
+    
+    $google_oauth = new Google_Service_Oauth2($client);
+    $google_account_info = $google_oauth->userinfo->get();
+    $email =  $google_account_info->email;
+    $name =  $google_account_info->name;
+
+    
+}
