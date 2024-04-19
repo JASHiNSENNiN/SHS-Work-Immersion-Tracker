@@ -224,7 +224,7 @@ footer {
 /* left box */
 
 .sales-boxes .recent-sales {
-  width: auto;
+  width: 75%;
   background: #fff;
   padding: 20px 30px;
   margin: 0 auto;
@@ -581,6 +581,15 @@ nav a:hover::after {
   }
   .logoimg {
     width: 100% !important;
+  }
+  .css-1ld7x2h {
+    margin: 5px 0 0 !important;
+  }
+  .sales-boxes .recent-sales {
+    width: auto;
+  }
+  .button-4 {
+    margin-top: 10px;
   }
 }
 

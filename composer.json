@@ -1,6 +1,6 @@
 {
     "require": {
-        "google/apiclient": "^2.0",
+        "google/apiclient": "^2.15",
         "auth0/auth0-php": "^8.11",
         "steampixel/simple-php-router": "^0.7.1",
         "guzzlehttp/guzzle": "^7.8",

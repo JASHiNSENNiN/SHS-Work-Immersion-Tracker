@@ -80,7 +80,7 @@
 
             <form action="">
                 <div class="container">
-                    <h1>Post a Job ad for free</h1>
+                    <h1>Post a Job ads</h1>
                     <p>Please fill in this form to create an job.</p>
                     <hr>
 
@@ -89,6 +89,24 @@
 
                     <label for="date"><b>Expected Job Start date</b></label><br>
                     <input type="date" placeholder="DD/MM/YY" name="" id="" required>
+
+                    <label for=""><b>Chooce a Strand:</b></label><br>
+                    <label class="con">STEM
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="con">GAS
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="con">HUMSS
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="con">TECHVOC
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
 
                     <h1>Job Description</h1>
                     <hr>
@@ -139,7 +157,6 @@
             profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
         }
     </script>
-
 
 
 </body>
