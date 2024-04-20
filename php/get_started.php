@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/backend/php/0Auth/auth_info.php';
+require_once __DIR__ . '../backend/php/0Auth/auth_info.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +40,7 @@ require_once __DIR__ . '/backend/php/0Auth/auth_info.php';
 
                     <div class="form-container">
 
-                        <input type="text" for="email" name="email" id="email" placeholder="<?php echo $email?>" disabled>
+                        <input type="text" for="email" name="email" id="email" placeholder="<?php echo $email ?>" disabled>
                         <select id="account-type" name="account-type" required onchange="toggleFields()">
                             <option value class="null-type">Account Type:</option>
                             <option value="student">Student</option>
