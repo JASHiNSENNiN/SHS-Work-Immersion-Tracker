@@ -114,7 +114,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>
@@ -180,7 +180,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>
@@ -213,7 +213,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>
@@ -246,7 +246,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>
@@ -279,7 +279,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>
@@ -312,7 +312,7 @@
                   <div class="company-card__links">
                     <a class="company-card__link" href="#">Reviews</a>
                     <a class="company-card__link" href="#">Question</a>
-                    <a class="company-card__link" href="#">News</a>
+                    <a class="company-card__link" href="#">Work Immersion</a>
                   </div>
                 </div>
               </div>

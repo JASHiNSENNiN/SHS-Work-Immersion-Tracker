@@ -13,7 +13,6 @@
    
 } */
 
-
 /* -------------Text container-----------*/
 
 .col-lg-12 {
@@ -30,9 +29,7 @@
     /* padding-left: 100px */
 }
 
-
 /* --------------------joblisting container ---------------------- */
-
 
 /* 
 .job-listing {
@@ -45,7 +42,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 
-
 /* ----------------Slider---------------------*/
 
 .mySlides {
@@ -56,7 +52,6 @@ img {
     vertical-align: middle;
 }
 
-
 /* Slideshow container */
 
 .slideshow-container {
@@ -64,7 +59,6 @@ img {
     position: relative;
     margin: auto;
 }
-
 
 /* Caption text */
 
@@ -79,7 +73,6 @@ img {
     margin-left: 70px;
 }
 
-
 /* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
@@ -87,7 +80,6 @@ img {
         font-size: 11px;
     }
 }
-
 
 /* ///////////////////////////////////Search Bar //////////////////////////////// */
 
@@ -208,7 +200,6 @@ input[type="text"] {
     padding-bottom: 20px;
 }
 
-
 /* -------------------------line button----------------------------- */
 
 .css-1ld7x2h {
@@ -222,7 +213,6 @@ input[type="text"] {
     min-width: 0;
     width: 0.0625rem;
 }
-
 
 /* ----------------------------company review---------------- */
 
@@ -280,13 +270,13 @@ html {
 }
 
 body {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
     background: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-body> :last-child {
+body > :last-child {
     margin-bottom: 40px;
 }
 
@@ -296,7 +286,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
 p,
@@ -453,7 +443,6 @@ a {
     border-bottom: 2px solid #dedede;
 }
 
-
 /* .section-wrapper {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 } */
@@ -557,7 +546,7 @@ a {
     padding: 0;
 }
 
-.section-complex__col--flexible .section-complex__inner>* {
+.section-complex__col--flexible .section-complex__inner > * {
     flex: 1 0 auto;
 }
 
@@ -582,7 +571,7 @@ a {
         background: rgba(0, 0, 0, 0.05);
         border-left: 1px solid #dedede;
     }
-    .section-complex__col--sidebar .section-complex__inner>* {
+    .section-complex__col--sidebar .section-complex__inner > * {
         flex: 1 0 auto;
     }
 }
@@ -746,7 +735,7 @@ a {
 }
 
 .header__menu .menu-item.current-menu-item::before {
-    content: '';
+    content: "";
     background: #fff;
     position: absolute;
     left: 50%;
@@ -870,7 +859,7 @@ a {
         padding-top: 0;
         border-top: 0;
     }
-    .company-grid__item:nth-child(-n+3) {
+    .company-grid__item:nth-child(-n + 3) {
         margin-top: 0;
     }
 }
@@ -880,7 +869,7 @@ a {
         width: 25%;
         margin-top: 30px;
     }
-    .company-grid__item:nth-child(-n+4) {
+    .company-grid__item:nth-child(-n + 4) {
         margin-top: 0;
     }
 }
@@ -933,7 +922,8 @@ a {
 }
 
 .company-card__link {
-    font-size: 0.825rem;
+    /* font-size: 0.825rem; */
+    font-size: 12px;
     line-height: 1.35;
     display: table-cell;
     padding-left: 15px;
@@ -1018,7 +1008,7 @@ a {
     flex: 1 0 auto;
 }
 
-.news-list--complex>* {
+.news-list--complex > * {
     width: 100%;
 }
 
@@ -1040,7 +1030,7 @@ a {
     flex-direction: column;
 }
 
-.news-list__content>* {
+.news-list__content > * {
     width: 100%;
 }
 
@@ -1112,12 +1102,12 @@ a {
     display: table;
 }
 
-.post-card__meta>* {
+.post-card__meta > * {
     display: table-cell;
     padding-left: 15px;
 }
 
-.post-card__meta> :first-child {
+.post-card__meta > :first-child {
     padding-left: 0;
 }
 
@@ -1166,8 +1156,17 @@ a {
 .css-hid0zu {
     color: #595959;
     color: #2557a7;
-    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
-    font-size: .875rem;
+    font-family:
+        Noto Sans,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        Liberation Sans,
+        Roboto,
+        Noto,
+        sans-serif;
+    /* font-size: 0.875rem; */
+    font-size: 12px;
     font-weight: inherit;
     line-height: 1.5;
 }
