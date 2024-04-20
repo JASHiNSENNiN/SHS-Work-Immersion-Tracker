@@ -22,16 +22,16 @@
             <a href="index.php">
                 <img src="img/logov3.jpg" alt="Logo">
             </a>
-            <nav>
+            <nav class="dash-middle">
                 <a href="index.php">Home</a>
                 <a href="job_list.php">Company Review</a>
-                <a href="./php/contact.php">Contact</a>
+                <a href="contact.php">Contact</a>
             </nav>
         </div>
         <nav>
             <a class="login-btn" href="./php/login_form.php" style="margin-left: 20px;">Sign in</a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a href="post_work_Immersion.php">Post Work Immersion</a>
+            <a class="com-btn" href="post_work_Immersion.php">Post Work Immersion</a>
         </nav>
 
     </header>
@@ -49,13 +49,13 @@
                             <input type="text" placeholder="Work Immersion / Keyword">
 
                         </div>
-                        <div class="search-container">
+                        <div class="search-container" style="border-left: 1px solid grey">
                             <button type="submit"><i class="fas fa-map-marker-alt"></i></button>
                             <input type="text" placeholder="Search location">
 
                         </div>
 
-                        <input type="submit" value="Find Now" href="">
+                        <input class="sub-btn" type="submit" value="Find Now" href="">
                 </div>
                 </form>
             </div>
