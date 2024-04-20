@@ -77,7 +77,7 @@
         <!-- ------------------------------------------------------Job list------------------------------>
         <div class="main-container">
             <div class="recent-search">
-                <button class="clear-btn" disabled="disabled" onclick="clearRecent()">No Recent Items</button>
+                <button class="clear-btn" disabled="disabled" onclick="clearRecent()">No recent searches yet</button>
                 <div class="recent-search__list"></div>
 
             </div>
