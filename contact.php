@@ -19,7 +19,7 @@
     </a>
     <nav>
       <a href="index.php">Home</a>
-      <a href="job_list.php">Company Review</a>
+      <a href="job_list.php">Company review</a>
       <a href="contact.php">Contact</a>
     </nav>
   </div>
