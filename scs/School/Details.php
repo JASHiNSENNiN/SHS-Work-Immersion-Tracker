@@ -7,6 +7,7 @@
     <title>School Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Details.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- -------------font--------- -->
@@ -23,9 +24,30 @@
             </a>
         </div>
 
-        <nav>
+
+        <nav class="by">
+            <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
+            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdown" style="float:right;">
+                <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
+                <div class="dropdown-content">
+                    <div class="email">olshco@gmail.com</div>
+                    <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                        Profile</a>
+                    <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
+                        Reviews</a>
+                    <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
+                    <hr>
+                    <div class="foot">&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer
+                        Society Students
+                    </div>
+                    <hr>
+                    <a class="logout" href="#"> Log out</a>
+                </div>
+            </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a>
+            <!-- <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a> -->
         </nav>
     </header>
 
@@ -47,7 +69,7 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; margin-left:auto; margin-right:auto;">
+        <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
             <a href="Company.php">Work Immersion List</a>
             <!-- <a href="#.php">Company</a> -->
             <a href="Student.php">Student</a>

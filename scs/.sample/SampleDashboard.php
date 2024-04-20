@@ -31,15 +31,17 @@
 
         <nav>
 
-            <a class="dropbtn" href=""><i class='fas fa-user-alt' style='font-size:2px; color: black;'></i></a>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn"><i class="fa fa-sign-out"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
+            <a class="dropbtn" href=""><i class='fas fa-user-alt' style='font-size:2px; color: black;'></i></a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;"><span class="text">Log out<i
-                        class="fa fa-sign-out"></i></span></a>
+            <a class="login-btn" href="#" style="margin-left: 20px;"><span class="text">Log out</span></a>
         </nav>
     </header>
 
@@ -92,47 +94,47 @@
     </div>
 
     <script>
-        let toastBox = document.getElementById('toastBox');
-        let successMsg = '<i class="fa fa-check-circle"></i> Successfully submitted'
-        let errorsMsg = '<i class="fa fa-times-circle"></i> Please fix the error!'
-        let invalidMsg = '<i class="fa fa-exclamation-circle"></i> Invalid input, check again'
+    let toastBox = document.getElementById('toastBox');
+    let successMsg = '<i class="fa fa-check-circle"></i> Successfully submitted'
+    let errorsMsg = '<i class="fa fa-times-circle"></i> Please fix the error!'
+    let invalidMsg = '<i class="fa fa-exclamation-circle"></i> Invalid input, check again'
 
-        function showToast(msg) {
-            let toast = document.createElement('div');
-            toast.classList.add('toast');
-            toast.innerHTML = msg;
-            toastBox.appendChild(toast);
+    function showToast(msg) {
+        let toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.innerHTML = msg;
+        toastBox.appendChild(toast);
 
-            if (msg.includes('error')) {
-                toast.classList.add('error');
-            }
-            if (msg.includes('Invalid')) {
-                toast.classList.add('Invalid');
-            }
-
-            setTimeout(() => {
-                toast.remove();
-            }, 6000);
+        if (msg.includes('error')) {
+            toast.classList.add('error');
         }
+        if (msg.includes('Invalid')) {
+            toast.classList.add('Invalid');
+        }
+
+        setTimeout(() => {
+            toast.remove();
+        }, 6000);
+    }
     </script>
 
     <script>
-        function validation() {
-            Swal.fire({
-                title: "Successfully send!",
-                text: "You clicked the button!",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 1500
-            });
+    function validation() {
+        Swal.fire({
+            title: "Successfully send!",
+            text: "You clicked the button!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1500
+        });
 
-            // Swal.fire({
-            //     icon: "error",
-            //     title: "Oops...",
-            //     text: "Something went wrong!",
-            //     footer: '<a href="#">Why do I have this issue?</a>'
-            // });
-        }
+        // Swal.fire({
+        //     icon: "error",
+        //     title: "Oops...",
+        //     text: "Something went wrong!",
+        //     footer: '<a href="#">Why do I have this issue?</a>'
+        // });
+    }
     </script>
     <!-- <script>
     $(document).ready(function() {

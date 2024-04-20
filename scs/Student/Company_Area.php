@@ -27,9 +27,29 @@ session_start();
                 <img src="image/logov3.jpg" alt="Logo">
             </a>
         </div>
-        <nav>
+        <nav class="by">
+            <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
+            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdown" style="float:right;">
+                <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
+                <div class="dropdown-content">
+                    <div class="email">natividadma@students.olshco.edu</div>
+                    <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                        Profile</a>
+                    <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
+                        Reviews</a>
+                    <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
+                    <hr>
+                    <div class="foot">&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer
+                        Society Students
+                    </div>
+                    <hr>
+                    <a class="logout" href="#"> Log out</a>
+                </div>
+            </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a>
+            <!-- <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a> -->
         </nav>
 
     </header>
@@ -51,7 +71,7 @@ session_start();
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; margin-left:auto; margin-right:auto;">
+        <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="active" id="#area" href="company_area.php"> Company Area</a>
             <a class="link" id="#review" href="Company_Review.php">Company review</a>
             <a class="link" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
@@ -872,56 +892,56 @@ session_start();
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
             modal.style.display = "none";
         }
-    }
-    </script>
-    <script>
-    window.onscroll = function() {
-        myFunction()
-    };
 
-    var header = document.getElementById("myHeader-sticky");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("stickyhead");
-        } else {
-            header.classList.remove("stickyhead");
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
-    }
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader-sticky");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("stickyhead");
+            } else {
+                header.classList.remove("stickyhead");
+            }
+        }
     </script>
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 </body>
