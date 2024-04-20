@@ -2,7 +2,7 @@
 
 $otp = rand(00000000, 99999999);
 
-require_once __DIR__ . '/../backend/php/0Auth/0auth_handler.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0Auth/0auth_handler.php';
 
 ?>
 
