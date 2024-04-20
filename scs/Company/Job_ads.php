@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.core.css">
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quill-image-resize-module@3.0.0/image-resize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
@@ -30,9 +31,29 @@
             </a>
         </div>
 
-        <nav>
+        <nav class="by">
+            <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
+            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdown" style="float:right;">
+                <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
+                <div class="dropdown-content">
+                    <div class="email">upriis.division6@nia.gov.ph</div>
+                    <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                        Profile</a>
+                    <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
+                        Reviews</a>
+                    <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
+                    <hr>
+                    <div class="foot">&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer
+                        Society Students
+                    </div>
+                    <hr>
+                    <a class="logout" href="#"> Log out</a>
+                </div>
+            </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a>
+            <!-- <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a> -->
         </nav>
     </header>
 
@@ -55,7 +76,7 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; margin-left:auto; margin-right:auto;">
+        <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="active" href="Job_ads.php"> Job Ads</a>
             <a href="Job_request.php">Job Request</a>
             <a href="Faculty_report.php">Faculty Report</a>

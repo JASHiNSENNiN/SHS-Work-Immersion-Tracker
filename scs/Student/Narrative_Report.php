@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" href="css/Narrative.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -35,9 +36,29 @@
             </nav> -->
         </div>
 
-        <nav>
+        <nav class="by">
+            <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
+            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdown" style="float:right;">
+                <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
+                <div class="dropdown-content">
+                    <div class="email">natividadma@students.olshco.edu</div>
+                    <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                        Profile</a>
+                    <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
+                        Reviews</a>
+                    <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
+                    <hr>
+                    <div class="foot">&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer
+                        Society Students
+                    </div>
+                    <hr>
+                    <a class="logout" href="#"> Log out</a>
+                </div>
+            </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a>
+            <!-- <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a> -->
         </nav>
     </header>
 
@@ -59,7 +80,7 @@
     <hr>
     <div class="logo">
 
-        <nav style="position:relative; margin-left:auto; margin-right:auto;">
+        <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="link" id="#area" href="Company_Area.php"> Company Area</a>
             <a class="link" id="#review" href="Company_Review.php">Company review</a>
             <a class="active" id="#narrative" href="Narrative_Report.php">Narrative Report</a>

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="nav-header">
+    <!-- <header class="nav-header">
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
@@ -29,7 +29,7 @@
             <a class="login-btn" href="#" style="margin-left: 20px;"><span class="text">Log out<i
                         class="fa fa-sign-out"></i></span></a>
         </nav>
-    </header>
+    </header> -->
 
 
     <div class="container light-style flex-grow-1 container-p-y">
@@ -275,7 +275,7 @@ l                           ist" href="#account-info">Info</a> -->
         </div>
         <div class="text-right mt-3">
             <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
-            <a href="Dashboard.php"><button type="button" class="btn btn-default">Cancel</button></a>
+            <a href="Details.php"><button type="button" class="btn btn-default">Cancel</button></a>
         </div>
     </div>
 
