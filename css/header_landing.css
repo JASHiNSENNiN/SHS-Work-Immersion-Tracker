@@ -44,7 +44,7 @@ h3 {
 nav {
     text-align: center;
     display: flex;
-    gap: 180px
+    gap: 180px;
 }
 
 nav a {
@@ -73,7 +73,7 @@ nav a::after {
     width: 100%;
     height: 2px;
     background-color: #1bbc9b;
-    bottom: 0;
+    bottom: -17px;
     left: 0;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -141,7 +141,6 @@ nav a:hover::after {
         height: 10% !important;
     }
 }
-
 
 /* -------------------------line button----------------------------- */
 

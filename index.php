@@ -35,6 +35,8 @@
         </nav>
 
     </header>
+
+
     <div class="content-sticky">
 
 
@@ -61,6 +63,17 @@
             </div>
 
         </section>
+        <div class="tab-selection">
+
+            <nav style="position:relative; margin-left:auto; margin-right:auto;">
+                <a class="active" href="index.php">Work Immersion feed</a>
+                <a href="recent-search.php">Recent search</a>
+
+
+
+            </nav>
+        </div>
+        <hr class="line_bottom">
         <!-- ------------------------------------------------------Job list------------------------------>
         <div class="main-container">
             <div class="search-type">
