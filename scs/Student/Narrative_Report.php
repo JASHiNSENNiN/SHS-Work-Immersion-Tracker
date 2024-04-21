@@ -295,24 +295,21 @@
                             <label>How do you rate your overall experience?</label>
                             <div class="mb-3 d-flex flex-row py-1">
                                 <div class="form-check mr-3">
-                                    <input class="form-check-input" type="radio" name="rating" id="rating_bad"
-                                        value="bad">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_bad" value="bad">
                                     <label class="form-check-label" for="rating_bad">
                                         Bad
                                     </label>
                                 </div>
 
                                 <div class="form-check mx-3">
-                                    <input class="form-check-input" type="radio" name="rating" id="rating_good"
-                                        value="good">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_good" value="good">
                                     <label class="form-check-label" for="rating_good">
                                         Good
                                     </label>
                                 </div>
 
                                 <div class="form-check mx-3">
-                                    <input class="form-check-input" type="radio" name="rating" id="rating_excellent"
-                                        value="excellent">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_excellent" value="excellent">
                                     <label class="form-check-label" for="rating_excellent">
                                         Excellent!
                                     </label>
@@ -327,14 +324,12 @@
                             <div class="row">
                                 <div class="col">
                                     <label class="form-label" for="feedback_name">Your Name:</label><br>
-                                    <input type="text" required name="name" class="form-control" id="feedback_name"
-                                        placeholder="Name" />
+                                    <input type="text" required name="name" class="form-control" id="feedback_name" placeholder="Name" />
                                 </div>
 
                                 <div class="col mb-4">
                                     <label class="form-label" for="feedback_email">Email:</label><br>
-                                    <input type="email" name="email" required class="form-control" id="feedback_email"
-                                        placeholder="Your Email" />
+                                    <input type="email" name="email" required class="form-control" id="feedback_email" placeholder="Your Email" />
                                 </div>
                             </div><br>
                             <button type="submit" class="Submit" onclick="openPopup();">Submit</button>
@@ -366,7 +361,7 @@
     </footer>
 
     <script>
-        $("input:checkbox").on('click', function () {
+        $("input:checkbox").on('click', function() {
 
             var $box = $(this);
             if ($box.is(":checked")) {
@@ -434,7 +429,7 @@
         let profilePic1 = document.getElementById("cover-pic");
         let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function () {
+        inputFile1.onchange = function() {
             profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
         }
     </script>
@@ -443,7 +438,7 @@
         let profilePic2 = document.getElementById("profile-pic");
         let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function () {
+        inputFile2.onchange = function() {
             profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
         }
     </script>

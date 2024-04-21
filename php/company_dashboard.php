@@ -11,8 +11,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="../css/school_dashboard.css"> -->
     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet '>
@@ -85,8 +84,7 @@
             </div>
 
 
-            <div class="profile-details" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <div class="profile-details" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="dropdown">
                     <img src="image/NIA.png" alt="">
                     <span class="admin_name">NIA</span>
@@ -244,18 +242,15 @@
                                 <div class="row">
                                     <div class="col-sm">
                                         <label for="studentname">Student Name</label> <br>
-                                        <input type="text" placeholder="Lastname, Firstname Middlename" name="studentid"
-                                            id="studentid" required>
+                                        <input type="text" placeholder="Lastname, Firstname Middlename" name="studentid" id="studentid" required>
                                     </div>
                                     <div class="col-sm">
                                         <label for="studentid">School</label> <br>
-                                        <input type="text" placeholder="Enter School" name="studentid" id="studentid"
-                                            style="width: auto;">
+                                        <input type="text" placeholder="Enter School" name="studentid" id="studentid" style="width: auto;">
                                     </div>
                                     <div class="col-sm">
                                         <label for="studentid">Student ID</label> <br>
-                                        <input type="number" placeholder="Enter Student ID" name="studentid"
-                                            id="studentid" style="width: auto;">
+                                        <input type="number" placeholder="Enter Student ID" name="studentid" id="studentid" style="width: auto;">
                                     </div>
 
 
@@ -462,36 +457,25 @@
                                 <div class="row no-gutters row-bordered row-border-light">
                                     <div class="col-md-3 pt-0">
                                         <div class="list-group list-group-flush account-settings-links">
-                                            <a class="list-group-item list-group-item-action active" data-toggle="list"
-                                                href="#account-general">General</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-change-password">Change password</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-info">Info</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-social-links">Social links</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-connections">Connections</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-notifications">Notifications</a>
+                                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Connections</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notifications</a>
                                         </div>
                                     </div>
                                     <div class="col-md-9">
                                         <div class="tab-content">
                                             <div class="tab-pane fade active show" id="account-general">
                                                 <div class="card-body media align-items-center">
-                                                    <img src="image/profile.jpg" alt="profile" id="profile-pic"
-                                                        class="d-block ui-w-80"
-                                                        style="border-radius:50%; height:150px;  width : 160px !important;">
+                                                    <img src="image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80" style="border-radius:50%; height:150px;  width : 160px !important;">
                                                     <div class="media-body ml-4">
                                                         <label class="btn btn-outline-primary">
                                                             Upload new photo
-                                                            <input type="file" class="account-settings-fileinput"
-                                                                accept="image/jpeg, image/png, image/jpg"
-                                                                id="input-file">
+                                                            <input type="file" class="account-settings-fileinput" accept="image/jpeg, image/png, image/jpg" id="input-file">
                                                         </label> &nbsp;
-                                                        <button type="button"
-                                                            class="btn btn-default md-btn-flat">Reset</button>
+                                                        <button type="button" class="btn btn-default md-btn-flat">Reset</button>
                                                         <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max
                                                             size
                                                             of 800K</div>
@@ -509,8 +493,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">E-mail</label>
-                                                        <input type="text" class="form-control mb-1"
-                                                            placeholder="@gmail.com">
+                                                        <input type="text" class="form-control mb-1" placeholder="@gmail.com">
                                                         <div class="alert alert-warning mt-3">
                                                             Your email is not confirmed. Please check your inbox.<br>
                                                             <a href="javascript:void(0)">Resend confirmation</a>
@@ -564,8 +547,7 @@
                                                     <h6 class="mb-4">Contacts</h6>
                                                     <div class="form-group">
                                                         <label class="form-label">Phone</label>
-                                                        <input type="text" class="form-control"
-                                                            value="+0 (123) 456 7891">
+                                                        <input type="text" class="form-control" value="+0 (123) 456 7891">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Website</label>
@@ -577,13 +559,11 @@
                                                 <div class="card-body pb-2">
                                                     <div class="form-group">
                                                         <label class="form-label">Twitter</label>
-                                                        <input type="text" class="form-control"
-                                                            value="https://twitter.com/user">
+                                                        <input type="text" class="form-control" value="https://twitter.com/user">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Facebook</label>
-                                                        <input type="text" class="form-control"
-                                                            value="https://www.facebook.com/user">
+                                                        <input type="text" class="form-control" value="https://www.facebook.com/user">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Google+</label>
@@ -595,40 +575,33 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Instagram</label>
-                                                        <input type="text" class="form-control"
-                                                            value="https://www.instagram.com/user">
+                                                        <input type="text" class="form-control" value="https://www.instagram.com/user">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="account-connections">
                                                 <div class="card-body">
-                                                    <button type="button" class="btn btn-twitter"
-                                                        style="font-size: 15px;">Connect to
+                                                    <button type="button" class="btn btn-twitter" style="font-size: 15px;">Connect to
                                                         <strong>Twitter</strong></button>
                                                 </div>
                                                 <hr class="border-light m-0">
                                                 <div class="card-body">
                                                     <h5 class="mb-2" style="font-size: 15px;">
-                                                        <a href="javascript:void(0)"
-                                                            class="float-right text-muted text-tiny"
-                                                            style="font-size: 15px;"><i class="ion ion-md-close"></i>
+                                                        <a href="javascript:void(0)" class="float-right text-muted text-tiny" style="font-size: 15px;"><i class="ion ion-md-close"></i>
                                                             Remove</a>
                                                         <i class="ion ion-logo-google text-google"></i>
                                                         You are connected to Google:
                                                     </h5>
-                                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                        data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
+                                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
                                                 </div>
                                                 <hr class="border-light m-0">
                                                 <div class="card-body">
-                                                    <button type="button" class="btn btn-facebook"
-                                                        style="font-size: 15px;">Connect to
+                                                    <button type="button" class="btn btn-facebook" style="font-size: 15px;">Connect to
                                                         <strong>Facebook</strong></button>
                                                 </div>
                                                 <hr class="border-light m-0">
                                                 <div class="card-body">
-                                                    <button type="button" class="btn btn-instagram"
-                                                        style="font-size: 15px;">Connect to
+                                                    <button type="button" class="btn btn-instagram" style="font-size: 15px;">Connect to
                                                         <strong>Instagram</strong></button>
                                                 </div>
                                             </div>
@@ -734,7 +707,7 @@
     <script>
         let sidebar = document.querySelector(".sidebar");
         let sidebarBtn = document.querySelector(".sidebarBtn");
-        sidebarBtn.onclick = function () {
+        sidebarBtn.onclick = function() {
             sidebar.classList.toggle("active");
             if (sidebar.classList.contains("active")) {
                 sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
@@ -758,7 +731,7 @@
     <script type="text/javascript" src=" ../js/analytics_school_dashboard.js"></script>
 
     <script>
-        $(".link").click(function (e) {
+        $(".link").click(function(e) {
             e.preventDefault();
             $(".content").removeClass("active");
             var content_id = $(this).attr("id");
@@ -768,7 +741,7 @@
 
 
     <script>
-        $("input:checkbox").on('click', function () {
+        $("input:checkbox").on('click', function() {
 
             var $box = $(this);
             if ($box.is(":checked")) {
@@ -784,7 +757,7 @@
     <script>
         let profilePic = document.getElementById("profile-pic");
         let inputfile = document.getElementById("input-file");
-        inputfile.onchange = function () {
+        inputfile.onchange = function() {
             profilePic.src = URL.createObjectURL(inputfile.files[0]);
         }
     </script>

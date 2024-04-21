@@ -101,18 +101,5 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0Auth/0auth_handler.php';
 </body>
 
 </html>
-<script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
 
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
-
-
-    window.onload = printCookies;
-</script>
 <script src="../backend/js/session_handler.js"></script>
