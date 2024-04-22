@@ -1,11 +1,15 @@
 function validateRegisterForm() {
-	const email = document.getElementById("email").value;
-	const password = document.getElementById("password").value;
-	const confirmPassword = document.getElementById("confirm-password").value;
+	const email = document.getElementById("register_email").value;
+	const password = document.getElementById("register_password").value;
+	const confirmPassword = document.getElementById(
+		"register_confirm-password"
+	).value;
 
-	const emailInput = document.getElementById("email");
-	const passwordInput = document.getElementById("password");
-	const confirmPasswordInput = document.getElementById("confirm-password");
+	const emailInput = document.getElementById("register_email");
+	const passwordInput = document.getElementById("register_password");
+	const confirmPasswordInput = document.getElementById(
+		"register_confirm_password"
+	);
 
 	const allInputs = [emailInput, passwordInput, confirmPasswordInput];
 
@@ -53,34 +57,4 @@ function validateRegisterForm() {
 	}
 
 	return true;
-}
-
-function checkEmailExists(email) {
-	const xhr = new XMLHttpRequest();
-	xhr.open("POST", "../php/check_email.php", false);
-	xhr.setRequestHeader("Content-Type", "application/json");
-
-	xhr.send(JSON.stringify({ email: email }));
-
-	if (xhr.readyState === 4 && xhr.status === 200) {
-		const exists = JSON.parse(xhr.responseText);
-		return exists;
-	} else {
-		throw new Error(xhr.statusText);
-	}
-}
-
-function checkNameExists(checkName, accountType) {
-	const xhr = new XMLHttpRequest();
-	xhr.open("POST", "../php/check_name.php", false);
-	xhr.setRequestHeader("Content-Type", "application/json");
-	checkData = { checkName: checkName, accountType: accountType };
-	xhr.send(JSON.stringify(checkData));
-
-	if (xhr.readyState === 4 && xhr.status === 200) {
-		const exists = JSON.parse(xhr.responseText);
-		return exists;
-	} else {
-		throw new Error(xhr.statusText);
-	}
 }

@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../../../vendor/autoload.php';
+require_once $_SERVER['DOCUMENT_ROOT'] .  '/vendor/autoload.php';
 
-(Dotenv\Dotenv::createImmutable(__DIR__ . '/../../../'))->load();
+(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 
 $auth0 = new \Auth0\SDK\Auth0([
     'clientId' => $_ENV['AUTH0_CLIENT_ID'],

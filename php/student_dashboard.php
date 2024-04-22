@@ -12,8 +12,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="../css/school_dashboard.css"> -->
     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -193,8 +192,7 @@
                             <br>
 
                             <label for="studentid">Company name</label> <br>
-                            <input type="text" placeholder="Enter Company name" name="studentid" id="studentid"
-                                required>
+                            <input type="text" placeholder="Enter Company name" name="studentid" id="studentid" required>
                             <!-- <div class="title">Popularity Company </div> -->
                             <!-- <div class="title">Student List <div class="icon"><i class="bx bx-user-plus"></i> </div> </div> -->
 
@@ -397,36 +395,25 @@
                                 <div class="row no-gutters row-bordered row-border-light">
                                     <div class="col-md-3 pt-0">
                                         <div class="list-group list-group-flush account-settings-links">
-                                            <a class="list-group-item list-group-item-action active" data-toggle="list"
-                                                href="#account-general">General</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-change-password">Change password</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-info">Info</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-social-links">Social links</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-connections">Connections</a>
-                                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                                href="#account-notifications">Notifications</a>
+                                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Connections</a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notifications</a>
                                         </div>
                                     </div>
                                     <div class="col-md-9">
                                         <div class="tab-content">
                                             <div class="tab-pane fade active show" id="account-general">
                                                 <div class="card-body media align-items-center">
-                                                    <img src="image/profile.jpg" alt="profile" id="profile-pic"
-                                                        class="d-block ui-w-80"
-                                                        style="border-radius:50%; height:150px;  width : 160px !important;">
+                                                    <img src="image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80" style="border-radius:50%; height:150px;  width : 160px !important;">
                                                     <div class="media-body ml-4">
                                                         <label class="btn btn-outline-primary">
                                                             Upload new photo
-                                                            <input type="file" class="account-settings-fileinput"
-                                                                accept="image/jpeg, image/png, image/jpg"
-                                                                id="input-file">
+                                                            <input type="file" class="account-settings-fileinput" accept="image/jpeg, image/png, image/jpg" id="input-file">
                                                         </label> &nbsp;
-                                                        <button type="button"
-                                                            class="btn btn-default md-btn-flat">Reset</button>
+                                                        <button type="button" class="btn btn-default md-btn-flat">Reset</button>
                                                         <div class="text-light small mt-1">Allowed JPG, GIF or PNG.
                                                             Max
                                                             size
@@ -441,24 +428,19 @@
                                 </div> -->
                                                     <div class="form-group">
                                                         <label class="form-label">School Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%"
-                                                            ;><br>
+                                                        <input type="text" class="form-control" style="width: 50%" ;><br>
                                                         <label class="form-label">First Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%"
-                                                            ;><br>
+                                                        <input type="text" class="form-control" style="width: 50%" ;><br>
                                                         <label class="form-label">Middle Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%"
-                                                            ;><br>
+                                                        <input type="text" class="form-control" style="width: 50%" ;><br>
                                                         <label class="form-label">Last Name</label><br>
-                                                        <input type="text" class="form-control" style="width: 50%"
-                                                            ;><br>
+                                                        <input type="text" class="form-control" style="width: 50%" ;><br>
                                                         <label class="form-label">Student ID</label><br>
                                                         <input type="text" class="form-control" style="width: 50%" ;>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">E-mail</label><br>
-                                                        <input type="text" class="form-control mb-1"
-                                                            placeholder="@gmail.com" style="width: 50%">
+                                                        <input type="text" class="form-control mb-1" placeholder="@gmail.com" style="width: 50%">
                                                         <div class="alert alert-warning mt-3">
                                                             Your email is not confirmed. Please check your
                                                             inbox.<br>
@@ -513,8 +495,7 @@
                                                     <h6 class="mb-4">Contacts</h6>
                                                     <div class="form-group">
                                                         <label class="form-label">Phone</label><br>
-                                                        <input type="number" class="form-control"
-                                                            value="+0 (123) 456 7891" style="width: 50%">
+                                                        <input type="number" class="form-control" value="+0 (123) 456 7891" style="width: 50%">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Website</label><br>
@@ -526,13 +507,11 @@
                                                 <div class="card-body pb-2">
                                                     <div class="form-group">
                                                         <label class="form-label">Twitter</label><br>
-                                                        <input type="text" class="form-control"
-                                                            value="https://twitter.com/user" style="width: 90%">
+                                                        <input type="text" class="form-control" value="https://twitter.com/user" style="width: 90%">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Facebook</label><br>
-                                                        <input type="text" class="form-control"
-                                                            value="https://www.facebook.com/user" style="width: 90%">
+                                                        <input type="text" class="form-control" value="https://www.facebook.com/user" style="width: 90%">
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Google+</label><br>
@@ -544,40 +523,33 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="form-label">Instagram</label><br>
-                                                        <input type="text" class="form-control"
-                                                            value="https://www.instagram.com/user" style="width: 90%">
+                                                        <input type="text" class="form-control" value="https://www.instagram.com/user" style="width: 90%">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="account-connections">
                                                 <div class="card-body">
-                                                    <button type="button" class="btn btn-twitter"
-                                                        style="font-size: 15px;">Connect to
+                                                    <button type="button" class="btn btn-twitter" style="font-size: 15px;">Connect to
                                                         <strong>Twitter</strong></button>
                                                 </div>
                                                 <hr class="border-light m-0">
                                                 <div class="card-body">
                                                     <h5 class="mb-2" style="font-size: 15px;">
-                                                        <a href="javascript:void(0)"
-                                                            class="float-right text-muted text-tiny"
-                                                            style="font-size: 15px;"><i class="ion ion-md-close"></i>
+                                                        <a href="javascript:void(0)" class="float-right text-muted text-tiny" style="font-size: 15px;"><i class="ion ion-md-close"></i>
                                                             Remove</a>
                                                         <i class="ion ion-logo-google text-google"></i>
                                                         You are connected to Google:
                                                     </h5>
-                                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                        data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
+                                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
                                                 </div>
                                                 <hr class="border-light m-0">
                                                 <div class="card-body">
-                                                    <button type="button" class="btn btn-facebook"
-                                                        style="font-size: 15px;">Connect to
+                                                    <button type="button" class="btn btn-facebook" style="font-size: 15px;">Connect to
                                                         <strong>Facebook</strong></button>
                                                 </div>
                                                 <hr class="border-light m-0">
                                                 <div class="card-body">
-                                                    <button type="button" class="btn btn-instagram"
-                                                        style="font-size: 15px;">Connect to
+                                                    <button type="button" class="btn btn-instagram" style="font-size: 15px;">Connect to
                                                         <strong>Instagram</strong></button>
                                                 </div>
                                             </div>
@@ -685,62 +657,61 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <script>
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".sidebarBtn");
-    sidebarBtn.onclick = function() {
-        sidebar.classList.toggle("active");
-        if (sidebar.classList.contains("active")) {
-            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-        } else
-            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-    }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
     </script>
     <script>
-    let toggle = () => {
+        let toggle = () => {
 
-        let element = document.getElementById("logo_name");
-        let hidden = element.getAttribute("hidden");
+            let element = document.getElementById("logo_name");
+            let hidden = element.getAttribute("hidden");
 
-        if (hidden) {
-            element.removeAttribute("hidden");
-        } else {
-            element.setAttribute("hidden", "hidden");
+            if (hidden) {
+                element.removeAttribute("hidden");
+            } else {
+                element.setAttribute("hidden", "hidden");
+            }
         }
-    }
     </script>
     <script type="text/javascript" src=" ../js/analytics_school_dashboard.js"></script>
 
     <script>
-    $(".link").click(function(e) {
-        e.preventDefault();
-        $(".content").removeClass("active");
-        var content_id = $(this).attr("id");
-        $(content_id).addClass("active");
-    });
+        $(".link").click(function(e) {
+            e.preventDefault();
+            $(".content").removeClass("active");
+            var content_id = $(this).attr("id");
+            $(content_id).addClass("active");
+        });
     </script>
     <script>
-    $("input:checkbox").on('click', function() {
+        $("input:checkbox").on('click', function() {
 
-        var $box = $(this);
-        if ($box.is(":checked")) {
-            var group = "input:checkbox[name='" + $box.attr("name") + "']";
-            $(group).prop("checked", false);
-            $box.prop("checked", true);
-        } else {
-            $box.prop("checked", false);
-        }
-    });
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
     </script>
     <script>
-    let profilePic = document.getElementById("profile-pic");
-    let inputfile = document.getElementById("input-file");
-    inputfile.onchange = function() {
-        profilePic.src = URL.createObjectURL(inputfile.files[0]);
-    }
+        let profilePic = document.getElementById("profile-pic");
+        let inputfile = document.getElementById("input-file");
+        inputfile.onchange = function() {
+            profilePic.src = URL.createObjectURL(inputfile.files[0]);
+        }
     </script>
 
 

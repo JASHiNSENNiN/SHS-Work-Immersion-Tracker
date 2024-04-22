@@ -103,6 +103,14 @@ CREATE TABLE IF NOT EXISTS risk_assessments (
   user_id INT(11),
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
+CREATE TABLE otp (
+    otp_id INT AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL,
+    otp_value VARCHAR(6) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (otp_id)
+);
 ";
 
 if (mysqli_multi_query($conn, $sql)) {
