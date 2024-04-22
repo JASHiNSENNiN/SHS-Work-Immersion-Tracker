@@ -56,7 +56,9 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
-    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
@@ -64,8 +66,9 @@
         <div class="name">National Irrigation Administration</div>
         <label class="strand" for="">NIA</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
-                profile</label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div><br>
     </div>
@@ -96,15 +99,18 @@
 
                     <div class="info">
                         <label for=" studentname">Student Name</label>
-                        <input type="text" placeholder="Lastname, Firstname Middlename" name="studentname" id="studentname" required>
+                        <input type="text" placeholder="Lastname, Firstname Middlename" name="studentname"
+                            id="studentname" required>
                     </div>
                     <div class="info">
                         <label for="studentid">School</label>
-                        <input type="text" placeholder="Enter School" name="studentid" id="studentid" style="width: auto;">
+                        <input type="text" placeholder="Enter School" name="studentid" id="studentid"
+                            style="width: auto;">
                     </div>
                     <div class="info">
                         <label for="studentid">Student ID</label>
-                        <input type="number" placeholder="Enter Student ID" name="studentid" id="studentid" style="width: auto;">
+                        <input type="number" placeholder="Enter Student ID" name="studentid" id="studentid"
+                            style="width: auto;">
                     </div>
 
                 </div>
@@ -296,7 +302,7 @@
     </form>
 
     <script>
-        $("input:checkbox").on('click', function() {
+        $("input:checkbox").on('click', function () {
 
             var $box = $(this);
             if ($box.is(":checked")) {
@@ -328,7 +334,7 @@
         let profilePic1 = document.getElementById("cover-pic");
         let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function() {
+        inputFile1.onchange = function () {
             profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
         }
     </script>
@@ -337,7 +343,7 @@
         let profilePic2 = document.getElementById("profile-pic");
         let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function() {
+        inputFile2.onchange = function () {
             profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
         }
     </script>

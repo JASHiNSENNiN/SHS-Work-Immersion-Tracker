@@ -55,7 +55,9 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" width="200" height="300">
-    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
@@ -63,8 +65,9 @@
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
-                profile</label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
     </div><br><br>
@@ -116,7 +119,8 @@
     <section class="section-gutter company-grid">
         <div class="container">
             <div class="section-bg-white section-wrapper company-grid__wrapper">
-                <header class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
+                <header
+                    class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
                     <h2 class="h4 company-grid__title">Popular companies</h2>
                     <div class="section-wrapper__header-cta">
                         <a class="link-text" href="/companies">View all <i class="fas fa-angle-double-right"></i></a>
@@ -129,7 +133,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="../Company/image/NIA.png">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="../Company/image/NIA.png">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -162,7 +167,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -196,7 +202,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -230,7 +237,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -264,7 +272,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -298,7 +307,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -332,7 +342,8 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name"
+                                                src="https://via.placeholder.com/150">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
@@ -384,7 +395,7 @@
     </script>
 
     <script>
-        $(".link").click(function(e) {
+        $(".link").click(function (e) {
             e.preventDefault();
             $(".content").removeClass("active");
             var content_id = $(this).attr("id");
@@ -395,7 +406,7 @@
         let profilePic1 = document.getElementById("cover-pic");
         let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function() {
+        inputFile1.onchange = function () {
             profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
         }
     </script>
@@ -404,7 +415,7 @@
         let profilePic2 = document.getElementById("profile-pic");
         let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function() {
+        inputFile2.onchange = function () {
             profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
         }
     </script>

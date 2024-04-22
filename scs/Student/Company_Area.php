@@ -55,7 +55,9 @@ session_start();
     </header>
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" width="200" height="300">
-    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
@@ -63,8 +65,9 @@ session_start();
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
-                profile</label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
     </div><br><br>
@@ -880,68 +883,68 @@ session_start();
     </footer>
 
     <script>
-    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
     <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("btnApply");
+        // Get the button that opens the modal
+        var btn = document.getElementById("btnApply");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
             modal.style.display = "none";
         }
-    }
-    </script>
-    <script>
-    window.onscroll = function() {
-        myFunction()
-    };
 
-    var header = document.getElementById("myHeader-sticky");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("stickyhead");
-        } else {
-            header.classList.remove("stickyhead");
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
-    }
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader-sticky");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("stickyhead");
+            } else {
+                header.classList.remove("stickyhead");
+            }
+        }
     </script>
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 </body>

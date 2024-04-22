@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/header.css"> -->
     <link rel="stylesheet" href="css/Narrative.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -64,7 +65,9 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
-    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
@@ -72,8 +75,9 @@
         <div class="name"> Miguel Von Natividad</div>
         <label class="strand" for="">STEM</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
-                profile</label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
     </div><br><br>
@@ -295,21 +299,24 @@
                             <label>How do you rate your overall experience?</label>
                             <div class="mb-3 d-flex flex-row py-1">
                                 <div class="form-check mr-3">
-                                    <input class="form-check-input" type="radio" name="rating" id="rating_bad" value="bad">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_bad"
+                                        value="bad">
                                     <label class="form-check-label" for="rating_bad">
                                         Bad
                                     </label>
                                 </div>
 
                                 <div class="form-check mx-3">
-                                    <input class="form-check-input" type="radio" name="rating" id="rating_good" value="good">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_good"
+                                        value="good">
                                     <label class="form-check-label" for="rating_good">
                                         Good
                                     </label>
                                 </div>
 
                                 <div class="form-check mx-3">
-                                    <input class="form-check-input" type="radio" name="rating" id="rating_excellent" value="excellent">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating_excellent"
+                                        value="excellent">
                                     <label class="form-check-label" for="rating_excellent">
                                         Excellent!
                                     </label>
@@ -324,12 +331,14 @@
                             <div class="row">
                                 <div class="col">
                                     <label class="form-label" for="feedback_name">Your Name:</label><br>
-                                    <input type="text" required name="name" class="form-control" id="feedback_name" placeholder="Name" />
+                                    <input type="text" required name="name" class="form-control" id="feedback_name"
+                                        placeholder="Name" />
                                 </div>
 
                                 <div class="col mb-4">
                                     <label class="form-label" for="feedback_email">Email:</label><br>
-                                    <input type="email" name="email" required class="form-control" id="feedback_email" placeholder="Your Email" />
+                                    <input type="email" name="email" required class="form-control" id="feedback_email"
+                                        placeholder="Your Email" />
                                 </div>
                             </div><br>
                             <button type="submit" class="Submit" onclick="openPopup();">Submit</button>
@@ -361,35 +370,35 @@
     </footer>
 
     <script>
-        $("input:checkbox").on('click', function() {
+    $("input:checkbox").on('click', function() {
 
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
 
     <script>
-        let popup = document.getElementById("popup");
+    let popup = document.getElementById("popup");
 
-        function openPopup() {
-            // popup.classList.add("open-popup");
-            Swal.fire({
-                title: "Successfully send!",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 2500
-            });
-        }
+    function openPopup() {
+        // popup.classList.add("open-popup");
+        Swal.fire({
+            title: "Successfully send!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 2500
+        });
+    }
 
-        function closePopup() {
-            popup.classList.remove("open-popup");
-        }
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
     </script>
 
     <!-- <script>
@@ -426,21 +435,21 @@
     </script> -->
 
     <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function() {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
     </script>
 
     <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function() {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
     </script>
 
 

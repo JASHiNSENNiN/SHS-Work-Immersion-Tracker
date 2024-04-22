@@ -442,13 +442,51 @@ h3 {
   background-color: #fff;
   color: #000000;
   padding-top: 5px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-left: 100px;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.checkbtn {
+  font-size: 30px;
+  color: #000;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  /* display: none; */
+}
+#check {
+  display: none;
+}
+.cam {
+  display: none;
+}
+.pen {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .cam {
+    display: block;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  .button-13 {
+    float: right;
+  }
+  .button-12 {
+    border-radius: 110px;
+  }
+  .edit {
+    display: none;
+  }
+  .pen {
+    display: block;
+  }
 }
 
 .logo {

@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/Student.css">
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,7 +55,9 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
-    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
@@ -62,8 +65,9 @@
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
-                profile</label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
     </div><br><br>
@@ -321,7 +325,7 @@
 
 
     <script>
-        $(".box").click(function(e) {
+        $(".box").click(function (e) {
             e.preventDefault();
             $(".content").removeClass("active");
             var content_id = $(this).attr("id");
@@ -337,7 +341,7 @@
         let profilePic1 = document.getElementById("cover-pic");
         let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function() {
+        inputFile1.onchange = function () {
             profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
         }
     </script>
@@ -346,7 +350,7 @@
         let profilePic2 = document.getElementById("profile-pic");
         let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function() {
+        inputFile2.onchange = function () {
             profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
         }
     </script>
