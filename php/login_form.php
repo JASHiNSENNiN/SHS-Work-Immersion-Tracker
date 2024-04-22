@@ -102,8 +102,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
                     <input type="password" placeholder="Password" id="password" name="register_password" required>
                     <input type="password" placeholder="Confirm Password" id="confirm-password"
                         name="register_confirm_password" required>
-                    <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
-                        data-action='register_form_submit' type="submit" class="btn-login" onclick="">Register</button>
+                    <button class="g-recaptcha" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6"
+                        data-callback='onSubmit' data-action='register_form_submit' type="submit" class="btn-login"
+                        onclick="">Register</button>
                     <button class="btn-new" id="switch-to-login" onclick="showLoginForm()">
                         Log in to Existing Account
                     </button>
