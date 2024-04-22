@@ -161,6 +161,45 @@ h3 {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.checkbtn {
+  font-size: 30px;
+  color: #000;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  /* display: none; */
+}
+#check {
+  display: none;
+}
+.cam {
+  display: none;
+}
+.pen {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .cam {
+    display: block;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  .button-13 {
+    float: right;
+  }
+  .button-12 {
+    border-radius: 110px;
+  }
+  .edit {
+    display: none;
+  }
+  .pen {
+    display: block;
+  }
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -195,6 +234,7 @@ nav a {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  /* display: inline; */
 }
 
 nav .login-btn:hover {
@@ -360,6 +400,9 @@ nav a:hover::after {
   }
   nav {
     margin: 0;
+  }
+  .dropdown {
+    margin-top: 5px;
   }
 }
 
@@ -623,6 +666,9 @@ h3:after {
 
 @media (min-width: 768px) {
   .button-37 {
+    padding: auto;
+  }
+  .button-9 {
     padding: 10px 30px;
   }
 }
@@ -745,7 +791,7 @@ input {
 }
 
 .button-12 {
-  /* display: flex; */
+  display: inline-block;
   flex-direction: column;
   align-items: center;
   padding: 6px 14px;

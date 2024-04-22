@@ -19,6 +19,10 @@
 <body>
 
     <header class="nav-header">
+        <!-- <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label> -->
         <div class="logo">
             <a href="#">
                 <img src="image/logov3.jpg" alt="Logo">
@@ -28,7 +32,6 @@
         <nav class="by">
             <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
             <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
-
             <div class="dropdown" style="float:right;">
                 <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
                 <div class="dropdown-content">
@@ -54,7 +57,9 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
-    <label for="input-file1" class="button-13" role="button"><i class="fa fa-camera"></i>Edit cover photo</label>
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
     <div class="profile">
@@ -62,8 +67,9 @@
         <div class="name">Our Lady of Sacred Heart College of Guimba Inc.</div>
         <label class="strand" for="">OLSHCO</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><i class="fa fa-pencil"></i> Edit
-                profile</label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
     </div><br><br>
