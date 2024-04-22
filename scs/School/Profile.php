@@ -6,115 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
     <style>
-    .ui-w-80 {
-        width: 160px !important;
-        height: auto;
-    }
+        .ui-w-80 {
+            width: 160px !important;
+            height: auto;
+        }
 
-    .btn-default {
-        border-color: rgba(24, 28, 33, 0.1);
-        background: rgba(0, 0, 0, 0);
-        color: #4e5155;
-    }
+        .btn-default {
+            border-color: rgba(24, 28, 33, 0.1);
+            background: rgba(0, 0, 0, 0);
+            color: #4e5155;
+        }
 
-    label.btn {
-        margin-bottom: 0;
-    }
+        label.btn {
+            margin-bottom: 0;
+        }
 
-    .btn-outline-primary {
-        border-color: #26b4ff;
-        background: transparent;
-        color: #26b4ff;
-    }
+        .btn-outline-primary {
+            border-color: #26b4ff;
+            background: transparent;
+            color: #26b4ff;
+        }
 
-    .btn {
-        cursor: pointer;
-    }
+        .btn {
+            cursor: pointer;
+        }
 
-    .text-light {
-        color: #babbbc !important;
-    }
+        .text-light {
+            color: #babbbc !important;
+        }
 
-    .btn-facebook {
-        border-color: rgba(0, 0, 0, 0);
-        background: #3b5998;
-        color: #fff;
-    }
+        .btn-facebook {
+            border-color: rgba(0, 0, 0, 0);
+            background: #3b5998;
+            color: #fff;
+        }
 
-    .btn-instagram {
-        border-color: rgba(0, 0, 0, 0);
-        background: #000;
-        color: #fff;
-    }
+        .btn-instagram {
+            border-color: rgba(0, 0, 0, 0);
+            background: #000;
+            color: #fff;
+        }
 
-    .card {
-        background-clip: padding-box;
-        box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
-    }
+        .card {
+            background-clip: padding-box;
+            box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
+        }
 
-    .row-bordered {
-        overflow: hidden;
-    }
+        .row-bordered {
+            overflow: hidden;
+        }
 
-    .account-settings-fileinput {
-        position: absolute;
-        visibility: hidden;
-        width: 1px;
-        height: 1px;
-        opacity: 0;
-    }
+        .account-settings-fileinput {
+            position: absolute;
+            visibility: hidden;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+        }
 
-    .account-settings-links .list-group-item.active {
-        font-weight: bold !important;
-    }
+        .account-settings-links .list-group-item.active {
+            font-weight: bold !important;
+        }
 
-    html:not(.dark-style) .account-settings-links .list-group-item.active {
-        background: transparent !important;
-    }
+        html:not(.dark-style) .account-settings-links .list-group-item.active {
+            background: transparent !important;
+        }
 
-    .account-settings-multiselect~.select2-container {
-        width: 100% !important;
-    }
+        .account-settings-multiselect~.select2-container {
+            width: 100% !important;
+        }
 
-    .light-style .account-settings-links .list-group-item {
-        padding: 0.85rem 1.5rem;
-        border-color: rgba(24, 28, 33, 0.03) !important;
-    }
+        .light-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(24, 28, 33, 0.03) !important;
+        }
 
-    .light-style .account-settings-links .list-group-item.active {
-        color: #4e5155 !important;
-    }
+        .light-style .account-settings-links .list-group-item.active {
+            color: #4e5155 !important;
+        }
 
-    .material-style .account-settings-links .list-group-item {
-        padding: 0.85rem 1.5rem;
-        border-color: rgba(24, 28, 33, 0.03) !important;
-    }
+        .material-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(24, 28, 33, 0.03) !important;
+        }
 
-    .material-style .account-settings-links .list-group-item.active {
-        color: #4e5155 !important;
-    }
+        .material-style .account-settings-links .list-group-item.active {
+            color: #4e5155 !important;
+        }
 
-    .dark-style .account-settings-links .list-group-item {
-        padding: 0.85rem 1.5rem;
-        border-color: rgba(255, 255, 255, 0.03) !important;
-    }
+        .dark-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(255, 255, 255, 0.03) !important;
+        }
 
-    .dark-style .account-settings-links .list-group-item.active {
-        color: #fff !important;
-    }
+        .dark-style .account-settings-links .list-group-item.active {
+            color: #fff !important;
+        }
 
-    .light-style .account-settings-links .list-group-item.active {
-        color: #4e5155 !important;
-    }
+        .light-style .account-settings-links .list-group-item.active {
+            color: #4e5155 !important;
+        }
 
-    .light-style .account-settings-links .list-group-item {
-        padding: 0.85rem 1.5rem;
-        border-color: rgba(24, 28, 33, 0.03) !important;
-    }
+        .light-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(24, 28, 33, 0.03) !important;
+        }
     </style>
 </head>
 
@@ -126,26 +125,19 @@
                 <div class="row no-gutters row-bordered row-border-light">
                     <div class="col-md-3 pt-0">
                         <div class="list-group list-group-flush account-settings-links">
-                            <a class="list-group-item list-group-item-action active" data-toggle="list"
-                                href="#account-general">General</a>
-                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                href="#account-change-password">Change password</a>
-                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                href="#account-info">Info</a>
-                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                href="#account-social-links">Social links</a>
-                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                href="#account-connections">Connections</a>
-                            <a class="list-group-item list-group-item-action" data-toggle="list"
-                                href="#account-notifications">Notifications</a>
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Connections</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notifications</a>
                         </div>
                     </div>
                     <div class="col-md-9">
                         <div class="tab-content">
                             <div class="tab-pane fade active show" id="account-general">
                                 <div class="card-body media align-items-center">
-                                    <img src="image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80"
-                                        style="
+                                    <img src="image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80" style="
                         border-radius: 50%;
                         height: 150px;
                         width: 160px !important;
@@ -153,8 +145,7 @@
                                     <div class="media-body ml-4">
                                         <label class="btn btn-outline-primary">
                                             Upload new photo
-                                            <input type="file" class="account-settings-fileinput"
-                                                accept="image/jpeg, image/png, image/jpg" id="input-file" />
+                                            <input type="file" class="account-settings-fileinput" accept="image/jpeg, image/png, image/jpg" id="input-file" />
                                         </label>
                                         &nbsp;
                                         <button type="button" class="btn btn-default md-btn-flat">
@@ -259,8 +250,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label">Instagram</label>
-                                        <input type="text" class="form-control"
-                                            value="https://www.instagram.com/user" />
+                                        <input type="text" class="form-control" value="https://www.instagram.com/user" />
                                     </div>
                                 </div>
                             </div>
@@ -273,13 +263,11 @@
                                 <hr class="border-light m-0" />
                                 <div class="card-body">
                                     <h5 class="mb-2" style="font-size: 15px">
-                                        <a href="javascript:void(0)" class="float-right text-muted text-tiny"
-                                            style="font-size: 15px"><i class="ion ion-md-close"></i> Remove</a>
+                                        <a href="javascript:void(0)" class="float-right text-muted text-tiny" style="font-size: 15px"><i class="ion ion-md-close"></i> Remove</a>
                                         <i class="ion ion-logo-google text-google"></i>
                                         You are connected to Google:
                                     </h5>
-                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                        data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
+                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
                                 </div>
                                 <hr class="border-light m-0" />
                                 <div class="card-body">

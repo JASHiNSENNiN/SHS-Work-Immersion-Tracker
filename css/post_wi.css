@@ -74,7 +74,6 @@ input {
     transition: 200ms ease-in;
 }
 
-
 /* 
 input:focus {
   border-bottom: 4px solid hsl(236, 92%, 66%);
@@ -109,7 +108,7 @@ input::placeholder {
 }
 
 header {
-    background-color: #08203A;
+    background-color: #08203a;
     color: #fff;
     padding-top: 5px;
     padding-right: 20px;
@@ -170,7 +169,7 @@ nav a::after {
     width: 100%;
     height: 2px;
     background-color: #1bbc9b;
-    bottom: 0;
+    bottom: -17px;
     left: 0;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -181,7 +180,6 @@ nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
 
 /* .login-btn {
             background-color: #1bbc9b;
@@ -256,7 +254,6 @@ nav a:hover::after {
     }
 }
 
-
 /* -------------------------line button----------------------------- */
 
 .css-1ld7x2h {
@@ -271,7 +268,6 @@ nav a:hover::after {
     width: 0.0625rem;
 }
 
-
 /* --------------------------------------Header Sticky--------------------------- */
 
 .stickyhead {
@@ -280,10 +276,9 @@ nav a:hover::after {
     width: 97%;
 }
 
-.stickyhead+.content-sticky {
+.stickyhead + .content-sticky {
     padding-top: 102px;
 }
-
 
 /* --------------------------------------guide line ----------------------- */
 
@@ -310,7 +305,7 @@ nav a:hover::after {
     height: auto;
     width: 300px;
     border: 1px solid;
-    border-color: #7D7C7C;
+    border-color: #7d7c7c;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
@@ -383,13 +378,13 @@ nav a:hover::after {
     font-size: 0.7em;
     font-weight: bold;
     line-height: 15px;
-    color: #7D7C7C;
+    color: #7d7c7c;
 }
 
 .description-zfpz9y {
     margin: 30px auto;
     font-size: 0.8em;
-    color: #7D7C7C;
+    color: #7d7c7c;
     margin-bottom: 0px !important;
     margin-top: 0px !important;
 }
@@ -404,10 +399,9 @@ nav a:hover::after {
     color: rgb(89, 89, 89);
 }
 
-
 /* Responsiveness:Start */
 
-@media screen and (max-width:970px) {
+@media screen and (max-width: 970px) {
     .content-yj6db6 {
         display: flex;
         align-items: center;
@@ -420,9 +414,7 @@ nav a:hover::after {
     }
 }
 
-
 /* Responsiveness:End */
-
 
 /* --------------------------------------Footer ----------------------- */
 

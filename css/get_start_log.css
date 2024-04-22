@@ -99,7 +99,7 @@ body {
     background: none;
     z-index: 1;
     cursor: context-menu;
-    transition: 0.8s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .myBtn:hover {
@@ -116,7 +116,7 @@ body {
     right: 0;
     top: 100%;
     z-index: -1;
-    transition: top 0.8s ease-out;
+    transition: top 0.3s ease-out;
 }
 
 .myBtn:hover:before {

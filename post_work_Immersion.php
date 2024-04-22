@@ -21,8 +21,6 @@
             </a>
             <nav>
                 <a href="post_work_immersion.php">Post Work Immersion</a>
-                <!-- <a href="./php/job_list.php">Find a Work Immerssion</a>
-            <a href="./php/contact.php">Contact</a> -->
 
             </nav>
 
@@ -32,7 +30,7 @@
         <nav>
             <a class="login-btn" href="./php/login_form.php" style="margin-left: 20px;">Sign in</a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a href="index.php">Find Work Immersion</a>
+            <a href="index.php" style="margin-top: 5px;">Find Work Immersion</a>
         </nav>
 
 
@@ -67,7 +65,8 @@
                         </div>
                     </div>
                     <div class="description-zfpz9y">
-                        <p class="css-zfpz9y">All you need is your email address to create an account and start building your job post.</p>
+                        <p class="css-zfpz9y">All you need is your email address to create an account and start building
+                            your job post.</p>
 
                     </div>
 
@@ -84,7 +83,8 @@
                         </div>
                     </div>
                     <div class="description-zfpz9y">
-                        <p class="css-zfpz9y">Then just add a title, description, and location to your job post, and you're ready to go.</p>
+                        <p class="css-zfpz9y">Then just add a title, description, and location to your job post, and
+                            you're ready to go.</p>
 
                     </div>
 
@@ -101,7 +101,8 @@
                         </div>
                     </div>
                     <div class="description-zfpz9y">
-                        <p class="css-zfpz9y">After you post your job use our state of the art tools to help you find dream talent.</p>
+                        <p class="css-zfpz9y">After you post your job use our state of the art tools to help you find
+                            dream talent.</p>
 
                     </div>
 
