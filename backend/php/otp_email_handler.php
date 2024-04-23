@@ -11,8 +11,22 @@ function insertOTP()
     $conn = mysqli_connect($host, $username, $password, $database);
     $currentDateTime = date('Y-m-d H:i:s A');
     $otp = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
-    $stmt = $conn->prepare("INSERT INTO otp (email, otp_value, timestamp) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $email, $otp, $currentDateTime);
+
+    $stmt = $conn->prepare("SELECT COUNT(*) FROM otp WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($count);
+    $stmt->fetch();
+    $stmt->close();
+
+    if ($count > 0) {
+        $stmt = $conn->prepare("UPDATE otp SET otp_value = ?, timestamp = ? WHERE email = ?");
+        $stmt->bind_param("sss", $otp, $currentDateTime, $email);
+    } else {
+        $stmt = $conn->prepare("INSERT INTO otp (email, otp_value, timestamp) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $email, $otp, $currentDateTime);
+    }
+
     $stmt->execute();
     $stmt->close();
     $conn->close();
@@ -154,7 +168,7 @@ function insertOTP()
                                                     <td valign="top " align="center ">
                                                         <div style="margin-top: 40px; ">
                                                             <p style=" font-size: 25px; color: #000!important; font-weight: 300; font-family: \'Raleway\', Helevetica, sans-serif; ">
-                                                                Hello ' . $email . '! 👋
+                                                                Hello ' . $email . '!
                                                             </p>
                                                         </div>
                                                     </td>
@@ -193,7 +207,7 @@ function insertOTP()
     margin-left: 37%;
     margin-right: auto;">
 
-                                                                                    <h1> ' . $otp . ' </h1>
+                                                                                    <h1 style="text-align: center; display: flex; justify-content: center; align-items: center;"> ' . $otp . ' </h1>
 
                                                                             </tr>
                                                                         </table>
