@@ -1,9 +1,10 @@
 <?php
 $otp = rand(00000000, 99999999);
 
-$email = $_POST['email'];
-$password = $_POST['password'];
-
+$email = $_SESSION['register_email'];
+$password = $_SESSION['register_password'];
+unset($_SESSION['register_email']);
+unset($_SESSION['register_password']);
 
 function insertOTP($email, $otp, $conn)
 {

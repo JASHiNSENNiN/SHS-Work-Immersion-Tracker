@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
 ?>
@@ -12,8 +13,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
     <title>Log in</title>
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/loginform.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer>
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -83,7 +83,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
                         Register with Google
                     </button></a>
 
-                <form id="registerForm" method="POST" action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/php/one_time_password.php" onsubmit="return validateForm()">
+                <form id="registerForm" method="POST" action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/backend/php/recaptcha.php">
                     <input type="hidden" name="register_form" value="register_form">
                     <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
@@ -92,9 +92,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
                     <input type="text" for="email" name="register_email" id="email" placeholder="Email address" required>
                     <input type="password" placeholder="Password" id="password" name="register_password" required>
                     <input type="password" placeholder="Confirm Password" id="confirm-password" ata name="register_confirm_password" required>
-                    <div name="recaptcha_button" class="g-recaptcha" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6">
-                    </div>
-                    <button type="submit" class="btn-login" onclick="validateRegisterForm()">Register</button>
+                    <button type="submit" class="g-recaptcha btn-login" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback='onSubmit' data-action='register_form_submit'>Register</button>
                 </form>
 
                 <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
@@ -118,5 +116,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
 </body>
 
 </html>
+<script>
+    function onSubmit(token) {
+        var registerForm = document.getElementById("registerForm");
+        var loginForm = document.getElementById("loginForm");
+        if (registerForm) {
+            registerForm.submit();
+        }
+        if (loginForm) {
+            loginForm.submit();
+        }
+    }
+</script>
 <script src="/../backend/js/login.js"></script>
 <script src="/../backend/js/register.js"></script>
