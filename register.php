@@ -49,7 +49,7 @@
                     </div>
                     <input type="text" for="email" name="register_email" id="email" placeholder="Email address" required>
                     <input type="password" placeholder="Password" id="password" name="register_password" required>
-                    <input type="password" placeholder="Confirm Password" id="confirm-password" ata name="register_confirm_password" required>
+                    <input type="password" placeholder="Confirm Password" id="confirm-password" name="register_confirm_password" required>
 
                     <button class="g-recaptcha" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onSubmit" data-action="submit">Register</button>
                 </form>

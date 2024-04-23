@@ -1,15 +1,11 @@
 function validateRegisterForm() {
-	const email = document.getElementById("register_email").value;
-	const password = document.getElementById("register_password").value;
-	const confirmPassword = document.getElementById(
-		"register_confirm-password"
-	).value;
+	const email = document.getElementById("email").value;
+	const password = document.getElementById("password").value;
+	const confirmPassword = document.getElementById("confirm-password").value;
 
-	const emailInput = document.getElementById("register_email");
-	const passwordInput = document.getElementById("register_password");
-	const confirmPasswordInput = document.getElementById(
-		"register_confirm_password"
-	);
+	const emailInput = document.getElementById("email");
+	const passwordInput = document.getElementById("password");
+	const confirmPasswordInput = document.getElementById("confirm-password");
 
 	const allInputs = [emailInput, passwordInput, confirmPasswordInput];
 
