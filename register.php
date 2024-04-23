@@ -35,7 +35,7 @@
     </noscript>
     <div class="row">
         <div id="register-form" class="colm-form">
-            <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
+            <a href="index.php"><img class="logo-login" src="../img/logo-login.svg" alt="Logo"></a>
 
             <div class="form-container">
                 <a href="<?php echo $client->createAuthUrl(); ?>"><button type="button" class="login-with-google-btn">
