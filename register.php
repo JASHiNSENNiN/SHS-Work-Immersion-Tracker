@@ -62,7 +62,7 @@
                         Log in to Existing Account
                     </button>
                 </a>
-                <a>&#10229;Back</a>
+
 
             </div>
         </div>
