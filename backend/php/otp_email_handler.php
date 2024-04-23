@@ -4,6 +4,7 @@ $otp = rand(00000000, 99999999);
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+
 function insertOTP($email, $otp, $conn)
 {
     $currentDateTime = date('Y-m-d H:i:s A');

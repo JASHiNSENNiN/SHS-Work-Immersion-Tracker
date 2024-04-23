@@ -1,4 +1,4 @@
-function validateRegisterForm() {
+function validateRegisterForm(captcha) {
 	const email = document.getElementById("register_email").value;
 	const password = document.getElementById("register_password").value;
 	const confirmPassword = document.getElementById(
@@ -10,8 +10,14 @@ function validateRegisterForm() {
 	const confirmPasswordInput = document.getElementById(
 		"register_confirm_password"
 	);
+	const recaptchaInput = document.getElementById("recaptcha_button");
 
-	const allInputs = [emailInput, passwordInput, confirmPasswordInput];
+	const allInputs = [
+		emailInput,
+		passwordInput,
+		confirmPasswordInput,
+		recaptchaInput,
+	];
 
 	allInputs.forEach((input) => {
 		input.addEventListener("input", function () {
@@ -20,6 +26,12 @@ function validateRegisterForm() {
 			}
 		});
 	});
+
+	if (captcha == false) {
+		recaptchaInput.setCustomValidity("Please verify captcha");
+		recaptchaInput.reportValidity();
+		return false;
+	}
 
 	try {
 		const exists = checkEmailExists(email);

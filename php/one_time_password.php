@@ -25,7 +25,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
                 <div class="card p-2 text-center">
 
                     <h6>Please enter the one time password <br> to verify your account</h6>
-                    <div> <span>A code has been sent to your email</span> <small>s******@gmail.com</small> </div>
+                    <div> <span>A code has been sent to your email</span> <small><?php echo $email ?></small> </div>
                     <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> <input class="m-2 text-center form-control rounded" type="text" id="first" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="second" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="third" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="fourth" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="fifth" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1" />
                     </div>
                     <div class="mt-4"> <button class="btn btn-danger px-4 validate" onclick="getOTPValue()">Verify</button> </div>
