@@ -1,4 +1,5 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/config.php';
 function getOTP()
 {
     $email = $_SESSION['email'];
