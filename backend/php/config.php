@@ -118,3 +118,5 @@ if (mysqli_multi_query($conn, $sql)) {
 } else {
   //echo "Error creating tables: " . mysqli_error($conn) . "\n";
 }
+
+$conn->close();
