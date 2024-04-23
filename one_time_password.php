@@ -18,6 +18,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
 </head>
 
 <body>
+    <noscript>
+        <style>
+            html {
+                display: none;
+            }
+        </style>
+        <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
+    </noscript>
     <div class="row">
 
         <div class="container height-100 d-flex justify-content-center align-items-center">
@@ -33,7 +41,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
                     </div>
                     <div class="mt-4"> <button class="btn btn-danger px-4 validate" onclick="getOTPValue()">Verify</button> </div>
                     <div class="mt-4"> <span>Didn't receive code?</span> <a href="<?php echo insertOTP(); ?>">Request
-                            again</a> </div>
+                            again</a> <span id="countdown"></span></div>
                 </div>
             </div>
         </div>
@@ -80,4 +88,47 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
             otpValue += input.value;
         });
     }
+    const otpInput = document.getElementById("otp");
+
+    function verifyOTPValue() {
+        if (getOTPValue() === "<?php getOTP() ?>") {
+            window.location.href = "/get_started.php";
+        } else {
+            otpInput.setCustomValidity("OTP verification failed, check your email or request a new one.");
+            otpInput.reportValidity();
+            return false;
+        }
+    }
+
+    function getOTPValue() {
+        const otpInputs = document.querySelectorAll('#otp > input');
+        let otpValue = '';
+        otpInputs.forEach(input => {
+            otpValue += input.value;
+        });
+    }
+
+    function startCountdown(duration, display) {
+        var timer = duration,
+            minutes, seconds;
+        setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    window.onload = function() {
+        var countdownMinutes = 1;
+        var display = document.querySelector('#countdown');
+        startCountdown(countdownMinutes * 60, display);
+    };
 </script>

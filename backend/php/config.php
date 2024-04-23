@@ -7,7 +7,7 @@ $password = "@--Workify000";
 $database = "u487450272_shs_immersion";
 
 
-$conn = mysqli_connect($host, $username, $password);
+$conn = mysqli_connect($host, $username, $password, $database);
 
 
 if (!$conn) {

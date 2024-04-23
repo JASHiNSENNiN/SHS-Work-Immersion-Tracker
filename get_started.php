@@ -20,7 +20,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
 </head>
 
 <body>
-
+    <noscript>
+        <style>
+            html {
+                display: none;
+            }
+        </style>
+        <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
+    </noscript>
     <div class="container">
 
         <div class="overlay">
@@ -40,7 +47,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
 
                     <div class="form-container">
 
-                        <input type="text" for="email" name="email" id="email" placeholder="<?php echo $email ?>" disabled>
+                        <input type="text" for="email" name="email" id="email" placeholder="<?php echo $_SESSION['email'] ?>" value="" <?php echo $_SESSION['email'] ?>"" disabled>
                         <select id="account-type" name="account-type" required onchange="toggleFields()">
                             <option value class="null-type">Account Type:</option>
                             <option value="student">Student</option>

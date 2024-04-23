@@ -1,14 +1,24 @@
 <?php
 
+function getOTP()
+{
+    $email = $_SESSION['email'];
+    $stmt = $conn->prepare("SELECT otp_value FROM otp WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($otp);
+    $stmt->fetch();
+    $stmt->close();
+
+    $conn->close();
+
+    return $otp;
+}
+
 function insertOTP()
 {
-    $host = "localhost";
-    $username = "u487450272_workify_admin";
-    $password = "@--Workify000";
-    $database = "u487450272_shs_immersion";
     $email = $_SESSION['email'];
 
-    $conn = mysqli_connect($host, $username, $password, $database);
     $currentDateTime = date('Y-m-d H:i:s A');
     $otp = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
 
