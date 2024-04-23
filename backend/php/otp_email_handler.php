@@ -1,5 +1,4 @@
 <?php
-
 function getOTP()
 {
     $email = $_SESSION['email'];

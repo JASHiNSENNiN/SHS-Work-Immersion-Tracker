@@ -23,16 +23,10 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 15]);
     $_SESSION['password'] = $Password;
     $destination = 'https://www.workifyph.online/one_time_password.php';
+    insertOTP();
     header("Location: $destination");
     exit();
 } else {
     // spam submission
     // show error messagea
 }
-
-
-        //$_SESSION['register_email'] = $_POST['register_email'];SS
-        //$_SESSION['register_password'] = $_POST['register_password'];
-        //$destination = $_SERVER['DOCUMENT_ROOT'] . '/php/one_time_password.php';
-        //header("Location: $destination");
-        //exit();
