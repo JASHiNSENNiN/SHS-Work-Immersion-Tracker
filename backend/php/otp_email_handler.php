@@ -12,7 +12,7 @@ function insertOTP($email)
     $database = "u487450272_shs_immersion";
 
 
-    $conn = mysqli_connect($host, $username, $password);
+    $conn = mysqli_connect($host, $username, $password, $database);
     $currentDateTime = date('Y-m-d H:i:s A');
     $otp = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
     $stmt = $conn->prepare("INSERT INTO otp (email, otp_value, timestamp) VALUES (?, ?, ?)");
