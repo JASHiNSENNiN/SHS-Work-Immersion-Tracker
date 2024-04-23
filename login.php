@@ -83,8 +83,10 @@
                         </span>
 
                     </button>
-                    <a>&#10229;Back</a>
+
                 </a>
+                <a href="index.php">
+                    << Back</a>
             </div>
 
         </div>
