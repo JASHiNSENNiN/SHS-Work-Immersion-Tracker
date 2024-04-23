@@ -1,6 +1,8 @@
 <?php
-$email = $_SESSION['register_email'];
-$password = $_SESSION['register_password'];
+if (isset($_SESSION['register_email']) && isset($_SESSION['register_password'])) {
+    $email = $_SESSION['register_email'];
+    $password = $_SESSION['register_password'];
+}
 
 function insertOTP($email)
 {
