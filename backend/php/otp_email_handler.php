@@ -249,6 +249,7 @@ function insertOTP()
 </html>
 
     ';
-    $header = 'From: ' . $fromName . '<' . $from . '>';
+    $header = 'From: ' . $fromName . ' <' . $from . '>' . "\r\n";
+    $header .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
     mail($to, $subject, $message, $header);
 }
