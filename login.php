@@ -36,7 +36,7 @@
         <div id="login-form" class="colm-form">
 
             <!-- ---------------------------------Logo ---------------------- -->
-            <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
+            <a href="index.php"> <img class="logo-login" src="../img/logo-login.svg" alt="Logo"></a>
 
             <div class="form-container">
 
@@ -83,7 +83,10 @@
                         </span>
 
                     </button>
+
                 </a>
+                <a href="index.php">
+                    << Back</a>
             </div>
 
         </div>
