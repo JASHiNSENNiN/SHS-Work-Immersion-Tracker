@@ -1,4 +1,4 @@
-function validateRegisterForm(captcha) {
+function validateRegisterForm() {
 	const email = document.getElementById("register_email").value;
 	const password = document.getElementById("register_password").value;
 	const confirmPassword = document.getElementById(
@@ -10,7 +10,6 @@ function validateRegisterForm(captcha) {
 	const confirmPasswordInput = document.getElementById(
 		"register_confirm_password"
 	);
-	const registerRecaptcha = document.getElementById("register-recaptcha");
 
 	const allInputs = [emailInput, passwordInput, confirmPasswordInput];
 
