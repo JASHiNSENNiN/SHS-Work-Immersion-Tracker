@@ -9,7 +9,6 @@ function getOTP()
     $stmt->bind_result($otp);
     $stmt->fetch();
     $stmt->close();
-
     $conn->close();
 
     return $otp;
