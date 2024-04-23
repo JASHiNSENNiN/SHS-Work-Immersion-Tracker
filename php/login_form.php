@@ -106,7 +106,7 @@
                     <input type="password" placeholder="Confirm Password" id="confirm-password" ata
                         name="register_confirm_password" required>
 
-                    <button class="login_btn g-recaptcha" onclick="validateRegisterForm()" class="g-recaptcha"
+                    <button class="login_btn g-recaptcha" class="g-recaptcha"
                         data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onRegisterSubmit"
                         data-action="register">Register</button>
                 </form>
