@@ -17,19 +17,6 @@ function validateRegisterForm() {
 		});
 	});
 
-	try {
-		const exists = checkEmailExists(email);
-		if (exists) {
-			emailInput.setCustomValidity("Email was already taken");
-			emailInput.reportValidity();
-			return false;
-		} else {
-			//console.log("Email does not exist");
-		}
-	} catch (error) {
-		console.error("Error:", error);
-	}
-
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email)) {
 		emailInput.setCustomValidity("Please enter a valid email address");
@@ -43,7 +30,7 @@ function validateRegisterForm() {
 		return false;
 	}
 
-	if (confirmpPassword === "") {
+	if (confirmPassword === "") {
 		confirmPasswordInput.setCustomValidity(
 			"Please enter your password again"
 		);
