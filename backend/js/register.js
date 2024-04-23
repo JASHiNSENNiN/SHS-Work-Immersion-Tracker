@@ -1,4 +1,8 @@
 function validateRegisterForm(captcha) {
+	const registerRecaptchaResponse = grecaptcha.getResponse(
+		document.getElementById("register-recaptcha")
+	);
+
 	const email = document.getElementById("register_email").value;
 	const password = document.getElementById("register_password").value;
 	const confirmPassword = document.getElementById(
@@ -10,7 +14,7 @@ function validateRegisterForm(captcha) {
 	const confirmPasswordInput = document.getElementById(
 		"register_confirm_password"
 	);
-	const recaptchaInput = document.getElementById("recaptcha_button");
+	const registerRecaptcha = document.getElementById("register-recaptcha");
 
 	const allInputs = [
 		emailInput,
@@ -27,11 +31,15 @@ function validateRegisterForm(captcha) {
 		});
 	});
 
-	if (captcha == false) {
-		recaptchaInput.setCustomValidity("Please verify captcha");
-		recaptchaInput.reportValidity();
+	if (registerRecaptchaResponse === "") {
+		registerRecaptcha.setCustomValidity(
+			"Please complete the reCAPTCHA for registration."
+		);
+		registerRecaptcha.reportValidity();
 		return false;
 	}
+	document.getElementById("g-recaptcha-response-register").value =
+		registerRecaptchaResponse;
 
 	try {
 		const exists = checkEmailExists(email);
