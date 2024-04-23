@@ -37,13 +37,13 @@ function validateRegisterForm() {
 		return false;
 	}
 
-	if (password == "") {
+	if (password === "") {
 		passwordInput.setCustomValidity("Please enter your password");
 		passwordInput.reportValidity();
 		return false;
 	}
 
-	if (confirmpPassword == "") {
+	if (confirmpPassword === "") {
 		confirmPasswordInput.setCustomValidity(
 			"Please enter your password again"
 		);
