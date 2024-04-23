@@ -20,7 +20,7 @@ curl_close($ch);
 $arrResponse = json_decode($response, true);
 if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.7) {
     $_SESSION['email'] = $_POST['register_email'];
-    $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 24]);
+    $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 15]);
     $_SESSION['password'] = $Password;
     $destination = 'https://www.workifyph.online/one_time_password.php';
     header("Location: $destination");
