@@ -22,6 +22,14 @@
 </head>
 
 <body>
+    <noscript>
+        <style>
+        html {
+            display: none;
+        }
+        </style>
+        <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.html">
+    </noscript>
     <div class="row">
 
 
@@ -29,8 +37,6 @@
 
             <!-- ---------------------------------Logo ---------------------- -->
             <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
-
-
 
             <div class="form-container">
 
@@ -40,7 +46,6 @@
                 <a href="<?php echo $client->createAuthUrl(); ?>"><button type="button" class="login-with-google-btn">
                         Sign in with Google
                     </button></a>
-
 
                 <!-- --------------------------------Line OR--------------------------->
                 <form id="loginForm" method="POST">
@@ -70,13 +75,15 @@
                 </form>
 
                 <!-- --------------------------------Line OR--------------------------->
+                <a href="register.php">
+                    <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
+                            <span role="separator" aria-orientation="horizontal"></span></span>
 
-                <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
-                        <span role="separator" aria-orientation="horizontal"></span></span>
+                    </div>
+                </a>
 
-                </div>
 
-                <button class="btn-new" id="switch-to-register" style=" font-size: 15px" onclick="showLoginForm()">
+                <button class="btn-new" id="switch-to-register" style=" font-size: 15px">
                     <span class="hover-underline-animation">
                         Create new account
                     </span>
@@ -85,43 +92,6 @@
             </div>
 
         </div>
-        <div id="register-form" class="colm-form">
-            <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
-
-            <div class="form-container">
-                <a href="<?php echo $client->createAuthUrl(); ?>"><button type="button" class="login-with-google-btn">
-                        Register with Google
-                    </button></a>
-
-                <form id="registerForm" method="POST"
-                    action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/php/one_time_password.php"
-                    onsubmit="return validateRegisterForm()">
-                    <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
-                            <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
-                        <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
-                    </div>
-                    <input type="text" for="email" name="register_email" id="email" placeholder="Email address"
-                        required>
-                    <input type="password" placeholder="Password" id="password" name="register_password" required>
-                    <input type="password" placeholder="Confirm Password" id="confirm-password" ata
-                        name="register_confirm_password" required>
-
-                    <button class="login_btn g-recaptcha" class="g-recaptcha"
-                        data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onRegisterSubmit"
-                        data-action="register">Register</button>
-                </form>
-
-                <div class=" dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
-                        <span role="separator" aria-orientation="horizontal"></span></span>
-
-                </div>
-
-                <button class="btn-new" id="switch-to-login" onclick="showLoginForm()">
-                    Log in to Existing Account
-                </button>
-            </div>
-        </div>
-
 
     </div>
     <footer>
