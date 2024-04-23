@@ -95,7 +95,7 @@
 
                 <form id="registerForm" method="POST"
                     action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/php/one_time_password.php"
-                    onsubmit="validateRegisterForm">
+                    onsubmit="return validateRegisterForm()">
                     <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
                         <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
