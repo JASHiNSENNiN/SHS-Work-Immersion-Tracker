@@ -1,7 +1,9 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/config.php';
+
 function getOTP()
 {
+    global $conn;
     $email = $_SESSION['email'];
     $stmt = $conn->prepare("SELECT otp_value FROM otp WHERE email = ?");
     $stmt->bind_param("s", $email);
@@ -16,6 +18,7 @@ function getOTP()
 
 function insertOTP()
 {
+    global $conn;
     $email = $_SESSION['email'];
 
     $currentDateTime = date('Y-m-d H:i:s A');
