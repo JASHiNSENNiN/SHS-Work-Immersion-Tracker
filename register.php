@@ -29,7 +29,7 @@
                 display: none;
             }
         </style>
-        <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.html">
+        <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
     </noscript>
     <div class="row">
         <div id="register-form" class="colm-form">
