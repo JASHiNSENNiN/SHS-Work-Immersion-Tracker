@@ -60,7 +60,9 @@
                 </div>
                 <a href="login.php"><button class="btn-new" id="switch-to-login">
                         Log in to Existing Account
-                    </button></a>
+                    </button>
+                </a>
+                <a>&#10229;Back</a>
 
             </div>
         </div>
