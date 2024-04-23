@@ -37,6 +37,20 @@ function validateRegisterForm() {
 		return false;
 	}
 
+	if (password == "") {
+		passwordInput.setCustomValidity("Please enter your password");
+		passwordInput.reportValidity();
+		return false;
+	}
+
+	if (confirmpPassword == "") {
+		confirmPasswordInput.setCustomValidity(
+			"Please enter your password again"
+		);
+		confirmPasswordInput.reportValidity();
+		return false;
+	}
+
 	const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 	if (!passwordRegex.test(password)) {
 		passwordInput.setCustomValidity(
