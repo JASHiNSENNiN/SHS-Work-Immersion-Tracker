@@ -23,7 +23,6 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 24]);
     $_SESSION['password'] = $Password;
     $destination = 'https://www.workifyph.online/one_time_password.php';
-    insertOTP();
     header("Location: $destination");
     exit();
 } else {
