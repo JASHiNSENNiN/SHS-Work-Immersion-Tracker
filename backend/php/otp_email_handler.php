@@ -1,16 +1,12 @@
 <?php
-if (isset($_SESSION['register_email']) && isset($_SESSION['register_password'])) {
-    $email = $_SESSION['register_email'];
-    $password = $_SESSION['register_password'];
-}
 
-function insertOTP($email)
+function insertOTP()
 {
     $host = "localhost";
     $username = "u487450272_workify_admin";
     $password = "@--Workify000";
     $database = "u487450272_shs_immersion";
-
+    $email = $_SESSION['email'];
 
     $conn = mysqli_connect($host, $username, $password, $database);
     $currentDateTime = date('Y-m-d H:i:s A');
