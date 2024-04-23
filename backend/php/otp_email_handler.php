@@ -1,15 +1,18 @@
 <?php
-$otp = rand(00000000, 99999999);
-
 $email = $_SESSION['register_email'];
 $password = $_SESSION['register_password'];
-unset($_SESSION['register_email']);
-unset($_SESSION['register_password']);
 
-function insertOTP($email, $otp, $conn)
+function insertOTP($email)
 {
-    $currentDateTime = date('Y-m-d H:i:s A');
+    $host = "localhost";
+    $username = "u487450272_workify_admin";
+    $password = "@--Workify000";
+    $database = "u487450272_shs_immersion";
 
+
+    $conn = mysqli_connect($host, $username, $password);
+    $currentDateTime = date('Y-m-d H:i:s A');
+    $otp = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
     $stmt = $conn->prepare("INSERT INTO otp (email, otp_value, timestamp) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $email, $otp, $currentDateTime);
     $stmt->execute();
