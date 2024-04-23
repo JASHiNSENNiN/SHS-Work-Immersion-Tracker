@@ -51,10 +51,10 @@
                     <input type="password" placeholder="Password" id="password" name="register_password" required>
                     <input type="password" placeholder="Confirm Password" id="confirm-password" name="register_confirm_password" required>
 
-                    <button class="g-recaptcha" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onSubmit" data-action="submit">Register</button>
+                    <button class="g-recaptcha btn-new" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onSubmit" data-action="submit">Register</button>
                 </form>
 
-                <div class=" dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
+                <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                         <span role="separator" aria-orientation="horizontal"></span></span>
 
                 </div>
