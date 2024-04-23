@@ -8,7 +8,7 @@ $recipientEmail = 'workifywebadmin0@workifyph.online';
 $postData = $valErr = $statusMsg = '';
 $status = 'error';
 
-if (($_SERVER['REQUEST_METHOD'] === 'POST') && isset($_POST['login_form'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login_form'])) {
     $login_email = trim($_POST['$login_email']);
     $login_password = trim($_POST['$login_password']);
 
@@ -46,7 +46,7 @@ if (($_SERVER['REQUEST_METHOD'] === 'POST') && isset($_POST['login_form'])) {
 }
 
 
-if (($_SERVER['REQUEST_METHOD'] === 'POST') && isset($_POST['register_form'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register_form'])) {
     $register_email = trim($_POST['$register_email']);
     $register_password = trim($_POST['$register_password']);
 

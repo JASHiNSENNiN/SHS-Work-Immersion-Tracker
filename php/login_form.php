@@ -83,7 +83,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha.php';
                         Register with Google
                     </button></a>
 
-                <form id="registerForm" method="POST" action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/backend/php/recaptcha.php">
+                <form id="registerForm" method="POST" action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/php/one_time_password.php">
                     <input type="hidden" name="register_form" value="register_form">
                     <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
