@@ -9,9 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../css/loginform.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-        function onRegisterSubmit(token) {
-            document.getElementById("login_form").submit();
-        }
+    function onRegisterSubmit(token) {
+        document.getElementById("login_form").submit();
+    }
     </script>
     <?php
     session_start();
@@ -48,16 +48,22 @@
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
                         <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
                     </div>
-                    <label class="css-ddheu4"> Email address <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                    <label class="css-ddheu4"> Email address <span aria-hidden="true"
+                            class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
                     <input autocomplete="email" type="text" placeholder="" id="login-email" name="login_email" required>
 
-                    <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span>
+                    <label class="css-ddheu4"> Password <span aria-hidden="true"
+                            class="css-ers2ar es2vvo71">&nbsp;*</span>
                     </label>
-                    <input autocomplete="current-password" type="password" placeholder="" id="login-password" name="login_password" required>
+                    <input autocomplete="current-password" type="password" placeholder="" id="login-password"
+                        name="login_password" required>
                     <button class="btn-login" style="height: 40px; font-size: 15px">
                         <span class="hover-underline-animation"> Continue </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16" fill="#fff">
-                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                            viewBox="0 0 46 16" fill="#fff">
+                            <path id="Path_10" data-name="Path 10"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)"></path>
                         </svg>
                     </button>
 
@@ -87,16 +93,22 @@
                         Register with Google
                     </button></a>
 
-                <form id="registerForm" method="POST" action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/php/one_time_password.php" onsubmit="validateRegisterForm">
+                <form id="registerForm" method="POST"
+                    action="<?php echo $_SERVER['DOCUMENT_ROOT'] ?>/php/one_time_password.php"
+                    onsubmit="validateRegisterForm">
                     <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
                         <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
                     </div>
-                    <input type="text" for="email" name="register_email" id="email" placeholder="Email address" required>
+                    <input type="text" for="email" name="register_email" id="email" placeholder="Email address"
+                        required>
                     <input type="password" placeholder="Password" id="password" name="register_password" required>
-                    <input type="password" placeholder="Confirm Password" id="confirm-password" ata name="register_confirm_password" required>
+                    <input type="password" placeholder="Confirm Password" id="confirm-password" ata
+                        name="register_confirm_password" required>
 
-                    <button class="btn-login login_btn" onclick="validateRegisterForm()" class="g-recaptcha" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onRegisterSubmit" data-action="register">Register</button>
+                    <button class="login_btn g-recaptcha" onclick="validateRegisterForm()" class="g-recaptcha"
+                        data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onRegisterSubmit"
+                        data-action="register">Register</button>
                 </form>
 
                 <div class=" dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">

@@ -5,7 +5,10 @@ $secretKey = $_ENV['RECAPTCHA_SECRET_KEY'];
 
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
 $recaptcha_sercret = $secretKey;
-$recaptcha_response = $_POST['g-captcha-response'];
+if (isset($_POST['g-captcha-response']) && !empty($_POST['g-captcha-response'])) {
+    $recaptcha_response = $_POST['g-captcha-response'];
+}
+
 
 $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_sercret . '&response=' . $recaptcha_response);
 $recaptcha = json_decode($recaptcha, true);
