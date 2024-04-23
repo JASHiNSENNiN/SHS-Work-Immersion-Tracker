@@ -92,7 +92,8 @@
         <div class="sales-boxes">
             <div class="recent-sales box">
                 <b>
-                    <div class="box-topic">Faculty Report</div>
+                    <h1 class="box-topic">Faculty Report</h1>
+                    <div class="date"> <input type="date" required></div>
                 </b>
                 <br>
                 <div class="container">

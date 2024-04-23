@@ -38,7 +38,8 @@
                     <div class="email">olshco@gmail.com</div>
                     <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
                         Profile</a>
-                    <a href="Dashboard.php"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>Company
+                    <a href="Dashboard.php"> <i class='fas fa-comment-alt'
+                            style='font-size:24px;margin-right:10px;'></i>Company
                         Reviews</a>
                     <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
                     <hr>
@@ -112,7 +113,7 @@
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <p>Some text in the Modal..</p>
+                                <img src="image/evaluation.png" alt="" width="1100" height="1400">
                             </div>
 
                         </div><br>
@@ -160,7 +161,7 @@
         let profilePic1 = document.getElementById("cover-pic");
         let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function() {
+        inputFile1.onchange = function () {
             profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
         }
     </script>
@@ -169,7 +170,7 @@
         let profilePic2 = document.getElementById("profile-pic");
         let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function() {
+        inputFile2.onchange = function () {
             profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
         }
     </script>
@@ -185,17 +186,17 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }

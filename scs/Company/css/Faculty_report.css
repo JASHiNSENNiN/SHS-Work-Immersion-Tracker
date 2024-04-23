@@ -196,12 +196,13 @@ footer {
 .sales-boxes .recent-sales {
   width: 75%;
   background: #fff;
-  padding: 20px 30px;
+  padding: 50px 50px;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .sales-boxes .sales-details {
@@ -294,23 +295,46 @@ footer {
   color: #333;
 }
 
-input[type="text"] {
-  padding: 15px;
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  /* padding: 15px;
   margin: 10px 0 22px 0;
   display: inline-block;
-  /* border: none; */
   background: #f1f1f1;
-  border-radius: 10px;
+  border-radius: 10px; */
+  font-size: 16px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 20px 29px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in,
+    background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  height: 36px;
+  text-decoration: none;
+  margin-bottom: 50px;
 }
 
-input[type="number"] {
-  width: 20%;
-  padding: 15px;
-  margin: 10px 0 22px 0;
-  display: inline-block;
-  /* border: none; */
-  background: #f1f1f1;
-  border-radius: 15px;
+input[type="text"],
+input[type="number"]:hover {
+  border-color: #ccc;
+}
+
+.info {
+  float: left;
+  margin-right: auto;
+  margin: auto;
+  width: 50%;
+  text-align: left;
+}
+
+.date {
+  float: right;
+  position: relative;
+  top: -35px;
 }
 
 .container {
@@ -329,14 +353,6 @@ input[type="number"] {
 input,
 label {
   display: block;
-}
-
-.info {
-  float: left;
-  margin-right: auto;
-  margin: auto;
-  width: 50%;
-  text-align: left;
 }
 
 table,
