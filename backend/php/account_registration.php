@@ -14,5 +14,7 @@ $stmt->execute();
 $stmt->close();
 $conn->close();
 
-header("Location: get_started.php");
+$destination = 'https://www.workifyph.online/get_started.php';
+header("Location: $destination");
+exit();
 exit();
