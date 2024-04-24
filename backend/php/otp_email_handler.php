@@ -3,7 +3,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/session.php';
 
 function getOTP()
 {
-    global $conn;
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
+
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
     $email = $_SESSION['email'];
     $stmt = $conn->prepare("SELECT otp_value FROM otp WHERE email = ?");
     $stmt->bind_param("s", $email);
@@ -18,7 +26,15 @@ function getOTP()
 
 function insertOTP()
 {
-    global $conn;
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
+
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
     $email = $_SESSION['email'];
 
     $currentDateTime = date('Y-m-d H:i:s A');
