@@ -16,9 +16,5 @@ function checkDuplicateEmail()
     $stmt->fetch();
     $stmt->close();
 
-    if ($count > 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return $count;
 }

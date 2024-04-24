@@ -17,7 +17,7 @@ function validateRegisterForm(emailTaken) {
 		});
 	});
 
-	if (emailTaken === true) {
+	if (emailTaken >= 0) {
 		emailInput.setCustomValidity("This email address was already in use");
 		emailInput.reportValidity();
 		return false;
