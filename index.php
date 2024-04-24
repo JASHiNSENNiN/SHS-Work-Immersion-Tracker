@@ -741,10 +741,10 @@
 
     </div>
 
-
+    <!-- 
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
-    </script>
+    </script> -->
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");

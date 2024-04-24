@@ -85,7 +85,7 @@
                     </button>
 
                 </a>
-                <a href="index.php">
+                <a href="index.php" style="text-decoration: none;">
                     << Back</a>
             </div>
 
