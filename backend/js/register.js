@@ -1,4 +1,4 @@
-function validateRegisterForm() {
+function validateRegisterForm(emailTaken) {
 	const email = document.getElementById("email").value;
 	const password = document.getElementById("password").value;
 	const confirmPassword = document.getElementById("confirm-password").value;
@@ -16,6 +16,12 @@ function validateRegisterForm() {
 			}
 		});
 	});
+
+	if (emailTaken === true) {
+		emailInput.setCustomValidity("This email address was already in use");
+		emailInput.reportValidity();
+		return false;
+	}
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email)) {

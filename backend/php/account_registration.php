@@ -17,4 +17,3 @@ $conn->close();
 $destination = 'https://www.workifyph.online/get_started.php';
 header("Location: $destination");
 exit();
-exit();

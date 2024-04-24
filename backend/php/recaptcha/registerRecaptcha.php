@@ -9,7 +9,7 @@ if (isset($_POST['g-recaptcha-response'])) {
     $captcha = false;
 }
 $action = "submit";
-// call curl to POST request
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
 curl_setopt($ch, CURLOPT_POST, 1);
@@ -27,6 +27,7 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     header("Location: $destination");
     exit();
 } else {
-    // spam submission
-    // show error messagea
+    $destination = 'https://www.workifyph.online/';
+    header("Location: $destination");
+    exit();
 }
