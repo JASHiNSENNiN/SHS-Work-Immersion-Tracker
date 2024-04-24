@@ -190,7 +190,7 @@ function insertOTP()
                                                     <td valign="top " align="center ">
                                                         <div style="margin-top: 40px; ">
                                                             <p style=" font-size: 25px; color: #000!important; font-weight: 300; font-family: \'Raleway\', Helevetica, sans-serif; ">
-                                                                Hello ' . $email . '!
+                                                                Hello  <br>' . $email . '!
                                                             </p>
                                                         </div>
                                                     </td>
@@ -226,7 +226,7 @@ function insertOTP()
                                                                             <tr>
 
                                                                                 <td style="padding: 20px 0; text-align: center; font-size: 30px; font-family: \'Raleway\', Helvetica, Arial, sans-serif; display: flex;
-    margin-left: 37%;
+    margin-left: 4%;
     margin-right: auto;">
 
                                                                                     <h1 style="text-align: center; display: flex; justify-content: center; align-items: center;"> ' . $otp . ' </h1>
