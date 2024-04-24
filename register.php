@@ -9,14 +9,13 @@
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/registration_support.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/registerRecaptcha.php';
     ?>
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/loginform.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-    var emailExists = <?php echo checkDuplicateEmail() ?>;
-
     function onSubmit(token) {
         if (validateRegisterForm()) {
             document.getElementById("registerForm").submit();
@@ -43,7 +42,8 @@
                         Register with Google
                     </button></a>
 
-                <form id="registerForm" method="POST" onsubmit="return validateRegisterForm(emailExists)">
+                <form id="registerForm" method="POST"
+                    onsubmit="return validateRegisterForm(<?php echo checkDuplicateEmail() ?>)">
                     <div class="dd-privacy-allow css-e1gwqt e15p7aqh1"><span class="css-8u2krs esbq1260">
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
                         <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
