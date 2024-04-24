@@ -43,7 +43,7 @@
                 <form action="login_form.php" method="get">
                     <!-- <input type="text" name="keywords" placeholder="Immerssion  / Keywords / Company">
                 <input type="text" name="location" placeholder="Location"> -->
-                    <input type="submit" value="Post a Work Immersion!">
+                    <a href="login.php" style="text-decoration:none;"><input type="submit" value="Post a Work Immersion!"></a>
 
                 </form>
             </div>
