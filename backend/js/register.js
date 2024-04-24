@@ -17,15 +17,6 @@ function validateRegisterForm() {
 		});
 	});
 
-	if (checkDuplicateEmail(email) === true) {
-		window.location.href = "http://www.example.com";
-		emailInput.setCustomValidity("This email address was already in use");
-		emailInput.reportValidity();
-		return false;
-	} else {
-		window.location.href = "http://www.w3schools.com";
-	}
-
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email)) {
 		emailInput.setCustomValidity("Please enter a valid email address");
@@ -63,23 +54,4 @@ function validateRegisterForm() {
 	}
 
 	return true;
-}
-
-function checkDuplicateEmail(email) {
-	return new Promise(function (resolve, reject) {
-		$.ajax({
-			url: "../php/validate_email.php",
-			method: "POST",
-			dataType: "json",
-			data: {
-				email: email,
-			},
-			success: function (response) {
-				resolve(response.duplicateEmail);
-			},
-			error: function (jqXHR, textStatus, errorThrown) {
-				reject(errorThrown);
-			},
-		});
-	});
 }
