@@ -2,6 +2,10 @@
 
 Workify: Streamlining Senior High School Work Immersion Management System with Data Analytics 
 
+[Chapter 1](https://docs.google.com/document/d/1ds18zd0S5pRqeJD4lZTbxwofpLuF3dFa/edit)
+
+[Chapter 2](https://docs.google.com/document/d/1BJcrj7xc7wn6Y1C4omMctd_BZmMUBFgs/edit)
+
 ## Scope-and-Delimitation
 
 Workify is an online digital service or website that can be accessed by users and administrators. Its purpose is to assist schools in choosing workplaces to be able to take action in case of negative performance that can be done by both parties that are more suitable and aligned with the needs of their senior high school students. The admin is in charge of monitoring, organizing necessary requirements, gathering student data, matching up students with suitable employers, and monitoring and evaluating the functionality of the website.
