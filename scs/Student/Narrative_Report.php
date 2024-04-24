@@ -370,35 +370,35 @@
     </footer>
 
     <script>
-    $("input:checkbox").on('click', function() {
+        $("input:checkbox").on('click', function () {
 
-        var $box = $(this);
-        if ($box.is(":checked")) {
-            var group = "input:checkbox[name='" + $box.attr("name") + "']";
-            $(group).prop("checked", false);
-            $box.prop("checked", true);
-        } else {
-            $box.prop("checked", false);
-        }
-    });
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
     </script>
 
     <script>
-    let popup = document.getElementById("popup");
+        let popup = document.getElementById("popup");
 
-    function openPopup() {
-        // popup.classList.add("open-popup");
-        Swal.fire({
-            title: "Successfully send!",
-            icon: "success",
-            showConfirmButton: false,
-            timer: 2500
-        });
-    }
+        function openPopup() {
+            // popup.classList.add("open-popup");
+            Swal.fire({
+                title: "Successfully send!",
+                icon: "success",
+                showConfirmButton: false,
+                timer: 2500
+            });
+        }
 
-    function closePopup() {
-        popup.classList.remove("open-popup");
-    }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
     </script>
 
     <!-- <script>
@@ -435,21 +435,21 @@
     </script> -->
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 

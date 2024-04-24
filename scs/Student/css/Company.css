@@ -688,7 +688,7 @@ nav .login-btn:hover {
 
 nav a:hover {
   color: #000000;
-  background-color: rgba(27, 188, 155, 0.3);
+  /* background-color: rgba(27, 188, 155, 0.3); */
   font-weight: bold;
 }
 
