@@ -1,10 +1,14 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
 
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+$dotenv->load();
+
 $host = "localhost";
-$username = "u487450272_workify_admin";
-$password = "@--Workify000";
-$database = "u487450272_shs_immersion";
+$username = $_ENV['MYSQL_USERNAME'];
+$password = $_ENV['MYSQL_PASSWORD'];
+$database = $_ENV['MYSQL_DBNAME'];
+
 $conn = new mysqli($host, $username, $password, $database);
 
 $stmt = $conn->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
