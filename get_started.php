@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
