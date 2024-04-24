@@ -1,13 +1,15 @@
 <?php
 
 
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+$dotenv->load();
+
 $host = "localhost";
-$username = "u487450272_workify_admin";
-$password = "@--Workify000";
-$database = "u487450272_shs_immersion";
+$username = $_ENV['MYSQL_USERNAME'];
+$password = $_ENV['MYSQL_PASSWORD'];
+$database = $_ENV['MYSQL_DBNAME'];
 
-
-$conn = mysqli_connect($host, $username, $password, $database);
+$conn = new mysqli($host, $username, $password, $database);
 
 
 if (!$conn) {
