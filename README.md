@@ -54,6 +54,8 @@ Future Proponents. This study can be used by future proponents as their basis fo
 
 [Gantt-Chart](https://docs.google.com/spreadsheets/d/1Hu5U-JDPpollFbVskDscJW9olF1mlN1x5WJMbuotb08/edit?usp=sharing)
 
+## Table of Reconnaissance
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of our Table of Reconnaissance of Streamline work immersion.](https://i.postimg.cc/rwBbpGd9/tor.jpg)
 
 **Members**
 
