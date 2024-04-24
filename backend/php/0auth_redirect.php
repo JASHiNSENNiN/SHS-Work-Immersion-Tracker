@@ -13,8 +13,6 @@ if (checkDuplicateEmail($_SESSION['email']) == true) {
     } else {
     }
     if (checkAccType() === false) {
-        $destination = 'https://www.workifyph.online/get_started.php';
-        header("Location: $destination");
         exit();
     }
 } else {
@@ -34,8 +32,6 @@ if (checkDuplicateEmail($_SESSION['email']) == true) {
     $stmt->close();
     $conn->close();
     if (checkAccType() === false) {
-        $destination = 'https://www.workifyph.online/get_started.php';
-        header("Location: $destination");
         exit();
     } else {
     }
