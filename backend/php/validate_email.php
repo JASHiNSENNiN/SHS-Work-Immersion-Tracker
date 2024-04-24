@@ -24,3 +24,55 @@ function checkDuplicateEmail($email)
         return false;
     }
 }
+
+function checkEmailPass()
+{
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
+
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
+    $stmt = $conn->prepare("SELECT password FROM users WHERE email = ?");
+    $stmt->bind_param("s", $_SESSION['email']);
+    $stmt->execute();
+    $stmt->bind_result($password);
+    $stmt->fetch();
+    $stmt->close();
+    $conn->close();
+
+    if ($password) {
+        return true; //has pw
+    } else {
+        return false;
+    }
+}
+
+function checkAccType()
+{
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
+
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
+    $stmt = $conn->prepare("SELECT account_type FROM users WHERE email = ?");
+    $stmt->bind_param("s", $_SESSION['email']);
+    $stmt->execute();
+    $stmt->bind_result($password);
+    $stmt->fetch();
+    $stmt->close();
+    $conn->close();
+
+    if ($password) {
+        return true; //has at
+    } else {
+        return false;
+    }
+}
