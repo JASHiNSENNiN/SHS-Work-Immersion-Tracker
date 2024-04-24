@@ -11,11 +11,6 @@ if (checkDuplicateEmail($_SESSION['email']) == true) {
         header("Location: $destination");
         exit();
     }
-    if (checkAccType() === false) {
-        $destination = 'https://www.workifyph.online/get_started.php';
-        header("Location: $destination");
-        exit();
-    }
 }
 $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
 $dotenv->load();
@@ -32,6 +27,3 @@ $stmt->bind_param("s", $_SESSION['email']);
 $stmt->execute();
 $stmt->close();
 $conn->close();
-$destination = 'https://www.workifyph.online/get_started.php';
-header("Location: $destination");
-exit();
