@@ -1,4 +1,4 @@
-function validateRegisterForm(emailTaken) {
+function validateRegisterForm() {
 	const email = document.getElementById("email").value;
 	const password = document.getElementById("password").value;
 	const confirmPassword = document.getElementById("confirm-password").value;
@@ -17,7 +17,7 @@ function validateRegisterForm(emailTaken) {
 		});
 	});
 
-	if (emailTaken >= 0) {
+	if (validateEmail(email) === true) {
 		emailInput.setCustomValidity("This email address was already in use");
 		emailInput.reportValidity();
 		return false;
@@ -60,4 +60,27 @@ function validateRegisterForm(emailTaken) {
 	}
 
 	return true;
+}
+
+function validateEmail(email) {
+	return new Promise(function (resolve, reject) {
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					var response = xhr.responseText;
+					resolve(response === "true");
+				} else {
+					reject(xhr.status);
+				}
+			}
+		};
+
+		xhr.open("POST", "/backend/php/validate_email.php", true);
+		xhr.setRequestHeader(
+			"Content-type",
+			"application/x-www-form-urlencoded"
+		);
+		xhr.send("email=" + encodeURIComponent(email));
+	});
 }

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 function checkDuplicateEmail()
 {
@@ -15,5 +16,11 @@ function checkDuplicateEmail()
     $stmt->fetch();
     $stmt->close();
 
-    return $count;
+    if ($count > 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+checkDuplicateEmail();
