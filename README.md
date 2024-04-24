@@ -52,7 +52,7 @@ Future Proponents. This study can be used by future proponents as their basis fo
 
 **Check our gantt chart**
 
-[Gantt-Chart](https://docs.google.com/spreadsheets/d/1L7D6lxhkZp3pd_tRhSlYWcQgTtq87mwGzEFN8lk_J18/edit#gid=1115838130)
+[Gantt-Chart](https://docs.google.com/spreadsheets/d/1Hu5U-JDPpollFbVskDscJW9olF1mlN1x5WJMbuotb08/edit?usp=sharing)
 
 
 **Members**
