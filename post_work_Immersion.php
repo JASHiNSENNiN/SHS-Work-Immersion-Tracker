@@ -28,7 +28,7 @@
 
 
         <nav>
-            <a class="login-btn" href="./php/login_form.php" style="margin-left: 20px;">Sign in</a>
+            <a class="login-btn" href="login.php" style="margin-left: 20px;">Sign in</a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
             <a href="index.php" style="margin-top: 5px;">Find Work Immersion</a>
         </nav>
@@ -40,7 +40,7 @@
         <section class="section-yj7db7">
             <h1 class="sfa">Let's Workify Your Work Life</h1>
             <div class="searchwork">
-                <form action="login_form.php" method="get">
+                <form action="login.php" method="get">
                     <!-- <input type="text" name="keywords" placeholder="Immerssion  / Keywords / Company">
                 <input type="text" name="location" placeholder="Location"> -->
                     <input type="submit" value="Post a Work Immersion!">

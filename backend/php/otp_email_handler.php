@@ -1,22 +1,54 @@
 <?php
-if (isset($_SESSION['register_email']) && isset($_SESSION['register_password'])) {
-    $email = $_SESSION['register_email'];
-    $password = $_SESSION['register_password'];
-}
 
-function insertOTP($email)
+
+function getOTP()
 {
     $host = "localhost";
     $username = "u487450272_workify_admin";
     $password = "@--Workify000";
     $database = "u487450272_shs_immersion";
 
-
     $conn = mysqli_connect($host, $username, $password, $database);
+    $email = $_SESSION['email'];
+    $stmt = $conn->prepare("SELECT otp_value FROM otp WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($otp);
+    $stmt->fetch();
+    $stmt->close();
+    $conn->close();
+
+    return $otp;
+}
+
+function insertOTP()
+{
+    $host = "localhost";
+    $username = "u487450272_workify_admin";
+    $password = "@--Workify000";
+    $database = "u487450272_shs_immersion";
+    $conn = mysqli_connect($host, $username, $password, $database);
+
+    $email = $_SESSION['email'];
+
     $currentDateTime = date('Y-m-d H:i:s A');
     $otp = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
-    $stmt = $conn->prepare("INSERT INTO otp (email, otp_value, timestamp) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $email, $otp, $currentDateTime);
+
+    $stmt = $conn->prepare("SELECT COUNT(*) FROM otp WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($count);
+    $stmt->fetch();
+    $stmt->close();
+
+    if ($count > 0) {
+        $stmt = $conn->prepare("UPDATE otp SET otp_value = ?, timestamp = ? WHERE email = ?");
+        $stmt->bind_param("sss", $otp, $currentDateTime, $email);
+    } else {
+        $stmt = $conn->prepare("INSERT INTO otp (email, otp_value, timestamp) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $email, $otp, $currentDateTime);
+    }
+
     $stmt->execute();
     $stmt->close();
     $conn->close();
@@ -158,7 +190,7 @@ function insertOTP($email)
                                                     <td valign="top " align="center ">
                                                         <div style="margin-top: 40px; ">
                                                             <p style=" font-size: 25px; color: #000!important; font-weight: 300; font-family: \'Raleway\', Helevetica, sans-serif; ">
-                                                                Hello ' . $email . '! 👋
+                                                                Hello  <br>' . $email . '!
                                                             </p>
                                                         </div>
                                                     </td>
@@ -194,10 +226,10 @@ function insertOTP($email)
                                                                             <tr>
 
                                                                                 <td style="padding: 20px 0; text-align: center; font-size: 30px; font-family: \'Raleway\', Helvetica, Arial, sans-serif; display: flex;
-    margin-left: 37%;
+    margin-left: 4%;
     margin-right: auto;">
 
-                                                                                    <h1> ' . $otp . ' </h1>
+                                                                                    <h1 style="text-align: center; display: flex; justify-content: center; align-items: center;"> ' . $otp . ' </h1>
 
                                                                             </tr>
                                                                         </table>
@@ -253,6 +285,7 @@ function insertOTP($email)
 </html>
 
     ';
-    $header = 'From: ' . $fromName . '<' . $from . '>';
+    $header = 'From: ' . $fromName . ' <' . $from . '>' . "\r\n";
+    $header .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
     mail($to, $subject, $message, $header);
 }

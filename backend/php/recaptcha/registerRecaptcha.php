@@ -1,5 +1,7 @@
-<?php (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
+<?php
+(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
 $secretKey = $_ENV['RECAPTCHA_SECRET_KEY'];
 
@@ -9,7 +11,7 @@ if (isset($_POST['g-recaptcha-response'])) {
     $captcha = false;
 }
 $action = "submit";
-// call curl to POST request
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
 curl_setopt($ch, CURLOPT_POST, 1);
@@ -18,21 +20,19 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
 $arrResponse = json_decode($response, true);
+
 if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.7) {
-    insertOTP($_POST['register_email']);
-    $_SESSION['register_email'] = $_POST['register_email'];
-    $_SESSION['register_password'] = $_POST['register_password'];
+    if (checkDuplicateEmail($_SESSION['email']) == true) {
+        $destination =
+            'https://www.workifyph.online/register.php?error=invalidEmail';
+        header("Location: $destination");
+        exit();
+    }
+    $_SESSION['email'] = $_POST['register_email'];
+    $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 15]);
+    $_SESSION['password'] = $Password;
+    insertOTP();
     $destination = 'https://www.workifyph.online/one_time_password.php';
     header("Location: $destination");
     exit();
-} else {
-    // spam submission
-    // show error message
 }
-
-
-        //$_SESSION['register_email'] = $_POST['register_email'];SS
-        //$_SESSION['register_password'] = $_POST['register_password'];
-        //$destination = $_SERVER['DOCUMENT_ROOT'] . '/php/one_time_password.php';
-        //header("Location: $destination");
-        //exit();

@@ -732,7 +732,7 @@
                         <button class="search-buttons detail-button">Senior Level</button>
                     </div>
                     <div class="job-card-buttons">
-                        <button class="search-buttons card-buttons" id="btnApply">Apply Now</button>
+                        <a href="login.php"> <button class="search-buttons card-buttons" id="btnApply">Apply Now</button></a>
                         <button class="search-buttons card-buttons-msg">Messages</button>
                     </div>
                 </div>
@@ -741,10 +741,10 @@
 
     </div>
 
-
+    <!-- 
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
-    </script>
+    </script> -->
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");

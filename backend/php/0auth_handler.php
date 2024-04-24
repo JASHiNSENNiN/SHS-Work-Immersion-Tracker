@@ -1,5 +1,5 @@
 <?php
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 
 $auth0 = new \Auth0\SDK\Auth0([
@@ -25,6 +25,5 @@ if (isset($_GET['code'])) {
 
     $google_oauth = new Google_Service_Oauth2($client);
     $google_account_info = $google_oauth->userinfo->get();
-    $email =  $google_account_info->email;
-    $name =  $google_account_info->name;
+    $_SESSION['email'] =  $google_account_info->email;
 }
