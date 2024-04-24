@@ -2,9 +2,9 @@
 
 Workify: Streamlining Senior High School Work Immersion Management System with Data Analytics 
 
-[Chapter 1](https://docs.google.com/document/d/1ds18zd0S5pRqeJD4lZTbxwofpLuF3dFa/edit)
+[Chapter 1](https://docs.google.com/document/d/1ds18zd0S5pRqeJD4lZTbxwofpLuF3dFa/edit?usp=sharing&ouid=102815085116670023505&rtpof=true&sd=true)
 
-[Chapter 2](https://docs.google.com/document/d/1BJcrj7xc7wn6Y1C4omMctd_BZmMUBFgs/edit)
+[Chapter 2](https://docs.google.com/document/d/1BJcrj7xc7wn6Y1C4omMctd_BZmMUBFgs/edit?usp=sharing&ouid=102815085116670023505&rtpof=true&sd=true)
 
 ## Scope-and-Delimitation
 
