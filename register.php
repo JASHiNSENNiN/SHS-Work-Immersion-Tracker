@@ -84,7 +84,7 @@ window.onload = function() {
     const error = urlParams.get('error');
 
     if (error === 'invalidEmail') {
-        document.getElementById("email").setCustomValidity("Please enter a valid email address");
+        document.getElementById("email").setCustomValidity("The email address has already been taken");
         document.getElementById("email").reportValidity();
     }
 }
