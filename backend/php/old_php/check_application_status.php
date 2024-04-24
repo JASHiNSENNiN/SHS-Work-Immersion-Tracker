@@ -9,7 +9,7 @@ $conn = mysqli_connect($host, $username, $password, $database);
 
 $workId = $_GET['workId'];
 
-session_start();
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 $userId = $_SESSION['user_id'];
 
 $sql = "SELECT * FROM applicants WHERE partner_id = ? AND student_id = ?";

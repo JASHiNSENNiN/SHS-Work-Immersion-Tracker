@@ -55,3 +55,23 @@ function validateRegisterForm() {
 
 	return true;
 }
+
+window.onload = function () {
+	const urlParams = new URLSearchParams(window.location.search);
+	const error = urlParams.get("error");
+
+	if (error === "invalidEmail") {
+		document
+			.getElementById("email")
+			.setCustomValidity("The email address has already been taken");
+		document.getElementById("email").reportValidity();
+	}
+	if (error === "0AuthDuplicateEmail") {
+		document
+			.getElementById("google-login-btn")
+			.setCustomValidity(
+				"Your email was already taken, try logging in using a different method"
+			);
+		document.getElementById("email").reportValidity();
+	}
+};

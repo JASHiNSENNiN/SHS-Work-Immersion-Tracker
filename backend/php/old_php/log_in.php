@@ -21,7 +21,7 @@ if ($result->num_rows === 1) {
   $row = $result->fetch_assoc();
   $hashedPassword = hash('sha256', $password);
   if (password_verify($hashedPassword, $row['password'])) {
-    session_start();
+    session_status() === PHP_SESSION_NONE ? session_start() : null;
 
     $_SESSION['user_id'] = $row['id'];
     $user_id = $_SESSION['user_id'];

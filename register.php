@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
     <?php
-    session_start();
+    session_status() === PHP_SESSION_NONE ? session_start() : null;
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/registerRecaptcha.php';
@@ -78,15 +78,4 @@
 </body>
 
 </html>
-<script>
-window.onload = function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const error = urlParams.get('error');
-
-    if (error === 'invalidEmail') {
-        document.getElementById("email").setCustomValidity("The email address has already been taken");
-        document.getElementById("email").reportValidity();
-    }
-}
-</script>
 <script src="/backend/js/register.js"></script>

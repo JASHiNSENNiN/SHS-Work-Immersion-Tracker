@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 
 if (isset($_SESSION['user_id'])) {
     $servername = "localhost";

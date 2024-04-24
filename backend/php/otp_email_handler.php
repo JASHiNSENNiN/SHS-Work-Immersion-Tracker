@@ -1,14 +1,9 @@
 <?php
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/session.php';
 
 function getOTP()
 {
-    $host = "localhost";
-    $username = "u487450272_workify_admin";
-    $password = "@--Workify000";
-    $database = "u487450272_shs_immersion";
-
-    $conn = mysqli_connect($host, $username, $password, $database);
+    global $conn;
     $email = $_SESSION['email'];
     $stmt = $conn->prepare("SELECT otp_value FROM otp WHERE email = ?");
     $stmt->bind_param("s", $email);
@@ -23,12 +18,7 @@ function getOTP()
 
 function insertOTP()
 {
-    $host = "localhost";
-    $username = "u487450272_workify_admin";
-    $password = "@--Workify000";
-    $database = "u487450272_shs_immersion";
-    $conn = mysqli_connect($host, $username, $password, $database);
-
+    global $conn;
     $email = $_SESSION['email'];
 
     $currentDateTime = date('Y-m-d H:i:s A');

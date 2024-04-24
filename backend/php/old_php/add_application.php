@@ -10,7 +10,7 @@ $conn = mysqli_connect($host, $username, $password, $database);
 $requestData = json_decode(file_get_contents('php://input'), true);
 $workId = $requestData['workId'];
 
-session_start();
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 $userId = $_SESSION['user_id'];
 
 $sql = "INSERT INTO applicants (partner_id, student_id) VALUES (?, ?)";

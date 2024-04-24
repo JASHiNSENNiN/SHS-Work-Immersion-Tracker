@@ -138,7 +138,7 @@ final class SessionStore implements StoreInterface
 
         if ('' === $sessionId || false === $sessionId) {
             // @codeCoverageIgnoreStart
-            if (! defined('AUTH0_TESTS_DIR')) {
+            if (!defined('AUTH0_TESTS_DIR')) {
                 session_set_cookie_params([
                     'lifetime' => $this->configuration->getCookieExpires(),
                     'domain' => $this->configuration->getCookieDomain(),
@@ -152,7 +152,7 @@ final class SessionStore implements StoreInterface
 
             session_register_shutdown();
 
-            session_start();
+            session_status() === PHP_SESSION_NONE ? session_start() : null;
         }
     }
 }

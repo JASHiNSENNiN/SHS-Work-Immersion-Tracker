@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 
 $host = "localhost";
 $username = "u487450272_workify_admin";
