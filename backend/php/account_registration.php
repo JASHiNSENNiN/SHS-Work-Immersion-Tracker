@@ -1,8 +1,7 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
 
-$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
-$dotenv->load();
+(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 
 $host = "localhost";
 $username = $_ENV['MYSQL_USERNAME'];
