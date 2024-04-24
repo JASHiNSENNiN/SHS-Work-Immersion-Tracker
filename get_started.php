@@ -87,7 +87,7 @@ session_start();
                             </select>
                         </div>
                         <nav>
-                            <a href="login_form.php"><button class="btn-login" id="switch-to-login" onclick="showLoginForm()">
+                            <a style="text-decoration: none" href="login_form.php"><button class="btn-login" id="switch-to-login" onclick="showLoginForm()">
 
                                     <p>Back</p>
                                 </button></a>
