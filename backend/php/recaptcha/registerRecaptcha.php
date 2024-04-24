@@ -1,4 +1,5 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
@@ -28,7 +29,7 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
         header("Location: $destination");
         exit();
     }
-    $_SESSION['email'] = $_POST['register_email'];
+    $_SESSION['email'] = filter_var($_POST['register_email'], FILTER_SANITIZE_EMAIL);
     $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 15]);
     $_SESSION['password'] = $Password;
     insertOTP();

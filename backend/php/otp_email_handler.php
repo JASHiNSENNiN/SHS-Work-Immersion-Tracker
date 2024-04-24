@@ -1,14 +1,16 @@
 <?php
 
-
 function getOTP()
 {
-    $host = "localhost";
-    $username = "u487450272_workify_admin";
-    $password = "@--Workify000";
-    $database = "u487450272_shs_immersion";
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
 
-    $conn = mysqli_connect($host, $username, $password, $database);
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
     $email = $_SESSION['email'];
     $stmt = $conn->prepare("SELECT otp_value FROM otp WHERE email = ?");
     $stmt->bind_param("s", $email);
@@ -23,12 +25,15 @@ function getOTP()
 
 function insertOTP()
 {
-    $host = "localhost";
-    $username = "u487450272_workify_admin";
-    $password = "@--Workify000";
-    $database = "u487450272_shs_immersion";
-    $conn = mysqli_connect($host, $username, $password, $database);
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
 
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
     $email = $_SESSION['email'];
 
     $currentDateTime = date('Y-m-d H:i:s A');

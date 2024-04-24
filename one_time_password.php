@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
