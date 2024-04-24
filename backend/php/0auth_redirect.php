@@ -13,7 +13,6 @@ if (checkDuplicateEmail($_SESSION['email']) == true) {
     } else {
     }
     if (checkAccType() === false) {
-        exit();
     }
 } else {
     $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
@@ -32,7 +31,6 @@ if (checkDuplicateEmail($_SESSION['email']) == true) {
     $stmt->close();
     $conn->close();
     if (checkAccType() === false) {
-        exit();
     } else {
     }
 }
