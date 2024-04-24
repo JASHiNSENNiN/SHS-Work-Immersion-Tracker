@@ -1,6 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
+(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
@@ -25,10 +25,10 @@ if (isset($_GET['code'])) {
 
     $google_oauth = new Google_Service_Oauth2($client);
     $google_account_info = $google_oauth->userinfo->get();
-    $_SESSION['email'] =  $google_account_info->email;
+    $_SESSION['email'] = $google_account_info->email;
 
     if (checkDuplicateEmail($_SESSION['email']) == true) {
-        $destination = 'https://www.workifyph.online/login.php?error=0AuthDuplicateEmail';
+        $destination = 'https://www.workifyph.online/register.php?error=0AuthDuplicateEmail';
         header("Location: $destination");
         exit();
     }
