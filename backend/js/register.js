@@ -63,7 +63,7 @@ window.onload = function () {
 	if (error === "invalidEmail") {
 		document
 			.getElementById("email")
-			.setCustomValidity("The email address has already been taken");
+			.setCustomValidity("The email address was already taken");
 		document.getElementById("email").reportValidity();
 	}
 	if (error === "0AuthDuplicateEmail") {

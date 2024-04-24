@@ -27,7 +27,7 @@ if (isset($_GET['code'])) {
     $google_account_info = $google_oauth->userinfo->get();
     $_SESSION['email'] =  $google_account_info->email;
 
-    if (checkDuplicateEmail($email) == true) {
+    if (checkDuplicateEmail($_SESSION['email']) == true) {
         $destination = 'https://www.workifyph.online/login.php?error=0AuthDuplicateEmail';
         header("Location: $destination");
         exit();
