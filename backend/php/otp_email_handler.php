@@ -35,6 +35,7 @@ function insertOTP()
 
     $conn = new mysqli($host, $username, $password, $database);
     $email = $_SESSION['email'];
+    $_SESSION['email'] = $email;
 
     $currentDateTime = date('Y-m-d H:i:s A');
     $otp = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
