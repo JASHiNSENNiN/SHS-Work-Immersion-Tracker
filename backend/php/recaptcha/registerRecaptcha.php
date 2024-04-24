@@ -3,14 +3,6 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
-if (checkDuplicateEmail($email) == true) {
-    $destination =
-        'https://www.workifyph.online/register.php?error=invalidEmail';
-    header("Location: $destination");
-    exit();
-}
-
-
 $secretKey = $_ENV['RECAPTCHA_SECRET_KEY'];
 
 if (isset($_POST['g-recaptcha-response'])) {
@@ -30,6 +22,12 @@ curl_close($ch);
 $arrResponse = json_decode($response, true);
 
 if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.7) {
+    if (checkDuplicateEmail($_SESSION['email']) == true) {
+        $destination =
+            'https://www.workifyph.online/register.php?error=invalidEmail';
+        header("Location: $destination");
+        exit();
+    }
     $_SESSION['email'] = $_POST['register_email'];
     $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 15]);
     $_SESSION['password'] = $Password;
