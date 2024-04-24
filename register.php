@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loginform.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-    var emailExists = <?php echo checkDuplicateEmail() ?>;
+    var emailExists = <?php echo checkDuplicateEmail() ? 'true' : 'false'; ?>;
 
     function onSubmit(token) {
         if (validateRegisterForm()) {
