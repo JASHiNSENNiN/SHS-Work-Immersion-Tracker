@@ -18,9 +18,12 @@ function validateRegisterForm() {
 	});
 
 	if (checkDuplicateEmail(email) === true) {
+		window.location.href = "http://www.example.com";
 		emailInput.setCustomValidity("This email address was already in use");
 		emailInput.reportValidity();
 		return false;
+	} else {
+		window.location.href = "http://www.w3schools.com";
 	}
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
