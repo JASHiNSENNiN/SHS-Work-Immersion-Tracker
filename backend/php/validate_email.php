@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-function checkDuplicateEmail()
+function checkDuplicateEmail($email)
 {
     $host = "localhost";
     $username = "u487450272_workify_admin";
@@ -10,7 +10,7 @@ function checkDuplicateEmail()
     $conn = new mysqli($host, $username, $password, $database);
 
     $stmt = $conn->prepare("SELECT COUNT(*) FROM users WHERE email = ?");
-    $stmt->bind_param("s", $_SESSION['email']);
+    $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->bind_result($count);
     $stmt->fetch();
@@ -22,5 +22,3 @@ function checkDuplicateEmail()
         return false;
     }
 }
-
-checkDuplicateEmail();

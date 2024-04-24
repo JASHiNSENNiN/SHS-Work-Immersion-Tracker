@@ -17,7 +17,7 @@ function validateRegisterForm() {
 		});
 	});
 
-	if (validateEmail(email) === true) {
+	if (checkDuplicateEmail(email) === true) {
 		emailInput.setCustomValidity("This email address was already in use");
 		emailInput.reportValidity();
 		return false;
@@ -62,25 +62,21 @@ function validateRegisterForm() {
 	return true;
 }
 
-function validateEmail(email) {
+function checkDuplicateEmail(email) {
 	return new Promise(function (resolve, reject) {
-		var xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					var response = xhr.responseText;
-					resolve(response === "true");
-				} else {
-					reject(xhr.status);
-				}
-			}
-		};
-
-		xhr.open("POST", "/backend/php/validate_email.php", true);
-		xhr.setRequestHeader(
-			"Content-type",
-			"application/x-www-form-urlencoded"
-		);
-		xhr.send("email=" + encodeURIComponent(email));
+		$.ajax({
+			url: "../php/validate_email.php",
+			method: "POST",
+			dataType: "json",
+			data: {
+				email: email,
+			},
+			success: function (response) {
+				resolve(response.duplicateEmail);
+			},
+			error: function (jqXHR, textStatus, errorThrown) {
+				reject(errorThrown);
+			},
+		});
 	});
 }
