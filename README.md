@@ -1,6 +1,7 @@
 # SHS-Work-Immersion-Tracker
 
 Workify: Streamlining Senior High School Work Immersion Management System with Data Analytics 
+[Chapter 1](https://docs.google.com/document/d/1ds18zd0S5pRqeJD4lZTbxwofpLuF3dFa/edit)
 
 ## Scope-and-Delimitation
 
