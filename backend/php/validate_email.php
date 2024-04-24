@@ -1,4 +1,5 @@
 <?php
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 
 function checkDuplicateEmail($email)
 {
@@ -15,5 +16,9 @@ function checkDuplicateEmail($email)
     $stmt->fetch();
     $stmt->close();
 
-    return $count;
+    if ($count > 0) {
+        return true;
+    } else {
+        return false;
+    }
 }

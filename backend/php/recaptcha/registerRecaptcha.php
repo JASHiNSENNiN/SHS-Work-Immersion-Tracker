@@ -1,5 +1,15 @@
-<?php (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
+<?php
+(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/otp_email_handler.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
+
+if (checkDuplicateEmail($email) == true) {
+    $destination =
+        'https://www.workifyph.online/register.php?error=invalidEmail';
+    header("Location: $destination");
+    exit();
+}
+
 
 $secretKey = $_ENV['RECAPTCHA_SECRET_KEY'];
 
@@ -27,5 +37,4 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     $destination = 'https://www.workifyph.online/one_time_password.php';
     header("Location: $destination");
     exit();
-} else {
 }

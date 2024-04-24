@@ -9,12 +9,18 @@
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/registerRecaptcha.php';
     ?>
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/loginform.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+    function onSubmit(token) {
+        if (validateRegisterForm()) {
+            document.getElementById("registerForm").submit();
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -73,22 +79,14 @@
 
 </html>
 <script>
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get('error');
+
+    if (error === 'invalidEmail') {
+        document.getElementById("email").setCustomValidity("Please enter a valid email address");
+        document.getElementById("email").reportValidity();
+    }
+}
 </script>
 <script src="/backend/js/register.js"></script>
-<script>
-function onSubmit(token) {
-    <?php
-        $email = "<script>document.write(document.getElementById('email').value)
-</script>";
-?>
-if (<?php echo checkDuplicateEmail($email) ?> > 0) {
-document.getElementById("email").setCustomValidity(
-"This email address was already in use"
-);
-document.getElementById("email").reportValidity();
-}
-if (validateRegisterForm() && (<?php echo checkDuplicateEmail($email) ?> === 0)) {
-document.getElementById("registerForm").submit();
-}
-}
-</script>
