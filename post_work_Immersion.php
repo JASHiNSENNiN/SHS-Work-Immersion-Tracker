@@ -40,10 +40,10 @@
         <section class="section-yj7db7">
             <h1 class="sfa">Let's Workify Your Work Life</h1>
             <div class="searchwork">
-                <form action="login_form.php" method="get">
+                <form action="login.php" method="get">
                     <!-- <input type="text" name="keywords" placeholder="Immerssion  / Keywords / Company">
                 <input type="text" name="location" placeholder="Location"> -->
-                    <a href="login.php" style="text-decoration:none;"><input type="submit" value="Post a Work Immersion!"></a>
+                    <input type="submit" value="Post a Work Immersion!">
 
                 </form>
             </div>
