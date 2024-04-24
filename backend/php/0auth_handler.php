@@ -41,7 +41,7 @@ if (isset($_GET['code'])) {
 
     $conn = new mysqli($host, $username, $password, $database);
 
-    $stmt = $conn->prepare("INSERT INTO otp (email) VALUES (?)");
+    $stmt = $conn->prepare("INSERT INTO users (email) VALUES (?)");
     $stmt->bind_param("s", $_SESSION['email']);
     $stmt->execute();
     $stmt->close();
