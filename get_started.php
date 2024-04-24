@@ -1,5 +1,6 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_redirect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
