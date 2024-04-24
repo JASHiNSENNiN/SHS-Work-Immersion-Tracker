@@ -89,8 +89,7 @@ session_start();
                         <nav>
                             <a href="login_form.php"><button class="btn-login" id="switch-to-login" onclick="showLoginForm()">
 
-                                    <p>
-                                        << Back</p>
+                                    <p>Back</p>
                                 </button></a>
                             <button class="btn-new" onclick="validateForm()">
                                 <p>Submit</p>
