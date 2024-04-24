@@ -27,7 +27,4 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     header("Location: $destination");
     exit();
 } else {
-    $destination = 'https://www.workifyph.online/';
-    header("Location: $destination");
-    exit();
 }
