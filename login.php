@@ -9,9 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../css/loginform.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-    function onRegisterSubmit(token) {
-        document.getElementById("login_form").submit();
-    }
+        function onRegisterSubmit(token) {
+            document.getElementById("login_form").submit();
+        }
     </script>
     <?php
     session_status() === PHP_SESSION_NONE ? session_start() : null;
@@ -24,9 +24,9 @@
 <body>
     <noscript>
         <style>
-        html {
-            display: none;
-        }
+            html {
+                display: none;
+            }
         </style>
         <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
     </noscript>
@@ -100,7 +100,7 @@
 
     </div>
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+        <p>&copy; 2024 WorkifyPH. All rights reserved. | Junior Philippines Computer Society Students</p>
         <!-- <p>By using Workify you agrree to new <a href="#"></a></p> -->
 
     </footer>
