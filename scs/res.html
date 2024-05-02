@@ -1,55 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>How to take screenshot of a div using JavaScript?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
 
-    <!-- Include from the CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
-    <!-- Include locally otherwise -->
-    <!-- <script src='html2canvas.js'></script> -->
-
+    <title>Job Posting Data for Google Job Search</title>
     <style>
-      #photo {
-        border: 4px solid green;
-        padding: 4px;
-      }
+      /* job-posting.css
+ */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  /*
+  font-size: 90%;
+  */
+	margin: 0px 20px;
+	padding: 5px;
+}
+
+h2 {
+  clear: left;
+  margin-top: 2em;
+  margin-bottom: 0px;
+}
+
+#output {
+  margin-left: 22px;
+}
+
+pre {
+  border : 1px solid #ccc;
+  border-radius: 4px;
+  background: #deefc4;
+  padding: 6px;
+}
+
+/* Borrowed with modifications from https://www.w3schools.com/css/css_form.asp */
+* {
+    box-sizing: border-box;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  /*
+  font-size: 90%
+  */
+}
+
+input[type=text], textarea {
+  font-size: 100%;
+  width: 90%;
+  padding: 8px;
+  border : 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 6px;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two
+ * columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input {
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=button] {
+    margin-top: 6px;
+  }
+}
     </style>
+  
   </head>
 
   <body>
-    <div id="photo">
-      <h1>GeeksforGeeks</h1>
-      Hello everyone! This is a trial page for taking a screenshot.
-      <br /><br />
-      This is a dummy button!
-      <button>Dummy</button>
-      <br /><br />
-      Click the button below to take a screenshot of the div.
-      <br /><br />
+    <h1>Job Posting Data for Google Job Search</h1>
 
-      <!-- Define the button 
-		that will be used to 
-		take the screenshot -->
-      <button onclick="takeshot()">Take Screenshot</button>
+    <p>Enter the job data below and them click on the "Show HTML to embed"
+    button to generate the job posting data to paste into your web page for the
+    job opening.</p>
+
+    <div class="container">
+    <form name="job-form" action="">
+      <input type="hidden" name="name" value="Kaimuki YMCA">
+      <input type="hidden" name="sameAs" value="http://www.kaimukiymca.org/">
+      <input type="hidden" name="logo" value="http://www.kaimukiymca.org/uploads/7/4/5/5/74555883/published/1474393861.png">
+      <div class="row">
+        <div class="col-25">
+          <label>Title:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="title">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label>Street Address:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="streetAddress">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label>City:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="addressLocality">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label>State:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="addressRegion">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label>Zip Code:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="postalCode">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label>Description:</label>
+        </div>
+        <div class="col-75">
+          <textarea rows="10" cols="50" name="description"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label>Date Posted:</label>
+        </div>
+        <div class="col-75">
+          <input type="date" name="datePosted">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>Valid Through:</label>
+        </div>
+        <div class="col-75">
+          <input type="date" name="validThrough">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>Employment Type:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="employmentType">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>Posting ID:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="postingId">
+        </div>
+      </div>
     </div>
-    <h1>Screenshot:</h1>
-    <div id="output"></div>
 
-    <script type="text/javascript">
-      // Define the function
-      // to screenshot the div
-      function takeshot() {
-        let div = document.getElementById("photo");
+      <div class="row">
+        <div class="col-25">
+          <input type="button" name="submit" value="Show HTML to embed">
+        </div>
+        <div class="col-25">
+          <input type="button" name="clear" value="Clear HTML to embed">
+        </div>
+      </div>
+    </form>
 
-        // Use the html2canvas
-        // function to take a screenshot
-        // and append it
-        // to the output div
-        html2canvas(div).then(function (canvas) {
-          document.getElementById("output").appendChild(canvas);
-        });
-      }
-    </script>
+    <h2>Embed this HTML snippet in your page</h2>
+      <div class="row">
+          <pre> </pre>
+      </div>
+
+      <script>
+        window.onload = function () {
+  var tmpl = "\u003Cscript type=\"application/ld+json\"> {\n" +
+"  \"@context\" : \"http://schema.org/\",\n" +
+"  \"@type\" : \"JobPosting\",\n" +
+"  \"title\" : \"{{title}}\",\n" +
+"  \"description\" : \"{{description}}\",\n" +
+"  \"identifier\": {\n" +
+"    \"@type\" : \"PropertyValue\",\n" +
+"    \"name\" : \"Kaimuki YMCA\",\n" +
+"    \"value\" : \"{{postingId}}\"\n" +
+"  },\n" +
+"  \"datePosted\" : \"{{datePosted}}\",\n" +
+"  \"validThrough\" : \"{{validThrough}}\",\n" +
+"  \"employmentType\" : \"{{employmentType}}\",\n" +
+"  \"hiringOrganization\" : {\n" +
+"    \"@type\" : \"Organization\",\n" +
+"    \"name\" : \"{{name}}\",\n" +
+"    \"sameAs\" : \"{{sameAs}}\",\n" +
+"    \"logo\" : \"{{logo}}\"\n" +
+"  },\n" +
+"  \"jobLocation\" : {\n" +
+"    \"@type\" : \"Place\",\n" +
+"    \"address\" : {\n" +
+"      \"@type\" : \"PostalAddress\",\n" +
+"      \"streetAddress\" : \"{{streetAddress}}\",\n" +
+"      \"addressLocality\" : \"{{addressLocality}}\",\n" +
+"      \"addressRegion\" : \"{{addressRegion}}\",\n" +
+"      \"postalCode\" : \"{{postalCode}}\",\n" +
+"      \"addressCountry\": \"US\"\n" +
+"    }\n" +
+"  }\n" +
+"}\n" +
+"\u003C/script>";
+
+  function spaces2html(line) {
+    // convert leading spaces to non-breaking space entities
+    return new Array(line.length + 1).join('&nbsp;')
+  }
+
+  function line2html(line) {
+    // convert line to HTML paragraph
+    return line.replace(/^(\s)+/, spaces2html);
+  }
+
+  function formatLineBreak(str) {
+    var lines = str.split("\n");
+    return lines.map(function (x) {return line2html(x) + "<br>"}).join("\n");
+  }
+
+  // handle no data and missing properties
+  var render = function (data) {
+    return data ?
+      tmpl.replace("{{name}}",data['name']||'')
+          .replace("{{sameAs}}",data['sameAs']||'')
+          .replace("{{logo}}",data['logo']||'')
+          .replace("{{title}}", data['title']||'')
+          .replace("{{description}}",data['description']||'')
+          .replace("{{postingId}}",data['postingId']||'')
+          .replace("{{datePosted}}",data['datePosted']||'')
+          .replace("{{validThrough}}",data['validThrough']||'')
+          .replace("{{employmentType}}",data['employmentType']||'')
+          .replace("{{streetAddress}}",data['streetAddress']||'')
+          .replace("{{addressLocality}}",data['addressLocality']||'')
+          .replace("{{addressRegion}}",data['addressRegion']||'')
+          .replace("{{postalCode}}",data['postalCode']||'')
+      :
+        {};
+  }
+
+  function getValue(elem) {
+    var item = document.getElementsByName(elem);
+    if (item.length < 1)
+      return '';
+    return item[0].value.trim();
+  }
+
+  var sbtn = document.getElementsByName("submit")[0];
+  sbtn.onclick = function () {
+    var data = {};
+    data.name = getValue("name");
+    data.sameAs = getValue("sameAs");
+    data.logo = getValue("logo");
+    data.title = getValue("title");
+    data.streetAddress = getValue("streetAddress");
+    data.addressLocality = getValue("addressLocality");
+    data.addressRegion = getValue("addressRegion");
+    data.postalCode = getValue("postalCode");
+    data.description = formatLineBreak(getValue("description"));
+    data.datePosted = getValue("datePosted");
+    data.validThrough = getValue("validThrough");
+    data.employmentType = getValue("employmentType");
+    data.postingId = getValue("postingId");
+
+    document.getElementsByTagName("pre")[0].innerText = render(data);
+  }
+
+  var cbtn = document.getElementsByName("clear")[0];
+  cbtn.onclick = function () {
+    document.getElementsByTagName("pre")[0].innerText = " ";
+  }
+} 
+      </script>
+
   </body>
 </html>

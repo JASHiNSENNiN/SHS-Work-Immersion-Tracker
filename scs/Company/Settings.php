@@ -40,15 +40,20 @@
             <div class="row no-gutters row-bordered row-border-light">
                 <div class="col-md-3 pt-0">
                     <div class="list-group list-group-flush account-settings-links">
-                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
+                        <a class="list-group-item list-group-item-action active" data-toggle="list"
+                            href="#account-general">General</a>
 
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-change-password">Change password</a>
 
                         <!-- <a class="list-group-item list-group-item-action" data-toggle="
 l                           ist" href="#account-info">Info</a> -->
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Connections</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notifications</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-social-links">Social links</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-connections">Connections</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-notifications">Notifications</a>
                     </div>
                 </div>
 
@@ -57,11 +62,13 @@ l                           ist" href="#account-info">Info</a> -->
                         <div class="tab-pane fade active show" id="account-general">
                             <div class="card-body media align-items-center">
 
-                                <img src="./image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80" style="border-radius:50%; height:150px;  width : 160px !important;">
+                                <img src="./image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80"
+                                    style="border-radius:50%; height:150px;  width : 160px !important;">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">
                                         Upload new photo
-                                        <input type="file" class="account-settings-fileinput" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                                        <input type="file" class="account-settings-fileinput"
+                                            accept="image/jpeg, image/png, image/jpg" id="input-file">
                                     </label> &nbsp;
                                     <button type="button" class="btn btn-default md-btn-flat">Reset</button>
                                     <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max
@@ -174,10 +181,12 @@ l                           ist" href="#account-info">Info</a> -->
                             <hr class="border-light m-0">
                             <div class="card-body">
                                 <h5 class="mb-2">
-                                    <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i class="ion ion-md-close"></i> Remove</a>
+                                    <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i
+                                            class="ion ion-md-close"></i> Remove</a>
                                     <i class="ion ion-logo-google text-google"></i> You are connected to Google:
                                 </h5>
-                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
+                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
                             </div>
                             <hr class="border-light m-0">
                             <div class="card-body">
@@ -273,20 +282,18 @@ l                           ist" href="#account-info">Info</a> -->
 
 
     <footer>
-        <div class="sub-footer">
-            2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
-        </div>
+        2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students
     </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputfile = document.getElementById("input-file");
-        inputfile.onchange = function() {
-            profilePic.src = URL.createObjectURL(inputfile.files[0]);
-        }
+    let profilePic = document.getElementById("profile-pic");
+    let inputfile = document.getElementById("input-file");
+    inputfile.onchange = function() {
+        profilePic.src = URL.createObjectURL(inputfile.files[0]);
+    }
     </script>
 
 </body>

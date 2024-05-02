@@ -37,6 +37,7 @@
                     <div class="email">upriis.division6@nia.gov.ph</div>
                     <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
                         Profile</a>
+                    <a href=""><i class='fas fa-bookmark' style='font-size:24px; margin-right:10px;'></i> My Jobs</a>
                     <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
                         Reviews</a>
                     <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>

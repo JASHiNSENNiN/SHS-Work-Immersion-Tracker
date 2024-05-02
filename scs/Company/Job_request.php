@@ -39,6 +39,7 @@
                     <div class="email">upriis.division6@nia.gov.ph</div>
                     <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
                         Profile</a>
+                    <a href=""><i class='fas fa-bookmark' style='font-size:24px; margin-right:10px;'></i> My Jobs</a>
                     <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
                         Reviews</a>
                     <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
@@ -162,21 +163,21 @@
     </footer>
 
     <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function () {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
     </script>
 
     <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function () {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
     </script>
 
 

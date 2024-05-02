@@ -102,6 +102,7 @@ img {
   width: 76%;
   display: block;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .Settings {
@@ -525,7 +526,7 @@ h3 {
 nav {
   text-align: center;
   display: flex;
-  margin-right: 160px;
+  margin-right: 180px;
 }
 
 nav a {
