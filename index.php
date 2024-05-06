@@ -48,7 +48,7 @@
 
 
         <section>
-            <!-- <h2 class="sfa">Search, Find and Apply!</h2 -->
+            <!-- <h2 class="sfa">Search, Find and Apply!</h2> -->
             <div class="line-search">
                 <div class="searchwork">
                     <form action="#" method="get">
@@ -733,7 +733,7 @@
                     </div>
                     <div class="job-card-buttons">
                         <a href="login.php"> <button class="search-buttons card-buttons" id="btnApply">Apply Now</button></a>
-                        <button class="search-buttons card-buttons-msg">Messages</button>
+                        <a href="login.php"><button class="search-buttons card-buttons-msg">Messages</button></a>
                     </div>
                 </div>
             </div>
