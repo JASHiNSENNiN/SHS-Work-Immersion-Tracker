@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | Workify </title>
     <link rel="stylesheet" type="text/css" href="./css/header.css">
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/contact.css">
@@ -107,7 +107,7 @@
 
 <!-- JavaScript to display the current date -->
 <script>
-document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
 
 
