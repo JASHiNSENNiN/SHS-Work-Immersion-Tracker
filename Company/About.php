@@ -108,8 +108,9 @@
 
         <div class="container">
             <form action="/action_page.php">
+                <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
+                <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
 
-                <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
             </form>

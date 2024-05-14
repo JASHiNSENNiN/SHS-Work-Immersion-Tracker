@@ -647,14 +647,22 @@ textarea {
     width: 200px;
     line-height: 40px;
     text-align: center;
-    color: #fff;
-    background: #3f8efc;
+    color: #127964;
+    background: #fff;
     border-radius: 5px;
+    border: 1px solid #d4d2d0;
+    border-radius: 0.5rem;
+}
+
+.installer label span:hover {
+    border: 1px solid #1bbc9b;
+    background: #effffc;
 }
 
 .installer label input:checked ~ span {
-    background: #87e544;
+    background: #effffc;
     animation: downloadSuccess 3.1s ease;
+    /* color: #fff; */
 }
 
 .installer label span:after {
@@ -688,10 +696,10 @@ textarea {
 @keyframes downloadSuccess {
     0%,
     90% {
-        background: #3f8efc;
+        background: #effffc;
     }
     100% {
-        background: #87e544;
+        background: #effffc;
     }
 }
 
