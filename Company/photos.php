@@ -22,9 +22,9 @@
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
-                <a href="index.php">Home</a>
-                <a href="job_list.php">Company review</a>
-                <a href="contact.php">Contact</a>
+                <a href="../index.php">Home</a>
+                <a href="../job_list.php">Company review</a>
+                <a href="../contact.php">Contact</a>
             </nav>
         </div>
         <nav>
@@ -36,10 +36,7 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
-    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
-            photo</span>
-        <span class="cam"><i class="fa fa-camera"></i></span></label>
-    <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
+
 
 
     <div class="profile-name">
@@ -47,9 +44,8 @@
         <div class="name">National Irrigation Administration</div>
         <label class="strand" for="">NIA</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i class="fa fa-pencil"></i> Edit
-                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
-            <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
+        <div class="Settings">
+            <label for="input-file2" class="button-12" role="button">Follow </label>
         </div>
 
     </div><br>

@@ -91,13 +91,13 @@
                                 <div class="company-card__inner">
                                     <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
                                         <figure class="company-card__figure">
-                                            <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
+                                            <img class="company-card__image" alt="Company Name" src="https://i.postimg.cc/HnV8QTq7/NIA.png">
                                         </figure>
                                     </a>
                                     <div class="company-card__content">
                                         <div class="company-card__block">
                                             <h3 class="company-card__title">
-                                                <a class="company-card__title-link" href="/company">Company Name</a>
+                                                <a class="company-card__title-link" href="/company">National Irrgation<br>Administration(NIA)</a>
                                             </h3>
                                             <div class="company-card__review">
                                                 <div class="review-stars">
@@ -112,9 +112,9 @@
                                         </div>
                                     </div>
                                     <div class="company-card__links">
-                                        <a class="company-card__link" href="#">Reviews</a>
-                                        <a class="company-card__link" href="#">Question</a>
-                                        <a class="company-card__link" href="#">Work Immersion</a>
+                                        <a class="company-card__link" href="Company/reviews.php">Reviews</a>
+                                        <a class="company-card__link" href="Company/questions.php">Question</a>
+                                        <a class="company-card__link" href="Company/work-immersion-list.php">Work Immersion</a>
                                     </div>
                                 </div>
                             </div>

@@ -7,13 +7,13 @@
     <title>Company Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/About.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- -------------font--------- -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -24,9 +24,9 @@
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
-                <a href="index.php">Home</a>
-                <a href="job_list.php">Company review</a>
-                <a href="contact.php">Contact</a>
+                <a href="../index.php">Home</a>
+                <a href="../job_list.php">Company review</a>
+                <a href="../contact.php">Contact</a>
             </nav>
         </div>
         <nav>
@@ -38,10 +38,7 @@
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
-    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
-            photo</span>
-        <span class="cam"><i class="fa fa-camera"></i></span></label>
-    <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
+
 
 
     <div class="profile-name">
@@ -49,9 +46,9 @@
         <div class="name">National Irrigation Administration</div>
         <label class="strand" for="">NIA</label>
 
-        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i class="fa fa-pencil"></i> Edit
-                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
-            <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
+        <div class="Settings">
+            <label for="input-file2" class="button-12" role="button">Follow </label>
+            <label for="input-file2" class="button-13" role="button">Write a review </label>
         </div>
 
     </div><br>
@@ -71,10 +68,10 @@
     <div class="bgc">
 
         <div class="snapshot_container">
-            <h1 style="font-size: 1.2rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">About NATIONAL IRRIGATION ADMINISTRATION (NIA)</h1>
+            <h1 style="font-size: 1.2rem; margin:0%; margin: bottom 20px; padding-top: 24px; margin-block-end: 1rem;">About NATIONAL IRRIGATION ADMINISTRATION (NIA)</h1>
             <p class="myText-toq">
                 The National Irrigation Administration (NIA) is a government-owned and controlled corporation created under Republic Act (RA) No. 3601 on 22 June 1963. NIA is primarily responsible for irrigation development and management. Its charter was amended by Presidential Decree (PD) 552 on 11 September 1974 and PD 1702 on 17 July 1980 wherein its capitalization was increased and the authority of the agency was broadened.
-            </p>
+            </p><br>
             <p class="myText" hidden>
                 NIA's forerunner was the Irrigation Division of the defunct Bureau of Public Works. Upon creation, NIA was placed under the Office of the President (OP). In 23 September 1972 under PD No.1, NIA became an attached agency to the Department of Public Works, Transportation, and Communication . The issuance also integrated all irrigation activities under the Agency. In 25 July 1987 pursuant to Executive Order No. 292, otherwise known as the Administrative Code of 1987, NIA was placed under the Department of Public Works and Highways (DPWH).<br><br>
 
@@ -111,7 +108,7 @@
                 <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
                 <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
 
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" style="height:200px" required></textarea>
 
             </form>
 
@@ -120,7 +117,30 @@
             </div>
 
         </div>
+        <section>
+            <h3 style="color: #2d2d2d;">Find another company</h3>
+            <div class="line-search">
 
+                <div class="searchwork">
+
+                    <form class="form-search" action="#" method="get">
+
+                        <div class="search-container">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input class="txt-btn" type="text" placeholder="Company name">
+
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+                <input class="sub-btn" type="submit" value="Search">
+            </div>
+
+
+        </section>
     </div>
     <br>
     <footer>
