@@ -58,8 +58,8 @@
 
         <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
             <a class="active" href="Details.php">Snapshot</a>
-            <a href="#">Why Join Us</a>
-            <a href="#">Reviews</a>
+            <a href="About.php">Why Join Us</a>
+            <a href="reviews.php">Reviews</a>
             <a href="#">Questions</a>
             <a href="#">Work immersion </a>
             <a href="#">Photos</a>
