@@ -49,66 +49,68 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_redirect.php';
                     <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
                     <div class="form-container">
-
-                        <input type="text" for="email" name="email" id="email"
-                            placeholder="<?php echo $_SESSION['email'] ?>" value="" <?php echo $_SESSION['email'] ?>""
-                            disabled>
-                        <select id="account-type" name="account-type" required onchange="toggleFields()">
-                            <option value class="null-type">Account Type:</option>
-                            <option value="student">Student</option>
-                            Studen <option value="school">School</option>
-                            <option value="organization">Partner Organization</option>
-                        </select>
-                        <div id="student-fields" style="display: none;">
-                            <input type="text" placeholder="First Name" id="first-name" name="first-name">
-                            <input type="text" placeholder="Middle Name" id="middle-name" name="middle-name">
-                            <input type="text" placeholder="Last Name" id="last-name" name="last-name">
-                            <select name="grade-level" id="grade-level">
-                                <option value class="null-type">Grade Level:</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
+                        <form action="">
+                            <input type="text" for="email" name="email" id="email"
+                                placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>"
+                                disabled>
+                            <select id="account-type" name="account-type" required onchange="toggleFields()">
+                                <option value class="null-type">Account Type:</option>
+                                <option value="student">Student</option>
+                                Studen <option value="school">School</option>
+                                <option value="organization">Partner Organization</option>
                             </select>
-                            <select name="strand" id="strand">
-                                <option value class="null-type">Strand:</option>
-                                <option value="stem">STEM</option>
-                                <option value="humss">HUMSS</option>
-                                <option value="abm">ABM</option>
-                                <option value="gas">GAS</option>
-                                <option value="tvl">TVL</option>
-                            </select>
-                        </div>
-                        <div id="school-fields" style="display: none;">
-                            <input type="text" placeholder="School Name" id="school-name" name="school-name">
-                        </div>
-                        <div id="partner-fields" style="display: none;">
-                            <input type="text" placeholder="Organization Name" id="organization-name"
-                                name="organization-name">
-                            <select name="strand-focus" id="strand-focus">
-                                <option value class="null-type">Strand:</option>
-                                <option value="stem">STEM</option>
-                                <option value="humss">HUMSS</option>
-                                <option value="abm">ABM</option>
-                                <option value="gas">GAS</option>
-                                <option value="tvl">TVL</option>
-                            </select>
-                        </div>
-                        <nav>
-                            <a style="text-decoration: none" href="login.php"><button class="btn-login"
-                                    id="switch-to-login" onclick="showLoginForm()">
+                            <div id="student-fields" style="display: none;">
+                                <input type="text" placeholder="First Name" id="first-name" name="first-name">
+                                <input type="text" placeholder="Middle Name" id="middle-name" name="middle-name">
+                                <input type="text" placeholder="Last Name" id="last-name" name="last-name">
+                                <select name="grade-level" id="grade-level">
+                                    <option value class="null-type">Grade Level:</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="strand" id="strand">
+                                    <option value class="null-type">Strand:</option>
+                                    <option value="stem">STEM</option>
+                                    <option value="humss">HUMSS</option>
+                                    <option value="abm">ABM</option>
+                                    <option value="gas">GAS</option>
+                                    <option value="tvl">TVL</option>
+                                </select>
+                            </div>
+                            <div id="school-fields" style="display: none;">
+                                <input type="text" placeholder="School Name" id="school-name" name="school-name">
+                            </div>
+                            <div id="partner-fields" style="display: none;">
+                                <input type="text" placeholder="Organization Name" id="organization-name"
+                                    name="organization-name">
+                                <select name="strand-focus" id="strand-focus">
+                                    <option value class="null-type">Strand:</option>
+                                    <option value="stem">STEM</option>
+                                    <option value="humss">HUMSS</option>
+                                    <option value="abm">ABM</option>
+                                    <option value="gas">GAS</option>
+                                    <option value="tvl">TVL</option>
+                                </select>
+                            </div>
+                            <nav>
+                                <a style="text-decoration: none" href="login.php"><button class="btn-login"
+                                        id="switch-to-login" onclick="showLoginForm()">
 
-                                    <p>Back</p>
-                                </button></a>
-                            <button class="btn-new" onclick="validateForm()">
-                                <p>Submit</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path
-                                        d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-                                        data-name="3-Arrow Right" />
-                                </svg>
-                            </button>
+                                        <p>Back</p>
+                                    </button></a>
+                                <button class="btn-new" onclick="validateForm()">
+                                    <p>Submit</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <path
+                                            d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                                            data-name="3-Arrow Right" />
+                                    </svg>
+                                </button>
 
 
-                        </nav>
+                            </nav>
+                        </form>
+
                     </div>
                 </div>
             </div>
