@@ -50,3 +50,26 @@ function checkAccType()
         return false;
     }
 }
+
+function getAccountype($email)
+{
+    $host = "localhost";
+    $username = $_ENV['MYSQL_USERNAME'];
+    $password = $_ENV['MYSQL_PASSWORD'];
+    $database = $_ENV['MYSQL_DBNAME'];
+
+    $conn = new mysqli($host, $username, $password, $database);
+
+    $stmt = $conn->prepare("SELECT account_type FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($accountType);
+    $stmt->fetch();
+    $stmt->close();
+    $conn->close();
+    if ($accountType) {
+        return $accountType;
+    } else {
+        return null;
+    }
+}

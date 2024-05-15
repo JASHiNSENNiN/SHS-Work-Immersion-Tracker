@@ -5,21 +5,28 @@ require_once $_SERVER['DOCUMENT_ROOT']
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
 
-$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
-$dotenv->load();
+if (isset($_GET['code'])) {
+    $_SESSION['code'] = $_GET['code'];
+    $token = $client->fetchAccessTokenWithAuthCode($_SESSION['code']);
+    $client->setAccessToken($token['access_token']);
 
-$host = "localhost";
-$username = $_ENV['MYSQL_USERNAME'];
-$password = $_ENV['MYSQL_PASSWORD'];
-$database = $_ENV['MYSQL_DBNAME'];
+    $google_oauth = new Google_Service_Oauth2($client);
+    $google_account_info = $google_oauth->userinfo->get();
+    $_SESSION['email'] = $google_account_info->email;
 
-$conn = new mysqli($host, $username, $password, $database);
-
-$stmt = $conn->prepare("INSERT INTO users (email) VALUES (?)");
-$stmt->bind_param("s", $_SESSION['email']);
-$stmt->execute();
-$stmt->close();
-$conn->close();
-if (checkAccType() === false) {
-} else {
+    $accountType = getAccountype($_SESSION['email']);
+    switch ($accountType) {
+        case 'student':
+            header("Location: https://www.student.workifyph.online/");
+            exit;
+        case 'school':
+            header("Location: https://www.school.workifyph.online/");
+            exit;
+        case 'organization':
+            header("Location: https://www.company.workifyph.online/");
+            exit;
+        default:
+            header("Location: https://www.workifyph.online/get_started.php");
+            exit;
+    }
 }
