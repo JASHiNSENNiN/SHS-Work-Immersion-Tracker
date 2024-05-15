@@ -655,6 +655,7 @@ textarea {
 .installer label span:hover {
     border: 1px solid #1bbc9b;
     background: #effffc;
+    font-weight: 600;
 }
 
 .installer label input:checked ~ span {
