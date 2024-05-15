@@ -745,6 +745,7 @@
     <script>
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script> -->
+    <!-- --------------------------------joblist modal js-------------------------=--- -->
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
@@ -772,6 +773,8 @@
             }
         }
     </script>
+
+    <!-- -------------------------------------header stick js ------------------------------ -->
     <script>
         window.onscroll = function() {
             myFunction()
