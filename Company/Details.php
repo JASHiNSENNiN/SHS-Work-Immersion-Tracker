@@ -28,9 +28,9 @@
             </nav>
         </div>
         <nav>
-            <a class="login-btn" href="login.php" style="margin-left: 20px;">Sign in</a>
+            <a class="login-btn" href="../slogin.php" style="margin-left: 20px;">Sign in</a>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="com-btn" href="post_work_Immersion.php">Post Work Immersion</a>
+            <a class="com-btn" href="../post_work_Immersion.php">Post Work Immersion</a>
         </nav>
     </header>
 
