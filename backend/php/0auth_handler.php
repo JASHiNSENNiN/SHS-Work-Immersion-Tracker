@@ -4,7 +4,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
-
 $auth0 = new \Auth0\SDK\Auth0([
     'clientId' => $_ENV['AUTH0_CLIENT_ID'],
     'clientSecret' => $_ENV['AUTH0_CLIENT_SECRET'],
@@ -14,12 +13,12 @@ $auth0 = new \Auth0\SDK\Auth0([
 $client = new Google_Client();
 $client->setClientId($_ENV['AUTH0_CLIENT_ID']);
 $client->setClientSecret($_ENV['AUTH0_CLIENT_SECRET']);
-$client->setRedirectUri($_ENV['AUTH0_REDIRECT_URI']);
 $client->addScope('profile');
 $client->addScope('email');
 
 
 if (isset($_GET['code'])) {
+    $_SESSION['code'] = $_GET['code'];
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
     $client->setAccessToken($token['access_token']);
 
@@ -48,3 +47,5 @@ if (isset($_GET['code'])) {
     $stmt->close();
     $conn->close();
 }
+
+$client->setRedirectUri($_ENV['AUTH0_REDIRECT_URI']);
