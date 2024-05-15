@@ -72,11 +72,11 @@
             <h1 style="font-size: 1.2rem;padding-top:0px; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">NATIONAL IRRIGATION ADMINISTRATION (NIA) Work Immersions</h1>
         </div>
     </div>
-    <section style="margin-top:0px; padding-top: 0px;">
+    <section class="section-search-loc-wrk" style="margin-top:0px; padding-top: 0px;">
         <!-- <h2 class="sfa">Search, Find and Apply!</h2> -->
         <div class="line-search">
             <div class="searchwork">
-                <form action="#" method="get">
+                <form class="form-search" action="#" method="get">
 
                     <div class="search-container">
                         <button type="submit"><i class="fas fa-search"></i></button>
@@ -751,6 +751,47 @@
             </div>
         </div>
     </div>
+    <div class="bgc">
+        <div class="container">
+            <form action="/action_page.php">
+                <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
+                <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+
+                <textarea id="subject" name="subject" style="height:200px" required></textarea>
+
+            </form>
+
+            <div class="installer">
+                <label for="progressLinux"><input id="progressLinux" type="radio"><span></span></label>
+            </div>
+
+        </div>
+        <section class="section-search-com">
+            <h3 style="color: #2d2d2d;">Find another company</h3>
+            <div class="line-search-find-com">
+
+                <div class="searchwork">
+
+                    <form class="form-search" action="#" method="get">
+
+                        <div class="search-container">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input class="txt-btn" type="text" placeholder="Company name">
+
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+                <input class="sub-btn-wrk" type="submit" value="Search">
+            </div>
+
+
+        </section>
+    </div>
+
 
 
     <br>

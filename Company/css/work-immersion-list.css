@@ -391,7 +391,7 @@ p {
 
 /* ----------------------------------------- work immersion search bar --------------------------------  */
 
-section {
+.section-search-loc-wrk {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -433,7 +433,7 @@ section {
     background: none;
 }
 
-form {
+.form-search {
     display: flex;
     justify-content: center;
     /* margin-top: 20px; */
@@ -1501,4 +1501,164 @@ html {
     .search-container button {
         padding: 0px;
     }
+}
+
+/* ----------------------------------------------section search comqany ------------------------------ */
+
+.section-search-com {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f3f2f1;
+}
+
+.container {
+    border-radius: 5px;
+    /*   background-color: #f2f2f2; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% auto;
+    gap: 10px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* margin-top: 6px; */
+    margin-bottom: 0px;
+    resize: vertical;
+    max-height: 154px;
+}
+
+.installer {
+    width: 200px;
+    height: 44px;
+    margin-top: 35%;
+}
+
+.installer label {
+    position: absolute;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.installer label input[type="radio"] {
+    display: none;
+}
+
+.installer label span {
+    position: absolute;
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    color: #127964;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #d4d2d0;
+    border-radius: 0.5rem;
+}
+
+.installer label span:hover {
+    border: 1px solid #1bbc9b;
+    background: #effffc;
+    font-weight: 600;
+}
+
+.installer label input:checked ~ span {
+    background: #effffc;
+    animation: downloadSuccess 3.1s ease;
+    /* color: #fff; */
+}
+
+.installer label span:after {
+    content: "Give feedback";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+}
+
+.installer label input:checked ~ span:after {
+    content: "Thank you!";
+    animation: downloadState 3s;
+}
+
+.installer label span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.installer label input:checked ~ span:before {
+    animation: downloadProgress 3s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+
+.sub-btn-wrk[type="submit"] {
+    background-color: #fff;
+    color: #127964;
+    padding: 10px 15px;
+    border: none;
+    border: 1px solid #d4d2d0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sub-btn-wrk[type="submit"]:hover {
+    background: #effffc;
+    color: #127964 !important;
+    border: 1px solid #1bbc9b;
+    font-weight: 600;
+}
+
+.txt-btn,
+.sub-btn-wrk {
+    border: 2px solid hsl(236, 92%, 66%);
+    outline: none;
+    transition: 200ms ease-in;
+}
+
+@media screen and (max-width: 393px) {
+    .sub-btn-wrk {
+        display: none !important;
+    }
+    .search-container input[type="text"] {
+        height: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .search-container button {
+        padding: 0px;
+    }
+}
+
+.line-search-find-com {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 80% auto;
+    gap: 10px;
+    align-items: flex-end;
+    box-sizing: border-box;
 }
