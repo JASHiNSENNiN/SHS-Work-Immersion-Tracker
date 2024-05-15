@@ -69,7 +69,7 @@
     <div class="bgc">
 
         <div class="snapshot_container">
-            <h1 style="font-size: 1.2rem;padding-top:0px; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">NATIONAL IRRIGATION ADMINISTRATION (NIA) Work Immersions</h1>
+            <h1 style="font-size: 1.2rem;padding-top:0px; margin:0%; width: auto; margin: bottom 20px; margin-block-end: 1rem;">NATIONAL IRRIGATION ADMINISTRATION (NIA) Work Immersions</h1>
         </div>
     </div>
     <section class="section-search-loc-wrk" style="margin-top:0px; padding-top: 0px;">
