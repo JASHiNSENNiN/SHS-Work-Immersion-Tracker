@@ -738,7 +738,7 @@ textarea {
 /* ----------------------------------comqany search------------------- */
 
 section {
-    max-width: 800px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
@@ -848,6 +848,7 @@ section {
     background: #effffc;
     /*     color: #000; */
     border: 1px solid #1bbc9b;
+    font-weight: 600;
 }
 
 .txt-btn,
