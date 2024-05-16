@@ -26,7 +26,29 @@
         </div>
         <nav class="by">
             <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
-            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdowntf" style="float:right;">
+                <a href="" class="notification"><i class='fas fa-bell' style='font-size:24px;'></i><span
+                        class="badge">2</span></a>
+                <div class="dropdowntf-content" id="box">
+                    <label for="" class="notif">Notification</label>
+                    <hr style="width: 100%;">
+                    <div class="notifi-item">
+                        <img src="../Company/image/NIA.png" alt="img">
+                        <div class="text">
+                            <h4>NIA</h4>
+                            <p>sent report for Revira, Joshua</p>
+                        </div>
+                    </div>
+                    <div class="notifi-item">
+                        <img src="../Company/image/NIA.png" alt="img">
+                        <div class="text">
+                            <h4>NIA</h4>
+                            <p>sent report for Diaz, Ronald</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="dropdown" style="float:right;">
                 <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>

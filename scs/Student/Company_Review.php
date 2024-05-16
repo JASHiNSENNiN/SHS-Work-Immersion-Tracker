@@ -29,7 +29,29 @@
 
         <nav class="by">
             <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
-            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdowntf" style="float:right;">
+                <a href="" class="notification"><i class='fas fa-bell' style='font-size:24px;'></i><span
+                        class="badge">2</span></a>
+                <div class="dropdowntf-content" id="box">
+                    <label for="" class="notif">Notification</label>
+                    <hr style="width: 100%;">
+                    <div class="notifi-item">
+                        <img src="../Company/image/NIA.png" alt="img">
+                        <div class="text">
+                            <h4>NIA</h4>
+                            <p>Welcome to NIA</p>
+                        </div>
+                    </div>
+                    <div class="notifi-item">
+                        <img src="../School/image/OLSHCO.png" alt="img">
+                        <div class="text">
+                            <h4>OLSHCO</h4>
+                            <p>Report to the Office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="dropdown" style="float:right;">
                 <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
@@ -391,33 +413,33 @@
     <script src="../js/job_list.js"></script>
     <!-- JavaScript to display the current date -->
     <script>
-        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
+    document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
     <script>
-        $(".link").click(function (e) {
-            e.preventDefault();
-            $(".content").removeClass("active");
-            var content_id = $(this).attr("id");
-            $(content_id).addClass("active");
-        });
+    $(".link").click(function(e) {
+        e.preventDefault();
+        $(".content").removeClass("active");
+        var content_id = $(this).attr("id");
+        $(content_id).addClass("active");
+    });
     </script>
     <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function () {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
     </script>
 
     <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function () {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
     </script>
 
 

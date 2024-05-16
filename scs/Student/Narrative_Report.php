@@ -39,7 +39,29 @@
 
         <nav class="by">
             <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
-            <a href=""><i class='fas fa-bell' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdowntf" style="float:right;">
+                <a href="" class="notification"><i class='fas fa-bell' style='font-size:24px;'></i><span
+                        class="badge">2</span></a>
+                <div class="dropdowntf-content" id="box">
+                    <label for="" class="notif">Notification</label>
+                    <hr style="width: 100%;">
+                    <div class="notifi-item">
+                        <img src="../Company/image/NIA.png" alt="img">
+                        <div class="text">
+                            <h4>NIA</h4>
+                            <p>Welcome to NIA</p>
+                        </div>
+                    </div>
+                    <div class="notifi-item">
+                        <img src="../School/image/OLSHCO.png" alt="img">
+                        <div class="text">
+                            <h4>OLSHCO</h4>
+                            <p>Report to the Office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="dropdown" style="float:right;">
                 <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
@@ -370,35 +392,35 @@
     </footer>
 
     <script>
-        $("input:checkbox").on('click', function () {
+    $("input:checkbox").on('click', function() {
 
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
 
     <script>
-        let popup = document.getElementById("popup");
+    let popup = document.getElementById("popup");
 
-        function openPopup() {
-            // popup.classList.add("open-popup");
-            Swal.fire({
-                title: "Successfully send!",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 2500
-            });
-        }
+    function openPopup() {
+        // popup.classList.add("open-popup");
+        Swal.fire({
+            title: "Successfully send!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 2500
+        });
+    }
 
-        function closePopup() {
-            popup.classList.remove("open-popup");
-        }
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
     </script>
 
     <!-- <script>
@@ -435,21 +457,21 @@
     </script> -->
 
     <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function () {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
     </script>
 
     <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function () {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
     </script>
 
 
