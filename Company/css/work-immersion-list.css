@@ -460,7 +460,7 @@ p {
 .search-container button {
     background-color: #fff;
     border: none;
-    color: #000;
+    color: #609187;
     padding: 8px 15px;
     border-radius: 10px;
     cursor: pointer;
@@ -1613,6 +1613,50 @@ textarea {
     animation: downloadProgress 3s cubic-bezier(0.67, 0.13, 0.1, 0.81);
 }
 
+@keyframes downloadSuccess {
+    0%,
+    90% {
+        background: #effffc;
+    }
+    100% {
+        background: #effffc;
+    }
+}
+
+@keyframes downloadState {
+    0%,
+    95% {
+        content: "Sending...";
+    }
+    100% {
+        content: "Thank you for feedback!";
+    }
+}
+
+@keyframes downloadProgress {
+    0% {
+        width: 5%;
+        opacity: 1;
+    }
+    35% {
+        width: 17%;
+    }
+    64% {
+        width: 51%;
+    }
+    81% {
+        width: 70%;
+    }
+    90% {
+        width: 86%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
 .sub-btn-wrk[type="submit"] {
     background-color: #fff;
     color: #127964;
@@ -1661,4 +1705,30 @@ textarea {
     gap: 10px;
     align-items: flex-end;
     box-sizing: border-box;
+}
+
+/* ------------------------------------------------------followers--------------------------- */
+
+.css-hid0zu {
+    color: #595959;
+    font-family:
+        Noto Sans,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        Liberation Sans,
+        Roboto,
+        Noto,
+        sans-serif;
+    font-size: 12px;
+    font-weight: inherit;
+    line-height: 1.5;
+}
+
+.review-link {
+    text-decoration: none;
+}
+
+.review-link:visited {
+    text-decoration: none;
 }

@@ -7,7 +7,12 @@
     <title>Company Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/photos.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -66,17 +71,73 @@
     <div class="bgc">
 
         <div class="snapshot_container">
-            <h1 style="font-size: 1.2rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">About NATIONAL IRRIGATION ADMINISTRATION (NIA)</h1>
+            <h1 style="font-size: 1.2rem; margin:0%; margin: bottom 20px; padding-top:0px; margin-block-end: 1rem;">NATIONAL IRRIGATION ADMINISTRATION (NIA) PHOTOS</h1>
 
         </div>
+        <div class="upload__box">
+            <div class="upload__btn-box">
+                <label class=" css-1cxc9zk">
+                    <span class="span-title">Photos</span>
+                    <b class="b-num">1</b>
+                    <span class="span-title">-</span>
+                    <b class="b-num">1</b>
+                    <span class="span-title">of</span>
+                    <b class="b-num">1</b>
+                </label>
+                <label class="upload__btn">
+                    <p class="title-up">Upload images</p>
+                    <input type="file" multiple="" data-max_length="20" accept="image/png, image/gif, image/jpeg" class="upload__inputfile">
+                </label>
+            </div>
+            <div class="upload__img-wrap"></div>
+        </div>
 
+        <!-- -------------------------search comqany and feedback--------------------------------- -->
+        <div class="container">
+            <form action="/action_page.php">
+                <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
+                <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+
+                <textarea id="subject" name="subject" style="height:200px" required></textarea>
+
+            </form>
+
+            <div class="installer">
+                <label for="progressLinux"><input id="progressLinux" type="radio"><span></span></label>
+            </div>
+
+        </div>
+        <section class="section-search-com">
+            <h3 style="color: #2d2d2d;">Find another company</h3>
+            <div class="line-search-find-com">
+
+                <div class="searchwork">
+
+                    <form class="form-search" action="#" method="get">
+
+                        <div class="search-container">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input class="txt-btn" type="text" placeholder="Company name">
+
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+                <input class="sub-btn-wrk" type="submit" value="Search">
+            </div>
+
+
+        </section>
 
     </div>
     <br>
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
     </footer>
-
+    <script src="photos.js"></script>
     <script>
         let profilePic1 = document.getElementById("cover-pic");
         let inputFile1 = document.getElementById("input-file1");

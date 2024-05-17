@@ -44,7 +44,8 @@
     <div class="profile-name">
         <img id="profile-pic" src="image/NIA.png" alt="">
         <div class="name">National Irrigation Administration</div>
-        <label class="strand" for="">NIA</label>
+        <label class="strand" for="">(NIA)</label>
+        <a class="review-link" href="reviews.php"><span class="css-hid0zu e1wnkr790">5 Reviews </span></a>
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
