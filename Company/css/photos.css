@@ -402,6 +402,8 @@ input {
 
 .upload__box {
     padding: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .upload__inputfile {
