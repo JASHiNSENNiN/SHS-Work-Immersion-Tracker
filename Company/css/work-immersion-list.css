@@ -1732,3 +1732,11 @@ textarea {
 .review-link:visited {
     text-decoration: none;
 }
+
+.review-stars .fas {
+    color: #ffc000;
+}
+
+.review-stars .far {
+    opacity: 0.35;
+}

@@ -741,3 +741,37 @@ textarea {
     align-items: flex-end;
     box-sizing: border-box;
 }
+
+/* ------------------------------------------------------followers--------------------------- */
+
+.css-hid0zu {
+    color: #595959;
+    font-family:
+        Noto Sans,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        Liberation Sans,
+        Roboto,
+        Noto,
+        sans-serif;
+    font-size: 12px;
+    font-weight: inherit;
+    line-height: 1.5;
+}
+
+.review-link {
+    text-decoration: none;
+}
+
+.review-link:visited {
+    text-decoration: none;
+}
+
+.review-stars .fas {
+    color: #ffc000;
+}
+
+.review-stars .far {
+    opacity: 0.35;
+}

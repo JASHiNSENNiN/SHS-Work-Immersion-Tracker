@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/reviews.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -42,7 +43,17 @@
     <div class="profile-name">
         <img id="profile-pic" src="image/NIA.png" alt="">
         <div class="name">National Irrigation Administration</div>
-        <label class="strand" for="">NIA</label>
+        <div class="company-card__review">
+            <div class="review-stars">
+                <label class="strand" for="">(NIA)</label>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="css-hid0zu e1wnkr790">388 reviews</span>
+            </div>
+        </div>
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>

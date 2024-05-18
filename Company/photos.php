@@ -47,7 +47,17 @@
     <div class="profile-name">
         <img id="profile-pic" src="image/NIA.png" alt="">
         <div class="name">National Irrigation Administration</div>
-        <label class="strand" for="">NIA</label>
+        <div class="company-card__review">
+            <div class="review-stars">
+                <label class="strand" for="">(NIA)</label>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="css-hid0zu e1wnkr790">388 reviews</span>
+            </div>
+        </div>
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
