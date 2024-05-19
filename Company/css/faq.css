@@ -244,7 +244,6 @@ nav a:hover {
     color: #000000;
     background-color: rgba(27, 188, 155, 0.3);
     font-weight: bold;
-    /* border-bottom: 3px solid red;      */
 }
 
 .bt a:hover {
@@ -435,137 +434,6 @@ p {
     opacity: 0.35;
 }
 
-/* ----------------------------------------------- Question and Answer--------------------------------------------- */
-
-/* Style the tab */
-
-.tab {
-    overflow: hidden;
-    border: 1px solid #fff;
-    background-color: #d7fff7;
-    border: none;
-}
-
-svg {
-    width: 30px;
-    height: auto;
-    padding: 8px;
-    color: #595959;
-}
-
-/* Style the buttons inside the tab */
-
-.tab-1,
-.tab-2 {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-bottom: 1px solid;
-    border-color: #09aa8a;
-    width: 50%;
-    font-weight: 700;
-    font-size: 0.875rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: #595959;
-}
-
-/* Change background color of buttons on hover */
-
-.tab-2:hover {
-    background-color: #bfebe2;
-}
-
-.tab-1:hover {
-    background-color: #bfebe2;
-}
-
-/* Create an active/current tablink class */
-
-.tab-1.active {
-    background-color: #fff;
-    border-top: 2px solid;
-    border-right: 1px solid;
-    border-color: #09aa8a;
-    border-bottom: none;
-}
-
-.tab-2.active {
-    background-color: #fff;
-    border-top: 2px solid;
-    border-left: 1px solid;
-    border-color: #09aa8a;
-    border-bottom: none;
-}
-
-/* Style the tab content */
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    padding-top: 20px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
-}
-
-/* Fade in tabs */
-
-@-webkit-keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.css-u9mbo3 {
-    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", "Roboto", "Noto", sans-serif;
-    font-weight: inherit;
-    color: #595959;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    border-radius: 0;
-    margin-top: 15px;
-    margin-bottom: 80px;
-    padding: 1rem;
-    color: #2d2d2d;
-    background-color: #ffffff;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: #d4d2d0;
-}
-
-@media screen and (min-width: 62em) {
-    .css-u9mbo3 {
-        border-radius: 0.5rem;
-        margin-bottom: 1.5rem;
-        border-style: none;
-        border-width: 0;
-    }
-}
-
-@media screen and (min-width: 48em) {
-    .css-u9mbo3 {
-        background-color: #f3f2f1;
-    }
-}
-
 /* -------------------------------browse question and answer ------------------------ */
 
 #testimonials {
@@ -634,11 +502,7 @@ svg {
 .name-user {
     display: flex;
     flex-direction: column;
-}
-
-.name-user a {
-    text-decoration: none;
-    color: #3d3d3d;
+    margin-bottom: 80px;
 }
 
 .name-user strong {
@@ -652,9 +516,9 @@ svg {
     font-size: 0.8rem;
 }
 
-.name-user a:hover {
+/* .name-user a:hover {
     text-decoration: underline;
-}
+} */
 
 .reviews {
     color: #f9d71c;
@@ -672,22 +536,10 @@ svg {
     color: #4b4b4b;
 }
 
-.client-comment a {
-    text-decoration: none;
-}
-
-.client-comment {
-    display: grid;
-    grid-template-columns: 15% auto;
-    gap: 10px;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-.testimonial-box:hover {
+/* .testimonial-box:hover {
     transform: translateY(-10px);
     transition: all ease 0.3s;
-}
+} */
 
 @media (max-width: 784px) {
     .testimonial-box {
@@ -720,40 +572,9 @@ svg {
     background-color: #252525;
 }
 
-.css-2jfdql {
-    align-items: center;
-    box-sizing: border-box;
-    color: #067c64;
-    display: flex;
-    font-weight: 700;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    margin-inline-end: 0;
-    margin-inline-start: 0;
-    min-inline-size: 0;
-    padding-left: 2rem;
-    font-size: 13px;
-}
-
-.css-3pliee {
-    background-color: #d9f5ef;
-    border-radius: 4px;
-    color: #067c64;
-    font-size: 0.75rem;
-    font-weight: 700;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    margin-inline-end: 0;
-    margin-inline-start: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 0.25rem 0.5rem;
-    width: 150px;
-    height: 28px;
-}
-
 /* ------------------------------------------- browse question and answer ------------------------------ */
 
+/* 
 circle[animetion] {
     transition: 0.2s;
     stroke-width: 0;
@@ -781,7 +602,7 @@ svg g[show_data] {
 .rating-overview {
     padding: 50px;
     padding-left: 0 !important;
-}
+} */
 
 /* ----------------------------------Question search------------------- */
 
@@ -1122,6 +943,59 @@ textarea {
     }
 }
 
+.css-2oood6 {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    min-inline-size: 0;
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+
+.css-8sxzvm,
+.css-t9hskz {
+    color: #595959;
+    font-family:
+        Noto Sans,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        Liberation Sans,
+        Roboto,
+        Noto,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-block-end: 0.25rem;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    margin-bottom: 0;
+}
+
+.css-14uu574,
+.css-n3nelf {
+    color: #595959;
+    font-family:
+        Noto Sans,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        Liberation Sans,
+        Roboto,
+        Noto,
+        sans-serif;
+    font-weight: inherit;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.75rem;
+}
+
 /* ---------------------------------------------button submit------------------------------------------- */
 
 .guid-text {
@@ -1160,12 +1034,13 @@ textarea {
     border-radius: 5px;
     border: 1px solid #d4d2d0;
     border-radius: 0.5rem;
+    font-weight: 600;
 }
 
 .installer-submit label span:hover {
     border: 1px solid #1bbc9b;
     background: #effffc;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .installer-submit label input:checked ~ span {
@@ -1175,7 +1050,7 @@ textarea {
 }
 
 .installer-submit label span:after {
-    content: "Submit";
+    content: "Submit Answer";
     position: absolute;
     width: 80%;
     height: 100%;
@@ -1244,4 +1119,75 @@ textarea {
         width: 100%;
         opacity: 0;
     }
+}
+
+.css-dtssv9 {
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", "Roboto", "Noto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+/* --------------------------button qhoto ---------------------- */
+
+.cta-photo {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta-photo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta-photo span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta-photo svg {
+    position: relative;
+    top: 0;
+    margin-right: 10px;
+    fill: #234567;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.cta-photo:hover:before {
+    width: 100%;
+}
+
+.cta-photo:hover {
+    color: #1bbc9b;
+}
+
+.cta-photo:hover svg {
+    transform: translateX(0);
+}
+
+.cta-photo:active {
+    transform: scale(0.95);
 }

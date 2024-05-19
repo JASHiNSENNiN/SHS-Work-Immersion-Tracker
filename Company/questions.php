@@ -160,7 +160,7 @@
                                 </div> -->
                                 <!--name-and-username-->
                                 <div class="name-user">
-                                    <a><strong>What is covered by the life insurance at NATIONAL IRRIGATION ADMINISTRATION (NIA)?</strong></a>
+                                    <a href="faq.php"><strong>What is covered by the life insurance at NATIONAL IRRIGATION ADMINISTRATION (NIA)?</strong></a>
                                     <span>on September 15, 2023</span>
                                 </div>
                             </div>
@@ -175,7 +175,10 @@
                         </div>
                         <!--Comments---------------------------------------->
                         <div class="client-comment">
-                            <a><input class="sub-btn" type="submit" value="Answer"></a>
+                            <a href="faq.php"><input class="sub-btn" type="submit" value="Answer"></a>
+                            <a class="css-2jfdql" href="faq.php"> See 1 answer<svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="css-g5h3rj eac13zx0">
+                                    <path d="M9.888 5.998a.506.506 0 00-.716-.008l-.707.707a.506.506 0 00.01.716L13.06 12l-4.587 4.587c-.2.2-.204.521-.009.716l.707.707a.507.507 0 00.717-.009l5.647-5.648c.1-.1.148-.233.144-.366a.492.492 0 00-.144-.34v-.001a.611.611 0 00-.009-.009L9.888 5.998z"></path>
+                                </svg></a>
                             <!-- <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p> -->
                         </div>
                     </div>
@@ -207,6 +210,7 @@
                         <!--Comments---------------------------------------->
                         <div class="client-comment">
                             <a><input class="sub-btn" type="submit" value="Answer"></a>
+                            <div class="css-3pliee eu4oa1w0">Be the first to answer!</div>
                             <!-- <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project.</p> -->
                         </div>
                     </div>
@@ -238,6 +242,7 @@
                         <!--Comments---------------------------------------->
                         <div class="client-comment">
                             <a><input class="sub-btn" type="submit" value="Answer"></a>
+                            <div class="css-3pliee eu4oa1w0">Be the first to answer!</div>
                             <!-- <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p> -->
                         </div>
                     </div>
@@ -254,7 +259,7 @@
                     <li class="css-1z0pyms ">Ask a direct question</li>
                     <li class="css-1z0pyms ">Check your spelling and grammar</li>
                 </ol>
-                <a><input class="guid-btn" type="submit" value="Guidelines"></a>
+                <a href="" target="_blank"><input class="guid-btn" type="submit" value="Guidelines"></a>
             </div>
 
             <textarea id="subject" name="subject" style="height:200px" placeholder="Type your question here"></textarea>
@@ -264,7 +269,9 @@
             </div>
 
 
-
+            <div class="css-u9mbo3">
+                Please note that all of this content is user-generated and its accuracy is not guaranteed by workify or this company.
+            </div>
 
         </div>
         <!-- --------------------------------------------------Feedback and search comqany--------------------------------------- -->
