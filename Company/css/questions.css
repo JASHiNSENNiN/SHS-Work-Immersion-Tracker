@@ -240,6 +240,10 @@ nav a:hover {
     color: #1bbc9b;
 }
 
+.active-header {
+    color: #1bbc9b;
+}
+
 .active {
     color: #000000;
     background-color: rgba(27, 188, 155, 0.3);

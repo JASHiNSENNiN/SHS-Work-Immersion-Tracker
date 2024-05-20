@@ -246,6 +246,10 @@ nav a:hover {
     color: #1bbc9b;
 }
 
+.active-header {
+    color: #1bbc9b;
+}
+
 nav a::after {
     content: "";
     position: absolute;

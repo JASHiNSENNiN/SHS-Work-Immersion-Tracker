@@ -30,7 +30,7 @@
                 <img src="img/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
-                <a href="index.php">Home</a>
+                <a class="active-header" href="index.php">Home</a>
                 <a href="job_list.php">Company review</a>
                 <a href="contact.php">Contact</a>
             </nav>
