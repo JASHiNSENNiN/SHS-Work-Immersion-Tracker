@@ -251,6 +251,7 @@
                 </div>
             </section>
         </div>
+
         <div id="Register" class="tabcontent">
             <h2 class="css-19w3i0t">Tips to get helpful answers</h2>
             <div class="css-4pn4n5">
@@ -274,6 +275,8 @@
             </div>
 
         </div>
+
+
         <!-- --------------------------------------------------Feedback and search comqany--------------------------------------- -->
         <div class="container">
             <form action="/action_page.php">
