@@ -86,13 +86,9 @@
         <div class="snapshot_container">
             <label style="font-size: .75rem; color: #595959;">National Irrigation Administration Careers and Employment</label>
             <h1 style="font-size: 1.75rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">About the company</h1>
-            <!-- <span class="snapshot_title"><strong>Snapshots</strong>(Added 7/20 Available)</span> -->
-            <!-- <span class="snapshot_toggle">Toggle to show snapshot details
-                <button class="button-26">+</button>
-                <button class="button-14" role="button">MANAGE</button>
-            </span> -->
 
-            <div class="api_card">
+
+            <!-- <div class="api_card">
                 <div class="api_details">
                     <span class="api_title">Ceo</span></br>
                     <span class="api_details_one">Robert Victor G. Seares, Jr.</span></br>
@@ -102,15 +98,18 @@
 
                 </div>
 
-            </div>
-            <!-- <div class="api_card">
-                <div class="api_details">
-                    <span class="api_title">Headerquarters</span></br>
-                    <span class="api_details_one">Payday: 02/01/2021</span></br>
+            </div> -->
+            <div class="section-wrap">
+                <div class="api_card_half">
+                    <div class="api_details">
+                        <p class="api_title">Ceo</p></br>
+                        <span class="api_details_one">Robert Victor G. Seares, Jr.</span>
+                    </div>
 
                 </div>
 
-            </div> -->
+            </div>
+
             <div class="section-wrap">
                 <div class="api_card_half">
                     <div class="api_details">
@@ -135,14 +134,59 @@
                 </div>
             </div>
             <h1 style="font-size: 1.75rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">Rating overview</h1>
-            <label style="font-size: .75rem; color: #595959;">Rating is calculated based on 4 reviews and is evolving.</label>
+            <label style="font-size: .75rem; color: #595959;">Rating is calculated based on <span class="total-reviews">0</span> reviews and is evolving.</label>
+
         </div>
     </div>
 
 
-    <div class="rating-overview">
+    <!-- <div class="rating-overview">
         <svg id="line" width="100%" style="/*background: #f5f5f5;*/font-size:8px;font-family: system-ui;cursor: pointer;"></svg>
+    </div> -->
+
+    <div class="container-rating">
+        <div class="global">
+            <span class="global-value">0.0</span>
+            <div class="rating-icons">
+                <span class="one"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="two"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            </div>
+            <!-- <span class="rev-title"> Base on
+                <span class="total-reviews">0</span> reviews</span> -->
+        </div>
+        <div class="chart">
+            <div class="rate-box">
+                <span class="value">5</span>
+                <div class="progress-bar">
+                    <span class="progress"></span>
+                </div>
+                <span class="count">0</span>
+            </div>
+            <div class="rate-box">
+                <span class="value">4</span>
+                <div class="progress-bar"><span class="progress"></span></div>
+                <span class="count">0</span>
+            </div>
+            <div class="rate-box">
+                <span class="value">3</span>
+                <div class="progress-bar"><span class="progress"></span></div>
+                <span class="count">0</span>
+            </div>
+            <div class="rate-box">
+                <span class="value">2</span>
+                <div class="progress-bar"><span class="progress"></span></div>
+                <span class="count">0</span>
+            </div>
+            <div class="rate-box">
+                <span class="value">1</span>
+                <div class="progress-bar"><span class="progress"></span></div>
+                <span class="count">0</span>
+            </div>
+        </div>
+
     </div>
+
+
     <section id="testimonials">
 
 
@@ -304,38 +348,3 @@
 <script src="chart.js"></script>
 
 </html>
-<script>
-    /*
-Conic gradients are not supported in all browsers (https://caniuse.com/#feat=css-conic-gradients), so this pen includes the CSS conic-gradient() polyfill by Lea Verou (https://leaverou.github.io/conic-gradient/)
-*/
-
-    // Find al rating items
-    const ratings = document.querySelectorAll(".rating");
-
-    // Iterate over all rating items
-    ratings.forEach((rating) => {
-        // Get content and get score as an int
-        const ratingContent = rating.innerHTML;
-        const ratingScore = parseInt(ratingContent, 10);
-
-        // Define if the score is good, meh or bad according to its value
-        const scoreClass =
-            ratingScore < 40 ? "bad" : ratingScore < 60 ? "meh" : "good";
-
-        // Add score class to the rating
-        rating.classList.add(scoreClass);
-
-        // After adding the class, get its color
-        const ratingColor = window.getComputedStyle(rating).backgroundColor;
-
-        // Define the background gradient according to the score and color
-        const gradient = `background: conic-gradient(${ratingColor} ${ratingScore}%, transparent 0 100%)`;
-
-        // Set the gradient as the rating background
-        rating.setAttribute("style", gradient);
-
-        // Wrap the content in a tag to show it above the pseudo element that masks the bar
-        rating.innerHTML = `<span>${ratingScore} ${
-    ratingContent.indexOf("%") >= 0 ? "<small>%</small>" : ""}</span>`;
-    });
-</script>
