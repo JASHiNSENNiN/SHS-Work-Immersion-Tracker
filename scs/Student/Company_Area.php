@@ -57,7 +57,7 @@ session_status() === PHP_SESSION_NONE ? session_start() : null;
                 <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
                 <div class="dropdown-content">
                     <div class="email">natividadma@students.olshco.edu</div>
-                    <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                    <a href="Profile.php"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
                         Profile</a>
                     <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
                         Reviews</a>

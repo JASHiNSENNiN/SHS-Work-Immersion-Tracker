@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/Profile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <title>Company Dashboard</title>
+    <title>Student Dashboard</title>
 
     <!-- Custom Css -->
     <style>
@@ -51,10 +51,10 @@
     <!-- Sidenav -->
     <div class="sidenav">
         <div class="profile">
-            <img src="image/OLSHCO.png" alt="" width="100" height="100" />
+            <img src="image/me.jpg" alt="" width="100" height="100" />
 
-            <div class="name">Our Lady Of Sacred Heart College of Guimba Inc.</div>
-            <div class="job">OLSHCO</div>
+            <div class="name">Miguel Von A. Natividad</div>
+            <div class="job">HUMSS</div>
         </div>
 
         <div class="sidenav-url">
@@ -79,29 +79,39 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td>School</td>
+                            <td><b>Name</b></td>
+                            <td>:</td>
+                            <td>Miguel Von A. Natividad</td>
+                        </tr>
+                        <tr>
+                            <td><b>Strand</b>:</td>
                             <td>:</td>
                             <td>Our Lady Of Sacred Heart College of Guimba Inc.</td>
                         </tr>
                         <tr>
-                            <td>Email</td>
+                            <td><b>School</b></td>
                             <td>:</td>
-                            <td>olshco47@yahoo.com</td>
+                            <td>Our Lady Of Sacred Heart College of Guimba Inc.</td>
                         </tr>
                         <tr>
-                            <td>Address</td>
+                            <td><b>Email</b></td>
+                            <td>:</td>
+                            <td>natividadma@students.olshco.edu</td>
+                        </tr>
+                        <tr>
+                            <td><b>Address</b></td>
                             <td>:</td>
                             <td>Afan Salavador Street Guimba Nueva Ecija</td>
                         </tr>
                         <tr>
-                            <td>Contact Number</td>
+                            <td><b>Contact Number</b></td>
                             <td>:</td>
-                            <td> (044) 611-0026; 0917-8830311</td>
+                            <td>0917-8830311</td>
                         </tr>
                         <tr>
-                            <td>Presindent</td>
+                            <td><b>Guardians</b></td>
                             <td>:</td>
-                            <td>Most Rev. Ruberto C. Mallari, D.D.</td>
+                            <td>N/A</td>
                         </tr>
                         <!-- <tr>
                             <td>Skill</td>
@@ -113,11 +123,6 @@
             </div>
         </div>
         <br>
-        <h2>Map</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1920.8544297966187!2d120.7673922211044!3d15.660484473847125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33912cdb2318296d%3A0xe4e2117e97dfc92e!2sOur%20Lady%20of%20The%20Sacred%20Heart%20College!5e0!3m2!1sen!2sph!4v1716015242226!5m2!1sen!2sph"
-            width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <h2>SOCIAL MEDIA</h2>
         <div class="card">
