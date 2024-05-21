@@ -99,7 +99,8 @@
             <a class="active" href="Job_ads.php"> Job Ads</a>
             <a href="Job_request.php">Job Request</a>
             <a href="Faculty_report.php">Faculty Report</a>
-            <a href="Details.php">Details</a>
+            <a href="Question.php">Questions</a>
+            <a href="Details.php">Snapshot</a>
 
 
         </nav>
