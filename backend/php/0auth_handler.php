@@ -15,13 +15,6 @@ $client->setRedirectUri($google_oauth_redirect_uri);
 $client->addScope("https://www.googleapis.com/auth/userinfo.email");
 $client->addScope("https://www.googleapis.com/auth/userinfo.profile");
 
-$client = new Google_Client();
-$client->setClientId($google_oauth_client_id);
-$client->setClientSecret($google_oauth_client_secret);
-$client->setRedirectUri($google_oauth_redirect_uri);
-$client->addScope("https://www.googleapis.com/auth/userinfo.email");
-$client->addScope("https://www.googleapis.com/auth/userinfo.profile");
-
 if (isset($_GET['code']) && !empty($_GET['code'])) {
 
     $accessToken = $client->fetchAccessTokenWithAuthCode($_GET['code']);
@@ -36,20 +29,14 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 
             session_regenerate_id();
             $_SESSION['google_loggedin'] = TRUE;
-            $_SESSION['google_email'] = $google_account_info->email;
+            $_SESSION['email'] = $google_account_info->email;
             $_SESSION['google_name'] = $google_account_info->name;
             $_SESSION['google_picture'] = $google_account_info->picture;
-
             header('Location: get_started.php');
             exit;
-        } else {
-            exit('Could not retrieve profile information! Please try again later!');
         }
-    } else {
-        exit('Invalid access token! Please try again later!');
     }
 } else {
-
     $authUrl = $client->createAuthUrl();
     header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
     exit;
