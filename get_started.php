@@ -6,6 +6,13 @@ session_status() === PHP_SESSION_NONE ? session_start() : null;
 <html lang="en">
 
 <head>
+    <script>
+        window.onload = function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/backend/php/ajax/checkAccType.php', true);
+            xhr.send();
+        };
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
