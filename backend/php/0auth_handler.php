@@ -1,66 +1,48 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
-require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
 $google_oauth_client_id = $_ENV['AUTH0_CLIENT_ID'];
 $google_oauth_client_secret = $_ENV['AUTH0_CLIENT_SECRET'];
 $google_oauth_redirect_uri = $_ENV['AUTH0_REDIRECT_URI'];
 $google_oauth_version = 'v3';
 
+$client = new Google_Client();
+$client->setClientId($google_oauth_client_id);
+$client->setClientSecret($google_oauth_client_secret);
+$client->setRedirectUri($google_oauth_redirect_uri);
+$client->addScope("https://www.googleapis.com/auth/userinfo.email");
+$client->addScope("https://www.googleapis.com/auth/userinfo.profile");
+
 if (isset($_GET['code']) && !empty($_GET['code'])) {
 
-    $params = [
-        'code' => $_GET['code'],
-        'client_id' => $google_oauth_client_id,
-        'client_secret' => $google_oauth_client_secret,
-        'redirect_uri' => $google_oauth_redirect_uri,
-        'grant_type' => 'authorization_code'
-    ];
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://accounts.google.com/o/oauth2/token');
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
-    curl_close($ch);
-    $response = json_decode($response, true);
+    $accessToken = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+    $client->setAccessToken($accessToken);
 
-    if (isset($response['access_token']) && !empty($response['access_token'])) {
+    if (isset($accessToken['access_token']) && !empty($accessToken['access_token'])) {
 
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/oauth2/' . $google_oauth_version . '/userinfo');
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Authorization: Bearer ' . $response['access_token']]);
-        $response = curl_exec($ch);
-        curl_close($ch);
-        $profile = json_decode($response, true);
+        $google_oauth = new Google_Service_Oauth2($client);
+        $google_account_info = $google_oauth->userinfo->get();
 
-        if (isset($profile['email'])) {
-            $google_name_parts = [];
-            $google_name_parts[] = isset($profile['given_name']) ? preg_replace('/[^a-zA-Z0-9]/s', '', $profile['given_name']) : '';
-            $google_name_parts[] = isset($profile['family_name']) ? preg_replace('/[^a-zA-Z0-9]/s', '', $profile['family_name']) : '';
+        if (isset($google_account_info->email)) {
 
             session_regenerate_id();
             $_SESSION['google_loggedin'] = TRUE;
-            $_SESSION['email'] = $profile['email'];
-            $_SESSION['google_name'] = implode(' ', $google_name_parts);
-            $_SESSION['google_picture'] = isset($profile['picture']) ? $profile['picture'] : '';
+            $_SESSION['email'] = $google_account_info->email;
+            $_SESSION['google_name'] = $google_account_info->name;
+            $_SESSION['google_picture'] = $google_account_info->picture;
 
             header('Location: get_started.php');
             exit;
+        } else {
+            exit('Could not retrieve profile information! Please try again later!');
         }
+    } else {
+        exit('Invalid access token! Please try again later!');
     }
 } else {
 
-    $params = [
-        'response_type' => 'code',
-        'client_id' => $google_oauth_client_id,
-        'redirect_uri' => $google_oauth_redirect_uri,
-        'scope' => 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile',
-        'access_type' => 'offline',
-        'prompt' => 'consent'
-    ];
-    header('Location: https://accounts.google.com/o/oauth2/auth?' . http_build_query($params));
+    $authUrl = $client->createAuthUrl();
+    header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
     exit;
 }
