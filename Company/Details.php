@@ -86,8 +86,10 @@
     <div class="bgc">
 
         <div class="snapshot_container">
-            <label style="font-size: .75rem; color: #595959;">National Irrigation Administration Careers and Employment</label>
-            <h1 style="font-size: 1.75rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">About the company</h1>
+            <label style="font-size: .75rem; color: #595959;">National Irrigation Administration Careers and
+                Employment</label>
+            <h1 style="font-size: 1.75rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">About the company
+            </h1>
 
 
             <!-- <div class="api_card">
@@ -126,10 +128,13 @@
                 <div class="api_card_half">
                     <div class="api_details">
                         <p class="api_title">Link</p></br>
-                        <a class="api_details_one" style="color: #2557a7;" href="https://www.nia.gov.ph/">NIA Philippines <svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class=" css-1jtd2m7 eac13zx0">
+                        <a class="api_details_one" style="color: #2557a7;" href="https://www.nia.gov.ph/">NIA
+                            Philippines <svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class=" css-1jtd2m7 eac13zx0">
                                 <title>Opens in a new window</title>
-                                <path d="M14.504 3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3.085l-9.594 9.594a.5.5 0 000 .707l.707.708a.5.5 0 00.707 0l9.594-9.595V9.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-6a.5.5 0 00-.5-.5h-6z"></path>
-                                <path d="M5 3.002a2 2 0 00-2 2v13.996a2 2 0 001.996 2.004h14a2 2 0 002-2v-6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v6.5L5 18.998V5.002L11.5 5a.495.495 0 00.496-.498v-1a.5.5 0 00-.5-.5H5z"></path>
+                                <path d="M14.504 3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3.085l-9.594 9.594a.5.5 0 000 .707l.707.708a.5.5 0 00.707 0l9.594-9.595V9.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-6a.5.5 0 00-.5-.5h-6z">
+                                </path>
+                                <path d="M5 3.002a2 2 0 00-2 2v13.996a2 2 0 001.996 2.004h14a2 2 0 002-2v-6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v6.5L5 18.998V5.002L11.5 5a.495.495 0 00.496-.498v-1a.5.5 0 00-.5-.5H5z">
+                                </path>
                             </svg></a>
                     </div>
 
@@ -226,7 +231,10 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p>
+                    <p>Working on this company is a good experience it is because it is related to the course I've taken
+                        in college as a Bachelor of Science and Social Work also the company memmber is a hard worker
+                        ang responsible for their work in the company. Other than that our relationship as a member of
+                        the company is good as we can united at the problem we are facing .</p>
                 </div>
             </div>
             <!--BOX-2-------------->
@@ -256,7 +264,9 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project.</p>
+                    <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other
+                        government agencies in the feasibility study sometimes they challenge you to finish investigate
+                        the subject area for the proposed irrigation project.</p>
                 </div>
             </div>
             <!--BOX-3-------------->
@@ -286,7 +296,9 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p>
+                    <p>National Irirgation Administration is a good environment to work in. The agency has very
+                        supportive heads and employees willing to work an extra mile for the benefit of the Filipino
+                        farmers.</p>
                 </div>
             </div>
             <!--BOX-4-------------->
@@ -316,7 +328,10 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>I've been working under planning unit. I properly evaluate Program of Works (POW) from 7 different divisions in Region III. The most complex part of my former job is when all 7 divisions submitted their POW on same date (due date) and not before due date. What I sincerely like in my previous job is there's no gossiping. They merely encourage you to be better.</p>
+                    <p>I've been working under planning unit. I properly evaluate Program of Works (POW) from 7
+                        different divisions in Region III. The most complex part of my former job is when all 7
+                        divisions submitted their POW on same date (due date) and not before due date. What I sincerely
+                        like in my previous job is there's no gossiping. They merely encourage you to be better.</p>
                 </div>
             </div>
         </div>

@@ -51,10 +51,10 @@
     <!-- Sidenav -->
     <div class="sidenav">
         <div class="profile">
-            <img src="image/OLSHCO.png" alt="" width="100" height="100" />
+            <img src="image/NIA.png" alt="" width="100" height="100" />
 
-            <div class="name">Our Lady Of Sacred Heart College of Guimba Inc.</div>
-            <div class="job">OLSHCO</div>
+            <div class="name">National Irrigation Administration</div>
+            <div class="job">NIA - Guimba</div>
         </div>
 
         <div class="sidenav-url">
@@ -79,29 +79,29 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td>School</td>
+                            <td>Name</td>
                             <td>:</td>
-                            <td>Our Lady Of Sacred Heart College of Guimba Inc.</td>
+                            <td>National Irrigation Administration</td>
                         </tr>
                         <tr>
                             <td>Email</td>
                             <td>:</td>
-                            <td>olshco47@yahoo.com</td>
+                            <td>upriis.division6@nia.gov.ph</td>
                         </tr>
                         <tr>
                             <td>Address</td>
                             <td>:</td>
-                            <td>Afan Salavador Street Guimba Nueva Ecija</td>
+                            <td>Guimba, Nueva Ecija</td>
                         </tr>
                         <tr>
-                            <td>Contact Number</td>
+                            <td>Telephone #</td>
                             <td>:</td>
-                            <td> (044) 611-0026; 0917-8830311</td>
+                            <td>+63 44 335-0542</td>
                         </tr>
                         <tr>
-                            <td>Presindent</td>
+                            <td>Acting Division Manager</td>
                             <td>:</td>
-                            <td>Most Rev. Ruberto C. Mallari, D.D.</td>
+                            <td>ENGR. ROBERT Q. MATIAS</td>
                         </tr>
                         <!-- <tr>
                             <td>Skill</td>
@@ -115,7 +115,7 @@
         <br>
         <h2>Map</h2>
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1920.8544297966187!2d120.7673922211044!3d15.660484473847125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33912cdb2318296d%3A0xe4e2117e97dfc92e!2sOur%20Lady%20of%20The%20Sacred%20Heart%20College!5e0!3m2!1sen!2sph!4v1716015242226!5m2!1sen!2sph"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5755.381035967767!2d120.76801963737383!3d15.68455601125408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33912df7beb03b0f%3A0xacb7e05e7490868d!2sNIA-UPRIIS%20Division%206!5e0!3m2!1sen!2sph!4v1716003778463!5m2!1sen!2sph"
             width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 

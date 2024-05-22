@@ -8,7 +8,6 @@
     <?php
     session_status() === PHP_SESSION_NONE ? session_start() : null;
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/registerRecaptcha.php';
     ?>
     <link rel="stylesheet" type="text/css" href="/css/header.css">
@@ -37,7 +36,7 @@
             <a href="index.php"><img class="logo-login" src="../img/logo-login.svg" alt="Logo"></a>
 
             <div class="form-container">
-                <a href="<?php echo $client->createAuthUrl(); ?>"><button type="button" class="login-with-google-btn">
+                <a href="/backend/php/0auth_handler.php"><button type="button" class="login-with-google-btn">
                         Register with Google
                     </button></a>
 

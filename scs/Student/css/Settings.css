@@ -13,20 +13,14 @@ hr {
 /* ----------------------------------sub footer----------------------------- */
 
 footer {
-  margin-top: auto;
-}
-
-.sub-footer {
-  /* position: fixed; */
-  background: #1e1e1e;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
   text-align: center;
-  font-size: 14px;
-  color: gray;
-  padding: 10px 0px;
-  margin-top: 50px;
-  width: 100%;
-  left: 0;
   bottom: 0;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
 }
 
 /* ----Header---- */

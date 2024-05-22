@@ -4,32 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Dashboard</title>
+    <title>Company Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/Settings.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
 
     <!-- -------------font--------- -->
-    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> -->
 
 </head>
 
 <body>
-    <!-- <header class="nav-header">
-        <div class="logo">
-            <a href="#">
-                <img src="image/logov3.jpg" alt="Logo">
-            </a>
-        </div>
-
-        <nav>
-
-            <a class="dropbtn" href=""><i class='fas fa-user-alt' style='font-size:2px; color: black;'></i></a>
-            <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="login-btn" href="#" style="margin-left: 20px;"><span class="text">Log out<i
-                        class="fa fa-sign-out"></i></span></a>
-        </nav>
-    </header> -->
 
 
     <div class="container light-style flex-grow-1 container-p-y">
@@ -60,9 +47,9 @@ l                           ist" href="#account-info">Info</a> -->
                 <div class="col-md-9">
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="account-general">
-                            <div class="card-body media align-items-center">
+                            <!-- <div class="card-body media align-items-center">
 
-                                <img src="./image/profile.jpg" alt="profile" id="profile-pic" class="d-block ui-w-80"
+                                <img src="image/NIA.png" alt="profile" id="profile-pic" class="d-block ui-w-80"
                                     style="border-radius:50%; height:150px;  width : 160px !important;">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">
@@ -75,41 +62,49 @@ l                           ist" href="#account-info">Info</a> -->
                                         size
                                         of 800K</div>
                                 </div>
-                            </div>
+                            </div> -->
                             <hr class="border-light m-0">
                             <div class="card-body">
 
                                 <div class="form-group">
-                                    <label class="form-label">School Name</label>
+                                    <label class="form-label">Branch Manager</label>
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" placeholder="Company Ltd.">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Telephone # / Phone #</label>
+                                    <input type="text" class="form-control" placeholder="+64900000" min="0">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Address</label>
                                     <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">E-mail</label>
-                                    <input type="text" class="form-control mb-1" value="sample@gmail.com">
-                                    <div class="alert alert-warning mt-3">
-                                        Your email is not confirmed. Please check your inbox.<br>
-                                        <a href="javascript:void(0)">Resend confirmation</a>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Company</label>
-                                    <input type="text" class="form-control" value="Company Ltd.">
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="account-change-password">
                             <div class="card-body pb-2">
                                 <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control mb-1" placeholder="sample@gmail.com">
+                                    <!-- <div class="alert alert-warning mt-3">
+                                        Your email is not confirmed. Please check your inbox.<br>
+                                        <a href="javascript:void(0)">Resend confirmation</a>
+                                    </div> -->
+                                </div>
+                                <div class="form-group">
                                     <label class="form-label">Current password</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" placeholder="Current password">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">New password</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" placeholder="New password">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Repeat new password</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" placeholder="Repeat new password">
                                 </div>
                             </div>
                         </div>
@@ -150,12 +145,12 @@ l                           ist" href="#account-info">Info</a> -->
                         <div class="tab-pane fade" id="account-social-links">
                             <div class="card-body pb-2">
                                 <div class="form-group">
-                                    <label class="form-label">Twitter</label>
-                                    <input type="text" class="form-control" value="https://twitter.com/user">
+                                    <label class="form-label">Facebook</label>
+                                    <input type="text" class="form-control" placeholder="https://www.facebook.com/user">
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label">Facebook</label>
-                                    <input type="text" class="form-control" value="https://www.facebook.com/user">
+                                    <label class="form-label">Twitter</label>
+                                    <input type="text" class="form-control" placeholder="https://twitter.com/user">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Google+</label>
@@ -165,15 +160,18 @@ l                           ist" href="#account-info">Info</a> -->
                                     <label class="form-label">LinkedIn</label>
                                     <input type="text" class="form-control" value>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label class="form-label">Instagram</label>
                                     <input type="text" class="form-control" value="https://www.instagram.com/user">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="tab-pane fade" id="account-connections">
                             <div class="card-body">
-
+                                <button type="button" class="btn btn-facebook">Connect to
+                                    <strong>Facebook</strong></button>
+                            </div>
+                            <div class="card-body">
                                 <button type="button" class="btn btn-twitter">Connect to
                                     <strong>Twitter</strong></button>
                             </div>
@@ -189,10 +187,7 @@ l                           ist" href="#account-info">Info</a> -->
                                     data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
                             </div>
                             <hr class="border-light m-0">
-                            <div class="card-body">
-                                <button type="button" class="btn btn-facebook">Connect to
-                                    <strong>Facebook</strong></button>
-                            </div>
+
                             <hr class="border-light m-0">
                             <div class="card-body">
                                 <button type="button" class="btn btn-instagram">Connect to
@@ -209,7 +204,7 @@ l                           ist" href="#account-info">Info</a> -->
                                             <span class="switcher-yes"></span>
                                             <span class="switcher-no"></span>
                                         </span>
-                                        <span class="switcher-label">Email me when someone comments on my article</span>
+                                        <span class="switcher-label">When someone send a request</span>
                                     </label>
                                 </div>
                                 <div class="form-group">
@@ -219,7 +214,7 @@ l                           ist" href="#account-info">Info</a> -->
                                             <span class="switcher-yes"></span>
                                             <span class="switcher-no"></span>
                                         </span>
-                                        <span class="switcher-label">Email me when someone answers on my forum
+                                        <span class="switcher-label">When someone send a feeback
                                             thread</span>
                                     </label>
                                 </div>
@@ -230,7 +225,7 @@ l                           ist" href="#account-info">Info</a> -->
                                             <span class="switcher-yes"></span>
                                             <span class="switcher-no"></span>
                                         </span>
-                                        <span class="switcher-label">Email me when someone follows me</span>
+                                        <span class="switcher-label">When someone follows me</span>
                                     </label>
                                 </div>
                             </div>
@@ -289,11 +284,11 @@ l                           ist" href="#account-info">Info</a> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    let profilePic = document.getElementById("profile-pic");
-    let inputfile = document.getElementById("input-file");
-    inputfile.onchange = function() {
-        profilePic.src = URL.createObjectURL(inputfile.files[0]);
-    }
+        let profilePic = document.getElementById("profile-pic");
+        let inputfile = document.getElementById("input-file");
+        inputfile.onchange = function () {
+            profilePic.src = URL.createObjectURL(inputfile.files[0]);
+        }
     </script>
 
 </body>

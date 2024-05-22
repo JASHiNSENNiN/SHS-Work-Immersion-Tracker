@@ -54,7 +54,7 @@
                 <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
                 <div class="dropdown-content">
                     <div class="email">upriis.division6@nia.gov.ph</div>
-                    <a href="#"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                    <a href="Profile.php"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
                         Profile</a>
                     <a href=""><i class='fas fa-bookmark' style='font-size:24px; margin-right:10px;'></i> My Jobs</a>
                     <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
@@ -98,7 +98,8 @@
             <a href="Job_ads.php"> Job Ads</a>
             <a class="active" href="Job_request.php">Job Request</a>
             <a href="Faculty_report.php">Faculty Report</a>
-            <a href="Details.php">Details</a>
+            <a href="Question.php">Questions</a>
+            <a href="Details.php">Snapshot</a>
 
 
         </nav>

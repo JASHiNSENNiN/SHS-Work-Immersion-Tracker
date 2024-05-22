@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/questions.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Question.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+
 
 </head>
 
@@ -19,47 +22,70 @@
 
     <header class="nav-header">
         <div class="logo">
-            <a href="index.php">
-                <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
+            <a href="#">
+                <img src="image/logov3.jpg" alt="Logo">
             </a>
-            <nav class="dash-middle">
-                <a href="../index.php">Home</a>
-                <a class="active-header" href="../job_list.php">Company review</a>
-                <a href="../contact.php">Contact</a>
-            </nav>
         </div>
-        <nav>
-            <a class="login-btn" href="../login.php" style="margin-left: 20px;">Sign in</a>
+
+        <nav class="by">
+            <a href=""><i class='fas fa-comment-alt' style='font-size:24px; margin-top:5px;'></i></a>
+
+            <div class="dropdowntf" style="float:right;">
+                <a href="" class="notification"><i class='fas fa-bell' style='font-size:24px;'></i><span
+                        class="badge">1</span></a>
+                <div class="dropdowntf-content" id="box">
+                    <label for="" class="notif">Notification</label>
+                    <hr style="width: 100%;">
+                    <div class="notifi-item">
+                        <img src="../Student/image/me.jpg" alt="img">
+                        <div class="text">
+                            <h4>Miguel Von Natividad</h4>
+                            <p>Sent Request</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" style="float:right;">
+                <a href=""><i class='fas fa-user-alt' style='font-size:24px;  margin-top:5px;'></i></a>
+                <div class="dropdown-content">
+                    <div class="email">upriis.division6@nia.gov.ph</div>
+                    <a href="Profile.php"><i class='fas fa-user-alt' style='font-size:24px; margin-right:10px;'></i> My
+                        Profile</a>
+                    <a href=""><i class='fas fa-bookmark' style='font-size:24px; margin-right:10px;'></i> My Jobs</a>
+                    <a href="#"> <i class='fas fa-comment-alt' style='font-size:24px;margin-right:10px;'></i>My
+                        Reviews</a>
+                    <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
+                    <hr>
+                    <div class="foot">&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer
+                        Society Students
+                    </div>
+                    <hr>
+                    <a class="logout" href="#"> Log out</a>
+                </div>
+            </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
-            <a class="com-btn" href="../post_work_Immersion.php">Post Work Immersion</a>
+            <!-- <a class="login-btn" href="#" style="margin-left: 20px;">Log out</a> -->
         </nav>
     </header>
 
 
     <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
+    <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
+            photo</span>
+        <span class="cam"><i class="fa fa-camera"></i></span></label>
+    <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
 
-
-    <div class="profile-name">
+    <div class="profile">
         <img id="profile-pic" src="image/NIA.png" alt="">
         <div class="name">National Irrigation Administration</div>
-        <div class="company-card__review">
-            <div class="review-stars">
-                <label class="strand ">(NIA)</label>
+        <label class="strand" for="">NIA</label>
 
-                <div class="rating-icons-profile">
-                    <span class="one-prof"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                    <span class="two-prof"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                </div>
-
-
-                <span class="css-hid0zu e1wnkr790"><span class="total-reviews">0</span> reviews</span>
-            </div>
-        </div>
-
-        <div class="Settings">
-            <label for="input-file2" class="button-12" role="button">Follow </label>
-            <label for="input-file2" class="button-13" role="button">Write a review </label>
+        <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
+                        class="fa fa-pencil"></i> Edit
+                    profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
+            <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
 
     </div><br>
@@ -67,12 +93,13 @@
     <div class="logo">
 
         <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
+            <a href="Job_ads.php"> Job Ads</a>
+            <a href="Job_request.php">Job Request</a>
+            <a href="Faculty_report.php">Faculty Report</a>
+            <a class="active" href="Question.php">Questions</a>
             <a href="Details.php">Snapshot</a>
-            <a href="About.php">Why Join Us</a>
-            <a href="reviews.php">Reviews</a>
-            <a class="active" href="questions.php">Questions</a>
-            <a href="work-immersion-list.php">Work immersion </a>
-            <a href="photos.php">Photos</a>
+
+
         </nav>
     </div>
     <hr class="line_bottom">
@@ -336,13 +363,15 @@
 
 
     </div>
+
+
     <br>
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
     </footer>
 
-    <script src="questions.js"></script>
-    <script src="chart.js"></script>
+
+    <script src="css/Questions.js"></script>
 
 </body>
 
