@@ -9,14 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../css/loginform.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-        function onRegisterSubmit(token) {
-            document.getElementById("login_form").submit();
-        }
+    function onRegisterSubmit(token) {
+        document.getElementById("login_form").submit();
+    }
     </script>
     <?php
     session_status() === PHP_SESSION_NONE ? session_start() : null;
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/registerRecaptcha.php';
     ?>
 </head>
@@ -24,9 +23,9 @@
 <body>
     <noscript>
         <style>
-            html {
-                display: none;
-            }
+        html {
+            display: none;
+        }
         </style>
         <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
     </noscript>
@@ -43,7 +42,7 @@
 
                 <!-- --------------------------------Google button--------------------- -->
 
-                <a href="<?php echo $client->createAuthUrl(); ?>"><button id="google-login-btn" type="button"
+                <a href="/backend/php/0auth_handler.php"><button id="google-login-btn" type="button"
                         class="login-with-google-btn">
                         Sign in with Google
                     </button></a>
