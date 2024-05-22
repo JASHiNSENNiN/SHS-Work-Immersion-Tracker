@@ -1,7 +1,9 @@
 let rateBox = Array.from(document.querySelectorAll(".rate-box"));
 let globalValue = document.querySelector(".global-value");
 let two = document.querySelector(".two");
+let twoProfile = document.querySelector(".two-prof");
 let totalReviews = document.querySelector(".total-reviews");
+let totalReviewsRating = document.querySelector(".total-reviews-rating");
 let reviews = {
   5: 10,
   4: 3,
@@ -25,6 +27,7 @@ function updateValues() {
     progress.style.width = `${progressValue}%`;
   });
   totalReviews.innerHTML = getTotal(reviews);
+  totalReviewsRating.innerHTML = getTotal(reviews);
   finalRating();
 }
 
@@ -47,7 +50,10 @@ function finalRating() {
   // console.log(typeof parseFloat(final / getTotal(reviews)).toFixed(1));
   let ratingValue = nFormat(parseFloat(final / getTotal(reviews)).toFixed(1));
   globalValue.innerHTML = ratingValue;
-  two.style.background = `linear-gradient(to right, #66bb6a ${
+  two.style.background = `linear-gradient(to right, #f1c40f ${
+    (ratingValue / 5) * 100
+  }%, transparent 0%)`;
+  twoProfile.style.background = `linear-gradient(to right, #f1c40f ${
     (ratingValue / 5) * 100
   }%, transparent 0%)`;
 }

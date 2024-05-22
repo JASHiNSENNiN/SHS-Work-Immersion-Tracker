@@ -51,7 +51,7 @@ img {
 
 .strand {
     margin-top: 1%;
-    margin-left: 21%;
+    margin-left: 60%;
     font-size: 1.25rem;
     color: #777;
 }
@@ -770,10 +770,148 @@ textarea {
     text-decoration: none;
 }
 
-.review-stars .fas {
-    color: #ffc000;
+/* ---------------------------------------qrofile star------------------------------------- */
+
+.rating-icons-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 6%;
+    left: 68px;
 }
 
-.review-stars .far {
-    opacity: 0.35;
+.rating-icons-profile span {
+    position: absolute;
+    display: flex;
+    font-size: 19px;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.one-prof .fas {
+    color: #cfd8dc;
+}
+
+.two-prof {
+    background: linear-gradient(to right, #ffc000 0%, transparent 0%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-in-out all;
+}
+
+.review-stars {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    background-color: #fff;
+}
+
+.review-stars {
+    display: -webkit-inline-box;
+    border-radius: 15px;
+    gap: 68px;
+}
+
+.company-card__review {
+    margin-left: 18%;
+    margin-right: auto;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }

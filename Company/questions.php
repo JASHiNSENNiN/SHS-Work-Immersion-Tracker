@@ -45,13 +45,15 @@
         <div class="name">National Irrigation Administration</div>
         <div class="company-card__review">
             <div class="review-stars">
-                <label class="strand" for="">(NIA)</label>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <span class="css-hid0zu e1wnkr790">388 reviews</span>
+                <label class="strand ">(NIA)</label>
+
+                <div class="rating-icons-profile">
+                    <span class="one-prof"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="two-prof"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                </div>
+
+
+                <span class="css-hid0zu e1wnkr790"><span class="total-reviews">0</span> reviews</span>
             </div>
         </div>
 
@@ -326,6 +328,8 @@
     </footer>
 
     <script src="questions.js"></script>
+    <script src="chart.js"></script>
+
 </body>
 
 </html>

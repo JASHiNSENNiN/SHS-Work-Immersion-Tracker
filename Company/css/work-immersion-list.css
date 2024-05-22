@@ -51,7 +51,7 @@ img {
 
 .strand {
     margin-top: 1%;
-    margin-left: 21%;
+    margin-left: 60%;
     font-size: 1.25rem;
     color: #777;
 }
@@ -1733,10 +1733,50 @@ textarea {
     text-decoration: none;
 }
 
-.review-stars .fas {
-    color: #ffc000;
+/* ---------------------------------------qrofile star------------------------------------- */
+
+.rating-icons-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 6%;
+    /* height: 10%; */
+    left: 68px;
 }
 
-.review-stars .far {
-    opacity: 0.35;
+.rating-icons-profile span {
+    position: absolute;
+    display: flex;
+    font-size: 19px;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.one-prof .fas {
+    color: #cfd8dc;
+}
+
+.two-prof {
+    background: linear-gradient(to right, #ffc000 0%, transparent 0%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-in-out all;
+}
+
+.review-stars {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    background-color: #fff;
+}
+
+.review-stars {
+    display: -webkit-inline-box;
+    border-radius: 15px;
+    gap: 68px;
+}
+
+.company-card__review {
+    margin-left: 18%;
+    margin-right: auto;
 }
