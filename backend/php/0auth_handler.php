@@ -14,26 +14,4 @@ $client->setClientId($_ENV['AUTH0_CLIENT_ID']);
 $client->setClientSecret($_ENV['AUTH0_CLIENT_SECRET']);
 $client->addScope('profile');
 $client->addScope('email');
-$client->setRedirectUri('https://www.workifyph.online/get_started.php');
-
-if (isset($_GET['code'])) {
-    $_SESSION['code'] = $_GET['code'];
-    $token = $client->fetchAccessTokenWithAuthCode($_SESSION['code']);
-    $client->setAccessToken($token['access_token']);
-
-    $google_oauth = new Google_Service_Oauth2($client);
-    $google_account_info = $google_oauth->userinfo->get();
-    $_SESSION['email'] = $google_account_info->email;
-
-    $accountType = getAccountype($_SESSION['email']);
-    switch ($accountType) {
-        case 'student':
-            $client->setRedirectUri('https://www.student.workifyph.online/');
-        case 'school':
-            $client->setRedirectUri('https://www.school.workifyph.online/');
-        case 'organization':
-            $client->setRedirectUri('https://www.company.workifyph.online/');
-        default:
-            $client->setRedirectUri('https://www.workifyph.online/get_started.php');
-    }
-}
+$client->setRedirectUri($_ENV['AUTH0_CLIENT_SECRET']);
