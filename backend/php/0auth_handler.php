@@ -4,7 +4,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 $google_oauth_client_id = $_ENV['AUTH0_CLIENT_ID'];
 $google_oauth_client_secret = $_ENV['AUTH0_CLIENT_SECRET'];
-$google_oauth_redirect_uri = $_ENV['AUTH0_REDIRECT_URI'];
 $google_oauth_version = 'v3';
 
 $client = new Google_Client();
@@ -33,6 +32,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
             $_SESSION['google_picture'] = $google_account_info->picture;
 
             header('Location: get_started.php');
+            $google_oauth_redirect_uri = $_ENV['AUTH0_REDIRECT_URI'];
             exit;
         } else {
             exit('Could not retrieve profile information! Please try again later!');
