@@ -62,7 +62,7 @@
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
-            <label for="input-file2" class="button-13" role="button">Write a review </label>
+            <a href="../login.php"><label for="input-file2" class="button-13" role="button">Write a review </label></a>
         </div>
 
     </div><br>

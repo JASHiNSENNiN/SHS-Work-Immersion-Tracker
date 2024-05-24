@@ -23,7 +23,7 @@
 
     <header class="nav-header">
         <div class="logo">
-            <a href="index.php">
+            <a href="../index.php">
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
@@ -63,7 +63,7 @@
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
-            <label for="input-file2" class="button-13" role="button">Write a review </label>
+            <a href="../login.php"><label for="input-file2" class="button-13" role="button">Write a review </label></a>
         </div>
 
     </div><br>
@@ -97,8 +97,8 @@
                     <b class="b-num">1</b>
                 </label>
                 <label class="upload__btn">
-                    <p class="title-up" id="myBtn">Upload images</p>
-                    <!-- <input type=" file" multiple="" data-max_length="20" accept="image/png, image/gif, image/jpeg" class="upload__inputfile"> -->
+                    <p class="title-up">Upload images</p>
+                    <input type="file" multiple="" data-max_length="20" accept="image/png, image/gif, image/jpeg" class="upload__inputfile">
                 </label>
             </div>
             <div class="upload__img-wrap"></div>

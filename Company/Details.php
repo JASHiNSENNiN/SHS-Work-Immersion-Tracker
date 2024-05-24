@@ -19,7 +19,7 @@
 
     <header class="nav-header">
         <div class="logo">
-            <a href="index.php">
+            <a href="../index.php">
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
@@ -59,7 +59,7 @@
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
-            <label for="input-file2" class="button-13" role="button">Write a review </label>
+            <a href="../login.php"><label for="input-file2" class="button-13" role="button">Write a review </label></a>
         </div>
 
     </div><br>
@@ -216,8 +216,8 @@
                         </div>
                         <!--name-and-username-->
                         <div class="name-user">
-                            <strong>Liam mendes</strong>
-                            <span>on September 15, 2023</span>
+                            <strong>Productive and more learning</strong>
+                            <span>Quezon Province - September 9, 2020</span>
                         </div>
                     </div>
                     <!--reviews------>
@@ -231,10 +231,7 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>Working on this company is a good experience it is because it is related to the course I've taken
-                        in college as a Bachelor of Science and Social Work also the company memmber is a hard worker
-                        ang responsible for their work in the company. Other than that our relationship as a member of
-                        the company is good as we can united at the problem we are facing .</p>
+                    <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project </p>
                 </div>
             </div>
             <!--BOX-2-------------->
@@ -249,8 +246,8 @@
                         </div>
                         <!--name-and-username-->
                         <div class="name-user">
-                            <strong>Noah Wood</strong>
-                            <span>on September 9, 2020</span>
+                            <strong>Has a good relationship with the member and a excellent work</strong>
+                            <span>Marawi - September 9, 2020</span>
                         </div>
                     </div>
                     <!--reviews------>
@@ -264,9 +261,7 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other
-                        government agencies in the feasibility study sometimes they challenge you to finish investigate
-                        the subject area for the proposed irrigation project.</p>
+                    <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p>
                 </div>
             </div>
             <!--BOX-3-------------->
@@ -281,8 +276,8 @@
                         </div>
                         <!--name-and-username-->
                         <div class="name-user">
-                            <strong>Oliver Queen</strong>
-                            <span>on May 31, 2020</span>
+                            <strong>Productive and fun to work with</strong>
+                            <span>Zamboanga Sibugay - May 31, 2020</span>
                         </div>
                     </div>
                     <!--reviews------>
@@ -296,44 +291,10 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>National Irirgation Administration is a good environment to work in. The agency has very
-                        supportive heads and employees willing to work an extra mile for the benefit of the Filipino
-                        farmers.</p>
+                    <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p>
                 </div>
             </div>
-            <!--BOX-4-------------->
-            <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong>Barry Allen</strong>
-                            <span>on February 11, 2020</span>
-                        </div>
-                    </div>
-                    <!--reviews------>
-                    <!--                     <div class="reviews">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div> -->
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <p>I've been working under planning unit. I properly evaluate Program of Works (POW) from 7
-                        different divisions in Region III. The most complex part of my former job is when all 7
-                        divisions submitted their POW on same date (due date) and not before due date. What I sincerely
-                        like in my previous job is there's no gossiping. They merely encourage you to be better.</p>
-                </div>
-            </div>
+
         </div>
     </section>
     </div>

@@ -10,12 +10,14 @@
 
 .rating {
   background: var(--background-color);
-  font: 16px/1 Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:
+    16px/1 Montserrat,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--rating-size), var(--rating-size))
-  );
+  grid-template-columns: repeat(auto-fill, minmax(var(--rating-size), var(--rating-size)));
   gap: var(--bar-size);
   justify-content: start;
   padding: var(--bar-size);
@@ -136,6 +138,11 @@ img {
   margin-top: -4%;
   display: block;
   width: 20%;
+  cursor: pointer;
+}
+
+.Settings label {
+  cursor: pointer;
 }
 
 .profile-name img {
@@ -598,8 +605,15 @@ p {
 }
 
 .api_title {
-  font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans,
-    Roboto, Noto, sans-serif;
+  font-family:
+    Noto Sans,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Liberation Sans,
+    Roboto,
+    Noto,
+    sans-serif;
   color: #2d2d2d;
   font-size: 0.75rem;
   font-weight: 700;
@@ -608,8 +622,15 @@ p {
 
 .api_details_one {
   color: #2d2d2d;
-  font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans,
-    Roboto, Noto, sans-serif;
+  font-family:
+    Noto Sans,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Liberation Sans,
+    Roboto,
+    Noto,
+    sans-serif;
   line-height: 1.5;
   font-size: 0.75rem;
   font-weight: inherit;
@@ -618,8 +639,15 @@ p {
 .api_details_two {
   color: #595959;
   color: #767676;
-  font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans,
-    Roboto, Noto, sans-serif;
+  font-family:
+    Noto Sans,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Liberation Sans,
+    Roboto,
+    Noto,
+    sans-serif;
   font-size: 0.75rem;
   font-weight: inherit;
   line-height: 1.5;
@@ -663,8 +691,19 @@ p {
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    Graphik,
+    -apple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 14px;
   line-height: 1.15;
   overflow: visible;
@@ -709,7 +748,8 @@ p {
   border-radius: 6px !important;
   border: none;
   background: #fff;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0px 0.5px 1px rgba(0, 0, 0, 0.1),
     inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
     0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
   color: #127964;
@@ -721,8 +761,10 @@ p {
 }
 
 .button-13:focus {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
-    0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  box-shadow:
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
 
@@ -748,7 +790,8 @@ p {
   border-radius: 6px;
   border: none;
   background: #1bbc9b;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0px 0.5px 1px rgba(0, 0, 0, 0.1),
     inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
     0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
   color: #fff;
@@ -759,8 +802,10 @@ p {
 }
 
 .button-12:focus {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
-    0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  box-shadow:
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
 
@@ -857,7 +902,7 @@ p {
   background-color: #ffffff;
   padding: 20px;
   margin: 15px;
-  cursor: pointer;
+  cursor: text;
 }
 
 .profile-img {
@@ -983,8 +1028,15 @@ svg g[show_data] {
 
 .css-hid0zu {
   color: #595959;
-  font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans,
-    Roboto, Noto, sans-serif;
+  font-family:
+    Noto Sans,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Liberation Sans,
+    Roboto,
+    Noto,
+    sans-serif;
   font-size: 12px;
   font-weight: inherit;
   line-height: 1.5;

@@ -59,7 +59,7 @@
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
-            <label for="input-file2" class="button-13" role="button">Write a review </label>
+            <a href="../login.php"><label for="input-file2" class="button-13" role="button">Write a review </label></a>
         </div>
 
     </div><br>
@@ -87,9 +87,7 @@
 
         <div class="tab">
             <button class="tablinks tab-1" onclick="openTab(event, 'tab')">
-                <svg fill="#2d2d2d" height="800px" width="800px" version="1.1" id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
-                    xml:space="preserve">
+                <svg fill="#2d2d2d" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
                     <g>
                         <path d="M42,15.5H5.93C2.66,15.5,0,18.16,0,21.429V42.57c0,3.27,2.66,5.93,5.93,5.93H12v10c0,0.413,0.254,0.784,0.64,0.933
         C12.757,59.478,12.879,59.5,13,59.5c0.276,0,0.547-0.115,0.74-0.327L23.442,48.5H42c3.27,0,5.93-2.66,5.93-5.929V21.43
@@ -101,9 +99,7 @@
                     </g>
                 </svg>Browse questions</button>
 
-            <button class="tablinks tab-2" onclick="openTab(event, 'Register')"> <svg fill="#2d2d2d" height="800px"
-                    width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 348.882 348.882" xml:space="preserve">
+            <button class="tablinks tab-2" onclick="openTab(event, 'Register')"> <svg fill="#2d2d2d" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 348.882 348.882" xml:space="preserve">
                     <g>
                         <path d="M333.988,11.758l-0.42-0.383C325.538,4.04,315.129,0,304.258,0c-12.187,0-23.888,5.159-32.104,14.153L116.803,184.231
         c-1.416,1.55-2.49,3.379-3.154,5.37l-18.267,54.762c-2.112,6.331-1.052,13.333,2.835,18.729c3.918,5.438,10.23,8.685,16.886,8.685
@@ -184,11 +180,8 @@
                         <!--Comments---------------------------------------->
                         <div class="client-comment">
                             <a href="faq.php"><input class="sub-btn" type="submit" value="Answer"></a>
-                            <a class="css-2jfdql" href="faq.php"> See 1 answer<svg xmlns="http://www.w3.org/2000/svg"
-                                    focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24"
-                                    aria-hidden="true" class="css-g5h3rj eac13zx0">
-                                    <path
-                                        d="M9.888 5.998a.506.506 0 00-.716-.008l-.707.707a.506.506 0 00.01.716L13.06 12l-4.587 4.587c-.2.2-.204.521-.009.716l.707.707a.507.507 0 00.717-.009l5.647-5.648c.1-.1.148-.233.144-.366a.492.492 0 00-.144-.34v-.001a.611.611 0 00-.009-.009L9.888 5.998z">
+                            <a class="css-2jfdql" href="faq.php"> See 1 answer<svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="css-g5h3rj eac13zx0">
+                                    <path d="M9.888 5.998a.506.506 0 00-.716-.008l-.707.707a.506.506 0 00.01.716L13.06 12l-4.587 4.587c-.2.2-.204.521-.009.716l.707.707a.507.507 0 00.717-.009l5.647-5.648c.1-.1.148-.233.144-.366a.492.492 0 00-.144-.34v-.001a.611.611 0 00-.009-.009L9.888 5.998z">
                                     </path>
                                 </svg></a>
                             <!-- <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p> -->

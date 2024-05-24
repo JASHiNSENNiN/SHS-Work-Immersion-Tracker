@@ -30,6 +30,10 @@ img {
     width: 20%;
 }
 
+.Settings label {
+    cursor: pointer;
+}
+
 .profile-name img {
     height: 150px;
     width: 150px;
