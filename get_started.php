@@ -115,7 +115,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                             <select id="account-type" name="account-type" required onchange="toggleFields()">
                                 <option value class="null-type">Account Type:</option>
                                 <option value="student">Student</option>
-                                Studen <option value="school">School</option>
+                                <option value="school">School</option>
                                 <option value="organization">Partner Organization</option>
                             </select>
                             <div id="student-fields" style="display: none;">
