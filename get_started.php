@@ -1,31 +1,53 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/setupRecaptcha.php';
 if (isset($_GET['code']) && !empty($_GET['code'])) {
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
+    (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
+
+    $google_oauth_client_id = $_ENV['AUTH0_CLIENT_ID'];
+    $google_oauth_client_secret = $_ENV['AUTH0_CLIENT_SECRET'];
+    $google_oauth_redirect_uri = $_ENV['AUTH0_REDIRECT_URI'];
+    $google_oauth_version = 'v3';
+
+    $client = new Google_Client();
+    $client->setClientId($google_oauth_client_id);
+    $client->setClientSecret($google_oauth_client_secret);
+    $client->setRedirectUri($google_oauth_redirect_uri);
+    $client->addScope("https://www.googleapis.com/auth/userinfo.email");
+    $client->addScope("https://www.googleapis.com/auth/userinfo.profile");
 
     $accessToken = $client->fetchAccessTokenWithAuthCode($_GET['code']);
     $client->setAccessToken($accessToken);
 
     if (isset($accessToken['access_token']) && !empty($accessToken['access_token'])) {
-
         $google_oauth = new Google_Service_Oauth2($client);
         $google_account_info = $google_oauth->userinfo->get();
 
         if (isset($google_account_info->email)) {
 
             session_regenerate_id();
-            $_SESSION['google_loggedin'] = TRUE;
             $_SESSION['email'] = $google_account_info->email;
-            $_SESSION['google_name'] = $google_account_info->name;
+            $_SESSION['name'] = $google_account_info->name;
             $_SESSION['google_picture'] = $google_account_info->picture;
 
+            if (!checkDuplicateEmail()) {
+                $host = "localhost";
+                $username = $_ENV['MYSQL_USERNAME'];
+                $password = $_ENV['MYSQL_PASSWORD'];
+                $database = $_ENV['MYSQL_DBNAME'];
 
-            header('Location: get_started.php');
-            exit;
-        } else {
-            exit('Could not retrieve profile information! Please try again later!');
+                $conn = new mysqli($host, $username, $password, $database);
+
+                $stmt = $conn->prepare("INSERT INTO users (email) VALUES (?)");
+                $stmt->bind_param("s", $_SESSION['email']);
+                $stmt->execute();
+
+                $stmt->close();
+                $conn->close();
+            }
         }
-    } else {
-        exit('Invalid access token! Please try again later!');
     }
 }
 ?>
@@ -49,6 +71,12 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     <link rel="stylesheet" type="text/css" href="../css/loginform_landing.css">
     <link rel="stylesheet" type="text/css" href="../css/get_start_log.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("setupForm").submit();
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -81,7 +109,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                     <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
                     <div class="form-container">
-                        <form action="">
+                        <form id="setupForm" method="POST" onsubmit="return validateSetupForm()">
 
                             <input type="text" for="email" name="email" id="email" placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>" disabled>
                             <select id="account-type" name="account-type" required onchange="toggleFields()">
@@ -127,7 +155,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 
                                         <p>Back</p>
                                     </button></a>
-                                <button class="btn-new" onclick="validateForm()">
+                                <button class="g-recaptcha btn-new" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onSubmit" data-action="submit">
                                     <p>Submit</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="3-Arrow Right" />
@@ -150,20 +178,4 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 </body>
 
 </html>
-<script>
-    function printCookies() {
-        const cookies = document.cookie.split(";")
-            .map(cookie => cookie.trim());
-
-        console.log("Cookies:");
-        cookies.forEach(cookie => {
-            console.log(cookie);
-        });
-    }
-
-
-    window.onload = printCookies;
-</script>
-<script src="../backend/js/login.js"></script>
-<script src="../backend/js/session_handler.js"></script>
-<script src="../js/get_start_log.js"></script>
+<script src="/backend/js/register.js"></script>

@@ -1,5 +1,5 @@
 <?php
-function checkDuplicateEmail($email)
+function checkDuplicateEmail()
 {
     $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
     $dotenv->load();
@@ -12,7 +12,7 @@ function checkDuplicateEmail($email)
     $conn = new mysqli($host, $username, $password, $database);
 
     $stmt = $conn->prepare("SELECT COUNT(*) FROM users WHERE email = ?");
-    $stmt->bind_param("s", $email);
+    $stmt->bind_param("s", $_SESSION['email']);
     $stmt->execute();
     $stmt->bind_result($count);
     $stmt->fetch();

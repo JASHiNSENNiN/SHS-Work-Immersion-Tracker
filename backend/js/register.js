@@ -56,6 +56,135 @@ function validateRegisterForm() {
 	return true;
 }
 
+function validateSetupForm() {
+	const accountType = document.getElementById("account-type").value;
+	const schoolName = document.getElementById("school-name").value;
+	const organizationName = document.getElementById("organization-name").value;
+	const firstName = document.getElementById("first-name").value;
+	const middleName = document.getElementById("middle-name").value;
+	const lastName = document.getElementById("last-name").value;
+	const gradeLevel = document.getElementById("grade-level").value;
+	const strand = document.getElementById("strand").value;
+	const strandFocus = document.getElementById("strand-focus").value;
+
+	const accountTypeInput = document.getElementById("account-type");
+	const schoolNameInput = document.getElementById("school-name");
+	const organizationNameInput = document.getElementById("organization-name");
+	const firstNameInput = document.getElementById("first-name");
+	const middleNameInput = document.getElementById("middle-name");
+	const lastNameInput = document.getElementById("last-name");
+	const gradeLevelInput = document.getElementById("grade-level");
+	const strandInput = document.getElementById("strand");
+	const strandFocusInput = document.getElementById("strand-focus");
+
+	const allInputs = [
+		accountTypeInput,
+		schoolNameInput,
+		organizationNameInput,
+		firstNameInput,
+		middleNameInput,
+		lastNameInput,
+		gradeLevelInput,
+		strandInput,
+		strandFocusInput,
+	];
+
+	allInputs.forEach((input) => {
+		input.addEventListener("input", function () {
+			if (this.validity.customError) {
+				this.setCustomValidity("");
+			}
+		});
+	});
+
+	if (accountType === "") {
+		accountTypeInput.setCustomValidity("Please select an account type");
+		accountTypeInput.reportValidity();
+		return false;
+	}
+
+	if (accountType === "student") {
+		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		if (
+			!nameRegex.test(firstName) ||
+			!nameRegex.test(middleName) ||
+			!nameRegex.test(lastName)
+		) {
+			firstNameInput.setCustomValidity("Please enter a valid full name");
+			middleNameInput.setCustomValidity("Please enter a valid full name");
+			lastNameInput.setCustomValidity("Please enter a valid full name");
+			firstNameInput.reportValidity();
+			middleNameInput.reportValidity();
+			lastNameInput.reportValidity();
+			return false;
+		}
+
+		if (gradeLevel === "") {
+			gradeLevelInput.setCustomValidity("Please select a grade level");
+			gradeLevelInput.reportValidity();
+			return false;
+		}
+		if (strand === "") {
+			strandInput.setCustomValidity("Please select a strand");
+			strandInput.reportValidity();
+			return false;
+		}
+		try {
+			const exists = checkNameExists(schoolName, accountType);
+			if (exists) {
+				schoolNameInput.setCustomValidity("Name was already taken");
+				schoolNameInput.reportValidity();
+				return false;
+			} else {
+				//console.log("name does not exist");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	}
+	if (accountType === "school") {
+		const schoolRegex = /^[A-Za-z\s]{3,}$/;
+		if (!schoolRegex.test(schoolName)) {
+			schoolNameInput.setCustomValidity(
+				"Please enter a valid school name"
+			);
+			schoolNameInput.reportValidity();
+			return false;
+		}
+	}
+	if (accountType === "organization") {
+		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		if (!nameRegex.test(organizationName)) {
+			organizationNameInput.setCustomValidity(
+				"Please enter a valid organization name"
+			);
+			organizationNameInput.reportValidity();
+			return false;
+		}
+		if (strandFocus === "") {
+			strandFocusInput.setCustomValidity("Please select a strand");
+			strandFocusInput.reportValidity();
+			return false;
+		}
+		try {
+			const exists = checkNameExists(organizationName, accountType);
+			if (exists) {
+				organizationNameInput.setCustomValidity(
+					"Name was already taken"
+				);
+				organizationNameInput.reportValidity();
+				return false;
+			} else {
+				//console.log("name does not exist");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	}
+
+	return true;
+}
+
 window.onload = function () {
 	const urlParams = new URLSearchParams(window.location.search);
 	const error = urlParams.get("error");

@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
 
 $google_oauth_client_id = $_ENV['AUTH0_CLIENT_ID'];
 $google_oauth_client_secret = $_ENV['AUTH0_CLIENT_SECRET'];
@@ -29,7 +29,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 
             session_regenerate_id();
             $_SESSION['google_loggedin'] = TRUE;
-            $_SESSION['email'] = $google_account_info->email;
+            $_SESSION['google_email'] = $google_account_info->email;
             $_SESSION['google_name'] = $google_account_info->name;
             $_SESSION['google_picture'] = $google_account_info->picture;
 
