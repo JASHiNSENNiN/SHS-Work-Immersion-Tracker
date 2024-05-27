@@ -110,22 +110,7 @@
 <script>
     document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail() {
-        Email.send({
-            SecureToken: "d856dc0c-6a80-494e-894c-317e64a92d33",
-            To: 'aldeakel27@gmail.com',
-            From: document.getElementById("email").value,
-            Subject: "New Contact Form Enquiry",
-            Body: "Name :" + document.getElementById("name").value +
-                "<br> Email : " + document.getElementById("email").value +
-                "<br> Message : " + document.getElementById("message").value
-        }).then(
-            message => alert(message)
-        );
-    }
-</script>
+
 
 </body>
 
