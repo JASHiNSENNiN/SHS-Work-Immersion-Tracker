@@ -112,7 +112,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                         <form id="setupForm" method="POST" onsubmit="return validateSetupForm()">
 
                             <input type="text" for="email" name="email" id="email" placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>" disabled>
-                            <select id="account-type" name="account-type" required onchange="toggleFields()">
+                            <select id="account-type" name="account-type" onchange="toggleFields()" required>
                                 <option value class="null-type">Account Type:</option>
                                 <option value="student">Student</option>
                                 <option value="school">School</option>
