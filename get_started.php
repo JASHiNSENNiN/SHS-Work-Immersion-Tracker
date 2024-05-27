@@ -179,3 +179,4 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 
 </html>
 <script src="/backend/js/register.js"></script>
+<script src="/js/get_start_log.js"></script>
