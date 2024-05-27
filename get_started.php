@@ -85,9 +85,9 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 <body>
     <noscript>
         <style>
-            html {
+            /* html {
                 display: none;
-            }
+            } */
         </style>
         <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
     </noscript>
@@ -96,7 +96,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
         <div class="overlay">
             <p class="screen">Lets setup your account</p>
             <div class="intro">
-                <button class="myBtn"> get started</button>
+                <button class="myBtn" onclick="fadeOut()"> get started</button>
             </div>
         </div>
 
