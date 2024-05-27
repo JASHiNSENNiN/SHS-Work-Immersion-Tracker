@@ -1,3 +1,32 @@
+function toggleFields() {
+	var accountType = document.getElementById("account-type").value;
+	var studentFields = document.getElementById("student-fields");
+	var schoolFields = document.getElementById("school-fields");
+	var partnerFields = document.getElementById("partner-fields");
+	var registerForm = document.getElementById("register-form");
+
+	if (accountType === "student") {
+		registerForm.style.paddingTop = "25%";
+		studentFields.style.display = "block";
+		schoolFields.style.display = "none";
+		partnerFields.style.display = "none";
+	} else if (accountType === "school") {
+		registerForm.style.paddingTop = "10%";
+		studentFields.style.display = "none";
+		schoolFields.style.display = "block";
+		partnerFields.style.display = "none";
+	} else if (accountType === "organization") {
+		registerForm.style.paddingTop = "10%";
+		studentFields.style.display = "none";
+		schoolFields.style.display = "none";
+		partnerFields.style.display = "block";
+	} else {
+		studentFields.style.display = "none";
+		schoolFields.style.display = "none";
+		partnerFields.style.display = "none";
+	}
+}
+
 function validateRegisterForm() {
 	const email = document.getElementById("email").value;
 	const password = document.getElementById("password").value;
