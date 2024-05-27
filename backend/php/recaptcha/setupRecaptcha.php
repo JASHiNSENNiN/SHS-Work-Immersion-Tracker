@@ -91,4 +91,18 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     $stmt->execute();
     $stmt->close();
     $conn->close();
+
+    switch ($accountType) {
+        case "student":
+            header('Location: student.workifyph.online');
+            exit;
+
+        case "school":
+            header('Location: school.workifyph.online');
+            exit;
+
+        case "organization":
+            header('Location: company.workifyph.online');
+            exit;
+    }
 }
