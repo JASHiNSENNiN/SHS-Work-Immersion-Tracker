@@ -96,7 +96,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
         <div class="overlay">
             <p class="screen">Lets setup your account</p>
             <div class="intro">
-                <button class="myBtn" onclick="fadeOut()"> get started</button>
+                <button class="myBtn"> get started</button>
             </div>
         </div>
 
