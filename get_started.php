@@ -118,7 +118,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                                 Studen <option value="school">School</option>
                                 <option value="organization">Partner Organization</option>
                             </select>
-                            <div id="student-fields">
+                            <div id="student-fields" style="display: none;">
                                 <input type="text" placeholder="First Name" id="first-name" name="first-name">
                                 <input type="text" placeholder="Middle Name" id="middle-name" name="middle-name">
                                 <input type="text" placeholder="Last Name" id="last-name" name="last-name">
