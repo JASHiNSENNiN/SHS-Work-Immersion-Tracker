@@ -64,7 +64,7 @@
 
                         </div>
 
-                        <input class="sub-btn" type="submit" value="Find Now" href="">
+                        <input class="sub-btn" type="submit" value="Find Now">
                 </div>
                 </form>
             </div>
@@ -155,11 +155,11 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="searched-bar">
+                <div class="searched-show">Showing 46 Jobs</div>
+            </div> -->
+            <!-- -------------------------------------------------------job cards ------------------------------- -->
             <div class="searched-jobs">
-                <div class="searched-bar">
-                    <div class="searched-show">Showing 46 Jobs</div>
-                    <!-- <div class="searched-sort">Sort by: <span class="post-time">Newest Post </span><span class="menu-icon">▼</span></div> -->
-                </div>
                 <div class="job-cards">
                     <div class="job-card">
                         <div class="job-card-header">
@@ -741,12 +741,10 @@
 
     </div>
 
-    <!-- 
-    <script>
-        document.getElementById("currentDate").innerHTML = new Date().getFullYear();
-    </script> -->
+
     <!-- --------------------------------joblist modal js-------------------------=--- -->
     <script>
+        // modal
         // Get the modal
         var modal = document.getElementById("myModal");
 
@@ -756,28 +754,28 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the modal
         btn.onclick = function() {
             modal.style.display = "block";
-        }
+        };
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
-        }
+        };
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
-        }
+        };
     </script>
 
     <!-- -------------------------------------header stick js ------------------------------ -->
     <script>
         window.onscroll = function() {
-            myFunction()
+            myFunction();
         };
 
         var header = document.getElementById("myHeader-sticky");
@@ -791,6 +789,7 @@
             }
         }
     </script>
+
 
 </body>
 

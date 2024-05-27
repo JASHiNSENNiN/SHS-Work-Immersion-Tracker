@@ -79,15 +79,15 @@
                 <p>Thank you for considering Workify for your work immersion. We are committed to providing a valuable
                     and informative experience to all our applicants. Please feel free to contact us if you have any
                     questions or would like to learn more about our website.</p>
-                <form action="#">
+                <form onsubmit="sendEmail(); reset(); return false ">
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your name">
+                        <input type="text" id="name" placeholder="Enter your name">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your email">
+                        <input type="text" id="email" placeholder="Enter your email">
                     </div>
                     <div class="input-box message-box">
-                        <textarea placeholder="Enter your message"></textarea>
+                        <textarea id="message" placeholder="Enter your message"></textarea>
                     </div>
                     <div class="button">
                         <input type="button" value="Send Now">
@@ -109,7 +109,24 @@
 <script>
     document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
-
+<script src="https://smtp.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "aldeakel27@gmail.com",
+            Password: "08AF42114163DF469933A8F3D216BFC36795 ",
+            To: 'aldeakel27@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "New Contact Form Enquiry",
+            Body: "Name" + document.getElementById("name").value +
+                "<br> Email: " + document.getElementById("email").value +
+                "<br> Message : " + document.getElementById("message").value
+        }), then(
+            message => alert("Message Sent Successfully")
+        );
+    }
+</script>
 
 </body>
 
