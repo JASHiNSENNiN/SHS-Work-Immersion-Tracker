@@ -78,6 +78,8 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="/backend/js/register.js"></script>
+    <script src="/js/get_start_log.js"></script>
 
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
@@ -188,5 +190,3 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 </body>
 
 </html>
-<script src="/backend/js/register.js"></script>
-<script src="/js/get_start_log.js"></script>
