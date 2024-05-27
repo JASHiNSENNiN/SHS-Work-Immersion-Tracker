@@ -21,7 +21,6 @@ img {
     margin-left: 70px;
 }
 
-
 /* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
@@ -29,7 +28,6 @@ img {
         font-size: 11px;
     }
 }
-
 
 /* ------------------------------Video Contact------------------ */
 
@@ -49,10 +47,9 @@ img {
     margin-top: 100px;
 }
 
-
 /*--------------------------Contact----------------------------  */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .container {
     width: 60%;
     background: #fff;
@@ -63,7 +60,7 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .container .content {
@@ -84,7 +81,7 @@ img {
 }
 
 .content .left-side::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 70%;
     width: 2px;
@@ -140,7 +137,7 @@ img {
     border: none;
     outline: none;
     font-size: 16px;
-    background: #F0F1F8;
+    background: #f0f1f8;
     border-radius: 6px;
     padding: 0 15px;
     resize: none;
@@ -154,12 +151,12 @@ img {
     padding-top: 6px;
 }
 
-.right-side .button {
+.right-side .sub-button {
     display: inline-block;
     margin-top: 12px;
 }
 
-.right-side .button input[type="button"] {
+.right-side .sub-button {
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -171,7 +168,7 @@ img {
     transition: all 0.3s ease;
 }
 
-.button input[type="button"]:hover {
+.sub-button:hover {
     background: #1bbc9b;
 }
 

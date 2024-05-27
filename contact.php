@@ -89,8 +89,9 @@
                     <div class="input-box message-box">
                         <textarea id="message" placeholder="Enter your message"></textarea>
                     </div>
-                    <div class="button">
-                        <input type="button" value="Send Now">
+                    <div>
+                        <button class="sub-button" type="submit">Send Now</button>
+                        <!-- <input type="button" value="Send Now"> -->
                     </div>
                 </form>
             </div>
