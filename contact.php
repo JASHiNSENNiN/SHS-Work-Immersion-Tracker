@@ -113,16 +113,27 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendEmail() {
+        // Email.send({
+        //     SecureToken: "945bffad-2ab2-4791-b83f-68371930b242",
+        //     To: 'aldeakel27@gmail.com',
+        //     From: document.getElementById("email").value,
+        //     Subject: "New Contact Form Enquiry",
+        //     Body: "Name" + document.getElementById("name").value +
+        //         "<br> Email: " + document.getElementById("email").value +
+        //         "<br> Message : " + document.getElementById("message").value
+        // }), then(
+        //     message => alert("Message Sent Successfully")
+        // );
         Email.send({
-            SecureToken: "7eab5a81-32be-4c94-8393-405fadf610d4",
+            SecureToken: "945bffad-2ab2-4791-b83f-68371930b242",
             To: 'aldeakel27@gmail.com',
             From: document.getElementById("email").value,
             Subject: "New Contact Form Enquiry",
-            Body: "Name" + document.getElementById("name").value +
-                "<br> Email: " + document.getElementById("email").value +
+            Body: "Name :" + document.getElementById("name").value +
+                "<br> Email : " + document.getElementById("email").value +
                 "<br> Message : " + document.getElementById("message").value
-        }), then(
-            message => alert("Message Sent Successfully")
+        }).then(
+            message => alert(message)
         );
     }
 </script>
