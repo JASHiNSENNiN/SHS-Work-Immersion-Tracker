@@ -224,6 +224,10 @@ main {
   width: 100%;
 }
 
+.btn-new {
+  right: 177px;
+}
+
 /* .colm-form .form-container .btn-new:hover {
     background-color: #0e745f;
 } */
