@@ -109,13 +109,11 @@
 <script>
     document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
-<script src="https://smtp.com/v3/smtp.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendEmail() {
         Email.send({
-            Host: "smtp.gmail.com",
-            Username: "aldeakel27@gmail.com",
-            Password: "08AF42114163DF469933A8F3D216BFC36795 ",
+            SecureToken: "7eab5a81-32be-4c94-8393-405fadf610d4",
             To: 'aldeakel27@gmail.com',
             From: document.getElementById("email").value,
             Subject: "New Contact Form Enquiry",
