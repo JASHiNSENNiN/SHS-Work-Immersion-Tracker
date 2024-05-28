@@ -168,7 +168,7 @@ img {
     transition: all 0.3s ease;
 }
 
-.sub-button:hover {
+.sub-button :hover {
     background: #1bbc9b;
 }
 

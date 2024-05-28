@@ -79,12 +79,12 @@
                 <p>Thank you for considering Workify for your work immersion. We are committed to providing a valuable
                     and informative experience to all our applicants. Please feel free to contact us if you have any
                     questions or would like to learn more about our website.</p>
-                <form onsubmit="sendEmail(); reset(); return false ">
+                <form onsubmit="sendEmail(); reset(); return false " autocomplete="off">
                     <div class="input-box">
-                        <input type="text" id="name" placeholder="Enter your name">
+                        <input pattern="[A-Za-z]{3,10}" minlength="3" maxlength="10" oninvalid="setCustomValidity('Please enter on alphabets only. ')" type="text" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="input-box">
-                        <input type="text" id="email" placeholder="Enter your email">
+                        <input type="text" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="input-box message-box">
                         <textarea id="message" placeholder="Enter your message"></textarea>
@@ -110,7 +110,23 @@
 <script>
     document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            SecureToken: "4e632808-d279-430d-95be-3160ff33cdc7",
+            To: "aldeakel27@gmail.com",
+            From: document.getElementById("email").value,
+            Subject: "New Contact Form Enquiry",
+            Body: "Name :" +
+                document.getElementById("name").value +
+                "<br> Email : " +
+                document.getElementById("email").value +
+                "<br> Message : " +
+                document.getElementById("message").value,
+        }).then((message) => alert(message));
+    }
+</script>
 
 </body>
 
