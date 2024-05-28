@@ -64,13 +64,13 @@ $conn->close();
 switch ($accountType) {
     case "student":
         $subdomain = "student";
-        exit;
+        break;
     case "school":
         $subdomain = "school";
-        exit;
+        break;
     case "organization":
         $subdomain = "organization";
-        exit;
+        break;
 }
 $redirectUrl = "http://" . $subdomain . ".workifyph.online";
 header("Location: " . $redirectUrl);

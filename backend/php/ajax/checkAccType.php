@@ -9,17 +9,19 @@ if (isset($_GET['code'])) {
     $_SESSION['email'] = $google_account_info->email;
 }
 
-$accountType = getAccountype($_SESSION['email']);
-switch ($accountType) {
-    case 'student':
-        header("Location: https://www.student.workifyph.online/");
-        exit;
-    case 'school':
-        header("Location: https://www.school.workifyph.online/");
-        exit;
-    case 'organization':
-        header("Location: https://www.company.workifyph.online/");
-        exit;
-    default:
-        exit;
+if (isset($_SESSION['email'])) {
+    $accountType = getAccountype($_SESSION['email']);
+    switch ($accountType) {
+        case 'student':
+            header("Location: https://www.student.workifyph.online/");
+            exit;
+        case 'school':
+            header("Location: https://www.school.workifyph.online/");
+            exit;
+        case 'organization':
+            header("Location: https://www.company.workifyph.online/");
+            exit;
+        default:
+            exit;
+    }
 }
