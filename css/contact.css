@@ -141,6 +141,7 @@ img {
     border-radius: 6px;
     padding: 0 15px;
     resize: none;
+    font-family: Arial, sans-serif;
 }
 
 .right-side .message-box {
