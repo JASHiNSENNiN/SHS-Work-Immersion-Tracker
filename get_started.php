@@ -106,7 +106,8 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                     <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
                     <div class="form-container">
-                        <form id="setupForm" method="POST" onsubmit="return validateSetupForm()">
+                        <form id="setupForm" action="/backend/php/setup_account.php" method="POST"
+                            onsubmit="return validateSetupForm()">
 
                             <input type="text" for="email" name="email" id="email"
                                 placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>"
