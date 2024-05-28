@@ -1,4 +1,7 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
+
 $accountType = $_POST["account-type"];
 
 $email = $_POST["email"];
@@ -10,8 +13,6 @@ $strand = "";
 $schoolName = "";
 $organizationName = "";
 $strandFocus = "";
-
-(Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 $host = "localhost";
 $username = $_ENV['MYSQL_USERNAME'];
 $password = $_ENV['MYSQL_PASSWORD'];
@@ -62,14 +63,15 @@ $conn->close();
 
 switch ($accountType) {
     case "student":
-        header('Location: student.workifyph.online');
+        $subdomain = "student";
         exit;
-
     case "school":
-        header('Location: school.workifyph.online');
+        $subdomain = "school";
         exit;
-
     case "organization":
-        header('Location: company.workifyph.online');
+        $subdomain = "organization";
         exit;
 }
+$redirectUrl = "http://" . $subdomain . ".workifyph.online";
+header("Location: " . $redirectUrl);
+exit;
