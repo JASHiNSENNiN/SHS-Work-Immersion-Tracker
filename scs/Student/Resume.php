@@ -79,13 +79,15 @@
 
         <div class="right_Side">
             <div class="about">
-                <h2 class="title2">Profile</h2>
+                <h2 class="title2">Career Objective</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, velit hic sequi, aliquam dolores
                     sit enim iure eos expedita id minus sapiente reprehenderit dolor similique accusantium qui esse!
                     Facere, aliquid?</p>
             </div>
             <div class="about">
                 <h2 class="title2">Experience</h2>
+                <hr>
                 <div class="box">
                     <div class="year_company">
                         <h5>2019 - Present</h5>
@@ -125,6 +127,7 @@
             </div>
             <div class="about skills">
                 <h2 class="title2">Professional Skills</h2>
+                <hr>
                 <div class="box">
                     <h4>HTML</h4>
                     <div class="percent">
@@ -149,6 +152,25 @@
                         <div style="width:40%"></div>
                     </div>
                 </div>
+            </div>
+
+            <div class="about reference">
+                <h2 class="title2">Reference</h2>
+                <hr>
+                <div class="text prof">
+                    <h4 class="Ref">Mrs. Rubelyn Esperon</h4>
+                    <p>Our Lady of the Sacred Heart College Inc. <br> (College Dean)
+                    </p>
+                </div>
+
+
+
+            </div>
+
+            <div class="about applicant">
+                <h2 class="name"><u>Ronald Diaz</u></h2>
+                <h4 class="App">Applicant</h4>
+
             </div>
         </div>
     </div>
