@@ -81,12 +81,13 @@
                     and informative experience to all our applicants. Please feel free to contact us if you have any
                     questions or would like to learn more about our website.</p>
 
-                <form onsubmit="sendEmail(); reset(); return false " autocomplete="off">
+                <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+                    <input type="hidden" name="access_key" value="1c3d7737-14bc-4bc1-819a-0a5c1c760bc4">
                     <div class="input-box">
-                        <input pattern="[A-Za-z]{3,10}" minlength="3" maxlength="10" oninvalid="setCustomValidity('Please enter on alphabets only. ')" type="text" id="name" placeholder="Enter your name" required>
+                        <input pattern="[A-Za-z]{3,10}" minlength="3" maxlength="10" oninvalid="setCustomValidity('Please enter on alphabets only. ')" type="text" id="name" placeholder="Enter your name" required />
                     </div>
                     <div class="input-box">
-                        <input type="text" id="email" placeholder="Enter your email" required>
+                        <input type="text" id="email" placeholder="Enter your email" required />
                     </div>
                     <div class="input-box message-box">
                         <textarea id="message" placeholder="Enter your message"></textarea>
@@ -113,24 +114,7 @@
     document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail() {
-        Email.send({
-            SecureToken: " ccc8d462-e9a3-46a2-836e-4643b6dbfff1",
-            To: "aldeakel27@gmail.com",
-            From: document.getElementById("email").value,
-            Subject: "New Contact Form Enquiry",
-            Body: "Name :" +
-                document.getElementById("name").value +
-                "<br> Email : " +
-                document.getElementById("email").value +
-                "<br> Message : " +
-                document.getElementById("message").value,
-        }).then((message) => alert(message));
-    }
-</script>
-
+<!-- <script src="js/send-email.js"></script> -->
 </body>
 
 </html>
