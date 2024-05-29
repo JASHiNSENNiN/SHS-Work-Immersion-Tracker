@@ -30,9 +30,9 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
         exit();
     }
     $_SESSION['email'] = filter_var($_POST['register_email'], FILTER_SANITIZE_EMAIL);
+    insertOTP();
     $Password = password_hash($_POST['register_password'], PASSWORD_BCRYPT, ['cost' => 15]);
     $_SESSION['password'] = $Password;
-    insertOTP();
     $destination = 'https://www.workifyph.online/one_time_password.php';
     header("Location: $destination");
     exit();

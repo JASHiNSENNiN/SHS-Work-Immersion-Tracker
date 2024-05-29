@@ -9,7 +9,7 @@ $username = $_ENV['MYSQL_USERNAME'];
 $password = $_ENV['MYSQL_PASSWORD'];
 $database = $_ENV['MYSQL_DBNAME'];
 
-if ($_SESSION['email']) {
+if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
     $conn = new mysqli($host, $username, $password, $database);
 
@@ -17,14 +17,63 @@ if ($_SESSION['email']) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sqlCheck = $conn->prepare("SELECT account_type FROM users WHERE email = ?");
+    $sqlCheck = $conn->prepare("SELECT id, account_type FROM users WHERE email = ?");
     $sqlCheck->bind_param("s", $email);
     $sqlCheck->execute();
-    $sqlCheck->bind_result($accountType);
+    $sqlCheck->bind_result($userId, $accountType);
 
     if ($sqlCheck->fetch() && $accountType) {
-
         $sqlCheck->close();
+
+        $_SESSION['user_id'] = $userId;
+
+        switch ($accountType) {
+            case 'student':
+                $stmt = $conn->prepare("SELECT first_name, middle_name, last_name, school, grade_level, strand FROM student_profiles WHERE user_id = ?");
+                $stmt->bind_param("i", $userId);
+                $stmt->execute();
+                $stmt->bind_result($firstName, $middleName, $lastName, $school, $gradeLevel, $strand);
+                if ($stmt->fetch()) {
+                    $_SESSION['profile'] = [
+                        'first_name' => $firstName,
+                        'middle_name' => $middleName,
+                        'last_name' => $lastName,
+                        'school' => $school,
+                        'grade_level' => $gradeLevel,
+                        'strand' => $strand
+                    ];
+                }
+                $stmt->close();
+                break;
+
+            case 'school':
+                $stmt = $conn->prepare("SELECT school_name FROM school_profiles WHERE user_id = ?");
+                $stmt->bind_param("i", $userId);
+                $stmt->execute();
+                $stmt->bind_result($schoolName);
+                if ($stmt->fetch()) {
+                    $_SESSION['profile'] = [
+                        'school_name' => $schoolName
+                    ];
+                }
+                $stmt->close();
+                break;
+
+            case 'organization':
+                $stmt = $conn->prepare("SELECT organization_name, strand FROM partner_profiles WHERE user_id = ?");
+                $stmt->bind_param("i", $userId);
+                $stmt->execute();
+                $stmt->bind_result($organizationName, $strand);
+                if ($stmt->fetch()) {
+                    $_SESSION['profile'] = [
+                        'organization_name' => $organizationName,
+                        'strand' => $strand
+                    ];
+                }
+                $stmt->close();
+                break;
+        }
+
         $conn->close();
 
         $accType = ucfirst($accountType);
@@ -32,7 +81,6 @@ if ($_SESSION['email']) {
         header("Location: " . $redirectUrl);
         exit;
     } else {
-
         $sqlCheck->close();
         $conn->close();
     }
