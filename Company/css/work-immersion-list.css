@@ -1537,7 +1537,7 @@ textarea {
     cursor: pointer;
 }
 
-.installer label input[type="radio"] {
+.installer label input[type="submit"] {
     display: none;
 }
 

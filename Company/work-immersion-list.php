@@ -428,11 +428,12 @@
         <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
         <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
         <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false ">
-                <input type="text" id="email" value="anonymous@gmai.com" hidden>
-                <textarea id="subject" name="subject" style="height:200px" required></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1c3d7737-14bc-4bc1-819a-0a5c1c760bc4">
+
+                <textarea id="subject" name="message" style="height:200px" required></textarea>
                 <div class="installer">
-                    <label for="progressLinux"><input id="progressLinux" type="radio"><span></span></label>
+                    <label for="progressLinux"><input id="progressLinux" type="submit"><span></span></label>
                 </div>
             </form>
 
@@ -471,19 +472,7 @@
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
     </footer>
-    <!-- -----------------------------------sent email-------------------------------- -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "4e632808-d279-430d-95be-3160ff33cdc7",
-                To: "aldeakel27@gmail.com",
-                From: document.getElementById("email").value,
-                Subject: "What would you add or change?",
-                Body: document.getElementById("subject").value
-            }).then((message) => alert(message));
-        }
-    </script>
+
 
     <!-- --------------------------------joblist modal js-------------------------=--- -->
     <script>
