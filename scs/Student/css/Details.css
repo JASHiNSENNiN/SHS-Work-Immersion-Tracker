@@ -852,6 +852,10 @@ input {
   width: 50%;
 }
 
+.prof {
+  cursor: pointer;
+}
+
 .EX {
   margin-top: 20px;
 }
@@ -900,4 +904,33 @@ input {
   .button-37 {
     padding: 10px 30px;
   }
+}
+
+/* --Resume Prof-- */
+
+#imageUpload {
+  display: none;
+}
+
+#profileImage {
+  cursor: pointer;
+  object-fit: cover;
+}
+
+#profile-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+#profile-container img {
+  width: 150px;
+  height: 150px;
 }

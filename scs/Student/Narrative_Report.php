@@ -107,11 +107,12 @@
     <div class="logo">
 
         <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
+            <a class="link" id="#details" href="Details.php">Resume Builder</a>
             <a class="link" id="#area" href="Company_Area.php"> Company Area</a>
             <a class="link" id="#review" href="Company_Review.php">Company review</a>
             <a class="active" id="#narrative" href="Narrative_Report.php">Narrative Report</a>
             <!-- <a class="link" id="#contact">Contact</a> -->
-            <a class="link" id="#details" href="Details.php">Details</a>
+
             <!-- <a href="aboutUs.php">About</a> -->
 
         </nav>
@@ -392,35 +393,35 @@
     </footer>
 
     <script>
-        $("input:checkbox").on('click', function () {
+    $("input:checkbox").on('click', function() {
 
-            var $box = $(this);
-            if ($box.is(":checked")) {
-                var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                $(group).prop("checked", false);
-                $box.prop("checked", true);
-            } else {
-                $box.prop("checked", false);
-            }
-        });
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
     </script>
 
     <script>
-        let popup = document.getElementById("popup");
+    let popup = document.getElementById("popup");
 
-        function openPopup() {
-            // popup.classList.add("open-popup");
-            Swal.fire({
-                title: "Successfully send!",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 2500
-            });
-        }
+    function openPopup() {
+        // popup.classList.add("open-popup");
+        Swal.fire({
+            title: "Successfully send!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 2500
+        });
+    }
 
-        function closePopup() {
-            popup.classList.remove("open-popup");
-        }
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
     </script>
 
     <!-- <script>
@@ -457,21 +458,21 @@
     </script> -->
 
     <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function () {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
     </script>
 
     <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function () {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
     </script>
 
 

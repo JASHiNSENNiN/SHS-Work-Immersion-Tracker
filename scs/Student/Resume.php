@@ -16,9 +16,9 @@
         <div class="left_Side">
             <div class="profileText">
                 <div class="imgBx">
-                    <img src="../scs/Student/image/me.jpg" alt="">
+                    <img src="image/me.jpg" alt="">
                 </div>
-                <h2>Ronald Diaz <br> <span>HUMSS</span></h2>
+                <h2>Miguel Von Natividad <br> <span>HUMSS</span></h2>
             </div>
             <div class="contactInfo">
                 <h3 class="title"> Contact Info</h3>
@@ -29,7 +29,7 @@
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span class="text">diaz@gmail.com</span>
+                        <span class="text">natividad@gmail.com</span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>

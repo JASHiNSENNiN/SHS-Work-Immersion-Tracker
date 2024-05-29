@@ -97,10 +97,11 @@
     <div class="logo">
 
         <nav class="bt" style="position:relative; margin-left:auto; margin-right:auto;">
+            <a class="activeD" id="#details" href="Details.php">Resume Builder</a>
             <a href="Company_area.php"> Company Area</a>
             <a href="Company_Review.php">Company review</a>
             <a href="Narrative_Report.php">Narrative Report</a>
-            <a class="activeD" id="#details" href="Details.php">Details</a>
+
 
 
 
@@ -138,9 +139,11 @@
                 <form>
                     <div class="form_container">
                         <div class="input_wrap">
-                            <img class="prof" src="http://via.placeholder.com/150x150" />
-                            <input type="file" accept="image/jpeg, image/png, image/gif" id="myfile"
-                                style="display:none " />
+                            <div id="profile-container">
+                                <image id="profileImage" src="http://via.placeholder.com/150x150" />
+                            </div>
+                            <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required=""
+                                capture>
                         </div>
                         <div class="input_wrap">
                             <label for="password">Name</label>
@@ -385,6 +388,24 @@
             '<div class="input_wrap" id="addR"> <input type="text" name="" class="input" id="name" placeholder="Name"> <textarea type="text" name="" class="input" id="Description" placeholder="Position Description"></textarea></div>'
         );
 
+    });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $("#profileImage").click(function(e) {
+        $("#imageUpload").click();
+    });
+
+    function fasterPreview(uploader) {
+        if (uploader.files && uploader.files[0]) {
+            $('#profileImage').attr('src',
+                window.URL.createObjectURL(uploader.files[0]));
+        }
+    }
+
+    $("#imageUpload").change(function() {
+        fasterPreview(this);
     });
     </script>
 </body>
