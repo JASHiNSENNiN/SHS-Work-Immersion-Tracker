@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Dashboard</title>
+    <link rel="shortcut icon" type="x-icon" href="image/W.png">
     <link rel="stylesheet" type="text/css" href="css/Settings.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -284,11 +285,11 @@ l                           ist" href="#account-info">Info</a> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputfile = document.getElementById("input-file");
-        inputfile.onchange = function () {
-            profilePic.src = URL.createObjectURL(inputfile.files[0]);
-        }
+    let profilePic = document.getElementById("profile-pic");
+    let inputfile = document.getElementById("input-file");
+    inputfile.onchange = function() {
+        profilePic.src = URL.createObjectURL(inputfile.files[0]);
+    }
     </script>
 
 </body>

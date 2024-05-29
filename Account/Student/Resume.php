@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="image/W.png">
     <link rel="stylesheet" href="css/Resume.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
@@ -18,7 +19,7 @@
                 <div class="imgBx">
                     <img src="image/me.jpg" alt="">
                 </div>
-                <h2>Miguel Von Natividad <br> <span>HUMSS</span></h2>
+                <h2>Miguel Von Natividad<br> <span>HUMSS</span></h2>
             </div>
             <div class="contactInfo">
                 <h3 class="title"> Contact Info</h3>
@@ -168,7 +169,7 @@
             </div>
 
             <div class="about applicant">
-                <h2 class="name"><u>Ronald Diaz</u></h2>
+                <h2 class="name"><u>Miguel Von Natividad</u></h2>
                 <h4 class="App">Applicant</h4>
 
             </div>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Dashboard</title>
+    <link rel="shortcut icon" type="x-icon" href="image/W.png">
     <link rel="stylesheet" type="text/css" href="css/Details.css">
 
 
@@ -363,21 +364,21 @@
     </footer>
 
     <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+    let profilePic1 = document.getElementById("cover-pic");
+    let inputFile1 = document.getElementById("input-file1");
 
-        inputFile1.onchange = function () {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
+    inputFile1.onchange = function() {
+        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+    }
     </script>
 
     <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+    let profilePic2 = document.getElementById("profile-pic");
+    let inputFile2 = document.getElementById("input-file2");
 
-        inputFile2.onchange = function () {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
+    inputFile2.onchange = function() {
+        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+    }
     </script>
 
 

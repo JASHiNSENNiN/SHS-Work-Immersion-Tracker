@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
+    <link rel="shortcut icon" type="x-icon" href="image/W.png">
     <link rel="stylesheet" type="text/css" href="css/Company.css">
     <link rel="stylesheet" href="">
 
