@@ -1,5 +1,5 @@
 <?php
-session_status() === PHP_SESSION_NONE ? session_start() : null;
+session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 $organizationName = $_SESSION['profile']['organization_name'];
@@ -48,7 +48,7 @@ $profile_div = '<header class="nav-header">
                         Society Students
                     </div>
                     <hr>
-                    <a class="logout" href="#"> Log out</a>
+                    <a class="logout" href="' . $_SERVER['DOCUMENT_ROOT'] . '/backend/php/logout.php' . '"> Log out</a>
                 </div>
             </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>

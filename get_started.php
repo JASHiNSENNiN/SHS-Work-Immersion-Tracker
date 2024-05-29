@@ -8,9 +8,9 @@ $host = "localhost";
 $username = $_ENV['MYSQL_USERNAME'];
 $password = $_ENV['MYSQL_PASSWORD'];
 $database = $_ENV['MYSQL_DBNAME'];
-$email = $_SESSION['email'] ?? null;
 
-if ($email) {
+if ($_SESSION['email']) {
+    $email = $_SESSION['email'];
     $conn = new mysqli($host, $username, $password, $database);
 
     if ($conn->connect_error) {
