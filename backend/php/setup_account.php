@@ -1,18 +1,10 @@
 <?php
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
 
 $accountType = $_POST["account-type"];
 
-$email = $_POST["email"];
-$firstName = "";
-$middleName = "";
-$lastName = "";
-$gradeLevel = "";
-$strand = "";
-$schoolName = "";
-$organizationName = "";
-$strandFocus = "";
 $host = "localhost";
 $username = $_ENV['MYSQL_USERNAME'];
 $password = $_ENV['MYSQL_PASSWORD'];
@@ -22,12 +14,13 @@ $conn = new mysqli($host, $username, $password, $database);
 
 
 $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
-$stmt->bind_param("s", $email);
+$stmt->bind_param("s", $_SESSION['email']);
 $stmt->execute();
 $result = $stmt->get_result();
 $userRow = $result->fetch_assoc();
 $user_id = $userRow["id"];
 $stmt->close();
+
 
 switch ($accountType) {
     case "student":
@@ -63,15 +56,15 @@ $conn->close();
 
 switch ($accountType) {
     case "student":
-        $subdomain = "student";
+        $accType = "Student";
         break;
     case "school":
-        $subdomain = "school";
+        $accType = "School";
         break;
     case "organization":
-        $subdomain = "organization";
+        $accType = "Company";
         break;
 }
-$redirectUrl = "http://" . $subdomain . ".workifyph.online";
+$redirectUrl = "https://www.workifyph.online/Account/" . $accType . "/";
 header("Location: " . $redirectUrl);
 exit;

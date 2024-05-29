@@ -32,9 +32,6 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
             $_SESSION['email'] = $google_account_info->email;
             $_SESSION['google_name'] = $google_account_info->name;
             $_SESSION['google_picture'] = $google_account_info->picture;
-
-            header('Location: get_started.php');
-            exit;
         } else {
             exit('Could not retrieve profile information! Please try again later!');
         }

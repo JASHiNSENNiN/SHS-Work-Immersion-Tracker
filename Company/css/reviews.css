@@ -547,6 +547,10 @@ p {
 
 /* -------------------------------reviews ------------------------ */
 
+.globalTargetList li {
+    list-style: none;
+}
+
 #testimonials {
     display: flex;
     justify-content: center;
@@ -579,7 +583,7 @@ p {
 }
 
 .testimonial-box {
-    width: 800px;
+    /* width: 800px; */
     /* box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1); */
     background-color: #ffffff;
     padding: 20px;
@@ -874,7 +878,7 @@ p {
     width: 100%;
 }
 
-.container {
+.container form {
     border-radius: 5px;
     /*   background-color: #f2f2f2; */
     padding: 20px;
@@ -883,6 +887,10 @@ p {
     gap: 10px;
     align-items: flex-end;
     box-sizing: border-box;
+}
+
+.des-feed {
+    padding-left: 20px;
 }
 
 .installer {
@@ -900,7 +908,7 @@ p {
     cursor: pointer;
 }
 
-.installer label input[type="radio"] {
+.installer label input[type="submit"] {
     display: none;
 }
 
@@ -1059,4 +1067,16 @@ textarea {
 .company-card__review {
     margin-left: 18%;
     margin-right: auto;
+}
+
+/* ---------------------------------search not found-------------------------------- */
+
+.globalSearchResultNoFoundFeedback {
+    font-size: 30px;
+    padding: 20px;
+    color: #91a1bb;
+    text-align: center;
+    font-family: inherit;
+    background: #f6f7f9;
+    border-radius: 5px;
 }

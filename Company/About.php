@@ -117,18 +117,24 @@
             </button>
         </a>
 
+        <!----------------------------------------------------feed back--------------------------------------------- -->
+        <div class="des-feed">
+            <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
+            <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+        </div>
         <div class="container">
-            <form action="/action_page.php">
-                <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
-                <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
 
-                <textarea id="subject" name="subject" style="height:200px" required></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1c3d7737-14bc-4bc1-819a-0a5c1c760bc4">
 
+
+                <textarea id="subject" name="message" style="height:200px" required></textarea>
+                <div class="installer">
+                    <label for="progressLinux"><input id="progressLinux" type="submit"><span></span></label>
+                </div>
             </form>
 
-            <div class="installer">
-                <label for="progressLinux"><input id="progressLinux" type="radio"><span></span></label>
-            </div>
+
 
         </div>
         <section>

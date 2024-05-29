@@ -1,69 +1,17 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
-if (isset($_GET['code']) && !empty($_GET['code'])) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
-    (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
-
-    $google_oauth_client_id = $_ENV['AUTH0_CLIENT_ID'];
-    $google_oauth_client_secret = $_ENV['AUTH0_CLIENT_SECRET'];
-    $google_oauth_redirect_uri = $_ENV['AUTH0_REDIRECT_URI'];
-    $google_oauth_version = 'v3';
-
-    $client = new Google_Client();
-    $client->setClientId($google_oauth_client_id);
-    $client->setClientSecret($google_oauth_client_secret);
-    $client->setRedirectUri($google_oauth_redirect_uri);
-    $client->addScope("https://www.googleapis.com/auth/userinfo.email");
-    $client->addScope("https://www.googleapis.com/auth/userinfo.profile");
-
-    $accessToken = $client->fetchAccessTokenWithAuthCode($_GET['code']);
-    $client->setAccessToken($accessToken);
-
-    if (isset($accessToken['access_token']) && !empty($accessToken['access_token'])) {
-        $google_oauth = new Google_Service_Oauth2($client);
-        $google_account_info = $google_oauth->userinfo->get();
-
-        if (isset($google_account_info->email)) {
-
-            session_regenerate_id();
-            $_SESSION['email'] = $google_account_info->email;
-            $_SESSION['name'] = $google_account_info->name;
-            $_SESSION['google_picture'] = $google_account_info->picture;
-
-            if (!checkDuplicateEmail()) {
-                $host = "localhost";
-                $username = $_ENV['MYSQL_USERNAME'];
-                $password = $_ENV['MYSQL_PASSWORD'];
-                $database = $_ENV['MYSQL_DBNAME'];
-
-                $conn = new mysqli($host, $username, $password, $database);
-
-                $stmt = $conn->prepare("INSERT INTO users (email) VALUES (?)");
-                $stmt->bind_param("s", $_SESSION['email']);
-                $stmt->execute();
-
-                $stmt->close();
-                $conn->close();
-            }
-        }
-    } else {
-        $authUrl = $client->createAuthUrl();
-        header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
-        exit;
-    }
-}
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <script>
-        window.onload = function() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', '/backend/php/ajax/checkAccType.php', true);
-            xhr.send();
-        };
+    window.onload = function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/backend/php/ajax/checkAccType.php', true);
+        xhr.send();
+    };
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,15 +26,17 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     <script src="/backend/js/register.js"></script>
     <script src="/js/get_start_log.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 </head>
 
 <body>
     <noscript>
         <style>
-            html {
-                display: none;
-            }
+        html {
+            display: none;
+        }
         </style>
         <meta http-equiv="refresh" content="0.0;url=https://www.workifyph.online/message.php">
     </noscript>
@@ -108,9 +58,12 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                     <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
                     <div class="form-container">
-                        <form id="setupForm" action="/backend/php/setup_account.php" method="POST" onsubmit="return validateSetupForm()">
+                        <form id="setupForm" action="/backend/php/setup_account.php" method="POST"
+                            onsubmit="return validateSetupForm()">
 
-                            <input type="text" for="email" name="email" id="email" placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>" disabled>
+                            <input type="text" for="email" name="email" id="email"
+                                placeholder="<?php echo $_SESSION['email'] ?>" disabled>
+                            <input type="hidden" name="email" id="email" value="<?php echo $_SESSION['email'] ?>">
                             <select id="account-type" name="account-type" onchange="toggleFields()" required>
                                 <option value="" selected disabled hidden class="null-type">Account Type:</option>
                                 <option value="student">Student</option>
@@ -119,7 +72,8 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                             </select>
                             <div id="student-fields" style="display: none;">
                                 <input value="" type="text" placeholder="First Name" id="first-name" name="first-name">
-                                <input value="" type="text" placeholder="Middle Name" id="middle-name" name="middle-name">
+                                <input value="" type="text" placeholder="Middle Name" id="middle-name"
+                                    name="middle-name">
                                 <input value="" type="text" placeholder="Last Name" id="last-name" name="last-name">
                                 <select name="grade-level" id="grade-level">
                                     <option value class="null-type">Grade Level:</option>
@@ -136,10 +90,12 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                                 </select>
                             </div>
                             <div id="school-fields" style="display: none;">
-                                <input value="" type="text" placeholder="School Name" id="school-name" name="school-name">
+                                <input value="" type="text" placeholder="School Name" id="school-name"
+                                    name="school-name">
                             </div>
                             <div id="partner-fields" style="display: none;">
-                                <input value="" type="text" placeholder="Organization Name" id="organization-name" name="organization-name">
+                                <input value="" type="text" placeholder="Organization Name" id="organization-name"
+                                    name="organization-name">
                                 <select name="strand-focus" id="strand-focus">
                                     <option value="" selected disabled hidden class="null-type">Strand:</option>
                                     <option value="stem">STEM</option>
@@ -158,7 +114,9 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                                 <button class="btn-new" style="right: 177px;" type="submit">
                                     <p>Submit</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="3-Arrow Right" />
+                                        <path
+                                            d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                                            data-name="3-Arrow Right" />
                                     </svg>
                                 </button>
 
@@ -177,34 +135,34 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     </div>
 </body>
 <script>
-    function toggleFields() {
-        var accountType = document.getElementById("account-type").value;
-        var studentFields = document.getElementById("student-fields");
-        var schoolFields = document.getElementById("school-fields");
-        var partnerFields = document.getElementById("partner-fields");
-        var registerForm = document.getElementById("register-form");
+function toggleFields() {
+    var accountType = document.getElementById("account-type").value;
+    var studentFields = document.getElementById("student-fields");
+    var schoolFields = document.getElementById("school-fields");
+    var partnerFields = document.getElementById("partner-fields");
+    var registerForm = document.getElementById("register-form");
 
-        if (accountType === "student") {
-            registerForm.style.paddingTop = "25%";
-            studentFields.style.display = "block";
-            schoolFields.style.display = "none";
-            partnerFields.style.display = "none";
-        } else if (accountType === "school") {
-            registerForm.style.paddingTop = "10%";
-            studentFields.style.display = "none";
-            schoolFields.style.display = "block";
-            partnerFields.style.display = "none";
-        } else if (accountType === "organization") {
-            registerForm.style.paddingTop = "10%";
-            studentFields.style.display = "none";
-            schoolFields.style.display = "none";
-            partnerFields.style.display = "block";
-        } else {
-            studentFields.style.display = "none";
-            schoolFields.style.display = "none";
-            partnerFields.style.display = "none";
-        }
+    if (accountType === "student") {
+        registerForm.style.paddingTop = "25%";
+        studentFields.style.display = "block";
+        schoolFields.style.display = "none";
+        partnerFields.style.display = "none";
+    } else if (accountType === "school") {
+        registerForm.style.paddingTop = "10%";
+        studentFields.style.display = "none";
+        schoolFields.style.display = "block";
+        partnerFields.style.display = "none";
+    } else if (accountType === "organization") {
+        registerForm.style.paddingTop = "10%";
+        studentFields.style.display = "none";
+        schoolFields.style.display = "none";
+        partnerFields.style.display = "block";
+    } else {
+        studentFields.style.display = "none";
+        schoolFields.style.display = "none";
+        partnerFields.style.display = "none";
     }
+}
 </script>
 
 </html>
