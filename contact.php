@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -79,6 +80,7 @@
                 <p>Thank you for considering Workify for your work immersion. We are committed to providing a valuable
                     and informative experience to all our applicants. Please feel free to contact us if you have any
                     questions or would like to learn more about our website.</p>
+
                 <form onsubmit="sendEmail(); reset(); return false " autocomplete="off">
                     <div class="input-box">
                         <input pattern="[A-Za-z]{3,10}" minlength="3" maxlength="10" oninvalid="setCustomValidity('Please enter on alphabets only. ')" type="text" id="name" placeholder="Enter your name" required>
@@ -110,11 +112,12 @@
 <script>
     document.getElementById("currentDate").innerHTML = new Date().getFullYear();
 </script>
+
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendEmail() {
         Email.send({
-            SecureToken: "4e632808-d279-430d-95be-3160ff33cdc7",
+            SecureToken: " ccc8d462-e9a3-46a2-836e-4643b6dbfff1",
             To: "aldeakel27@gmail.com",
             From: document.getElementById("email").value,
             Subject: "New Contact Form Enquiry",
