@@ -38,9 +38,4 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     } else {
         exit('Invalid access token! Please try again later!');
     }
-} else {
-
-    $authUrl = $client->createAuthUrl();
-    header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
-    exit;
 }
