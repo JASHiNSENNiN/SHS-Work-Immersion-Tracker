@@ -1,58 +1,6 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
-if (isset($_GET['code']) && !empty($_GET['code'])) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
-    (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
-
-    $google_oauth_client_id = $_ENV['AUTH0_CLIENT_ID'];
-    $google_oauth_client_secret = $_ENV['AUTH0_CLIENT_SECRET'];
-    $google_oauth_redirect_uri = $_ENV['AUTH0_REDIRECT_URI'];
-    $google_oauth_version = 'v3';
-
-    $client = new Google_Client();
-    $client->setClientId($google_oauth_client_id);
-    $client->setClientSecret($google_oauth_client_secret);
-    $client->setRedirectUri($google_oauth_redirect_uri);
-    $client->addScope("https://www.googleapis.com/auth/userinfo.email");
-    $client->addScope("https://www.googleapis.com/auth/userinfo.profile");
-
-    $accessToken = $client->fetchAccessTokenWithAuthCode($_GET['code']);
-    $client->setAccessToken($accessToken);
-
-    if (isset($accessToken['access_token']) && !empty($accessToken['access_token'])) {
-        $google_oauth = new Google_Service_Oauth2($client);
-        $google_account_info = $google_oauth->userinfo->get();
-
-        if (isset($google_account_info->email)) {
-
-            session_regenerate_id();
-            $_SESSION['email'] = $google_account_info->email;
-            $_SESSION['name'] = $google_account_info->name;
-            $_SESSION['google_picture'] = $google_account_info->picture;
-
-            if (!checkDuplicateEmail()) {
-                $host = "localhost";
-                $username = $_ENV['MYSQL_USERNAME'];
-                $password = $_ENV['MYSQL_PASSWORD'];
-                $database = $_ENV['MYSQL_DBNAME'];
-
-                $conn = new mysqli($host, $username, $password, $database);
-
-                $stmt = $conn->prepare("INSERT INTO users (email) VALUES (?)");
-                $stmt->bind_param("s", $_SESSION['email']);
-                $stmt->execute();
-
-                $stmt->close();
-                $conn->close();
-            }
-        }
-    } else {
-        $authUrl = $client->createAuthUrl();
-        header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
-        exit;
-    }
-}
+require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/0auth_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
