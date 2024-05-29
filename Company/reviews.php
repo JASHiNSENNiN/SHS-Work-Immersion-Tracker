@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -19,7 +20,7 @@
 
     <header class="nav-header">
         <div class="logo">
-            <a href="index.php">
+            <a href="../index.php">
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
@@ -59,7 +60,7 @@
 
         <div class="Settings">
             <label for="input-file2" class="button-12" role="button">Follow </label>
-            <a href="../login.php"></a><label for="input-file2" class="button-13" role="button">Write a review </label>
+            <a href="../login.php"><label for="input-file2" class="button-13" role="button">Write a review </label></a>
         </div>
 
     </div><br>
@@ -91,47 +92,48 @@
 
                         <div class="search-container">
                             <button type="submit"><i class="fas fa-search"></i></button>
-                            <input type="text" placeholder="Work Immersion title">
+                            <input class="globalInputSearch" type="text" placeholder="Work Immersion title">
 
                         </div>
                         <div class="search-container" style="border-left: 1px solid grey">
                             <button type="submit"><i class="fas fa-map-marker-alt"></i></button>
-                            <input type="text" placeholder="Location">
+                            <input class="globalInputSearch" type="text" placeholder="Location">
 
                         </div>
 
-                        <input class="sub-btn" type="submit" value="Search" href="">
+                        <!-- <input class="sub-btn" type="submit" value="Search" href=""> -->
                 </div>
                 </form>
             </div>
             <!--heading--->
             <div class="testimonial-heading">
-                <span>3 Reviews found</span>
+                <!-- <span>3 Reviews found</span> -->
 
             </div>
             <!--testimonials-box-container------>
             <div class="testimonial-box-container">
-                <!--BOX-1-------------->
+                <ul class="globalTargetList">
+                    <!--BOX-1-------------->
+                    <li>
+                        <div class="testimonial-box">
+                            <!--top------------------------->
 
-                <div class="testimonial-box">
-                    <!--top------------------------->
+                            <div class="box-top">
+                                <!--profile----->
+                                <div class="profile">
 
-                    <div class="box-top">
-                        <!--profile----->
-                        <div class="profile">
-
-                            <!--img---->
-                            <!-- <div class="profile-img">
+                                    <!--img---->
+                                    <!-- <div class="profile-img">
                                     <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
                                 </div> -->
-                            <!--name-and-username-->
-                            <div class="name-user">
-                                <a href="#"><strong>Productive and more learning</strong></a>
-                                <span>Quezon Province - September 9, 2020</span>
-                            </div>
-                        </div>
-                        <!--reviews------>
-                        <!-- <div class="reviews">
+                                    <!--name-and-username-->
+                                    <div class="name-user">
+                                        <a href="#"><strong>Productive and more learning</strong></a>
+                                        <span>Quezon Province - September 9, 2020</span>
+                                    </div>
+                                </div>
+                                <!--reviews------>
+                                <!-- <div class="reviews">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -139,113 +141,120 @@
                                 <i class="far fa-star"></i>
                             </div> -->
 
-                    </div>
-                    <span class="css-15r9gu1 ">Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project </span>
-                    <br><br>
-                    <div class="css-eyjn56 ">Was this review helpful?</div>
-                    <!--Comments---------------------------------------->
-                    <div class="client-comment">
+                            </div>
+                            <span class="css-15r9gu1 ">Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project </span>
+                            <br><br>
+                            <div class="css-eyjn56 ">Was this review helpful?</div>
+                            <!--Comments---------------------------------------->
+                            <div class="client-comment">
 
-                        <input class="sub-btn" type="submit" value="Yes">
-                        <input class="sub-btn" type="submit" value="No">
-                        <button class="reportBtn">
-                            <span class="IconContainer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
-                                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
-                                </svg>
-                            </span>
-                            <p class="text-Report">Report</p>
-                        </button>
-                        <!-- <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p> -->
-                    </div>
-                </div>
-                <!--BOX-2-------------->
-                <div class="testimonial-box">
-                    <!--top------------------------->
-                    <div class="box-top">
-                        <!--profile----->
-                        <div class="profile">
-                            <!--img---->
-                            <!-- <div class="profile-img">
-                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
-                                </div> -->
-                            <!--name-and-username-->
-                            <div class="name-user">
-                                <strong>Has a good relationship with the member and a excellent work</strong>
-                                <span>Marawi - September 9, 2020</span>
+                                <input class="sub-btn" type="submit" value="Yes">
+                                <input class="sub-btn" type="submit" value="No">
+                                <button class="reportBtn">
+                                    <span class="IconContainer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-Report">Report</p>
+                                </button>
+                                <!-- <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p> -->
                             </div>
                         </div>
-                        <!--reviews------>
-                        <!--                     <div class="reviews">
+                    </li>
+                    <li>
+                        <!--BOX-2-------------->
+                        <div class="testimonial-box">
+                            <!--top------------------------->
+                            <div class="box-top">
+                                <!--profile----->
+                                <div class="profile">
+                                    <!--img---->
+                                    <!-- <div class="profile-img">
+                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
+                                </div> -->
+                                    <!--name-and-username-->
+                                    <div class="name-user">
+                                        <strong>Has a good relationship with the member and a excellent work</strong>
+                                        <span>Marawi - September 9, 2020</span>
+                                    </div>
+                                </div>
+                                <!--reviews------>
+                                <!--                     <div class="reviews">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div> -->
-                    </div>
-                    <span class="css-15r9gu1 ">Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</span>
-                    <br><br>
-                    <div class="css-eyjn56 ">Was this review helpful?</div>
-                    <!--Comments---------------------------------------->
-                    <div class="client-comment">
-                        <a href="#"><input class="sub-btn" type="submit" value="Yes"></a>
-                        <a href="#"><input class="sub-btn" type="submit" value="No"></a><button class="reportBtn">
-                            <span class="IconContainer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
-                                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
-                                </svg>
-                            </span>
-                            <p class="text-Report">Report</p>
-                        </button>
-                        <!-- <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project.</p> -->
-                    </div>
-                </div>
-                <!--BOX-3-------------->
-                <div class="testimonial-box">
-                    <!--top------------------------->
-                    <div class="box-top">
-                        <!--profile----->
-                        <div class="profile">
-                            <!--img---->
-                            <!-- <div class="profile-img">
-                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
-                                </div> -->
-                            <!--name-and-username-->
-                            <div class="name-user">
-                                <strong>Productive and fun to work with</strong>
-                                <span>Zamboanga Sibugay - May 31, 2020</span>
+                            </div>
+                            <span class="css-15r9gu1 ">Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</span>
+                            <br><br>
+                            <div class="css-eyjn56 ">Was this review helpful?</div>
+                            <!--Comments---------------------------------------->
+                            <div class="client-comment">
+                                <a href="#"><input class="sub-btn" type="submit" value="Yes"></a>
+                                <a href="#"><input class="sub-btn" type="submit" value="No"></a><button class="reportBtn">
+                                    <span class="IconContainer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-Report">Report</p>
+                                </button>
+                                <!-- <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project.</p> -->
                             </div>
                         </div>
-                        <!--reviews------>
-                        <!--                     <div class="reviews">
+                    </li>
+                    <li>
+                        <!--BOX-3-------------->
+                        <div class="testimonial-box">
+                            <!--top------------------------->
+                            <div class="box-top">
+                                <!--profile----->
+                                <div class="profile">
+                                    <!--img---->
+                                    <!-- <div class="profile-img">
+                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
+                                </div> -->
+                                    <!--name-and-username-->
+                                    <div class="name-user">
+                                        <strong>Productive and fun to work with</strong>
+                                        <span>Zamboanga Sibugay - May 31, 2020</span>
+                                    </div>
+                                </div>
+                                <!--reviews------>
+                                <!--                     <div class="reviews">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div> -->
-                    </div>
-                    <span class="css-15r9gu1 ">National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</span>
-                    <br><br>
-                    <div class="css-eyjn56 ">Was this review helpful?</div>
-                    <!--Comments---------------------------------------->
-                    <div class="client-comment">
-                        <a href="#"><input class="sub-btn" type="submit" value="Yes"></a>
-                        <a href="#"><input class="sub-btn" type="submit" value="No"></a>
-                        <button class="reportBtn">
-                            <span class="IconContainer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
-                                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
-                                </svg>
-                            </span>
-                            <p class="text-Report">Report</p>
-                        </button>
-                        <!-- <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p> -->
-                    </div>
-                </div>
+                            </div>
+                            <span class="css-15r9gu1 ">National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</span>
+                            <br><br>
+                            <div class="css-eyjn56 ">Was this review helpful?</div>
+                            <!--Comments---------------------------------------->
+                            <div class="client-comment">
+                                <a href="#"><input class="sub-btn" type="submit" value="Yes"></a>
+                                <a href="#"><input class="sub-btn" type="submit" value="No"></a>
+                                <button class="reportBtn">
+                                    <span class="IconContainer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-Report">Report</p>
+                                </button>
+                                <!-- <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p> -->
+                            </div>
+                        </div>
+                    </li>
 
-
+                </ul>
+                <!-- feedback -->
+                <div class="globalSearchResultNoFoundFeedback" aria-live="polite"> Search nothing found</div>
             </div>
 
         </section>
@@ -316,6 +325,7 @@
             }
         </script>
         <script src="chart.js"></script>
+        <script src="filter-work-immersion-list.js"></script>
 </body>
 
 </html>

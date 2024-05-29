@@ -547,6 +547,10 @@ p {
 
 /* -------------------------------reviews ------------------------ */
 
+.globalTargetList li {
+    list-style: none;
+}
+
 #testimonials {
     display: flex;
     justify-content: center;
@@ -579,7 +583,7 @@ p {
 }
 
 .testimonial-box {
-    width: 800px;
+    /* width: 800px; */
     /* box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1); */
     background-color: #ffffff;
     padding: 20px;
@@ -1063,4 +1067,16 @@ textarea {
 .company-card__review {
     margin-left: 18%;
     margin-right: auto;
+}
+
+/* ---------------------------------search not found-------------------------------- */
+
+.globalSearchResultNoFoundFeedback {
+    font-size: 30px;
+    padding: 20px;
+    color: #91a1bb;
+    text-align: center;
+    font-family: inherit;
+    background: #f6f7f9;
+    border-radius: 5px;
 }

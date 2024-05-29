@@ -21,7 +21,7 @@
 
     <header class="nav-header">
         <div class="logo">
-            <a href="index.php">
+            <a href="../index.php">
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
@@ -98,11 +98,11 @@
                     </div>
                     <div class="search-container" style="border-left: 1px solid grey">
                         <button type="submit"><i class="fas fa-map-marker-alt"></i></button>
-                        <input class="loc-input-text" type="text" placeholder="Search location">
+                        <input class="loc-input-text globalInputSearch" type="text" placeholder="Search location">
 
                     </div>
 
-                    <input class="sub-btn" type="submit" value="Find Now" href="">
+                    <!-- <input class="sub-btn" type="submit" value="Find Now" href=""> -->
             </div>
             </form>
         </div>
@@ -110,78 +110,44 @@
     </section>
     <!-- ------------------------------------------------------Job list------------------------------>
     <div class="main-container">
-        <div class="search-type">
-            <div class="job-time">
-                <div class="job-time-title">Type of Employment</div>
-                <div class="job-wrapper">
-                    <div class="type-container">
-                        <input type="checkbox" id="job1" class="job-style" checked>
-                        <label for="job1">Full Time Jobs</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job2" class="job-style">
-                        <label for="job2">Part Time Jobs</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job3" class="job-style">
-                        <label for="job3">Remote Jobs</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job4" class="job-style">
-                        <label for="job4">Internship Jobs</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job5" class="job-style">
-                        <label for="job5">Contract</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job6" class="job-style">
-                        <label for="job6">Training Jobs</label>
-                        <span class="job-number">0</span>
-                    </div>
-                </div>
-            </div>
-            <div class="job-time">
-                <div class="job-time-title">Seniority Level</div>
-                <div class="job-wrapper">
-                    <div class="type-container">
-                        <input type="checkbox" id="job7" class="job-style">
-                        <label for="job7">Student Level</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job8" class="job-style">
-                        <label for="job8">Entry Level</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job9" class="job-style" checked>
-                        <label for="job9">Mid Level</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job10" class="job-style" checked>
-                        <label for="job10">Senior Level</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job11" class="job-style">
-                        <label for="job11">Directors</label>
-                        <span class="job-number">0</span>
-                    </div>
-                    <div class="type-container">
-                        <input type="checkbox" id="job12" class="job-style">
-                        <label for="job12">VP or Above</label>
-                        <span class="job-number">0</span>
+        <!-- <div class="search-type">
+                <div class="job-time">
+                    <div class="job-time-title">Type of Employment</div>
+                    <div class="job-wrapper">
+                        <div class="type-container">
+                            <input type="checkbox" id="job1" class="job-style">
+                            <label for="job1">Full Time Jobs</label>
+                            <span class="job-number">0</span>
+                        </div>
+                        <div class="type-container">
+                            <input type="checkbox" id="job2" class="job-style">
+                            <label for="job2">Part Time Jobs</label>
+                            <span class="job-number">0</span>
+                        </div>
+                        <div class="type-container">
+                            <input type="checkbox" id="job3" class="job-style">
+                            <label for="job3">Remote Jobs</label>
+                            <span class="job-number">0</span>
+                        </div>
+                        <div class="type-container">
+                            <input type="checkbox" id="job4" class="job-style">
+                            <label for="job4">Internship Jobs</label>
+                            <span class="job-number">0</span>
+                        </div>
+                        <div class="type-container">
+                            <input type="checkbox" id="job5" class="job-style">
+                            <label for="job5">Contract</label>
+                            <span class="job-number">0</span>
+                        </div>
+                        <div class="type-container">
+                            <input type="checkbox" id="job6" class="job-style">
+                            <label for="job6">Training Jobs</label>
+                            <span class="job-number">0</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+            </div> -->
         <!-- <div class="searched-bar">
                 <div class="searched-show">Showing 46 Jobs</div>
             </div> -->
@@ -197,12 +163,51 @@
                                 <div class="menu-dot"></div>
                             </div>
                             <div class="job-card-title">
-                                <h2><span>Work Immerion</span></h2>
+                                <h2><span>Work Immersion</span></h2>
                             </div>
 
                             <div class="loc-com">
                                 <div class="job-card-title-company">King Emerald Collection Service</div>
                                 <div class="job-card-title-location">Pasig</div>
+                            </div>
+
+                            <div class="job-detail-buttons">
+                                <button class="search-buttons detail-button">Full Time</button>
+                                <button class="search-buttons detail-button">Min. 1 Year</button>
+                                <button class="search-buttons detail-button">Senior Level</button>
+                            </div>
+
+                            <div class="job-card-subtitle">
+                                <ul>
+                                    <li>College Students taking up Computer and Business courses with On the Job training requirements are also encouraged to join. (with allowance)</li>
+                                    <li>Computer literate</li>
+                                    <li>Knowledgeable in Microsoft Office tools</li>
+                                    <li>Critical thinker /Tech Savvy</li>
+                                </ul>
+
+                            </div>
+
+                            <span class="css-1f21ew ">Posted 7 minutes ago</span>
+
+
+                            <div class="job-card-buttons">
+                                <button class="search-buttons card-buttons" id="btnApply">Details</button>
+                                <button class="search-buttons card-buttons-msg">Save</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="job-card">
+                            <div class="job-card-header">
+
+                                <div class="menu-dot"></div>
+                            </div>
+                            <div class="job-card-title">
+                                <h2><span>Work Immersion</span></h2>
+                            </div>
+                            <div class="loc-com">
+                                <div class="job-card-title-company">Besco Clark Philippines Group of Companies Corporation</div>
+                                <div class="job-card-title-location">Quezon</div>
                             </div>
 
                             <div class="job-detail-buttons">
@@ -237,11 +242,11 @@
                                 <div class="menu-dot"></div>
                             </div>
                             <div class="job-card-title">
-                                <h2><span>Work Immerion</span></h2>
+                                <h2><span>Work Immersion</span></h2>
                             </div>
                             <div class="loc-com">
-                                <div class="job-card-title-company">King Emerald Collection Service</div>
-                                <div class="job-card-title-location">Pasig</div>
+                                <div class="job-card-title-company">Aspen Philippines Inc.</div>
+                                <div class="job-card-title-location">Nueva Ecija</div>
                             </div>
 
                             <div class="job-detail-buttons">
@@ -276,50 +281,11 @@
                                 <div class="menu-dot"></div>
                             </div>
                             <div class="job-card-title">
-                                <h2><span>Work Immerion</span></h2>
+                                <h2><span>Work Immersion</span></h2>
                             </div>
                             <div class="loc-com">
-                                <div class="job-card-title-company">King Emerald Collection Service</div>
-                                <div class="job-card-title-location">Pasig</div>
-                            </div>
-
-                            <div class="job-detail-buttons">
-                                <button class="search-buttons detail-button">Full Time</button>
-                                <button class="search-buttons detail-button">Min. 1 Year</button>
-                                <button class="search-buttons detail-button">Senior Level</button>
-                            </div>
-
-                            <div class="job-card-subtitle">
-                                <ul>
-                                    <li>College Students taking up Computer and Business courses with On the Job training requirements are also encouraged to join. (with allowance)</li>
-                                    <li>Computer literate</li>
-                                    <li>Knowledgeable in Microsoft Office tools</li>
-                                    <li>Critical thinker /Tech Savvy</li>
-                                </ul>
-
-                            </div>
-
-                            <span data-testid="myJobsState" class="css-1f21ew eu4oa1w0">Posted 7 minutes ago</span>
-
-
-                            <div class="job-card-buttons">
-                                <button class="search-buttons card-buttons" id="btnApply">Details</button>
-                                <button class="search-buttons card-buttons-msg">Save</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="job-card">
-                            <div class="job-card-header">
-
-                                <div class="menu-dot"></div>
-                            </div>
-                            <div class="job-card-title">
-                                <h2><span>Work Immerion</span></h2>
-                            </div>
-                            <div class="loc-com">
-                                <div class="job-card-title-company">King Emerald Collection Service</div>
-                                <div class="job-card-title-location">Pasig</div>
+                                <div class="job-card-title-company">SBS Philippines Corporation</div>
+                                <div class="job-card-title-location">Makati</div>
                             </div>
 
                             <div class="job-detail-buttons">
@@ -354,6 +320,7 @@
             <div class="globalSearchResultNoFoundFeedback" aria-live="polite"> Search nothing found</div>
         </div>
     </div>
+
 
     <!-- ----------------------modal job list ----------------------- -->
     <div id="myModal" class="modal">

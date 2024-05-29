@@ -20,7 +20,7 @@
 
     <header class="nav-header">
         <div class="logo">
-            <a href="index.php">
+            <a href="../index.php">
                 <img src="https://i.postimg.cc/bwCDv2SH/logov3.jpg" alt="Logo">
             </a>
             <nav class="dash-middle">
@@ -123,22 +123,22 @@
                 <!-- <span style="color: #595959;">Search Questions</span> -->
                 <div class="line-search">
 
-                    <div class="searchwork">
+                    <!-- <div class="searchwork"> -->
 
-                        <form class="form-search" action="#" method="get">
+                    <form class="form-search" action="#" method="get">
 
-                            <div class="search-container">
-                                <button type="submit"><i class="fas fa-search"></i></button>
-                                <input class="txt-btn" type="text" placeholder="search keywords">
+                        <div class="search-container">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input class="txt-btn globalInputSearch" type="text" placeholder="search keywords">
 
-                            </div>
+                        </div>
 
 
 
-                        </form>
+                    </form>
 
-                    </div>
-                    <input class="sub-btn" type="submit" value="Search">
+                    <!-- </div> -->
+                    <!-- <input class="sub-btn" type="submit" value="Search"> -->
                 </div>
 
 
@@ -152,110 +152,118 @@
                 </div>
                 <!--testimonials-box-container------>
                 <div class="testimonial-box-container">
-                    <!--BOX-1-------------->
-                    <div class="testimonial-box">
-                        <!--top------------------------->
-                        <div class="box-top">
-                            <!--profile----->
-                            <div class="profile">
-                                <!--img---->
-                                <!-- <div class="profile-img">
+                    <ul class="globalTargetList">
+                        <li>
+                            <!--BOX-1-------------->
+                            <div class="testimonial-box">
+                                <!--top------------------------->
+                                <div class="box-top">
+                                    <!--profile----->
+                                    <div class="profile">
+                                        <!--img---->
+                                        <!-- <div class="profile-img">
                                     <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
                                 </div> -->
-                                <!--name-and-username-->
-                                <div class="name-user">
-                                    <a href="faq.php"><strong>What is covered by the life insurance at NATIONAL
-                                            IRRIGATION ADMINISTRATION (NIA)?</strong></a>
-                                    <span>on September 15, 2023</span>
-                                </div>
-                            </div>
-                            <!--reviews------>
-                            <!-- <div class="reviews">
+                                        <!--name-and-username-->
+                                        <div class="name-user">
+                                            <a href="faq.php"><strong>What is covered by the life insurance at NATIONAL
+                                                    IRRIGATION ADMINISTRATION (NIA)?</strong></a>
+                                            <span>on September 15, 2023</span>
+                                        </div>
+                                    </div>
+                                    <!--reviews------>
+                                    <!-- <div class="reviews">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
                             </div> -->
-                        </div>
-                        <!--Comments---------------------------------------->
-                        <div class="client-comment">
-                            <a href="faq.php"><input class="sub-btn" type="submit" value="Answer"></a>
-                            <a class="css-2jfdql" href="faq.php"> See 1 answer<svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="css-g5h3rj eac13zx0">
-                                    <path d="M9.888 5.998a.506.506 0 00-.716-.008l-.707.707a.506.506 0 00.01.716L13.06 12l-4.587 4.587c-.2.2-.204.521-.009.716l.707.707a.507.507 0 00.717-.009l5.647-5.648c.1-.1.148-.233.144-.366a.492.492 0 00-.144-.34v-.001a.611.611 0 00-.009-.009L9.888 5.998z">
-                                    </path>
-                                </svg></a>
-                            <!-- <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p> -->
-                        </div>
-                    </div>
-                    <!--BOX-2-------------->
-                    <div class="testimonial-box">
-                        <!--top------------------------->
-                        <div class="box-top">
-                            <!--profile----->
-                            <div class="profile">
-                                <!--img---->
-                                <!-- <div class="profile-img">
-                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
-                                </div> -->
-                                <!--name-and-username-->
-                                <div class="name-user">
-                                    <a><strong>How long do you have to work at NATIONAL IRRIGATION ADMINISTRATION (NIA)
-                                            before you can go on maternity leave?</strong></a>
-                                    <span>on September 9, 2020</span>
+                                </div>
+                                <!--Comments---------------------------------------->
+                                <div class="client-comment">
+                                    <a href="faq.php"><input class="sub-btn" type="submit" value="Answer"></a>
+                                    <a class="css-2jfdql" href="faq.php"> See 1 answer<svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="css-g5h3rj eac13zx0">
+                                            <path d="M9.888 5.998a.506.506 0 00-.716-.008l-.707.707a.506.506 0 00.01.716L13.06 12l-4.587 4.587c-.2.2-.204.521-.009.716l.707.707a.507.507 0 00.717-.009l5.647-5.648c.1-.1.148-.233.144-.366a.492.492 0 00-.144-.34v-.001a.611.611 0 00-.009-.009L9.888 5.998z">
+                                            </path>
+                                        </svg></a>
+                                    <!-- <p>Working on this company is a good experience it is because it is related to the course I've taken in college as a Bachelor of Science and Social Work also the company memmber is a hard worker ang responsible for their work in the company. Other than that our relationship as a member of the company is good as we can united at the problem we are facing .</p> -->
                                 </div>
                             </div>
-                            <!--reviews------>
-                            <!--                     <div class="reviews">
+                        </li>
+                        <li>
+                            <!--BOX-2-------------->
+                            <div class="testimonial-box">
+                                <!--top------------------------->
+                                <div class="box-top">
+                                    <!--profile----->
+                                    <div class="profile">
+                                        <!--img---->
+                                        <!-- <div class="profile-img">
+                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
+                                </div> -->
+                                        <!--name-and-username-->
+                                        <div class="name-user">
+                                            <a><strong>How long do you have to work at NATIONAL IRRIGATION ADMINISTRATION (NIA)
+                                                    before you can go on maternity leave?</strong></a>
+                                            <span>on September 9, 2020</span>
+                                        </div>
+                                    </div>
+                                    <!--reviews------>
+                                    <!--                     <div class="reviews">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div> -->
-                        </div>
-                        <!--Comments---------------------------------------->
-                        <div class="client-comment">
-                            <a><input class="sub-btn" type="submit" value="Answer"></a>
-                            <div class="css-3pliee eu4oa1w0">Be the first to answer!</div>
-                            <!-- <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project.</p> -->
-                        </div>
-                    </div>
-                    <!--BOX-3-------------->
-                    <div class="testimonial-box">
-                        <!--top------------------------->
-                        <div class="box-top">
-                            <!--profile----->
-                            <div class="profile">
-                                <!--img---->
-                                <!-- <div class="profile-img">
-                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
-                                </div> -->
-                                <!--name-and-username-->
-                                <div class="name-user">
-                                    <a><strong>What benefits does NATIONAL IRRIGATION ADMINISTRATION (NIA)
-                                            offer?</strong></a>
-                                    <span>on May 31, 2020</span>
+                                </div>
+                                <!--Comments---------------------------------------->
+                                <div class="client-comment">
+                                    <a><input class="sub-btn" type="submit" value="Answer"></a>
+                                    <div class="css-3pliee eu4oa1w0">Be the first to answer!</div>
+                                    <!-- <p>Good in cooperation and research study you will learned to coordinate in the Lgu and other government agencies in the feasibility study sometimes they challenge you to finish investigate the subject area for the proposed irrigation project.</p> -->
                                 </div>
                             </div>
-                            <!--reviews------>
-                            <!--                     <div class="reviews">
+                        </li>
+                        <li>
+                            <!--BOX-3-------------->
+                            <div class="testimonial-box">
+                                <!--top------------------------->
+                                <div class="box-top">
+                                    <!--profile----->
+                                    <div class="profile">
+                                        <!--img---->
+                                        <!-- <div class="profile-img">
+                                    <img src="https://i.postimg.cc/638DNCV2/profile.jpg" />
+                                </div> -->
+                                        <!--name-and-username-->
+                                        <div class="name-user">
+                                            <a><strong>What benefits does NATIONAL IRRIGATION ADMINISTRATION (NIA)
+                                                    offer?</strong></a>
+                                            <span>on May 31, 2020</span>
+                                        </div>
+                                    </div>
+                                    <!--reviews------>
+                                    <!--                     <div class="reviews">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div> -->
-                        </div>
-                        <!--Comments---------------------------------------->
-                        <div class="client-comment">
-                            <a><input class="sub-btn" type="submit" value="Answer"></a>
-                            <div class="css-3pliee eu4oa1w0">Be the first to answer!</div>
-                            <!-- <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p> -->
-                        </div>
-                    </div>
+                                </div>
+                                <!--Comments---------------------------------------->
+                                <div class="client-comment">
+                                    <a><input class="sub-btn" type="submit" value="Answer"></a>
+                                    <div class="css-3pliee eu4oa1w0">Be the first to answer!</div>
+                                    <!-- <p>National Irirgation Administration is a good environment to work in. The agency has very supportive heads and employees willing to work an extra mile for the benefit of the Filipino farmers.</p> -->
+                                </div>
+                            </div>
+                        </li>
 
-
+                    </ul>
+                    <div class="globalSearchResultNoFoundFeedback" aria-live="polite"> Search nothing found</div>
                 </div>
             </section>
         </div>
@@ -311,7 +319,7 @@
         <!-- -------------------------------------------search comqany------------------------------------- -->
         <section class="search-find-com">
             <h3 style="color: #2d2d2d;">Find another company</h3>
-            <div class="line-search">
+            <div class="line-search-com">
 
                 <div class="searchwork">
 
@@ -344,6 +352,7 @@
 
     <script src="questions.js"></script>
     <script src="chart.js"></script>
+    <script src="filter-work-immersion-list.js"></script>
 
 </body>
 

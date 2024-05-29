@@ -831,6 +831,19 @@ svg g[show_data] {
   padding: 5px;
   border-radius: 10px;
   background-color: #fff;
+  /* display: grid; */
+  /* grid-template-columns: 80% auto; */
+  /* gap: 10px; */
+  /* align-items: flex-end; */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.line-search-com {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
   display: grid;
   grid-template-columns: 80% auto;
   gap: 10px;
@@ -1039,6 +1052,10 @@ textarea {
 }
 
 /* --------------------------------------ask a question ------------------------------------ */
+
+.globalTargetList li {
+  list-style: none;
+}
 
 .guid-btn[type="submit"] {
   background-color: #fff;
@@ -1305,4 +1322,16 @@ textarea {
 .company-card__review {
   margin-left: 18%;
   margin-right: auto;
+}
+
+/* ---------------------------------search not found-------------------------------- */
+
+.globalSearchResultNoFoundFeedback {
+  font-size: 30px;
+  padding: 20px;
+  color: #91a1bb;
+  text-align: center;
+  font-family: inherit;
+  background: #f6f7f9;
+  border-radius: 5px;
 }

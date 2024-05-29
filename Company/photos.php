@@ -90,11 +90,11 @@
             <div class="upload__btn-box">
                 <label class=" css-1cxc9zk">
                     <span class="span-title">Photos</span>
-                    <b class="b-num">1</b>
+                    <!-- <b class="b-num">1</b>
                     <span class="span-title">-</span>
                     <b class="b-num">1</b>
                     <span class="span-title">of</span>
-                    <b class="b-num">1</b>
+                    <b class="b-num">1</b> -->
                 </label>
                 <label class="upload__btn">
                     <p class="title-up">Upload images</p>

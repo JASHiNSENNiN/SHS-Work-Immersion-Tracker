@@ -61,11 +61,11 @@
                         </div>
                         <div class="search-container" style="border-left: 1px solid grey">
                             <button type="submit"><i class="fas fa-map-marker-alt"></i></button>
-                            <input type="text" placeholder="Search location">
+                            <input class="globalInputSearch" type="text" placeholder="Search location">
 
                         </div>
 
-                        <input class="sub-btn" type="submit" value="Find Now">
+                        <!-- <input class="sub-btn" type="submit" value="Find Now"> -->
                 </div>
                 </form>
             </div>
@@ -86,12 +86,12 @@
         <hr class="line_bottom">
         <!-- ------------------------------------------------------Job list------------------------------>
         <div class="main-container">
-            <div class="search-type">
+            <!-- <div class="search-type">
                 <div class="job-time">
                     <div class="job-time-title">Type of Employment</div>
                     <div class="job-wrapper">
                         <div class="type-container">
-                            <input type="checkbox" id="job1" class="job-style" checked>
+                            <input type="checkbox" id="job1" class="job-style">
                             <label for="job1">Full Time Jobs</label>
                             <span class="job-number">0</span>
                         </div>
@@ -122,42 +122,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="job-time">
-                    <div class="job-time-title">Seniority Level</div>
-                    <div class="job-wrapper">
-                        <div class="type-container">
-                            <input type="checkbox" id="job7" class="job-style">
-                            <label for="job7">Student Level</label>
-                            <span class="job-number">0</span>
-                        </div>
-                        <div class="type-container">
-                            <input type="checkbox" id="job8" class="job-style">
-                            <label for="job8">Entry Level</label>
-                            <span class="job-number">0</span>
-                        </div>
-                        <div class="type-container">
-                            <input type="checkbox" id="job9" class="job-style" checked>
-                            <label for="job9">Mid Level</label>
-                            <span class="job-number">0</span>
-                        </div>
-                        <div class="type-container">
-                            <input type="checkbox" id="job10" class="job-style" checked>
-                            <label for="job10">Senior Level</label>
-                            <span class="job-number">0</span>
-                        </div>
-                        <div class="type-container">
-                            <input type="checkbox" id="job11" class="job-style">
-                            <label for="job11">Directors</label>
-                            <span class="job-number">0</span>
-                        </div>
-                        <div class="type-container">
-                            <input type="checkbox" id="job12" class="job-style">
-                            <label for="job12">VP or Above</label>
-                            <span class="job-number">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            </div> -->
             <!-- <div class="searched-bar">
                 <div class="searched-show">Showing 46 Jobs</div>
             </div> -->
@@ -173,7 +139,7 @@
                                     <div class="menu-dot"></div>
                                 </div>
                                 <div class="job-card-title">
-                                    <h2><span>Work Immerion</span></h2>
+                                    <h2><span>Work Immersion</span></h2>
                                 </div>
 
                                 <div class="loc-com">
@@ -213,11 +179,11 @@
                                     <div class="menu-dot"></div>
                                 </div>
                                 <div class="job-card-title">
-                                    <h2><span>Work Immerion</span></h2>
+                                    <h2><span>Work Immersion</span></h2>
                                 </div>
                                 <div class="loc-com">
-                                    <div class="job-card-title-company">King Emerald Collection Service</div>
-                                    <div class="job-card-title-location">Pasig</div>
+                                    <div class="job-card-title-company">Besco Clark Philippines Group of Companies Corporation</div>
+                                    <div class="job-card-title-location">Quezon</div>
                                 </div>
 
                                 <div class="job-detail-buttons">
@@ -252,11 +218,11 @@
                                     <div class="menu-dot"></div>
                                 </div>
                                 <div class="job-card-title">
-                                    <h2><span>Work Immerion</span></h2>
+                                    <h2><span>Work Immersion</span></h2>
                                 </div>
                                 <div class="loc-com">
-                                    <div class="job-card-title-company">King Emerald Collection Service</div>
-                                    <div class="job-card-title-location">Pasig</div>
+                                    <div class="job-card-title-company">Aspen Philippines Inc.</div>
+                                    <div class="job-card-title-location">Nueva Ecija</div>
                                 </div>
 
                                 <div class="job-detail-buttons">
@@ -291,11 +257,11 @@
                                     <div class="menu-dot"></div>
                                 </div>
                                 <div class="job-card-title">
-                                    <h2><span>Work Immerion</span></h2>
+                                    <h2><span>Work Immersion</span></h2>
                                 </div>
                                 <div class="loc-com">
-                                    <div class="job-card-title-company">King Emerald Collection Service</div>
-                                    <div class="job-card-title-location">Pasig</div>
+                                    <div class="job-card-title-company">SBS Philippines Corporation</div>
+                                    <div class="job-card-title-location">Makati</div>
                                 </div>
 
                                 <div class="job-detail-buttons">
