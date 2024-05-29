@@ -1,157 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="res.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Resume</title>
+    <title>Progressive Form | Multi Steps Form</title>
+    <link rel="stylesheet" type="text/css" href="res.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left_Side">
-            <div class="profileText">
-                <div class="imgBx">
-                    <img src="../scs/Student/image/me.jpg" alt="">
-                </div>
-                <h2>Ronald Diaz <br> <span>HUMSS</span></h2>
-            </div>
-            <div class="contactInfo">
-                <h3 class="title"> Contact Info</h3>
-                <ul>
-                    <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">+639565101932</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span class="text">diaz@gmail.com</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="text">Guimba, Nueva Ecija</span>
-                    </li>
-                    <!-- <li>
-                        <span class="icon"></span>
-                        <span class="text">+639565101932</span>
-                    </li> -->
-                </ul>
-            </div>
 
-            <div class="contactInfo education">
-                <h3 class="title">Education</h3>
-                <ul>
-                    <li>
-                        <h5>2010 - 2013</h5>
-                        <h4>Guimba West Central School</h4>
-                        <h4>Junior High School name</h4>
-                    </li>
-                    <li>
-                        <h5>2007 - 2010</h5>
-                        <h4>Our Lady Of Sacred Heart College of Guimba Inc.</h4>
-                        <h4>Senior High School</h4>
-                    </li>
-
-                </ul>
+    <div class="wrapper">
+        <div class="header1">
+            <ul>
+                <li class="active form_1_progessbar">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </li>
+                <li class="form_2_progessbar">
+                    <div>
+                        <p>2</p>
+                    </div>
+                </li>
+                <li class="form_3_progessbar">
+                    <div>
+                        <p>3</p>
+                    </div>
+                </li>
+                <li class="form_4_progessbar">
+                    <div>
+                        <p>4</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form_wrap">
+            <div class="form_1 data_info">
+                <h2>Signup Info</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="email">Email Address</label>
+                            <input type="text" name="Email Address" class="input" id="email">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="input" id="password">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" name="confirm password" class="input" id="confirm_password">
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="contactInfo language">
-                <h3 class="title">Languages</h3>
-                <ul>
-                    <li>
-                        <span class="text">English</span>
-                        <span class="percent">
-                            <div style="width: 90%;"></div>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="text">Tagalog</span>
-                        <span class="percent">
-                            <div style="width: 50%;"></div>
-                        </span>
-                    </li>
-                </ul>
+            <div class="form_2 data_info" style="display: none;">
+                <h2>Personal Info</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="user_name">User Name</label>
+                            <input type="text" name="User Name" class="input" id="user_name">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="First Name" class="input" id="first_name">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="Last Name" class="input" id="last_name">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_3 data_info" style="display: none;">
+                <h2>Professional Info</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="company">Current Company</label>
+                            <input type="text" name="Current Company" class="input" id="company">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="experience">Total Experience</label>
+                            <input type="text" name="Total Experience" class="input" id="experience">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="designation">Designation</label>
+                            <input type="text" name="Designation" class="input" id="designation">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_4 data_info" style="display: none;">
+                <h2>Professional Info</h2>
+                <form>
+                    <div class="form_container">
+                        <!-- <div class="input_wrap">
+                            <label for="company">Current Company</label>
+                            <input type="text" name="Current Company" class="input" id="company">
+                        </div> -->
+                        <div class="input_wrap">
+                            <label for="experience">Total Experience</label>
+                            <input type="text" name="Total Experience" class="input" id="experience">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="designation">Designation</label>
+                            <input type="text" name="Designation" class="input" id="designation">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns">
+                <button type="button" class="btn_next">Next <span class="icon">
+                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                    </span></button>
+            </div>
+            <div class="common_btns form_2_btns" style="display: none;">
+                <button type="button" class="btn_back"><span class="icon">
+                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                    </span>Back</button>
+                <button type="button" class="btn_next">Next <span class="icon">
+                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                    </span></button>
+            </div>
+            <div class="common_btns form_3_btns" style="display: none;">
+                <button type="button" class="btn_back"><span class="icon">
+                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                    </span>Back</button>
+                <button type="button" class="btn_next">Next <span class="icon">
+                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                    </span></button>
+            </div>
+            <div class="common_btns form_4_btns" style="display: none;">
+                <button type="button" class="btn_back"><span class="icon">
+                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                    </span>Back</button>
+                <button type="button" class="btn_done">Done</button>
+            </div>
 
-        <div class="right_Side">
-            <div class="about">
-                <h2 class="title2">Profile</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, velit hic sequi, aliquam dolores
-                    sit enim iure eos expedita id minus sapiente reprehenderit dolor similique accusantium qui esse!
-                    Facere, aliquid?</p>
-            </div>
-            <div class="about">
-                <h2 class="title2">Experience</h2>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2019 - Present</h5>
-                        <h5>Company Name</h5>
-                    </div>
-                    <div class="text">
-                        <h4>Senior UX Designer</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe labore velit eaque voluptas
-                            quidem vitae soluta. Sunt cumque nam, mollitia sequi laudantium laboriosam vitae et.
-                            Perspiciatis beatae vero ducimus alias.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2016 - 2019</h5>
-                        <h5>Company name</h5>
-                    </div>
-                    <div class="text">
-                        <h4>UX / UI Designer</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe labore velit eaque voluptas
-                            quidem vitae soluta. Sunt cumque nam, mollitia sequi laudantium laboriosam vitae et.
-                            Perspiciatis beatae vero ducimus alias.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2014 - 2016</h5>
-                        <h5>Company Name</h5>
-                    </div>
-                    <div class="text">
-                        <h4>Junior UX Designer</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe labore velit eaque voluptas
-                            quidem vitae soluta. Sunt cumque nam, mollitia sequi laudantium laboriosam vitae et.
-                            Perspiciatis beatae vero ducimus alias.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about skills">
-                <h2 class="title2">Professional Skills</h2>
-                <div class="box">
-                    <h4>HTML</h4>
-                    <div class="percent">
-                        <div style="width:100%"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>CSS</h4>
-                    <div class="percent">
-                        <div style="width:80%"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>Javascript</h4>
-                    <div class="percent">
-                        <div style="width:60%"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>Photoshop</h4>
-                    <div class="percent">
-                        <div style="width:40%"></div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="success_wrap">
+            <span class="modal_icon">
+                <ion-icon name="checkmark-sharp"></ion-icon>
+            </span>
+            <p>You have successfully completed the process.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
 </body>
 
 </html>
