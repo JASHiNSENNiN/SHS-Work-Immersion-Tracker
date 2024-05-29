@@ -1053,7 +1053,7 @@ textarea {
 
 /* --------------------------------------ask a question ------------------------------------ */
 
-.globalTargetList li {
+li {
   list-style: none;
 }
 
