@@ -1,5 +1,6 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
+session_status() === PHP_SESSION_NONE ? session_start() : null;
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
 

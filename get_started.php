@@ -144,11 +144,11 @@ if ($email) {
                             </div>
                             <nav>
                                 <a style="text-decoration: none" href="login.php">
-                                    <button class="btn-login" id="switch-to-login" onclick="showLoginForm()">
+                                    <button class="btn-login" id="switch-to-login">
 
                                         <p>Back</p>
                                     </button></a>
-                                <button class="btn-new" style="right: 177px;" type="submit">
+                                <button class="btn-new" type="submit" onclick="showLoginForm()">
                                     <p>Submit</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path
