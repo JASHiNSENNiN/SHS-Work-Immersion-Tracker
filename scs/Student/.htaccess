@@ -1,1 +1,2 @@
 DirectoryIndex Company_Area.php
+php_value session.cookie_domain .workifyph.online

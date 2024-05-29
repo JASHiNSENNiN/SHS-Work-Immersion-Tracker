@@ -1,1 +1,2 @@
 DirectoryIndex Student.php
+php_value session.cookie_domain .workifyph.online

@@ -1,6 +1,5 @@
 <?php
 session_status() === PHP_SESSION_NONE ? session_start() : null;
-require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/setupRecaptcha.php';
 if (isset($_GET['code']) && !empty($_GET['code'])) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/validate_email.php';
@@ -48,6 +47,10 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                 $conn->close();
             }
         }
+    } else {
+        $authUrl = $client->createAuthUrl();
+        header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
+        exit;
     }
 }
 ?>
@@ -71,12 +74,6 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     <link rel="stylesheet" type="text/css" href="../css/loginform_landing.css">
     <link rel="stylesheet" type="text/css" href="../css/get_start_log.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("setupForm").submit();
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="/backend/js/register.js"></script>
     <script src="/js/get_start_log.js"></script>
@@ -111,26 +108,26 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                     <img class="logo-login" src="../img/logo-login.svg" alt="Logo">
 
                     <div class="form-container">
-                        <form id="setupForm" method="POST" onsubmit="return validateSetupForm()">
+                        <form id="setupForm" action="/backend/php/setup_account.php" method="POST" onsubmit="return validateSetupForm()">
 
                             <input type="text" for="email" name="email" id="email" placeholder="<?php echo $_SESSION['email'] ?>" value="<?php echo $_SESSION['email'] ?>" disabled>
                             <select id="account-type" name="account-type" onchange="toggleFields()" required>
-                                <option value class="null-type">Account Type:</option>
+                                <option value="" selected disabled hidden class="null-type">Account Type:</option>
                                 <option value="student">Student</option>
                                 <option value="school">School</option>
                                 <option value="organization">Partner Organization</option>
                             </select>
                             <div id="student-fields" style="display: none;">
-                                <input type="text" placeholder="First Name" id="first-name" name="first-name">
-                                <input type="text" placeholder="Middle Name" id="middle-name" name="middle-name">
-                                <input type="text" placeholder="Last Name" id="last-name" name="last-name">
+                                <input value="" type="text" placeholder="First Name" id="first-name" name="first-name">
+                                <input value="" type="text" placeholder="Middle Name" id="middle-name" name="middle-name">
+                                <input value="" type="text" placeholder="Last Name" id="last-name" name="last-name">
                                 <select name="grade-level" id="grade-level">
                                     <option value class="null-type">Grade Level:</option>
                                     <option value="11">11</option>
                                     <option value="12">12</option>
                                 </select>
                                 <select name="strand" id="strand">
-                                    <option value class="null-type">Strand:</option>
+                                    <option value="" selected disabled hidden class="null-type">Strand:</option>
                                     <option value="stem">STEM</option>
                                     <option value="humss">HUMSS</option>
                                     <option value="abm">ABM</option>
@@ -139,12 +136,12 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                                 </select>
                             </div>
                             <div id="school-fields" style="display: none;">
-                                <input type="text" placeholder="School Name" id="school-name" name="school-name">
+                                <input value="" type="text" placeholder="School Name" id="school-name" name="school-name">
                             </div>
                             <div id="partner-fields" style="display: none;">
-                                <input type="text" placeholder="Organization Name" id="organization-name" name="organization-name">
+                                <input value="" type="text" placeholder="Organization Name" id="organization-name" name="organization-name">
                                 <select name="strand-focus" id="strand-focus">
-                                    <option value class="null-type">Strand:</option>
+                                    <option value="" selected disabled hidden class="null-type">Strand:</option>
                                     <option value="stem">STEM</option>
                                     <option value="humss">HUMSS</option>
                                     <option value="abm">ABM</option>
@@ -158,7 +155,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
 
                                         <p>Back</p>
                                     </button></a>
-                                <button class="g-recaptcha btn-new" data-sitekey="6Lfa9MIpAAAAALAoYvFEZ86D6SvXCMeXjJ1ULag6" data-callback="onSubmit" data-action="submit" style="right: 177px;">
+                                <button class="btn-new" style="right: 177px;" type="submit">
                                     <p>Submit</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="3-Arrow Right" />
@@ -180,135 +177,6 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
     </div>
 </body>
 <script>
-    function validateSetupForm() {
-        const accountType = document.getElementById("account-type").value;
-        const schoolName = document.getElementById("school-name").value;
-        const organizationName = document.getElementById("organization-name").value;
-        const firstName = document.getElementById("first-name").value;
-        const middleName = document.getElementById("middle-name").value;
-        const lastName = document.getElementById("last-name").value;
-        const gradeLevel = document.getElementById("grade-level").value;
-        const strand = document.getElementById("strand").value;
-        const strandFocus = document.getElementById("strand-focus").value;
-
-        const accountTypeInput = document.getElementById("account-type");
-        const schoolNameInput = document.getElementById("school-name");
-        const organizationNameInput = document.getElementById("organization-name");
-        const firstNameInput = document.getElementById("first-name");
-        const middleNameInput = document.getElementById("middle-name");
-        const lastNameInput = document.getElementById("last-name");
-        const gradeLevelInput = document.getElementById("grade-level");
-        const strandInput = document.getElementById("strand");
-        const strandFocusInput = document.getElementById("strand-focus");
-
-        const allInputs = [
-            accountTypeInput,
-            schoolNameInput,
-            organizationNameInput,
-            firstNameInput,
-            middleNameInput,
-            lastNameInput,
-            gradeLevelInput,
-            strandInput,
-            strandFocusInput,
-        ];
-
-        allInputs.forEach((input) => {
-            input.addEventListener("input", function() {
-                if (this.validity.customError) {
-                    this.setCustomValidity("");
-                }
-            });
-        });
-
-        if (accountType === "") {
-            accountTypeInput.setCustomValidity("Please select an account type");
-            accountTypeInput.reportValidity();
-            return false;
-        }
-
-        if (accountType === "student") {
-            const nameRegex = /^[A-Za-z\s]{3,}$/;
-            if (
-                !nameRegex.test(firstName) ||
-                !nameRegex.test(middleName) ||
-                !nameRegex.test(lastName)
-            ) {
-                firstNameInput.setCustomValidity("Please enter a valid full name");
-                middleNameInput.setCustomValidity("Please enter a valid full name");
-                lastNameInput.setCustomValidity("Please enter a valid full name");
-                firstNameInput.reportValidity();
-                middleNameInput.reportValidity();
-                lastNameInput.reportValidity();
-                return false;
-            }
-
-            if (gradeLevel === "") {
-                gradeLevelInput.setCustomValidity("Please select a grade level");
-                gradeLevelInput.reportValidity();
-                return false;
-            }
-            if (strand === "") {
-                strandInput.setCustomValidity("Please select a strand");
-                strandInput.reportValidity();
-                return false;
-            }
-            try {
-                const exists = checkNameExists(schoolName, accountType);
-                if (exists) {
-                    schoolNameInput.setCustomValidity("Name was already taken");
-                    schoolNameInput.reportValidity();
-                    return false;
-                } else {
-                    //console.log("name does not exist");
-                }
-            } catch (error) {
-                console.error("Error:", error);
-            }
-        }
-        if (accountType === "school") {
-            const schoolRegex = /^[A-Za-z\s]{3,}$/;
-            if (!schoolRegex.test(schoolName)) {
-                schoolNameInput.setCustomValidity(
-                    "Please enter a valid school name"
-                );
-                schoolNameInput.reportValidity();
-                return false;
-            }
-        }
-        if (accountType === "organization") {
-            const nameRegex = /^[A-Za-z\s]{3,}$/;
-            if (!nameRegex.test(organizationName)) {
-                organizationNameInput.setCustomValidity(
-                    "Please enter a valid organization name"
-                );
-                organizationNameInput.reportValidity();
-                return false;
-            }
-            if (strandFocus === "") {
-                strandFocusInput.setCustomValidity("Please select a strand");
-                strandFocusInput.reportValidity();
-                return false;
-            }
-            try {
-                const exists = checkNameExists(organizationName, accountType);
-                if (exists) {
-                    organizationNameInput.setCustomValidity(
-                        "Name was already taken"
-                    );
-                    organizationNameInput.reportValidity();
-                    return false;
-                } else {
-                    //console.log("name does not exist");
-                }
-            } catch (error) {
-                console.error("Error:", error);
-            }
-        }
-
-        return true;
-    }
-
     function toggleFields() {
         var accountType = document.getElementById("account-type").value;
         var studentFields = document.getElementById("student-fields");
