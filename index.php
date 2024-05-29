@@ -361,24 +361,27 @@
                     <h2>Full job description</h2>
                 </div>
                 <div class="job-card-subtitle">
-                    <h4>Job description</h4>
-                    The User Experience Designer position exists to create compelling and digital user experience
-                    through excellent design...
+                    <h4>JOB DESCRIPTION</h4>
+                    <li>Properly document account information and input data in the appropriate systems.</li>
+                    <li>Lead and prepare a report for each investigation to creditors.</li>
+                    <li>Analytical and problem-solving skills to expedite these investigations.</li>
+                    <li>Collect daily and weekly data for required reports and submit them to the supervisors prior to deadlines.</li>
+                    <li>Use computer applications to locate and trace clients.</li>
 
-                    <h4>Qualifications </h4>
+                    <h4>QUALIFICATION </h4>
                     <li>College Students taking up Computer and Business courses with On the Job training requirements are also encouraged to join. (with allowance)</li>
                     <li>Computer literate</li>
                     <li>Knowledgeable in Microsoft Office tools</li>
                     <li>Critical thinker /Tech Savvy</li>
 
-                    <h4>Responsibilities</h4>
+                    <h4>RESPONSIBILITIES</h4>
                     <li>[List of specific responsibilities and tasks]</li>
                     <li>[Another responsibility]</li>
                     <li>[Additional responsibility]</li>
 
 
 
-                    <h4>Benefits</h4>
+                    <h4>BENEFITS</h4>
                     <li>[List of any benefits offered, such as health insurance, retirement plans, etc.].</li>
 
                     <h4>Consent from Parents or Guardians:</h4>
