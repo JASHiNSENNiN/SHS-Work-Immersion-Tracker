@@ -18,6 +18,6 @@ $stmt->execute();
 $stmt->close();
 $conn->close();
 
-$destination = 'https://www.workifyph.online/get_started.php';
+$destination = 'get_started.php';
 header("Location: $destination");
 exit();

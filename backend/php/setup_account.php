@@ -120,6 +120,6 @@ switch ($accountType) {
         $accType = "Company";
         break;
 }
-$redirectUrl = "https://www.workifyph.online/Account/" . $accType . "/";
+$redirectUrl = "/Account/" . $accType . "/";
 header("Location: " . $redirectUrl);
 exit;
