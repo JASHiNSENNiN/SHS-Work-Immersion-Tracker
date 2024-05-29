@@ -175,6 +175,7 @@
                                 <div class="job-card-title">
                                     <h2><span>Work Immerion</span></h2>
                                 </div>
+
                                 <div class="loc-com">
                                     <div class="job-card-title-company">King Emerald Collection Service</div>
                                     <div class="job-card-title-location">Pasig</div>
