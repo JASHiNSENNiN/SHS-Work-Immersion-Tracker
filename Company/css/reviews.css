@@ -874,7 +874,7 @@ p {
     width: 100%;
 }
 
-.container {
+.container form {
     border-radius: 5px;
     /*   background-color: #f2f2f2; */
     padding: 20px;
@@ -883,6 +883,10 @@ p {
     gap: 10px;
     align-items: flex-end;
     box-sizing: border-box;
+}
+
+.des-feed {
+    padding-left: 20px;
 }
 
 .installer {
@@ -900,7 +904,7 @@ p {
     cursor: pointer;
 }
 
-.installer label input[type="radio"] {
+.installer label input[type="submit"] {
     display: none;
 }
 

@@ -12,6 +12,7 @@
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -267,7 +268,7 @@
                     <li class="css-1z0pyms ">Ask a direct question</li>
                     <li class="css-1z0pyms ">Check your spelling and grammar</li>
                 </ol>
-                <a href="" target="_blank"><input class="guid-btn" type="submit" value="Guidelines"></a>
+                <a href="#" target="_blank"><input class="guid-btn" type="submit" value="Guidelines"></a>
             </div>
 
             <textarea id="subject" name="subject" style="height:200px" placeholder="Type your question here"></textarea>
@@ -286,21 +287,28 @@
         </div>
 
 
-        <!-- --------------------------------------------------Feedback and search comqany--------------------------------------- -->
+        <!----------------------------------------------------feed back--------------------------------------------- -->
+        <div class="des-feed">
+            <h3 style="color: #2d2d2d; font-size: 1rem; margin-top: 0px;
+    margin-bottom: 0px;">Tell us how to improve this page</h3>
+            <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+        </div>
+
         <div class="container">
-            <form action="/action_page.php">
-                <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
-                <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1c3d7737-14bc-4bc1-819a-0a5c1c760bc4">
 
-                <textarea id="subject" name="subject" style="height:200px" required></textarea>
-
+                <textarea id="subject" name="message" style="height:200px" required></textarea>
+                <div class="installer">
+                    <label for="progressLinux"><input id="progressLinux" type="submit"><span></span></label>
+                </div>
             </form>
 
-            <div class="installer">
-                <label for="progressLinux"><input id="progressLinux" type="radio"><span></span></label>
-            </div>
+
 
         </div>
+
+        <!-- -------------------------------------------search comqany------------------------------------- -->
         <section class="search-find-com">
             <h3 style="color: #2d2d2d;">Find another company</h3>
             <div class="line-search">

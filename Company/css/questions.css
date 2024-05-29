@@ -899,7 +899,7 @@ svg g[show_data] {
 
 /* -----------------------------------feedback-------------------------------- */
 
-.container {
+.container form {
   border-radius: 5px;
   /*   background-color: #f2f2f2; */
   padding: 20px;
@@ -925,7 +925,7 @@ svg g[show_data] {
   cursor: pointer;
 }
 
-.installer label input[type="radio"] {
+.installer label input[type="submit"] {
   display: none;
 }
 
@@ -1131,6 +1131,11 @@ textarea {
 }
 
 /* ---------------------------------------------button submit------------------------------------------- */
+
+.des-feed {
+  padding-top: 20px;
+  padding-left: 20px;
+}
 
 .guid-text {
   color: #595959;

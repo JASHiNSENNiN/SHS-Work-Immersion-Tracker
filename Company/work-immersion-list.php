@@ -425,8 +425,14 @@
 
 
     <div class="bgc">
-        <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
-        <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+
+        <!----------------------------------------------------feed back--------------------------------------------- -->
+        <div class="des-feed">
+            <h3 style="color: #2d2d2d; font-size: 1rem; margin-top: 0px;
+    margin-bottom: 0px;">Tell us how to improve this page</h3>
+            <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+        </div>
+
         <div class="container">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="1c3d7737-14bc-4bc1-819a-0a5c1c760bc4">
@@ -440,6 +446,8 @@
 
 
         </div>
+
+        <!-- -----------------------------search comqany --------------------------------- -->
         <section class="section-search-com">
             <h3 style="color: #2d2d2d;">Find another company</h3>
             <div class="line-search-find-com">

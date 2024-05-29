@@ -1574,6 +1574,10 @@ textarea {
     left: 10%;
 }
 
+.des-feed {
+    padding-left: 20px;
+}
+
 .installer label input:checked ~ span:after {
     content: "Thank you!";
     animation: downloadState 3s;

@@ -252,19 +252,21 @@
 
 
         <!-- --------------------------------------------------Feedback and search comqany--------------------------------------- -->
+        <div class="des-feed">
+            <h3 style="color: #2d2d2d; font-size: 1rem; margin-top: 0px;
+    margin-bottom: 0px;">Tell us how to improve this page</h3>
+            <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+        </div>
+
         <div class="container">
-            <form action="/action_page.php">
-                <h3 style="color: #2d2d2d; font-size: 1rem;">Tell us how to improve this page</h3>
-                <label style="font-size: .75rem; color: #595959;">What would you add or change?</label>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1c3d7737-14bc-4bc1-819a-0a5c1c760bc4">
 
-                <textarea id="subject" name="subject" style="height:200px" required></textarea>
-
+                <textarea id="subject" name="message" style="height:200px" required></textarea>
+                <div class="installer">
+                    <label for="progressLinux"><input id="progressLinux" type="submit"><span></span></label>
+                </div>
             </form>
-
-            <div class="installer">
-                <label for="progressLinux"><input id="progressLinux" type="radio"><span></span></label>
-            </div>
-
         </div>
         <section class="search-find-com">
             <h3 style="color: #2d2d2d;">Find another company</h3>
@@ -290,30 +292,30 @@
 
         </section>
 
-    </div>
-    <br>
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-    </footer>
 
-    <script>
-        let profilePic1 = document.getElementById("cover-pic");
-        let inputFile1 = document.getElementById("input-file1");
+        <br>
+        <footer>
+            <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
+        </footer>
 
-        inputFile1.onchange = function() {
-            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-        }
-    </script>
+        <script>
+            let profilePic1 = document.getElementById("cover-pic");
+            let inputFile1 = document.getElementById("input-file1");
 
-    <script>
-        let profilePic2 = document.getElementById("profile-pic");
-        let inputFile2 = document.getElementById("input-file2");
+            inputFile1.onchange = function() {
+                profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+            }
+        </script>
 
-        inputFile2.onchange = function() {
-            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-        }
-    </script>
-    <script src="chart.js"></script>
+        <script>
+            let profilePic2 = document.getElementById("profile-pic");
+            let inputFile2 = document.getElementById("input-file2");
+
+            inputFile2.onchange = function() {
+                profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+            }
+        </script>
+        <script src="chart.js"></script>
 </body>
 
 </html>
