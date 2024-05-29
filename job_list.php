@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/job_list.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 
     <!-- -------------font--------- -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
@@ -61,11 +62,11 @@
 
                     <div class="search-container">
                         <button type="submit"><i class="fas fa-search"></i></button>
-                        <input type="text" placeholder="Company name or Work Immersion title ">
+                        <input class="globalInputSearch" type="text" placeholder="Company name or Work Immersion title ">
 
                     </div>
 
-                    <input class="input-find-now" type="submit-find-now" value="Find Now" href="">
+                    <input class="input-find-now" type="submit" value="Find Now">
             </div>
             </form>
         </div>
@@ -77,15 +78,21 @@
     <!-- Homepage: Grid -->
     <section class="section-gutter company-grid">
         <div class="container">
+
             <div class="section-bg-white section-wrapper company-grid__wrapper">
+
                 <header class="section-wrapper__header section-wrapper__header--has-cta section-wrapper__header--has-bg">
                     <h2 class="h4 company-grid__title">Popular companies</h2>
                     <div class="section-wrapper__header-cta">
                         <a class="link-text" href="/companies">View all <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </header>
+
                 <div class="section-wrapper__content">
+
                     <div class="company-grid__list">
+
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -119,6 +126,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -152,6 +160,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -185,6 +194,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -218,6 +228,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -251,6 +262,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -284,6 +296,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="company-grid__item">
                             <div class="company-card">
                                 <div class="company-card__inner">
@@ -317,9 +330,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="globalSearchResultNoFoundFeedback" aria-live="polite"> Search nothing found</div>
                     </div>
                 </div>
+
+
             </div>
+
         </div>
     </section>
 
@@ -464,7 +482,7 @@
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
-
+    <script src="js/filter.js"> </script>
 
 
 </body>
