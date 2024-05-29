@@ -8,6 +8,10 @@ body {
     background-repeat: no-repeat; */
 }
 
+.globalTargetList li {
+    list-style: none;
+}
+
 .line_bottom {
     width: 100% !important;
     height: 1px;
@@ -88,6 +92,7 @@ section {
     padding: 8px;
     font-size: 16px;
     /*   border-radius: 10px; */
+    width: 100%;
 }
 
 .search-container button {
@@ -881,6 +886,8 @@ html {
         background-color: #575ad8;
         color: #fff;
     }
+    .job-card-title-company,
+    .job-card-title-location,
     .job-card-title,
     .job-stat {
         color: #fff;
@@ -1024,6 +1031,8 @@ html {
 }
 
 .overview-detail {
+    .job-card-title-company,
+    .job-card-title-location,
     .job-card-title,
     .job-card-subtitle {
         margin-top: 4px;
@@ -1066,11 +1075,18 @@ html {
 .job-title-wrapper {
     display: flex;
     align-items: center;
+    .job-card-title-company,
+    .job-card-title-location,
     .job-card-title {
         font-size: 20px;
         margin-top: 0;
         font-weight: 600;
     }
+}
+
+.loc-com {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .job-action {
@@ -1381,6 +1397,33 @@ html {
     }
 }
 
+.job-detail-buttons {
+    margin-bottom: 8px;
+}
+
+.css-1f21ew {
+    margin-top: 8px;
+    font-weight: 400 !important;
+    color: #6f6f6f;
+    font-family:
+        Noto Sans,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+    box-sizing: initial;
+    font-size: 0.75rem;
+}
+
+.job-card-subtitle ul li {
+    list-style-type: circle;
+}
+
+.job-card-title-location .fas {
+    color: rgb(118, 118, 118);
+    margin: 8px;
+}
+
 /* -------------------------------recent Search --------------- */
 
 .recent-search {
@@ -1430,4 +1473,16 @@ html {
 
 .stickyhead + .content-sticky {
     padding-top: 102px;
+}
+
+/* ---------------------------------search not found-------------------------------- */
+
+.globalSearchResultNoFoundFeedback {
+    font-size: 30px;
+    padding: 20px;
+    color: #91a1bb;
+    text-align: center;
+    font-family: inherit;
+    background: #f6f7f9;
+    border-radius: 5px;
 }
