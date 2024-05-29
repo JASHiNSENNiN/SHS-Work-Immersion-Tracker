@@ -197,7 +197,7 @@
 
                                 </div>
 
-                                <span data-testid="myJobsState" class="css-1f21ew eu4oa1w0">Posted 7 minutes ago</span>
+                                <span class="css-1f21ew ">Posted 7 minutes ago</span>
 
 
                                 <div class="job-card-buttons">
