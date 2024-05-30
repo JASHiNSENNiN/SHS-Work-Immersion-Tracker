@@ -14,20 +14,28 @@ $profile_div = '<header class="nav-header">
             </a>
         </div>
 
+
         <nav class="by">
             <a href=""><i class="fas fa-comment-alt" style="font-size:24px; margin-top:5px;"></i></a>
 
             <div class="dropdowntf" style="float:right;">
                 <a href="" class="notification"><i class="fas fa-bell" style="font-size:24px;"></i><span
-                        class="badge">1</span></a>
+                        class="badge">2</span></a>
                 <div class="dropdowntf-content" id="box">
                     <label for="" class="notif">Notification</label>
                     <hr style="width: 100%;">
                     <div class="notifi-item">
-                        <img src="../Student/image/me.jpg" alt="img">
+                        <img src="../Company/image/NIA.png" alt="img">
                         <div class="text">
-                            <h4>Miguel Von Natividad</h4>
-                            <p>Sent Request</p>
+                            <h4>NIA</h4>
+                            <p>sent report for Revira, Joshua</p>
+                        </div>
+                    </div>
+                    <div class="notifi-item">
+                        <img src="../Company/image/NIA.png" alt="img">
+                        <div class="text">
+                            <h4>NIA</h4>
+                            <p>sent report for Diaz, Ronald</p>
                         </div>
                     </div>
                 </div>
@@ -39,7 +47,6 @@ $profile_div = '<header class="nav-header">
                     <div class="email">' . $email . '</div>
                     <a href="Profile.php"><i class="fas fa-user-alt" style="font-size:24px; margin-right:10px;"></i> My
                         Profile</a>
-                    <a href=""><i class="fas fa-bookmark" style="font-size:24px; margin-right:10px;"></i> My Jobs</a>
                     <a href="#"> <i class="fas fa-comment-alt" style="font-size:24px;margin-right:10px;"></i>My
                         Reviews</a>
                     <a href="Settings.php"><i class="fa fa-gear" style="font-size:24px"></i> Settings</a>
@@ -48,7 +55,7 @@ $profile_div = '<header class="nav-header">
                         Society Students
                     </div>
                     <hr>
-                    <a class="logout" href="' .  '/backend/php/logout.php' . '"> Log out</a>
+                    <a class="logout" href="#"> Log out</a>
                 </div>
             </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
@@ -63,16 +70,14 @@ $profile_div = '<header class="nav-header">
         <span class="cam"><i class="fa fa-camera"></i></span></label>
     <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file1" />
 
-
     <div class="profile">
-        <img id="profile-pic" src="image/NIA.png" alt="">
+        <img id="profile-pic" src="image/OLSHCO.png" alt="">
         <div class="name">' . $schoolName . '</div>
-        <label class="strand" for="">' . $strandFocus . '</label>
+        <label class="strand" for="">OLSHCO</label>
 
         <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
                         class="fa fa-pencil"></i> Edit
                     profile</span><span class="pen"><i class="fa fa-pencil"></i></span></label>
             <input type="file" accept="image/jpeg, image/png, image/gif" id="input-file2" />
         </div>
-
     </div>';
