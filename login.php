@@ -14,7 +14,7 @@
         }
     </script>
     <?php
-    session_status() === PHP_SESSION_NONE ? session_start() : null;
+    session_start();
     require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/recaptcha/registerRecaptcha.php';
     ?>

@@ -1,6 +1,5 @@
 <?php
-session_status() === PHP_SESSION_NONE ? session_start() : null;
-session_status() === PHP_SESSION_NONE ? session_start() : null;
+session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
 
@@ -15,6 +14,8 @@ $email = $_POST['email'];
 $conn = new mysqli($host, $username, $password, $database);
 
 if ($conn->connect_error) {
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+    (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
     die("Connection failed: " . $conn->connect_error);
 }
 
