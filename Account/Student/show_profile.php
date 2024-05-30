@@ -59,7 +59,7 @@ $profile_div = '<header class="nav-header">
                         Society Students
                     </div>
                     <hr>
-                    <a class="logout" href="#"> Log out</a>
+                    <a class="logout" href="' .  '/backend/php/logout.php' . '"> Log out</a>
                 </div>
             </div>
             <div class="css-1ld7x2h eu4oa1w0"></div>
