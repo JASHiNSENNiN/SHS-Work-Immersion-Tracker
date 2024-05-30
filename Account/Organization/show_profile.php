@@ -3,8 +3,8 @@ session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/session_handler.php';
 
-$organizationName = $_SESSION['profile']['organization_name'];
-$strandFocus = $_SESSION['profile']['strand'];
+$organizationName = $_SESSION['organization_name'];
+$strandFocus = $_SESSION['strand'];
 $email = $_SESSION['email'];
 
 
