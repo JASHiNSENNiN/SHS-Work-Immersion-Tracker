@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+require_once 'show_profile.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -284,11 +289,11 @@ l                           ist" href="#account-info">Info</a> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputfile = document.getElementById("input-file");
-        inputfile.onchange = function () {
-            profilePic.src = URL.createObjectURL(inputfile.files[0]);
-        }
+    let profilePic = document.getElementById("profile-pic");
+    let inputfile = document.getElementById("input-file");
+    inputfile.onchange = function() {
+        profilePic.src = URL.createObjectURL(inputfile.files[0]);
+    }
     </script>
 
 </body>
