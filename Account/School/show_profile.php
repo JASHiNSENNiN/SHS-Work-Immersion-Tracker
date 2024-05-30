@@ -3,8 +3,7 @@ session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/session_handler.php';
 
-$organizationName = $_SESSION['organization_name'];
-
+$schoolName = $_SESSION['school_name'];
 $email = $_SESSION['email'];
 
 
@@ -67,7 +66,7 @@ $profile_div = '<header class="nav-header">
 
     <div class="profile">
         <img id="profile-pic" src="image/NIA.png" alt="">
-        <div class="name">' . $organizationName . '</div>
+        <div class="name">' . $schoolName . '</div>
         <label class="strand" for="">' . $strandFocus . '</label>
 
         <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i

@@ -66,15 +66,6 @@ switch ($accountType) {
         $stmt->bind_param("ssssssi", $firstName, $middleName, $lastName, $schoolName, $gradeLevel, $strand, $userId);
         $stmt->execute();
         $stmt->close();
-
-        $_SESSION['profile'] = [
-            'first_name' => $firstName,
-            'middle_name' => $middleName,
-            'last_name' => $lastName,
-            'school_name' => $schoolName,
-            'grade_level' => $gradeLevel,
-            'strand' => $strand
-        ];
         break;
 
     case "school":
@@ -84,10 +75,6 @@ switch ($accountType) {
         $stmt->bind_param("si", $schoolName, $userId);
         $stmt->execute();
         $stmt->close();
-
-        $_SESSION['profile'] = [
-            'school_name' => $schoolName
-        ];
         break;
 
     case "organization":
@@ -98,11 +85,6 @@ switch ($accountType) {
         $stmt->bind_param("ssi", $organizationName, $strandFocus, $userId);
         $stmt->execute();
         $stmt->close();
-
-        $_SESSION['profile'] = [
-            'organization_name' => $organizationName,
-            'strand' => $strandFocus
-        ];
         break;
 }
 
