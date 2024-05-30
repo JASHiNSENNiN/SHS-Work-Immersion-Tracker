@@ -27,7 +27,7 @@ require_once 'show_profile.php';
 
 <body>
     <?php echo $profile_div; ?>
-
+    <br>
     <hr>
     <div class="logo">
 
