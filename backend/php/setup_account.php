@@ -100,7 +100,7 @@ switch ($accountType) {
         $accType = "School";
         break;
     case "organization":
-        $accType = "Company";
+        $accType = "Organization";
         break;
 }
 $redirectUrl = "/Account/" . $accType . "/";
