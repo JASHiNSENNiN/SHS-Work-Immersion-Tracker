@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+require_once 'show_profile.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 

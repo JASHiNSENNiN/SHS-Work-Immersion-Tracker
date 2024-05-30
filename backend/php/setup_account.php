@@ -1,6 +1,5 @@
 <?php
-session_status() === PHP_SESSION_NONE ? session_start() : null;
-session_status() === PHP_SESSION_NONE ? session_start() : null;
+session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/'))->load();
 
@@ -15,6 +14,8 @@ $email = $_POST['email'];
 $conn = new mysqli($host, $username, $password, $database);
 
 if ($conn->connect_error) {
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+    (Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] .  '/'))->load();
     die("Connection failed: " . $conn->connect_error);
 }
 
@@ -65,15 +66,6 @@ switch ($accountType) {
         $stmt->bind_param("ssssssi", $firstName, $middleName, $lastName, $schoolName, $gradeLevel, $strand, $userId);
         $stmt->execute();
         $stmt->close();
-
-        $_SESSION['profile'] = [
-            'first_name' => $firstName,
-            'middle_name' => $middleName,
-            'last_name' => $lastName,
-            'school_name' => $schoolName,
-            'grade_level' => $gradeLevel,
-            'strand' => $strand
-        ];
         break;
 
     case "school":
@@ -83,10 +75,6 @@ switch ($accountType) {
         $stmt->bind_param("si", $schoolName, $userId);
         $stmt->execute();
         $stmt->close();
-
-        $_SESSION['profile'] = [
-            'school_name' => $schoolName
-        ];
         break;
 
     case "organization":
@@ -97,11 +85,6 @@ switch ($accountType) {
         $stmt->bind_param("ssi", $organizationName, $strandFocus, $userId);
         $stmt->execute();
         $stmt->close();
-
-        $_SESSION['profile'] = [
-            'organization_name' => $organizationName,
-            'strand' => $strandFocus
-        ];
         break;
 }
 
