@@ -3,9 +3,15 @@ session_start();
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/backend/php/session_handler.php';
 
-$schoolName = $_SESSION['school_name'];
+$firstName = $student_profile['first_name'];
+$middleName = $student_profile['middle_name'];
+$lastName = $student_profile['last_name'];
+$school = $student_profile['school'];
+$gradeLevel = $student_profile['grade_level'];
+$strand = $student_profile['strand'];
+$stars = $student_profile['stars'];
+$currentWork = $student_profile['current_work'];
 $email = $_SESSION['email'];
-
 
 $profile_div = '<header class="nav-header">
         <div class="logo">
@@ -42,7 +48,7 @@ $profile_div = '<header class="nav-header">
             <div class="dropdown" style="float:right;">
                 <a href=""><i class="fas fa-user-alt" style="font-size:24px;  margin-top:5px;"></i></a>
                 <div class="dropdown-content">
-                    <div class="email">natividadma@students.olshco.edu</div>
+                    <div class="email">' . $email . '</div>
                     <a href="Profile.php"><i class="fas fa-user-alt" style="font-size:24px; margin-right:10px;"></i> My
                         Profile</a>
                     <a href="#"> <i class="fas fa-comment-alt" style="font-size:24px;margin-right:10px;"></i>My
@@ -70,8 +76,8 @@ $profile_div = '<header class="nav-header">
 
     <div class="profile">
         <img src="image/me.jpg" alt="">
-        <div class="name"> Miguel Von Natividad</div>
-        <label class="strand" for="">STEM</label>
+        <div class="name">' . $firstName . ' ' . $middleName . ' ' . $lastName . '</div>
+        <label class="strand" for="">' . $strand . '</label>
 
         <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
                         class="fa fa-pencil"></i> Edit
