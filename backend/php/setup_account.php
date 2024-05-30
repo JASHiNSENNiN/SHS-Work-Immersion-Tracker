@@ -55,6 +55,7 @@ $_SESSION['email'] = $email;
 
 switch ($accountType) {
     case "student":
+        $accType = "Student";
         $firstName = $_POST["first-name"];
         $middleName = $_POST["middle-name"];
         $lastName = $_POST["last-name"];
@@ -70,7 +71,7 @@ switch ($accountType) {
 
     case "school":
         $schoolName = $_POST["school-name"];
-
+        $accType = "School";
         $stmt = $conn->prepare("INSERT INTO school_profiles (school_name, user_id) VALUES (?, ?)");
         $stmt->bind_param("si", $schoolName, $userId);
         $stmt->execute();
@@ -80,7 +81,7 @@ switch ($accountType) {
     case "organization":
         $organizationName = $_POST["organization-name"];
         $strandFocus = $_POST["strand-focus"];
-
+        $accType = "Organization";
         $stmt = $conn->prepare("INSERT INTO partner_profiles (organization_name, strand, user_id) VALUES (?, ?, ?)");
         $stmt->bind_param("ssi", $organizationName, $strandFocus, $userId);
         $stmt->execute();
@@ -91,18 +92,6 @@ switch ($accountType) {
 $stmt->execute();
 $stmt->close();
 $conn->close();
-
-switch ($accountType) {
-    case "student":
-        $accType = "Student";
-        break;
-    case "school":
-        $accType = "School";
-        break;
-    case "organization":
-        $accType = "Organization";
-        break;
-}
 $redirectUrl = "/Account/" . $accType . "/";
 header("Location: " . $redirectUrl);
 exit;
