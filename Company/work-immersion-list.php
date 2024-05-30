@@ -64,7 +64,7 @@
             <a href="../login.php"><label for="input-file2" class="button-13" role="button">Write a review </label></a>
         </div>
 
-    </div><br>
+    </div><br><br>
     <hr>
     <div class="logo">
 
