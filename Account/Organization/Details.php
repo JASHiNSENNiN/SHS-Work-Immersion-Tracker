@@ -89,15 +89,11 @@ require_once 'show_profile.php';
                     <div class="api_details">
                         <p class="api_title">Link</p></br>
                         <a class="api_details_one" style="color: #2557a7;" href="https://www.nia.gov.ph/">NIA
-                            Philippines <svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img"
-                                fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"
-                                class=" css-1jtd2m7 eac13zx0">
+                            Philippines <svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class=" css-1jtd2m7 eac13zx0">
                                 <title>Opens in a new window</title>
-                                <path
-                                    d="M14.504 3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3.085l-9.594 9.594a.5.5 0 000 .707l.707.708a.5.5 0 00.707 0l9.594-9.595V9.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-6a.5.5 0 00-.5-.5h-6z">
+                                <path d="M14.504 3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3.085l-9.594 9.594a.5.5 0 000 .707l.707.708a.5.5 0 00.707 0l9.594-9.595V9.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-6a.5.5 0 00-.5-.5h-6z">
                                 </path>
-                                <path
-                                    d="M5 3.002a2 2 0 00-2 2v13.996a2 2 0 001.996 2.004h14a2 2 0 002-2v-6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v6.5L5 18.998V5.002L11.5 5a.495.495 0 00.496-.498v-1a.5.5 0 00-.5-.5H5z">
+                                <path d="M5 3.002a2 2 0 00-2 2v13.996a2 2 0 001.996 2.004h14a2 2 0 002-2v-6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v6.5L5 18.998V5.002L11.5 5a.495.495 0 00.496-.498v-1a.5.5 0 00-.5-.5H5z">
                                 </path>
                             </svg></a>
                     </div>
@@ -105,8 +101,7 @@ require_once 'show_profile.php';
                 </div>
             </div>
             <h1 style="font-size: 1.75rem; margin:0%; margin: bottom 20px; margin-block-end: 1rem;">Rating overview</h1>
-            <label style="font-size: .75rem; color: #595959;">Rating is calculated based on <span
-                    class="total-reviews">0</span> reviews and is evolving.</label>
+            <label style="font-size: .75rem; color: #595959;">Rating is calculated based on <span class="total-reviews">0</span> reviews and is evolving.</label>
 
         </div>
     </div>
@@ -115,10 +110,8 @@ require_once 'show_profile.php';
         <div class="global">
             <span class="global-value">0.0</span>
             <div class="rating-icons">
-                <span class="one"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                <span class="two"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="one"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="two"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
             </div>
             <!-- <span class="rev-title"> Base on
                 <span class="total-reviews">0</span> reviews</span> -->
@@ -303,21 +296,21 @@ require_once 'show_profile.php';
     </footer>
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function() {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function() {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
 
