@@ -86,7 +86,7 @@ session_status() === PHP_SESSION_NONE ? session_start() : null;
     <div class="profile">
         <img src="image/me.jpg" alt="">
         <div class="name"> Miguel Von Natividad</div>
-        <label class="strand" for="">STEM</label>
+        <label class="strand" for="">HUMSS</label>
 
         <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
                         class="fa fa-pencil"></i> Edit

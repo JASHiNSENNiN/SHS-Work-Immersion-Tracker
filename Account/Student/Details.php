@@ -86,7 +86,7 @@
     <div class="profile">
         <img id="profile-pic" src="image/me.jpg" alt="">
         <div class="name"> Miguel Von Natividad</div>
-        <label class="strand" for="">STEM</label>
+        <label class="strand" for="">HUMSS</label>
 
         <div class="Settings"><label for="input-file2" class="button-12" role="button"><span class="edit"><i
                         class="fa fa-pencil"></i> Edit
@@ -344,70 +344,70 @@
     </footer>
 
     <script>
-    let profilePic1 = document.getElementById("cover-pic");
-    let inputFile1 = document.getElementById("input-file1");
+        let profilePic1 = document.getElementById("cover-pic");
+        let inputFile1 = document.getElementById("input-file1");
 
-    inputFile1.onchange = function() {
-        profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
-    }
+        inputFile1.onchange = function () {
+            profilePic1.src = URL.createObjectURL(inputFile1.files[0]);
+        }
     </script>
 
     <script>
-    let profilePic2 = document.getElementById("profile-pic");
-    let inputFile2 = document.getElementById("input-file2");
+        let profilePic2 = document.getElementById("profile-pic");
+        let inputFile2 = document.getElementById("input-file2");
 
-    inputFile2.onchange = function() {
-        profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
-    }
+        inputFile2.onchange = function () {
+            profilePic2.src = URL.createObjectURL(inputFile2.files[0]);
+        }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $('#locationAlternate').on('click', function() {
+        $('#locationAlternate').on('click', function () {
 
-        $('#location').append(
-            '<div class="input_wrap" id="altloc">  <input type = "number" class = "input Position" min = "1900" max = "2099" step = "1" placeholder = "2000 - 2000" / > <input type = "text" name = "" class = "input" id = "Position" placeholder = "Position"> <textarea type = "text" name = "" class = "input" id = "Description" placeholder = "Position Description"> </textarea> </div>'
-        );
+            $('#location').append(
+                '<div class="input_wrap" id="altloc">  <input type = "number" class = "input Position" min = "1900" max = "2099" step = "1" placeholder = "2000 - 2000" / > <input type = "text" name = "" class = "input" id = "Position" placeholder = "Position"> <textarea type = "text" name = "" class = "input" id = "Description" placeholder = "Position Description"> </textarea> </div>'
+            );
 
-    });
+        });
     </script>
 
     <script>
-    $('#LanguageAdd').on('click', function() {
+        $('#LanguageAdd').on('click', function () {
 
-        $('#addLanguage').append(
-            '<div class="input_wrap" id="addL"> <input type = "text" class = "input language" placeholder = "Language" / > <input type = "number" name = "per" min = "0" class = "input percent" id = "per" placeholder = "%" ></div>'
-        );
+            $('#addLanguage').append(
+                '<div class="input_wrap" id="addL"> <input type = "text" class = "input language" placeholder = "Language" / > <input type = "number" name = "per" min = "0" class = "input percent" id = "per" placeholder = "%" ></div>'
+            );
 
-    });
+        });
     </script>
 
     <script>
-    $('#ReferenceAdd').on('click', function() {
+        $('#ReferenceAdd').on('click', function () {
 
-        $('#addReference').append(
-            '<div class="input_wrap" id="addR"> <input type="text" name="" class="input" id="name" placeholder="Name"> <textarea type="text" name="" class="input" id="Description" placeholder="Position Description"></textarea></div>'
-        );
+            $('#addReference').append(
+                '<div class="input_wrap" id="addR"> <input type="text" name="" class="input" id="name" placeholder="Name"> <textarea type="text" name="" class="input" id="Description" placeholder="Position Description"></textarea></div>'
+            );
 
-    });
+        });
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-    $("#profileImage").click(function(e) {
-        $("#imageUpload").click();
-    });
+        $("#profileImage").click(function (e) {
+            $("#imageUpload").click();
+        });
 
-    function fasterPreview(uploader) {
-        if (uploader.files && uploader.files[0]) {
-            $('#profileImage').attr('src',
-                window.URL.createObjectURL(uploader.files[0]));
+        function fasterPreview(uploader) {
+            if (uploader.files && uploader.files[0]) {
+                $('#profileImage').attr('src',
+                    window.URL.createObjectURL(uploader.files[0]));
+            }
         }
-    }
 
-    $("#imageUpload").change(function() {
-        fasterPreview(this);
-    });
+        $("#imageUpload").change(function () {
+            fasterPreview(this);
+        });
     </script>
 </body>
 
