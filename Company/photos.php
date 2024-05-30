@@ -46,10 +46,10 @@
 
     <div class="profile-name">
         <img id="profile-pic" src="image/NIA.png" alt="">
-        <div class="name">National Irrigation Administration</div>
+        <div class="name">National Irrigation Administration (NIA)</div>
         <div class="company-card__review">
             <div class="review-stars">
-                <label class="strand ">(NIA)</label>
+
 
                 <div class="rating-icons-profile">
                     <span class="one-prof"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
