@@ -58,7 +58,7 @@ $profile_div = '<header class="nav-header">
     </header>
 
 
-    <img class="logoimg" id="cover-pic" src="image/background.jpg" alt="" height="300" width="200">
+    <img class="logoimg" id="cover-pic" src="image/bg.png" alt="" height="300" width="200">
     <label for="input-file1" class="button-13" role="button"><span class="edit"><i class="fa fa-camera"></i>Edit cover
             photo</span>
         <span class="cam"><i class="fa fa-camera"></i></span></label>
@@ -66,7 +66,7 @@ $profile_div = '<header class="nav-header">
 
 
     <div class="profile">
-        <img id="profile-pic" src="image/NIA.png" alt="">
+        <img id="profile-pic" src="image/Default.png" alt="">
         <div class="name">' . $organizationName . '</div>
         <label class="strand" for="">' . $strandFocus . '</label>
 
