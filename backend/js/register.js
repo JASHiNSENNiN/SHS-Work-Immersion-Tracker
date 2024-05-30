@@ -104,21 +104,35 @@ function validateSetupForm() {
 	}
 
 	if (accountType === "student") {
-		const nameRegex = /^[A-Za-z\s]{3,}$/;
+		const nameRegex = /^[A-Za-z\s]{2,}$/;
+
 		if (
 			!nameRegex.test(firstName) ||
 			!nameRegex.test(middleName) ||
 			!nameRegex.test(lastName)
 		) {
-			firstNameInput.setCustomValidity("Please enter a valid full name");
-			middleNameInput.setCustomValidity("Please enter a valid full name");
-			lastNameInput.setCustomValidity("Please enter a valid full name");
-			firstNameInput.reportValidity();
-			middleNameInput.reportValidity();
-			lastNameInput.reportValidity();
+			if (!nameRegex.test(firstName)) {
+				firstNameInput.setCustomValidity(
+					"Please enter a valid first name with at least 2 letters"
+				);
+				firstNameInput.reportValidity();
+			}
+			if (!nameRegex.test(middleName)) {
+				middleNameInput.setCustomValidity(
+					"Please enter a valid middle name with at least 2 letters"
+				);
+				middleNameInput.reportValidity();
+			}
+
+			if (!nameRegex.test(lastName)) {
+				lastNameInput.setCustomValidity(
+					"Please enter a valid last name with at least 2 letters"
+				);
+				lastNameInput.reportValidity();
+			}
+
 			return false;
 		}
-
 		if (gradeLevel === "") {
 			gradeLevelInput.setCustomValidity("Please select a grade level");
 			gradeLevelInput.reportValidity();
