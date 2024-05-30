@@ -216,6 +216,14 @@ input[type="text"] {
 
 /* ----------------------------company review---------------- */
 
+.globalTargetList {
+    padding-left: 0px !important;
+}
+
+.globalTargetList li {
+    list-style-type: none;
+}
+
 h1,
 h2,
 h3,
@@ -943,6 +951,35 @@ a {
 
 .review-stars .far {
     opacity: 0.35;
+}
+
+.rating-icons-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 6%;
+    /* height: 10%; */
+    left: 68px;
+}
+
+.rating-icons-profile span {
+    position: absolute;
+    display: flex;
+    font-size: 19px;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.one-prof .fas {
+    color: #cfd8dc;
+}
+
+.two-prof {
+    background: linear-gradient(to right, #ffc000 0%, transparent 0%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-in-out all;
 }
 
 .coupon-list__header {

@@ -89,14 +89,14 @@
                 </header>
 
                 <div class="section-wrapper__content">
+                    <ul class="globalTargetList">
+                        <div class="company-grid__list">
 
-                    <div class="company-grid__list">
-                        <ul class="globalTargetList">
 
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="Company/About.php" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://i.postimg.cc/HnV8QTq7/NIA.png">
                                             </figure>
@@ -104,7 +104,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">National Irrgation<br>Administration(NIA)</a>
+                                                    <a class="company-card__title-link" href="Company/About.php">National Irrgation<br>Administration(NIA)</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -113,8 +113,11 @@
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="far fa-star"></i>
-                                                        <span class="css-hid0zu e1wnkr790">388 reviews</span>
+                                                        <!-- <span class="css-hid0zu e1wnkr790">388 reviews</span> -->
+
+                                                        <span class="css-hid0zu "><span class="total-reviews">0</span> reviews</span>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +133,7 @@
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="#" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                             </figure>
@@ -138,7 +141,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">Company Name</a>
+                                                    <a class="company-card__title-link" href="#">Company Name</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -164,7 +167,7 @@
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="#" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                             </figure>
@@ -172,7 +175,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">Company Name</a>
+                                                    <a class="company-card__title-link" href="#">Company Name</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -198,7 +201,7 @@
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="#" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                             </figure>
@@ -206,7 +209,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">Company Name</a>
+                                                    <a class="company-card__title-link" href="#">Company Name</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -232,7 +235,7 @@
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="#" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                             </figure>
@@ -240,7 +243,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">Company Name</a>
+                                                    <a class="company-card__title-link" href="#">Company Name</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -266,7 +269,7 @@
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="#" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                             </figure>
@@ -274,7 +277,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">Company Name</a>
+                                                    <a class="company-card__title-link" href="#">Company Name</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -300,7 +303,7 @@
                             <div class="company-grid__item">
                                 <div class="company-card">
                                     <div class="company-card__inner">
-                                        <a class="company-card__image-wrapper" href="/company" title="Go to Company Name">
+                                        <a class="company-card__image-wrapper" href="#" title="Go to Company Name">
                                             <figure class="company-card__figure">
                                                 <img class="company-card__image" alt="Company Name" src="https://via.placeholder.com/150">
                                             </figure>
@@ -308,7 +311,7 @@
                                         <div class="company-card__content">
                                             <div class="company-card__block">
                                                 <h3 class="company-card__title">
-                                                    <a class="company-card__title-link" href="/company">Company Name</a>
+                                                    <a class="company-card__title-link" href="#">Company Name</a>
                                                 </h3>
                                                 <div class="company-card__review">
                                                     <div class="review-stars">
@@ -331,9 +334,11 @@
                                 </div>
                             </div>
 
-                            <div class="globalSearchResultNoFoundFeedback" aria-live="polite"> Search nothing found</div>
-                        </ul>
-                    </div>
+
+
+                        </div>
+                    </ul>
+                    <div class="globalSearchResultNoFoundFeedback" aria-live="polite"> Search nothing found</div>
                 </div>
 
 
@@ -356,7 +361,8 @@
         document.getElementById("currentDate").innerHTML = new Date().getFullYear();
     </script>
 
-    <script src="js/filter.js"> </script>
+    <script src="js/com-filter.js"> </script>
+    <script src="Company/chart.js"></script>
 
 
 </body>

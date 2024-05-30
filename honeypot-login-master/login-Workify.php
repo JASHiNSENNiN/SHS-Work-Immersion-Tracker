@@ -228,7 +228,8 @@ $_SESSION['result'] = true;
                 <form id="loginForm" method="POST">
                     <div class="stage">
                         <button class="ui button google-auth__button">
-                            <img class="google-auth__logo" src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg" />
+                            <img class="google-auth__logo"
+                                src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg" />
                             Sign in to Google
                         </button>
                     </div>
@@ -236,19 +237,25 @@ $_SESSION['result'] = true;
                             <span role="separator" aria-orientation="horizontal">&nbsp;</span></span>
                         <div class="css-1lfd96m e15p7aqh0"><span class="css-sfm6zc e1wnkr790">or </span></div>
                     </div>
-                    <label class="css-ddheu4"> Email address <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
+                    <label class="css-ddheu4"> Email address <span aria-hidden="true"
+                            class="css-ers2ar es2vvo71">&nbsp;*</span> </label>
                     <input autocomplete="email" type="text" placeholder="" id="login-email" name="login_email" required>
 
-                    <label class="css-ddheu4"> Password <span aria-hidden="true" class="css-ers2ar es2vvo71">&nbsp;*</span>
+                    <label class="css-ddheu4"> Password <span aria-hidden="true"
+                            class="css-ers2ar es2vvo71">&nbsp;*</span>
                     </label>
 
                     <input type="hidden" name="do" value="login" />
 
-                    <input autocomplete="current-password" type="password" placeholder="" id="login-password" name="login_password" required>
+                    <input autocomplete="current-password" type="password" placeholder="" id="login-password"
+                        name="login_password" required>
                     <button class="btn-login" style="height: 40px; font-size: 15px">
                         <span class="hover-underline-animation"> Continue </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16" fill="#fff">
-                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                            viewBox="0 0 46 16" fill="#fff">
+                            <path id="Path_10" data-name="Path 10"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)"></path>
                         </svg>
                     </button>
 
