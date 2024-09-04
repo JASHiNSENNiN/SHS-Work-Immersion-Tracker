@@ -305,9 +305,9 @@ require_once 'show_profile.php';
 
 
     <br>
-    <footer>
+    <!-- <footer>
         <p>&copy; 2024 Your Website. All rights reserved. | Junior Philippines Computer Society Students</p>
-    </footer>
+    </footer> -->
 
 
     <script src="css/Questions.js"></script>
